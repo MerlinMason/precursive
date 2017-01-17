@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/merlin/Sites/precursive/user/config/system.yaml',
-    'modified' => 1482735152,
+    'modified' => 1484653592,
     'data' => [
         'absolute_urls' => false,
         'home' => [

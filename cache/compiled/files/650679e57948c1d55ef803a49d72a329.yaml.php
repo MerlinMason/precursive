@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/merlin/Sites/precursive/user/plugins/email/email.yaml',
-    'modified' => 1482735152,
+    'modified' => 1484656173,
     'data' => [
         'enabled' => true,
         'from' => NULL,

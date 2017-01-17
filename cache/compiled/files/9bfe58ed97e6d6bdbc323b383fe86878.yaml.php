@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/merlin/Sites/precursive/user/plugins/email/blueprints.yaml',
-    'modified' => 1482735152,
+    'modified' => 1484656173,
     'data' => [
         'name' => 'Email',
-        'version' => '2.5.2',
+        'version' => '2.5.3',
         'description' => 'Enables the emailing system for Grav',
         'icon' => 'envelope',
         'author' => [
