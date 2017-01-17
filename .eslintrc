@@ -1,0 +1,46 @@
+{
+    "extends": "airbnb",
+    "env": {
+        "browser": true,
+        "jquery": true,
+        "node": true
+    },
+    "globals": {
+        "mixpanel": true
+    },
+    "plugins": [
+    ],
+    "settings": {
+    },
+    "rules": {
+        "arrow-parens": ["error", "always"],
+        "indent": ["error", 4, { "SwitchCase": 1 }],
+        "quotes": [1, "double"],
+        "comma-dangle": ["error", "never"],
+        "new-cap": ["error", { "capIsNew": false }],
+        "camelcase": 0,
+        "no-plusplus": 0,
+        "no-param-reassign": 0,
+        "no-underscore-dangle": 0,
+        "max-len": 0,
+        "no-console": 0,
+        "default-case": 0,
+        "func-names": 0,
+        "no-new": 0,
+        "global-require": 0,
+        "eol-last": 1,
+        "class-methods-use-this": 0,
+        "react/require-extension": [0, { "extensions": [".js"] }],
+        "import/no-extraneous-dependencies": [0, {}],
+        "import/extensions": 0,
+        "newline-per-chained-call": [2, { "ignoreChainWithDepth": 3 }],
+        "backbone/collection-model": 0,
+        "backbone/defaults-on-top": 2,
+        "backbone/events-on-top": [2, ["el"]],
+        "backbone/initialize-on-top": [2, { View: ["el", "events"] }],
+        "backbone/model-defaults": 0,
+        "backbone/no-constructor": 2,
+        "backbone/no-el-assign": 2,
+        "backbone/no-native-jquery": [2, "selector"]
+    }
+}

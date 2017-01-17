@@ -1,0 +1,11 @@
+email: info@merlinmason.co.uk
+fullname: 'Merlin Mason'
+title: admin
+state: enabled
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$g6fgc5Ok9zGAZhfWniwycezII300PRrFQls1AbjDN4tfqqaoAG4yi

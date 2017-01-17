@@ -1,0 +1,29 @@
+{
+  "name": "precursive",
+  "version": "1.0.0",
+  "description": "Install heroku CLI Login with `heroku login` Launch bash with `heroku run bash --app precursive` Restart with `heroku restart --app precursive`",
+  "main": "main.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MerlinBB/precursive.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MerlinBB/precursive/issues"
+  },
+  "homepage": "https://github.com/MerlinBB/precursive#readme",
+  "devDependencies": {
+    "eslint": "^3.13.1",
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-php": "^1.5.1",
+    "load-grunt-tasks": "^3.5.2",
+    "time-grunt": "^1.4.0"
+  }
+}
