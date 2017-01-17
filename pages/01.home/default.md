@@ -2,7 +2,7 @@
 title: Home
 ---
 
-# Grav is Running, and it's cool - 1.04!
+# Grav is Running, and it's cool - 3.46!
 ## You have installed **Grav** successfully
 
 Congratulations! You have installed the **Base Grav Package** that provides a **simple page** and the default **antimatter** theme to get you started.
