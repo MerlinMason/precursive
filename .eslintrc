@@ -33,14 +33,6 @@
         "react/require-extension": [0, { "extensions": [".js"] }],
         "import/no-extraneous-dependencies": [0, {}],
         "import/extensions": 0,
-        "newline-per-chained-call": [2, { "ignoreChainWithDepth": 3 }],
-        "backbone/collection-model": 0,
-        "backbone/defaults-on-top": 2,
-        "backbone/events-on-top": [2, ["el"]],
-        "backbone/initialize-on-top": [2, { View: ["el", "events"] }],
-        "backbone/model-defaults": 0,
-        "backbone/no-constructor": 2,
-        "backbone/no-el-assign": 2,
-        "backbone/no-native-jquery": [2, "selector"]
+        "newline-per-chained-call": [2, { "ignoreChainWithDepth": 3 }]
     }
 }
