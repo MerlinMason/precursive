@@ -3,7 +3,7 @@ locales:
   en:
     full: en_US
     name: English
-    url: http://precursive.dev:8888
+    url: https://precursive.herokuapp.com/
 timezone: UTC
 date_format: F jS, Y
 default_extension: md
@@ -23,7 +23,7 @@ filesystems:
     url: /site/themes
 app_key: T1jZ3jXs1ZJoTgb8v9p3bl18sXUvSgBK
 redactor:
-  - 
+  -
     name: Standard
     settings:
       buttons:
@@ -33,7 +33,7 @@ redactor:
         - unorderedlist
         - orderedlist
         - html
-  - 
+  -
     name: Basic
     settings:
       buttons:
