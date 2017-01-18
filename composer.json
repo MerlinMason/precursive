@@ -11,11 +11,15 @@
             "email": "dz@heroku.com"
         }
     ],
+    "config": {
+        "platform": {
+            "php": "7.0.13"
+        }
+    },
     "bin": [
         "bin/heroku-hhvm-apache2",
         "bin/heroku-hhvm-nginx",
         "bin/heroku-php-apache2",
-        "bin/heroku-php-nginx",
-        "symfony/polyfill-mbstring"
+        "bin/heroku-php-nginx"
     ]
 }

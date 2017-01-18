@@ -2,6 +2,7 @@ collections:
   blog: '/blog/{year}/{month}/{day}/{slug}'
   things: '/things/{slug}'
   events: '/events/{slug}'
+  casestudies: '/case-studies/{slug}'
 taxonomies:
   tags: '/blog/tags/{slug}'
   categories: '/blog/categories/{slug}'

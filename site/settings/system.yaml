@@ -3,4 +3,4 @@ locales:
   en:
     full: en_US
     name: English
-    url: http://localhost:3000/
+    url: http://precursive.dev:8888
