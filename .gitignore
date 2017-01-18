@@ -8,3 +8,5 @@ local/cache/*
 local/storage/*
 local/temp/*
 installer.php
+vendor
+composer.phar
