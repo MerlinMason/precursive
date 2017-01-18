@@ -20,8 +20,12 @@ class SpockListener extends Listener
      *
      * @var array
      */
+    // public $events = [
+    //     'cp.published' => 'run'
+    // ];
     public $events = [
-        'cp.published' => 'run'
+        'cp.published' => 'run',
+        PageDeleted::class => 'run'
     ];
 
     /**
@@ -57,7 +61,7 @@ class SpockListener extends Listener
                 $process->getOutput()
             );
         }
-        
+
     }
 
     /**
@@ -75,12 +79,28 @@ class SpockListener extends Listener
      *
      * @return string
      */
+    // private function commands()
+    // {
+    //     $full_path = Path::assemble(root_path(), $this->data->path());
+    //
+    //     $data = $this->data->toArray();
+    //     $data['full_path'] = $full_path;
+    //     $data['committer'] = User::getCurrent()->toArray();
+    //
+    //     $commands = [];
+    //
+    //     foreach ($this->getConfig('commands', []) as $command) {
+    //         $commands[] = Parse::template($command, $data);
+    //     }
+    //
+    //     return join('; ', $commands);
+    // }
     private function commands()
     {
-        $full_path = Path::assemble(root_path(), $this->data->path());
+        #$full_path = Path::assemble(root_path(), $this->data->path());
 
-        $data = $this->data->toArray();
-        $data['full_path'] = $full_path;
+        #$data = $this->data->toArray();
+        #$data['full_path'] = $full_path;
         $data['committer'] = User::getCurrent()->toArray();
 
         $commands = [];

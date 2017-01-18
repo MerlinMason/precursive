@@ -1,6 +1,6 @@
 environments:
-  - "production"
+  - production
 commands:
-  - "git add ."
-  - "git commit -m '{{ title }} updated by {{ committer:username }}'"
+  - "git add --all"
+  - "git commit -m '{{ url }} updated by {{ committer:username }}'"
   - "git push"
