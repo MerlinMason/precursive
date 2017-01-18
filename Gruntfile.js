@@ -18,12 +18,11 @@ module.exports = function (grunt) {
                     port: 9000,
                     base: "", // Project root
                     keepalive: false,
-                    open: false,
-                    router: "system/router.php"
+                    open: false
                 }
             }
         },
-        
+
         browserSync: {
             dist: {
                 bsFiles: {
@@ -46,7 +45,7 @@ module.exports = function (grunt) {
                 }
             }
         },
-        
+
         watch: {
             // Your watch tasks
         }

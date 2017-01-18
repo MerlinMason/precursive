@@ -1,9 +1,10 @@
-.env
-node_modules
 .DS_Store
-.tmp
+.env
+node_modules/
+bower_components/
 npm-debug.log
 *.map
-test/reports
-logs
-cache
+local/cache/*
+local/storage/*
+local/temp/*
+installer.php

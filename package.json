@@ -18,6 +18,10 @@
   "homepage": "https://github.com/MerlinBB/precursive#readme",
   "devDependencies": {
     "eslint": "^3.13.1",
+    "eslint-config-airbnb": "^14.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-react": "^6.9.0",
     "grunt": "^1.0.1",
     "grunt-browser-sync": "^2.2.0",
     "grunt-cli": "^1.2.0",
