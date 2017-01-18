@@ -1,44 +1,5 @@
-license_key: 2d216c93-b1d1-4271-b281-5188d275a908
 locales:
   en:
-    full: en_US
     name: English
-    url: https://precursive.com
-timezone: UTC
-date_format: F jS, Y
-default_extension: md
-filesystems:
-  content:
-    driver: local
-    root: site/content
-  storage:
-    driver: local
-    root: site/storage
-  users:
-    driver: local
-    root: site/users
-  themes:
-    driver: local
-    root: site/themes
-    url: /site/themes
-app_key: T1jZ3jXs1ZJoTgb8v9p3bl18sXUvSgBK
-redactor:
-  -
-    name: Standard
-    settings:
-      buttons:
-        - formatting
-        - bold
-        - italic
-        - unorderedlist
-        - orderedlist
-        - html
-  -
-    name: Basic
-    settings:
-      buttons:
-        - bold
-        - italic
-csrf_exclude: [ ]
-send_powered_by_header: true
-ensure_unique_ids: true
+    full: en_US
+    url: /
