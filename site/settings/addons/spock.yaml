@@ -3,4 +3,4 @@ environments:
 commands:
   - "git add --all"
   - "git commit -m '{{ url }} updated by {{ committer:username }}'"
-  - "git push"
+  - "git push origin master"
