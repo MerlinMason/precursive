@@ -11,10 +11,8 @@
             "email": "dz@heroku.com"
         }
     ],
-    "config": {
-        "platform": {
-            "php": "7.0.13"
-        }
+    "require": {
+        "php": "^5.6.0"
     },
     "bin": [
         "bin/heroku-hhvm-apache2",
