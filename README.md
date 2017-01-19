@@ -1,0 +1,24 @@
+Content types
+- blog posts
+    -- title
+    -- content
+    -- preview image
+    -- hero image
+    -- authors
+    -- most read
+    -- latest
+    -- comments
+    -- tags
+- customers
+    -- name
+    -- logo
+    - case studies
+        -- featured image
+        -- title
+        -- content
+        -- tags
+        -- results
+- features
+
+- benefits
+- users (authors)
