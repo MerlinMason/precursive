@@ -1,5 +1,3 @@
-import $ from "jquery";
+import Home from "./home";
 
-
-$("body").addClass("YOOOOO");
-console.log("hello world");
+Home();
