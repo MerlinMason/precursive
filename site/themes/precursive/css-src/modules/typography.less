@@ -2,24 +2,22 @@
 // Typography
 //----------------------------------------------------------------------------//
 
-
-@font: "sans-serif";
-@fsize: 16px;
+.serif { font-family: 'PT Serif', serif; }
+.sans { font-family: 'Source Sans Pro', sans-serif; }
 
 body, p, input, button {
-    color:#666;
-    font-size:14px;
+    color:@grey1;
+    font-size:18px;
     line-height:1.4;
     text-rendering:optimizeLegibility;
     -webkit-font-smoothing:antialiased;
-    font-family:@font;
-    font-size:@fsize;
+    font-weight:normal;
+    .sans();
 }
 
 // baseline spacing
 p,
-.blockquote,
-.title {
+blockquote {
     margin-bottom:1.4em;
     &:empty {
         margin:0;
@@ -32,8 +30,8 @@ p,
 //----------------------------------
 
 
-// Setup
-[class*="heading-"] {
+// Headings
+.h {
     font-weight:normal;
     margin-bottom:0.6em;
     line-height:1.2;
@@ -44,27 +42,17 @@ p,
 }
 
 // Sizes
-[class*="heading-xl"]   { font-size:38px; }
-[class*="heading-lrg"]  { font-size:28px; }
-[class*="heading-med"]  { font-size:22px; }
-[class*="heading-sm"]   { font-size:16px; }
-[class*="heading-xs"]   { font-size:14px; }
-[class*="heading-xxs"]   { font-size:12px; }
+.s-xxl  { font-size:40px; }
+.s-lg   { font-size:36px; }
+.s-md   { font-size:26px; }
+.s-sm   { font-size:18px; }
+.s-xs   { font-size:14px; }
+.s-xxs  { font-size:10px; }
 
 // Weights
-[class*="heading-"][class*="-lt"] { font-weight:100; }
-[class*="heading-"][class*="-rg"] { font-weight:400; }
-[class*="heading-"][class*="-md"] { font-weight:800; }
-
-// leading paragraphs
-.lead {
-    font-size:(@fsize * 1.2);
-}
-
-// aside / smallprint paragraphs
-.smallprint {
-    font-size:(@fsize * 0.8);
-}
+.w-n { font-weight:400; }
+.w-r { font-weight:600; }
+.w-b { font-weight:700; }
 
 
 //----------------------------------
