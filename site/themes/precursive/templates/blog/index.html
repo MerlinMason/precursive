@@ -13,13 +13,35 @@
 <div class="container md mt-4x">
     <div class="row">
         {{ collection:blog paginate="true" as="posts" limit="4" }}
-            {{ index }}
             {{ posts }}
                 <div class="col-sm-4">
-                    {{ if most_read }}
-                        mostread
-                    {{ /if }}
-                    {{ partial:block }}
+                    <div class="post">
+                        {{ if index == 1 }}
+                            <div class="label bg-jade">Most Recent</div>
+                        {{ elseif most_read }}
+                            <div class="label bg-flamingo">Most Read</div>
+                        {{ /if }}
+
+                        <a href="{{ url }}">
+                            {{ if intro_image }}
+                                <img src="{{ glide:intro_image width='400' height='200' }}" class="scale">
+                            {{ /if }}
+
+                            <h3>{{ title }}</h3>
+
+                            <p>{{ content strip_tags="img|a|p" safe_truncate="210" ensure_right="..." }}</p>
+
+                            <div class="meta">
+                                {{ if (date | days_ago) < 21 }}
+                                {{ date | relative }}
+                                {{ elseif (date | format:Y) == now | format:Y }}
+                                {{ date format="M j" }}
+                                {{ else }}
+                                {{ date format="M j, Y" }}
+                                {{ /if }}
+                            </div>
+                        </a>
+                    </div>
                 </div>
             {{ /posts }}
 
