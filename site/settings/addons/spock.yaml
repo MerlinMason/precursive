@@ -1,6 +1,6 @@
 environments:
   - production
 commands:
-  - "git add {{ full_path }}"
+  - "git add -A"
   - "git commit -m '{{ url }} updated by {{ committer:username }}'"
   - "git push origin master"
