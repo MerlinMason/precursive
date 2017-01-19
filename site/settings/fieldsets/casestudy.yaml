@@ -1,0 +1,39 @@
+title: Case Study
+create_title: Create a new case study
+fields:
+  related_customer:
+    type: collection
+    display: Related Customer
+    instructions: Choose a customer that this case study related to
+    collection:
+      - customer
+    max_items: "1"
+    mode: tags
+  description:
+    type: markdown
+    display: Description
+    cheatsheet: true
+    container: main
+    folder: img
+  client_name:
+    type: text
+    display: Client Name
+  client_role:
+    type: text
+    display: Client Role
+  client_photo:
+    type: assets
+    display: Client Photo
+    container: main
+    folder: /
+    max_files: "1"
+  results:
+    type: list
+    display: Results
+  promoted:
+    type: toggle
+    display: Promoted
+    instructions: Toggle this on to feature this case study
+  tags:
+    type: tags
+    display: Tags

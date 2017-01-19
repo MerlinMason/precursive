@@ -1,0 +1,9 @@
+title: Customer
+create_title: Create a new customer
+fields:
+  logo:
+    type: assets
+    display: Logo
+    container: main
+    folder: img
+    max_files: "1"
