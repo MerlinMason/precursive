@@ -1,0 +1,12 @@
+title: Blog Home
+create_title: ""
+fields:
+  subtitle:
+    type: text
+    display: Subtitle
+  hero:
+    type: assets
+    display: Hero
+    container: main
+    folder: img
+    max_files: "1"

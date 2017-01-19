@@ -1,18 +1,29 @@
-<section class="regular">
+<div class="masthead">
+    <div class="masthead-bg blog-index"></div>
+    <div class="masthead-content">
+        {{ partial:nav }}
+        <div class="text-center mt-4x mb-4x">
+            <h1 class="h s-xl w-n">{{ title }}</h1>
+            <h2 class="h s-md w-r">{{ subtitle }}</h2>
+        </div>
+    </div>
+</div>
 
-	<header>
-		<h1>{{ title }}</h1>
-		<h2>{{ content }}</h2>
-	</header>
 
-	<article class="list">
-		{{ collection:blog paginate="true" as="posts" limit="4" }}
-			{{ posts }}
-				{{ partial:block }}
-			{{ /posts }}
+<div class="container md mt-4x">
+    <div class="row">
+        {{ collection:blog paginate="true" as="posts" limit="4" }}
+            {{ index }}
+            {{ posts }}
+                <div class="col-sm-4">
+                    {{ if most_read }}
+                        mostread
+                    {{ /if }}
+                    {{ partial:block }}
+                </div>
+            {{ /posts }}
 
-			{{ partial:pagination }}
-		{{ /collection:blog }}
-	</article>
-
-</section>
+            {{ partial:pagination }}
+        {{ /collection:blog }}
+    </div>
+</div>
