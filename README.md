@@ -15,7 +15,6 @@ Content types
     - case studies
         -- featured image
         -- hero image
-        -- promoted
         -- title
         -- content
         -- overview text (extract)
@@ -23,6 +22,7 @@ Content types
         -- client photo
         -- client role
         -- tags
+        -- promoted
         -- results
 - features
     -- title

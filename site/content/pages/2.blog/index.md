@@ -1,7 +1,7 @@
 ---
-title: My Magical Blogventure
+title: Blog
 nav_title: Blog
-mount: blog
+mount: blogs
 template: blog/index
 id: 60962021-f154-4cd2-a1d7-035a12b6da9e
 ---
