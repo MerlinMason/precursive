@@ -1,0 +1,18 @@
+title: Module
+create_title: Create a new module
+fields:
+  title:
+    type: title
+    display: Title
+  subtitle:
+    type: text
+    display: Subtitle
+  image:
+    type: assets
+    display: Image
+    container: main
+    folder: img
+    max_files: "1"
+  feature_list:
+    type: list
+    display: Feature List

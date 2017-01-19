@@ -13,6 +13,7 @@ collections:
   casestudies: 'case-studies/{slug}'
   benefits: 'benefits/{slug}'
   features: 'features/{slug}'
+  modules: 'features/modules/{slug}'
 taxonomies:
   tags: '/blog/tags/{slug}'
   categories: '/blog/categories/{slug}'
