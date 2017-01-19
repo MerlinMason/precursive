@@ -5,10 +5,6 @@ fields:
     type: title
     display: Title
     localizable: true
-  sub_title:
-    type: textarea
-    display: Subtitle
-    localizable: true
   intro_image:
     type: assets
     display: Intro Image
@@ -21,6 +17,10 @@ fields:
     container: main
     folder: img
     max_files: 1
+  sub_title:
+    type: textarea
+    display: Subtitle
+    localizable: true
   tags:
     type: taxonomy
     taxonomy: tags
@@ -29,3 +29,18 @@ fields:
     type: markdown
     display: Content
     localizable: true
+    cheatsheet: false
+  comments:
+    type: toggle
+    display: Comments
+    instructions: Enable comments
+    width: 33
+  most_read:
+    type: toggle
+    display: Most Read
+    instructions: "Marks post as being 'most read'"
+    width: 33
+  author:
+    type: users
+    display: Author
+    width: 33

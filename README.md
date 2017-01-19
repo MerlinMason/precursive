@@ -14,11 +14,31 @@ Content types
     -- logo
     - case studies
         -- featured image
+        -- hero image
+        -- promoted
         -- title
         -- content
+        -- overview text (extract)
+        -- client name
+        -- client photo
+        -- client role
         -- tags
         -- results
 - features
+    -- title
+    -- icon
+    -- description
+    - modules
+        -- title
+        -- subtitle
+        -- image
+        -- ticklist
 
 - benefits
+    -- title
+    -- subtitle
+    -- image
+    -- ticklist
 - users (authors)
+    -- name
+    -- photo
