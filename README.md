@@ -1,4 +1,5 @@
-Content types
+Content Structure
+
 - blog posts
     -- title
     -- content

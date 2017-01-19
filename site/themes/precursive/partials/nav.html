@@ -1,4 +1,12 @@
-<nav class="navbar navbar-redwood">
+<nav class="container lg nav">
+    <a href="/" class="logo">{{ site_name }}</a>
+    {{ nav from="/" include_home="true" scope="tag" }}
+        <a {{ if is_current or is_parent }} class="active"{{ /if }} href="{{ url }}">{{ tag:nav_title or title }}</a>
+    {{ /nav }}
+    <a href="#" class="fr">Support</a>
+    <a href="#" class="fr">Sign In</a>
+</nav>
+    <!-- <a class="navbar-brand" href="/">{{ site_name }}</a>
     <div class="container-fluid">
 
         <div class="navbar-header">
@@ -37,4 +45,4 @@
         </div>
 
     </div>
-</nav>
+</nav> -->

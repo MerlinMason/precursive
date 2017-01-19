@@ -16,6 +16,7 @@
 
 @import "modules/grid";
 @import "modules/typography";
+@import "modules/masthead";
 
 ::selection {
     background:@highlight;
@@ -34,6 +35,9 @@
 @media (min-width: @screen-sm-min) { .make-grid(sm); }
 @media (min-width: @screen-md-min) { .make-grid(md); }
 @media (min-width: @screen-lg-min) { .make-grid(lg); }
+
+.brand-grad { background:linear-gradient(300deg, #00C9B5 0%, #136EB5 100%); }
+.brand-grad-trans { background:linear-gradient(300deg, rgba(0, 201, 181, 0.8) 0%, rgba(19, 110, 181, 0.8) 100%); }
 
 
 //----------------------------------------------------------------------------//

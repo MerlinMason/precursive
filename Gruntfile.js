@@ -44,8 +44,7 @@ module.exports = function (grunt) {
                     expand: true,
                     cwd: "site/themes/precursive/css",
                     src: ["precursive.css"],
-                    dest: ".",
-                    ext: ".css"
+                    dest: "site/themes/precursive/css"
                 }]
             }
         },
