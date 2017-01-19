@@ -11,6 +11,7 @@ routes:
 collections:
   blog: '/blog/{slug}'
   casestudies: 'case-studies/{slug}'
+  benefits: 'benefits/{slug}'
 taxonomies:
   tags: '/blog/tags/{slug}'
   categories: '/blog/categories/{slug}'
