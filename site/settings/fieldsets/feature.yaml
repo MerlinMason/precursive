@@ -1,0 +1,15 @@
+title: Feature
+create_title: Create a new feature
+fields:
+  title:
+    type: title
+    display: Title
+  icon:
+    type: assets
+    display: Icon
+    container: main
+    folder: icons
+    max_files: "1"
+  description:
+    type: textarea
+    display: Description
