@@ -1,14 +1,22 @@
 <div class="masthead">
-    <video class="masthead-bg" autoplay loop webkit-playsinline playsinline>
-        <source src="{{ theme:asset src="vid/home-masthead.mp4" }}" type="video/mp4">
-        <source src="{{ theme:asset src="vid/home-masthead.webm" }}" type="video/webm">
-    </video>
+    <div class="masthead-bg">
+        <video autoplay loop webkit-playsinline playsinline>
+            <source src="{{ theme:asset src="vid/home-masthead.mp4" }}" type="video/mp4">
+            <source src="{{ theme:asset src="vid/home-masthead.webm" }}" type="video/webm">
+        </video>    
+    </div>
     <div class="masthead-content">
         {{ partial:nav }}
     </div>
 </div>
 
-<section class="regular">
+{{ collection:customer }}
+    {{ assets:logo }}
+        <img src="{{ glide:id width="200" }}" alt="logo for {{ title }}" title="{{ title }}">
+    {{ /assets:logo }}
+{{ /collection:customer }}
+
+<!-- <section class="regular">
 
     <h1 class="special centered">
         <small>The Statamic</small>
@@ -25,4 +33,4 @@
         <a href="{{ link to='blog' }}">Read the rest of the blog</a>
     </div>
 
-</section>
+</section> -->
