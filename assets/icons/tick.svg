@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>tick</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="component/benefit" transform="translate(-8.000000, -5.000000)">
+            <g id="tick" transform="translate(8.000000, 5.000000)">
+                <circle id="Oval-4" fill="#00EAB5" cx="10" cy="10" r="10"></circle>
+                <path d="M8.0738631,15.2041827 L3.53368328,10.6364867 C3.36858583,10.4713892 3.36858583,10.1962268 3.53368328,10.0311294 L4.13904059,9.42577205 C4.30413804,9.2606746 4.57930045,9.2606746 4.7443979,9.42577205 L8.15641183,12.8653022 C8.26647679,12.9753672 8.45909048,12.9753672 8.56915545,12.8653022 L15.2556021,6.12382309 C15.4206996,5.95872564 15.695862,5.95872564 15.8609594,6.12382309 L16.4663167,6.7291804 C16.6314142,6.89427784 16.6314142,7.16944026 16.4663167,7.33453771 L8.67922041,15.2041827 C8.51412297,15.3967964 8.23896055,15.3967964 8.0738631,15.2041827" id="white-tick" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>
