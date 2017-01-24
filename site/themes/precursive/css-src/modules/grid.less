@@ -3,6 +3,12 @@
 // From Bootstrap3 - getbootstrap.com
 //----------------------------------------------------------------------------//
 
+.row { .make-row(); }
+.make-grid-columns();
+.make-grid(xs);
+@media (min-width: @mobile) { .make-grid(sm); }
+@media (min-width: @tablet) { .make-grid(md); }
+@media (min-width: @desktop) { .make-grid(lg); }
 
 .row-sm {
     .cf();

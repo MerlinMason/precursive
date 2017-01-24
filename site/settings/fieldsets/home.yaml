@@ -5,5 +5,5 @@ fields:
     type: assets
     display: Demo Form Image
     container: main
-    folder: homepage-images
+    folder: backgrounds
     max_files: "1"

@@ -1,36 +1,39 @@
 <section class="pt-4x pb-4x">
-    <h1 class="h s-lg w-m">Customer Success Stories</h1>
-    <h2 class="h s-sm w-n">Learn why customers of all sizes succeed with Precursive</h2>
+    <div class="text-center">
+        <h1 class="h s-lg w-m">Customer Success Stories</h1>
+        <h2 class="h s-sm w-n mb-2x">Learn why customers of all sizes succeed with Precursive</h2 >
+    </div>
+
     <div class="casestudy-carousel js-casestudy-carousel">
         {{ collection:casestudies }}
             <div class="carousel-cell">
                 <div class="bg" style="background-image:url({{ asset:main_image }}{{ glide:url width="300" height="300" }}{{ /asset:main_image }});"></div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-4">
+                        <div class="body">
+                            {{ relate:related_customer }}
+                            {{ asset:logo }}
+                            <img src="{{ glide:url width="150" height="60" }}" alt="logo for {{ title }}" title="{{ title }}">
+                            {{ /asset:logo }}
+                            {{ /relate:related_customer }}
 
+                            <p>{{ client_testimonial }}</p>
+                            <div class="media">
+                                <div class="img">
+                                    {{ asset:client_photo }}
+                                    <img src="{{ glide:url width="60" height="60" fit="crop" }}" alt="Photo of {{ client_name }}" title="{{ client_name }}" class="round">
+                                    {{ /asset:client_photo }}
+                                </div>
+                                <p class="bd w-b">
+                                    {{ client_name }},
+                                    <br>
+                                    {{ client_role }} — {{ relate:related_customer }}{{ title }}{{ /relate:related_customer }}
+                                </p>
+                            </div>
+                            <a href="{{ url }}" class="link-sky">Read full case study</a>
+                        </div>
                     </div>
                 </div>
-                {{ relate:related_customer }}
-                    {{ asset:logo }}
-                        <img src="{{ glide:url width="150" height="60" }}" alt="logo for {{ title }}" title="{{ title }}">
-                    {{ /asset:logo }}
-                {{ /relate:related_customer }}
-
-                <p>{{ client_testimonial }}</p>
-                <div class="media">
-                    <div class="img">
-                        {{ asset:client_photo }}
-                            <img src="{{ glide:url width="150" }}" alt="Photo of {{ client_name }}" title="{{ client_name }}">
-                        {{ /asset:client_photo }}
-                    </div>
-                    <div class="bd">
-                        {{ client_name }},
-                        <br>
-                        {{ client_role }}
-                    </div>
-                </div>
-
-                <a href="{{ url }}" class="link-sky">Read full case study</a>
             </div>
         {{ /collection:casestudies }}
     </div>

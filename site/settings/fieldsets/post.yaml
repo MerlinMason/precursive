@@ -15,7 +15,7 @@ fields:
     type: assets
     display: Hero Image
     container: main
-    folder: img
+    folder: backgrounds
     max_files: 1
   sub_title:
     type: textarea

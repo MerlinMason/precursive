@@ -5,5 +5,5 @@ fields:
     type: assets
     display: Logo
     container: main
-    folder: img
+    folder: logos
     max_files: "1"

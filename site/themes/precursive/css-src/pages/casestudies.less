@@ -1,5 +1,8 @@
 .casestudy-promoted {
     padding:(@space * 4) 0;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
     .related-logo {
         display:inline-block;
         margin:0 auto (@space * 2);
@@ -10,11 +13,24 @@
 .casestudy-carousel {
     .carousel-cell {
         position:relative;
+        width:100%;
+        max-width:800px;
+        margin:0 (@space * 2) (@space *2);
+        border:1px solid @grey1;
+        .shadow();
+        transform:scale(0.8);
+        transition:transform 0.5s ease-in-out;
+        &.is-selected {
+            transform:scale(1);
+        }
     }
     .bg {
         .position(absolute, 0, auto, 0, 0, 0);
-        width:40%;
+        width:33.333%;
         background-size:cover;
         background-repeat:no-repeat;
+    }
+    .body {
+        padding:@space;
     }
 }

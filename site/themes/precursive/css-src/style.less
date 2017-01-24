@@ -1,12 +1,7 @@
 /*!
-    Starter by Merlin Mason
-    License: The MIT License (MIT)
+    Copyright: Precursive Limited
+    Author: Merlin Mason
 */
-
-
-//----------------------------------------------------------------------------//
-//  Setup & Create Grid
-//----------------------------------------------------------------------------//
 
 
 @charset "UTF-8";
@@ -32,31 +27,3 @@
     text-shadow:none;
 }
 * { box-sizing:border-box; }
-
-.row { .make-row(); }
-.make-grid-columns();
-.make-grid(xs);
-@media (min-width: @mobile) { .make-grid(sm); }
-@media (min-width: @tablet) { .make-grid(md); }
-@media (min-width: @desktop) { .make-grid(lg); }
-
-.brand-grad { background:linear-gradient(300deg, @jade 0%, @royal 100%); }
-.brand-grad-trans { background:linear-gradient(300deg, rgba(0, 201, 181, 0.8) 0%, rgba(19, 110, 181, 0.8) 100%); }
-.shadow { box-shadow:0 9px 15px 0 rgba(0, 0, 0, 0.07); }
-@radius: 6px;
-.bg-flamingo { background-color:@flamingo; }
-.bg-white { background-color:#fff; }
-.bg-jade { background-color:@jade; }
-.bg-royal { background-color:@royal; }
-.bg-grey1 { background-color:@grey1; }
-.bg-grey3 { background-color:@grey3; }
-
-hr {
-    margin:(@space * 3) auto;
-    display:block;
-    width:60%;
-    height:2px;
-    border:0;
-    border-radius:100%;
-    box-shadow:0 1px 1px rgba(0, 0, 0, 0.1);
-}

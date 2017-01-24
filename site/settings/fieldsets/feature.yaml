@@ -8,7 +8,7 @@ fields:
     type: assets
     display: Icon
     container: main
-    folder: icons
+    folder: features/product-icon
     max_files: "1"
   description:
     type: textarea

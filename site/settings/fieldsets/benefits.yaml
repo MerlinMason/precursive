@@ -11,7 +11,7 @@ fields:
     type: assets
     display: Image
     container: main
-    folder: img
+    folder: benefits
     max_files: "1"
   benefits_list:
     type: list

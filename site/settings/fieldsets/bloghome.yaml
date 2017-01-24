@@ -8,5 +8,5 @@ fields:
     type: assets
     display: Hero
     container: main
-    folder: img
+    folder: backgrounds
     max_files: "1"

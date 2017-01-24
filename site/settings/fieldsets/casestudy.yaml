@@ -6,14 +6,14 @@ fields:
     display: Hero Image
     instructions: Image to be used when case study is promoted
     container: main
-    folder: img
+    folder: casestudies
     max_files: "1"
   main_image:
     type: assets
     display: Main Image
     instructions: Image to be displayed in the list of case studies
     container: main
-    folder: img
+    folder: casestudies
     max_files: "1"
   related_customer:
     type: collection
