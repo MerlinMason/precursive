@@ -6,7 +6,7 @@
 .sans { font-family: 'Source Sans Pro', sans-serif; }
 
 body, p, input, button {
-    color:@grey2;
+    color:@grey3;
     font-size:18px;
     line-height:1.4;
     text-rendering:optimizeLegibility;
@@ -99,8 +99,10 @@ a:active {
 }
 
 // create link variants
-.link-royal   { .link(@royal, darken(@royal, 10%), @grey2, @grey2); }
-.link-sky     { .link(@sky, darken(@sky, 10%), @grey2, @grey2); }
+.link-royal   { .link(@royal, darken(@royal, 10%), @grey3, @grey3); }
+.link-sky     { .link(@sky, darken(@sky, 10%), @grey3, @grey3); }
+.link-grey2   { .link(@grey2, darken(@grey2, 10%), @sky, @sky); }
+.link-grey3   { .link(@grey3, darken(@grey3, 10%), @sky, @sky); }
 
 
 //----------------------------------

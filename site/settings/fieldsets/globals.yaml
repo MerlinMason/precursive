@@ -1,8 +1,33 @@
-title: Default Globals
+title: Globals
 hide: true
+create_title: Site wide information
 fields:
   site_name:
     type: text
     display: Website Name
     instructions: The name of your website
     localizable: true
+    width: 33
+  site_email:
+    type: text
+    display: Email
+    validate: email
+    instructions: Main contact email
+    width: 33
+  site_phone:
+    type: text
+    display: Phone
+    width: 33
+    instructions: Main contact number
+  login_link:
+    type: text
+    display: Login Link
+    instructions: Login to precursive app
+    width: 33
+    validate: URL
+  support_link:
+    type: text
+    display: Support Link
+    instructions: Link to support site
+    width: 33
+    validate: URL

@@ -1,18 +1,16 @@
 //----------------------------------------------------------------------------//
-// Variables
-//----------------------------------------------------------------------------//
-
-
-//----------------------------------------------------------------------------//
 // Colors
 //----------------------------------------------------------------------------//
 
+
 @grey1:      #F8F7FC;
-@grey2:      #343A4A;
+@grey2:      #b5b5b5;
+@grey3:      #343A4A;
 @jade:       #00C9B5;
 @royal:      #136EB5;
 @sky:        #00A1E0;
 @flamingo:   #FF33D3;
+
 
 //----------------------------------------------------------------------------//
 // Scaffolding
@@ -37,7 +35,7 @@
 
 .container {
     .container-fixed();
-    @media (min-width: @mobile) { width: @container-sm; }
-    @media (min-width: @tablet) { width: @container-md; }
+    @media (min-width: @mobile)  { width: @container-sm; }
+    @media (min-width: @tablet)  { width: @container-md; }
     @media (min-width: @desktop) { width: @container-lg; }
 }

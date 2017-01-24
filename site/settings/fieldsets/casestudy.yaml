@@ -1,6 +1,20 @@
 title: Case Study
 create_title: Create a new case study
 fields:
+  hero_image:
+    type: assets
+    display: Hero Image
+    instructions: Image to be used when case study is promoted
+    container: main
+    folder: img
+    max_files: "1"
+  main_image:
+    type: assets
+    display: Main Image
+    instructions: Image to be displayed in the list of case studies
+    container: main
+    folder: img
+    max_files: "1"
   related_customer:
     type: collection
     display: Related Customer
@@ -15,18 +29,24 @@ fields:
     cheatsheet: true
     container: main
     folder: img
+  client_testimonial:
+    type: textarea
+    display: Client Testimonial
   client_name:
     type: text
     display: Client Name
+    instructions: Name of the person on the client team
   client_role:
     type: text
     display: Client Role
+    instructions: Their joib role
   client_photo:
     type: assets
     display: Client Photo
     container: main
     folder: /
     max_files: "1"
+    instructions: Photo of person on client team
   results:
     type: list
     display: Results
