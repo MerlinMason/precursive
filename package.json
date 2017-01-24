@@ -30,8 +30,9 @@
     "time-grunt": "^1.4.0"
   },
   "dependencies": {
-    "jquery": "^3.1.1",
     "flickity": "^2.0.5",
-    "flickity-imagesloaded": "^2.0.0"
+    "flickity-imagesloaded": "^2.0.0",
+    "jquery": "^3.1.1",
+    "scrollmonitor": "^1.2.1"
   }
 }
