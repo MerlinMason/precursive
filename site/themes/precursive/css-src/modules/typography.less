@@ -70,30 +70,37 @@ b, strong, .w-b { font-weight:700; }
 
 a:link,
 a:visited {
-    color:blue;
     text-decoration:none;
     transition:all 0.2s;
 }
 a:hover,
 a:focus,
 a:active {
-    color:darken(red, 10%);
     text-decoration:none;
     outline:none;
 }
 
-.text-link {
+.link(@color, @hover, @border, @borderhover) {
     &:link,
     &:visited {
-        text-decoration:none;
-        color:red;
+        color:@color;
     }
     &:hover,
     &:focus,
     &:active {
-        color:darken(red, 10%);
+        color:@hover;
+    }
+    &.link-bordered {
+        border-bottom-color:@border;
+        &:hover {
+            border-bottom-color:@borderhover;
+        }
     }
 }
+
+// create link variants
+.link-royal   { .link(@royal, darken(@royal, 10%), @grey2, @grey2); }
+.link-sky     { .link(@sky, darken(@sky, 10%), @grey2, @grey2); }
 
 
 //----------------------------------

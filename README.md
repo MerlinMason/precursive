@@ -34,7 +34,6 @@ Content Structure
         -- subtitle
         -- image
         -- ticklist
-
 - benefits
     -- title
     -- subtitle

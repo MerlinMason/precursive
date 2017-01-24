@@ -1,0 +1,16 @@
+.ticklist {
+    margin:0 0 (@space * 2) 0;
+    li {
+        position:relative;
+        list-style:none;
+        padding-left:(@space * 1.5);
+        margin-bottom:(@space / 2);
+        &::before {
+            content:"";
+            .square(@space);
+            .position(absolute, 4px, auto, auto, 0);
+            border-radius:50%;
+            .bg-jade();
+        }
+    }
+}

@@ -1,0 +1,9 @@
+title: Homepage
+create_title: ""
+fields:
+  demo_form_image:
+    type: assets
+    display: Demo Form Image
+    container: main
+    folder: homepage-images
+    max_files: "1"
