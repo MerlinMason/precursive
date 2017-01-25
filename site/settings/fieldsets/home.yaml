@@ -7,3 +7,9 @@ fields:
     container: main
     folder: backgrounds
     max_files: "1"
+  page_heading:
+    type: text
+    display: Page Heading
+  page_subheading:
+    type: text
+    display: Page Subheading

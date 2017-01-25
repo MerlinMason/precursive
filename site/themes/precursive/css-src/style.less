@@ -10,6 +10,7 @@
 @import "helpers.less";
 
 @import "modules/grid";
+@import "modules/angle";
 @import "modules/island";
 @import "modules/typography";
 @import "modules/masthead";
@@ -27,19 +28,3 @@
     text-shadow:none;
 }
 * { box-sizing:border-box; }
-.angle {
-    @h: 8vw;
-    position:relative;
-    &::after {
-        content:"";
-        .position(absolute, ~"calc(-@{h} + 2px)", 0, auto, 0, 1);
-        width:0;
-        height:0;
-        border-style:solid;
-        border-width:@h 100vw 0 0;
-        border-color:transparent currentColor transparent transparent;
-        &.alt::after {
-            transform:rotateY(180deg);
-        }
-    }
-}

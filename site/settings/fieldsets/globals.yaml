@@ -31,3 +31,9 @@ fields:
     instructions: Link to support site
     width: 33
     validate: URL
+  appexchange_link:
+    type: text
+    display: Appexchange Link
+    instructions: Link to appexchange
+    width: 33
+    validate: URL

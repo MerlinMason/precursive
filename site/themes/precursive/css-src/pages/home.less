@@ -16,7 +16,7 @@
 }
 
 .connection {
-    @h: 80px;
+    @h: 100px;
     height:@h;
     position:relative;
     overflow:hidden;
@@ -35,7 +35,8 @@
         }
         &.one {
             left:(-@h / 3);
-            .bg-royal();
+            background:@royal url('../img/logos/salesforce-white.svg') no-repeat calc(100% - 40px) 22px;
+            background-size:80px auto;
             transform:translateX(-110%);
             &::after {
                 right:(-@h / 2);
@@ -46,7 +47,8 @@
         }
         &.two {
             right:(-@h / 3);
-            .bg-jade();
+            background:@jade url('../img/logos/precursive-white.svg') no-repeat 40px 30px;
+            background-size:135px auto;
             transform:translateX(110%);
             &::after {
                 left:(-@h / 2);
@@ -57,11 +59,12 @@
         }
     }
     .synergy {
-        .square(((@h / 3) * 2));
-        background:#fff;
+        .square((@h / 2));
+        background:#fff url('../img/icons/lightning.svg') no-repeat center;
+        background-size:(@h / 6) auto;
         border-radius:50%;
-        .position(absolute, (@h / 6), auto, auto, 50%, 1);
-        margin-left:(-@h / 3);
+        .position(absolute, (@h / 4), auto, auto, 50%, 1);
+        margin-left:(-@h / 4);
         transform:scale(0);
         transition:all 0.4s 1.2s cubic-bezier(.84,.2,.36,1.67);
     }
