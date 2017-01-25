@@ -5,42 +5,55 @@ fields:
     type: title
     display: Title
     localizable: true
+  sub_title:
+    type: text
+    display: Subtitle
+    localizable: true
   intro_image:
     type: assets
     display: Intro Image
     container: main
-    folder: img
+    folder: /
     max_files: 1
+    width: 50
   hero_image:
     type: assets
     display: Hero Image
     container: main
     folder: backgrounds
     max_files: 1
-  sub_title:
-    type: textarea
-    display: Subtitle
-    localizable: true
-  tags:
-    type: taxonomy
-    taxonomy: tags
-    display: Tags
-  content:
-    type: markdown
-    display: Content
-    localizable: true
-    cheatsheet: false
+    width: 50
   comments:
     type: toggle
     display: Comments
     instructions: Enable comments
-    width: 33
+    width: 50
   most_read:
     type: toggle
     display: Most Read
     instructions: "Marks post as being 'most read'"
-    width: 33
+    width: 50
+  tags:
+    type: taxonomy
+    taxonomy: tags
+    display: Tags
+    width: 50
   author:
     type: users
     display: Author
-    width: 33
+    width: 50
+  blog_content:
+    type: replicator
+    display: Blog Content
+    sets:
+      paragraph:
+        display: Paragraph
+        instructions: ""
+        fields:
+          paragraph_content:
+            type: markdown
+            display: Paragraph Content
+            instructions: null
+            cheatsheet: true
+            container: main
+            folder: /
