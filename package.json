@@ -5,13 +5,14 @@
   "description": "",
   "main": "precursive.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "grunt eslint && blc http://precursive.dev:8888 -ro"
   },
   "author": "",
   "license": "UNLICENSED",
   "devDependencies": {
     "babel-preset-es2015": "^6.18.0",
     "babelify": "^7.3.0",
+    "broken-link-checker": "^0.7.4",
     "eslint-config-airbnb": "^14.0.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^3.0.2",
