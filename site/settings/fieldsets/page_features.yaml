@@ -12,3 +12,9 @@ fields:
     container: main
     folder: backgrounds
     max_files: "1"
+  demo_form_image:
+    type: assets
+    display: Demo Form Image
+    container: main
+    folder: backgrounds
+    max_files: "1"

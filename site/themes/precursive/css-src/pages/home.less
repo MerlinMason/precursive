@@ -77,29 +77,3 @@
         margin-right:(-@space / 2);
     }
 }
-
-.benefits-container {
-    overflow:hidden;
-}
-.benefits-image {
-    transition:all 0.6s 0.4s cubic-bezier(.82,.06,.22,.99);
-    transform:translateX(50%);
-    will-change:transform, opacity;
-    opacity:0;
-    .fr & {
-        transform:translateX(-50%);
-    }
-    &.play {
-        opacity:1;
-        transform:translateX(0);
-    }
-}
-
-.home-demo-form {
-    background-repeat:no-repeat;
-    background-size:auto 100%;
-    position:relative;
-    .bg {
-        .position(absolute, 0, 0, 0, 0, 0);
-    }
-}
