@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="8px" viewBox="0 0 17 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>link-arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="buttons/more-about-features" transform="translate(-189.000000, -20.000000)" fill="#00A1E0">
+            <path d="M189,23.8787953 C189.002361,24.043765 189.0901,24.2290256 189.228721,24.2954983 L194.895387,27.6896559 C195.219072,27.882165 195.612339,27.6411953 195.611111,27.2729529 L195.611111,24.363668 L205.527778,24.363668 C205.788586,24.363668 206,24.1466014 206,23.8787953 C206,23.6109893 205.788586,23.3939226 205.527778,23.3939226 L195.611111,23.3939226 L195.611111,20.4846644 C195.611111,20.142822 195.195437,19.8671371 194.895387,20.0679614 L189.228721,23.4620923 C189.076382,23.5560074 189.006871,23.7000317 189,23.8787953 L189,23.8787953 Z M190.40191,23.8787953 L194.666667,21.3256341 L194.666667,26.4319832 L190.40191,23.8787953 Z" id="link-arrow" transform="translate(197.500000, 23.878800) rotate(-180.000000) translate(-197.500000, -23.878800) "></path>
+        </g>
+    </g>
+</svg>
