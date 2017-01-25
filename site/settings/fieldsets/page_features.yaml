@@ -1,0 +1,14 @@
+title: 'Page - Features'
+fields:
+  page_heading:
+    type: text
+    display: Page Heading
+  page_subheading:
+    type: text
+    display: Page Subheading
+  masthead:
+    type: assets
+    display: Masthead
+    container: main
+    folder: backgrounds
+    max_files: "1"

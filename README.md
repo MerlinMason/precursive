@@ -31,11 +31,10 @@ Content Structure
     -- title
     -- icon
     -- description
-    - modules
-        -- title
-        -- subtitle
-        -- image
-        -- ticklist
+    -- subtitle
+    -- 2nd description
+    -- image
+    -- ticklist
 - benefits
     -- title
     -- subtitle

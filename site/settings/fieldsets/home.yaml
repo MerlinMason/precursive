@@ -13,3 +13,12 @@ fields:
   page_subheading:
     type: text
     display: Page Subheading
+  appexchange_heading:
+    type: text
+    display: Appexhange Heading
+  appexchange_subheading:
+    type: text
+    display: Appexhange Subheading
+  appexchange_description:
+    type: textarea
+    display: Appexhange Description

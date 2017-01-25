@@ -48,15 +48,20 @@
     <div class="container md">
         <section class="island">
             <div class="row">
-                <div class="col-sm-8">
-                    <h1 class="h s-md w-n">
-                        <b>Available on the Salesforce AppExchange®</b>
-                        <br>Precursive is Native to Salesforce
-                    </h1>
-                    <p>Find out why Precursive is the #1 app on Salesforce AppExchange® for resource scheduling, project planning and timesheets.</p>
+                <div class="col-sm-6">
+                    <div class="pt-1x pl-1x">
+                        <h1 class="h s-md w-n">
+                            <b>{{ appexchange_heading }}</b>
+                            <br>{{ appexchange_subheading }}
+                        </h1>
+                        <p>{{ appexchange_description }}</p>
+                        <a href="{{ appexchange_link }}">
+                            <img src="{{ theme:img src='/logos/appexchange.svg' }}" width="200">
+                        </a>
+                    </div>
                 </div>
-                <div class="col-sm-4">
-
+                <div class="col-sm-5 col-sm-offset-1">
+                    <img src="{{ theme:img src='/misc/appexchange.png' }}" class="scale">
                 </div>
             </div>
         </section>
@@ -105,7 +110,7 @@
                             {{ /benefits_list }}
                         </ul>
 
-                        <a href="/features" class="link-sky">More about features</a>
+                        <a href="/features" class="link-sky">More about features ⇨</a>
                     </div>
                     <div class="col-sm-5 col-sm-offset-1 {{ if index % 2 == 0 }}fr{{ /if }}">
                         {{ assets:image }}
@@ -118,25 +123,7 @@
     </div>
 </div>
 
-<div class="home-demo-form pt-4x pb-4x" style="background-image:url({{ asset:demo_form_image }}{{ glide:url width="500" }}{{ /asset:demo_form_image }});">
-    <div class="bg brand-grad-trans"></div>
-    <div class="container md">
-        <section class="row">
-            <div class="col-sm-6 col-sm-offset-6">
-                <h1 class="h s-lg w-r c-white">Wave goodbye to spending your weekend working in spreadsheets</h1>
-                <h2 class="h s-sm w-n mb-4x c-white">Get in touch to find out how much time you could save</h2>
-                <div class="row-sm">
-                    <div class="col-xs-8">
-                        <input type="email" class="form-input" placeholder="Enter your email" validate>
-                    </div>
-                    <div class="col-xs-4">
-                        <button class="btn-white btn-fit">Book a demo</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-</div>
+{{ partial:form-demo }}
 
 {{ partial:casestudy-carousel }}
 

@@ -1,0 +1,55 @@
+<div class="masthead">
+    {{ asset:masthead }}
+    <div class="masthead-bg" style="background-image:url({{ glide:url width="1440" height="500" }});">
+    </div>
+    {{ /asset:masthead }}
+    <div class="masthead-content">
+        {{ partial:nav }}
+        <div class="container md mt-4x mb-4x text-center">
+            <h1 class="h s-xl w-r mb-05x">{{ page_heading }}</h1>
+            <h1 class="h s-md w-n mb-3x">{{ page_subheading }}</h1>
+            <a href="#" class="btn-white btn-large">Book a demo</a>
+            <a href="{{ appexchange_link }}" class="btn-white btn-large has-image" target="_blank">
+                <img src="{{ theme:img src='/logos/salesforce-blue.svg' }}" alt="Salesforce logo">
+                View on app exchange
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="pt-4x pb-4x benefits-container">
+    <div class="container md">
+        <section>
+            <div class="text-center mb-3x">
+                <h1 class="h s-md w-b">Helping Your Business Succeed</h1>
+                <p>Maximise the performance and profitability of your people</p>
+            </div>
+
+            {{ collection:benefits }}
+                {{ if index > 1 }}<hr>{{ /if }}
+
+                <article class="row mb-3x">
+                    <div class="col-sm-5 col-sm-offset-1 {{ if index % 2 == 0 }}fr{{ /if }}">
+                        <h2 class="h s-lg w-n">{{ title }}</h2>
+                        <h3 class="h s-sm w-n">{{ subtitle }}</h3>
+
+                        <ul class="ticklist">
+                            {{ benefits_list }}
+                                <li>{{ value }}</li>
+                            {{ /benefits_list }}
+                        </ul>
+
+                        <a href="/features" class="link-sky">More about features ⇨</a>
+                    </div>
+                    <div class="col-sm-5 col-sm-offset-1 {{ if index % 2 == 0 }}fr{{ /if }}">
+                        {{ assets:image }}
+                            <img src="{{ glide:id width="500" }}" alt="{{ subtitle }}" title="{{ title }}" class="scale css-animation benefits-image">
+                        {{ /assets:image }}
+                    </div>
+                </article>
+            {{ /collection:benefits }}
+        </section>
+    </div>
+</div>
+
+{{ partial:form-demo }}

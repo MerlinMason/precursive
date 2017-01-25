@@ -11,5 +11,20 @@ fields:
     folder: features/product-icon
     max_files: "1"
   description:
-    type: textarea
+    type: markdown
     display: Description
+  subtitle:
+    type: text
+    display: Subtitle
+  secondarydescription:
+    type: markdown
+    display: Secondary Description
+  image:
+    type: assets
+    display: Image
+    container: main
+    folder: features
+    max_files: "1"
+  feature_list:
+    type: list
+    display: Feature List
