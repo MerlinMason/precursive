@@ -1,0 +1,46 @@
+<div class="masthead">
+    {{ asset:masthead }}
+    <div class="masthead-bg" style="background-image:url({{ glide:url width="1440" height="500" }});">
+    </div>
+    {{ /asset:masthead }}
+    <div class="masthead-content">
+        {{ partial:nav }}
+        <div class="container md mt-4x mb-4x text-center">
+            <h1 class="h s-xl w-r mb-05x">{{ page_heading }}</h1>
+            <h1 class="h s-md w-n mb-3x">{{ page_subheading }}</h1>
+            <a href="#" class="btn-white btn-large">Book a demo</a>
+            <a href="{{ appexchange_link }}" class="btn-white btn-large has-image" target="_blank">
+                <img src="{{ theme:img src='/logos/salesforce-blue.svg' }}" alt="Salesforce logo">
+                View on app exchange
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="container md mt-4x mb-4x">
+    {{ collection:customer }}
+    {{ asset:logo }}
+    <img src="{{ glide:url width="150" height="60" }}" alt="logo for {{ title }}" title="{{ title }}">
+    {{ /asset:logo }}
+    {{ /collection:customer }}
+</div>
+
+{{ partial:casestudy-promoted }}
+
+<div class="container md mt-4x mb-4x">
+    <div class="row">
+        {{ collection:casestudies }}
+            <div class="col-sm-3">
+                <a href="{{ url }}" class="case-study-tile" style="background-image:url({{ asset:main_image }}{{ glide:url width="500" height="500" }}{{ /asset:main_image }});">
+                    <article class="body">
+                        <h1 class="h s-lg w-r">{{ relate:related_customer }}{{ title }}{{ /relate:related_customer }}</h1>
+                        <h2 class="h s-sm w-n mb-2x">{{ title }}</h2>
+                        <span class="btn-white">Read full case study</span>
+                    </article>
+                </a>
+            </div>
+        {{ /collection:casestudies }}
+    </div>
+</div>
+
+{{ partial:form-demo image=assets:demo_form_image }}

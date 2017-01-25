@@ -34,3 +34,23 @@
         padding:@space;
     }
 }
+
+.case-study-tile {
+    display:block;
+    height:300px;
+    position:relative;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    overflow:hidden;
+    .body {
+        .position(absolute, 0, 0, 0, 0, 1);
+        .brand-grad-trans();
+        padding:@space;
+        color:#fff;
+        transform:translateY(100%) scale(0.6);
+        will-change:transform;
+        transition:transform 0.4s cubic-bezier(.82,.06,.22,.99);
+    }
+    &:hover .body { transform:translateY(0) scale(1); }
+}
