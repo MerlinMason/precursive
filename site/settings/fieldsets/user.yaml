@@ -11,6 +11,11 @@ fields:
   email:
     type: text
     display: Email address
+    width: 50
+  role:
+    type: text
+    display: Role
+    width: 50
   first_name:
     type: text
     display: First Name

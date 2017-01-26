@@ -33,8 +33,8 @@
         {{ /replicator_content }}
 
         {{ relate:author }}
-            {{ name }} - {{ content }}
-
+            <h6 class="h s-md w-b">{{ name }}, {{ role }}</h6>
+             - {{ content }}
             {{ asset:avatar }}
             <img src="{{ glide:url width="300" height="300" }}" alt="{{ name }}">
             {{ /asset:avatar }}
