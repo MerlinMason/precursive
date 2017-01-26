@@ -8,15 +8,54 @@
         <div class="container mt-4x mb-4x text-center">
             <h1 class="h s-xl w-r mb-05x">{{ title }}</h1>
             <h1 class="h s-md w-n mb-3x">{{ subtitle }}</h1>
+            <span>
+                Posted
+                {{ if (date | days_ago) < 21 }}
+                {{ date | relative }}
+                {{ elseif (date | format:Y) == now | format:Y }}
+                {{ date format="M j" }}
+                {{ else }}
+                {{ date format="M j, Y" }}
+                {{ /if }}
+                by
+                {{ relate:author }}
+                    {{ name }}
+                {{ /relate:author }}
+            </span>
         </div>
     </div>
 </div>
 
-<section class="regular">
+<div class="container">
+    <div class="col-sm-8 col-sm-offset-2 mt-4x mb-4x">
+        {{ replicator_content }}
+            {{ partial src="replicator/{type}" }}
+        {{ /replicator_content }}
+
+        {{ relate:author }}
+            {{ name }} - {{ content }}
+
+            {{ asset:avatar }}
+            <img src="{{ glide:url width="300" height="300" }}" alt="{{ name }}">
+            {{ /asset:avatar }}
+        {{ /relate:author }}
+    </div>
+</div>
+
+<div class="container">
+    {{ if comments }}
+        <div class="mb-4x">
+            {{ disqus:comments id="{ id }" }}
+        </div>
+    {{ /if }}
+</div>
+
+
+{{ partial:form-demo image=assets:demo_form_image }}
+<!-- <section class="regular">
 	<header>
 		<div class="meta clearfix">
 			<div class="author">
-				<img src="https://s3.amazonaws.com/uifaces/faces/twitter/rssems/48.jpg" class="img-circle" width="48" height="48">
 				<div class="pull-left">
 					<a href="" class="name">{{ author_name }}</a>
 					<span class="length">{{ content | read_time }} minute read</span>
@@ -55,4 +94,4 @@
 
 </section>
 
-{{ partial:article-footer }}
+{{ partial:article-footer }} -->

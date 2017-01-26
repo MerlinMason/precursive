@@ -42,18 +42,7 @@ fields:
     type: users
     display: Author
     width: 50
-  blog_content:
-    type: replicator
+  replicator:
+    type: partial
     display: Blog Content
-    sets:
-      paragraph:
-        display: Paragraph
-        instructions: ""
-        fields:
-          paragraph_content:
-            type: markdown
-            display: Paragraph Content
-            instructions: null
-            cheatsheet: true
-            container: main
-            folder: /
+    fieldset: precursive_replicator

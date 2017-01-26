@@ -1,0 +1,47 @@
+title: Precursive Replicator
+fields:
+  replicator_content:
+    type: replicator
+    display: Replicator Content
+    sets:
+      paragraph:
+        display: Paragraph
+        instructions: ""
+        fields:
+          text:
+            type: markdown
+            display: text
+            instructions: null
+            cheatsheet: true
+            container: main
+            folder: /
+      blockquote:
+        display: Blockquote
+        instructions: ""
+        fields:
+          quote:
+            type: markdown
+            display: Quote
+            instructions: null
+            cheatsheet: false
+            container: null
+            folder: null
+          source:
+            type: text
+            display: Source
+            instructions: null
+      image:
+        display: Image
+        instructions: ""
+        fields:
+          image:
+            type: assets
+            display: Image
+            instructions: null
+            container: main
+            folder: /
+            max_files: "1"
+          caption:
+            type: text
+            display: Caption
+            instructions: null

@@ -1,4 +1,5 @@
 hide: true
+title: ""
 fields:
   username:
     type: text
@@ -21,3 +22,8 @@ fields:
   content:
     type: textarea
     display: Biography
+  avatar:
+    type: assets
+    display: Avatar
+    container: main
+    folder: /

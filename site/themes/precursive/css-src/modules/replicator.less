@@ -1,0 +1,107 @@
+.replicator {
+    &.paragraph {
+        .serif();
+        p {
+            .serif();
+        }
+        ol {
+            list-style:none;
+            counter-reset: ol-counter;
+            li {
+                counter-increment:ol-counter;
+                position:relative;
+                padding-left:1.4em;
+                margin-bottom:0.8em;
+                &::before {
+                    content:counter(ol-counter) ",";
+                    font-weight:700;
+                    position:absolute;
+                    left:0;
+                }
+            }
+        }
+        ul {
+            list-style:none;
+            li {
+                position:relative;
+                padding-left:1.4em;
+                margin-bottom:0.7em;
+                &::before {
+                    content:"";
+                    display:block;
+                    .square(0.5em);
+                    border-radius:50%;
+                    .brand-grad();
+                    position:absolute;
+                    left:0;
+                    top:0.5em;
+                }
+            }
+        }
+        h1, h2, h3, h4, h5, h6 {
+            .w-b();
+            margin-top:1.4em;
+            margin-bottom:0.7em;
+        }
+        h1 { .s-xl(); }
+        h2 { .s-lg(); }
+        h3 { .s-md(); }
+        h4 { .s-sm(); }
+        h5 { .s-xs(); }
+        h6 { .s-xxs(); }
+        a { .link-jade(); }
+    }
+    &.blockquote {
+        text-align:center;
+        padding:(@space * 2) @space;
+        margin:(@space * 3) 1.4em;
+        position:relative;
+        &::before,
+        &::after {
+            content:"";
+            display:block;
+            height:1px;
+            position:absolute;
+            left:0;
+            right:0;
+            transition:all 0.6s ease-in-out;
+            .brand-grad();
+        }
+        &::before { top:0; }
+        &::after { bottom:0; }
+        &:hover {
+            &::before,
+            &::after {
+                .brand-grad-opposite();
+            }
+        }
+        p {
+            .s-md();
+            .w-b();
+            margin-bottom:0;
+            quotes: "“" "”" "‘" "’";
+            &:before { content:open-quote; }
+            &:after { content:close-quote; }
+        }
+        cite {
+            margin:@space 0 0 0;
+            font-style:normal;
+            color:@grey3;
+        }
+    }
+    &.image {
+        margin:(@space * 2) 0;
+        position:relative;
+        img {
+            .scale();
+        }
+        figcaption {
+            .brand-grad-trans();
+            padding:@space;
+            .position(absolute, auto, 0, 0, 0, 1);
+            color:#fff;
+            .w-b();
+            .shadow();
+        }
+    }
+}
