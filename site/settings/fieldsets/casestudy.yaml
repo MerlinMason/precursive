@@ -39,7 +39,7 @@ fields:
   client_role:
     type: text
     display: Client Role
-    instructions: Their joib role
+    instructions: Their job role
   client_photo:
     type: assets
     display: Client Photo

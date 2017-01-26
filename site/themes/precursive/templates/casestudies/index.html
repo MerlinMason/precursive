@@ -5,7 +5,7 @@
     {{ /asset:masthead }}
     <div class="masthead-content">
         {{ partial:nav }}
-        <div class="container md mt-4x mb-4x text-center">
+        <div class="container mt-4x mb-4x text-center">
             <h1 class="h s-xl w-r mb-05x">{{ page_heading }}</h1>
             <h1 class="h s-md w-n mb-3x">{{ page_subheading }}</h1>
             <a href="#" class="btn-white btn-large">Book a demo</a>
@@ -17,7 +17,7 @@
     </div>
 </div>
 
-<div class="container md mt-4x mb-4x">
+<div class="container mt-4x mb-4x">
     {{ collection:customer }}
     {{ asset:logo }}
     <img src="{{ glide:url width="150" height="60" }}" alt="logo for {{ title }}" title="{{ title }}">
@@ -27,10 +27,10 @@
 
 {{ partial:casestudy-promoted }}
 
-<div class="container md mt-4x mb-4x">
+<div class="container mt-4x mb-4x">
     <div class="row">
         {{ collection:casestudies }}
-            <div class="col-sm-3">
+            <div class="col-sm-{{ if index % 3 == 0 }}6{{ else }}3{{ /if }}">
                 <a href="{{ url }}" class="case-study-tile" style="background-image:url({{ asset:main_image }}{{ glide:url width="500" height="500" }}{{ /asset:main_image }});">
                     <article class="body">
                         <h1 class="h s-lg w-r">{{ relate:related_customer }}{{ title }}{{ /relate:related_customer }}</h1>
@@ -42,5 +42,7 @@
         {{ /collection:casestudies }}
     </div>
 </div>
+
+{{ partial:casestudy-carousel }}
 
 {{ partial:form-demo image=assets:demo_form_image }}

@@ -1,0 +1,42 @@
+<div class="masthead">
+    {{ asset:masthead }}
+    <div class="masthead-bg" style="background-image:url({{ glide:url width="1440" height="500" }});">
+    </div>
+    {{ /asset:masthead }}
+    <div class="masthead-content">
+        {{ partial:nav }}
+        <div class="container mt-4x mb-4x text-center">
+            <h1 class="h s-xl w-r mb-05x">{{ relate:related_customer }}{{ title }}{{ /relate:related_customer }}</h1>
+            <h1 class="h s-md w-n mb-3x">{{ title }}</h1>
+        </div>
+    </div>
+</div>
+
+<div class="container pt-4x pb-4x">
+    <article class="row">
+        <div class="col-sm-6">
+            <header class="mb-2x">
+                {{ relate:related_customer }}
+                {{ assets:logo }}
+                <img src="{{ glide:id width="150" height="60" }}" alt="logo for {{ title }}" title="{{ title }}" class="va-m">
+                {{ /assets:logo }}
+                {{ /relate:related_customer }}
+                {{ tags }}
+                <span class="tag va-m">{{ value }}</span>
+                {{ /tags }}
+            </header>
+
+            {{ description | markdown }}
+        </div>
+        <div class="col-sm-4 col-sm-offset-2">
+            <h2 class="h s-sm w-r caps lined">Results seen with Precursive</h2>
+            <ul class="ticklist">
+                {{ results }}
+                    <li>{{ value }}</li>
+                {{ /results }}
+            </ul>
+        </div>
+    </article>
+</div>
+
+{{ partial:casestudy-carousel }}

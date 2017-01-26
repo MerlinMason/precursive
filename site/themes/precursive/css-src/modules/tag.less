@@ -1,0 +1,11 @@
+.tag {
+    display:inline-block;
+    padding:2px (@space / 2);
+    border-radius:50px;
+    background:@grey1;
+    color:@grey2;
+    .s-xs();
+    + .tag {
+        margin-left:(@space / 2);
+    }
+}

@@ -1,4 +1,4 @@
 order: date
 fieldset: post
-template: blog/post
+template: blog/single
 title: Blogs
