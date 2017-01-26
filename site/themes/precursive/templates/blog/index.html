@@ -10,28 +10,28 @@
 </div>
 
 
-<div class="container mt-4x">
+<section class="container mt-4x">
     <div class="row">
         {{ collection:blog paginate="true" as="posts" limit="4" }}
             {{ posts }}
                 <div class="col-sm-4">
-                    <div class="post">
+                    <article class="post">
                         {{ if index == 1 }}
                             <div class="label bg-jade">Most Recent</div>
                         {{ elseif most_read }}
                             <div class="label bg-flamingo">Most Read</div>
                         {{ /if }}
 
-                        <a href="{{ url }}">
+                        <a href="{{ url }}" class="text-center">
                             {{ if intro_image }}
-                                <img src="{{ glide:intro_image width='400' height='200' }}" class="scale">
+                                <img src="{{ glide:intro_image width='400' height='200' }}" class="scale mb-1x">
                             {{ /if }}
 
-                            <h3>{{ title }}</h3>
+                            <h1 class="h s-sm w-r caps c-jade">{{ title }}</h1>
 
-                            <p>{{ content strip_tags="img|a|p" safe_truncate="210" ensure_right="..." }}</p>
+                            <h2 class="h s-sm w-r caps c-jade">{{ subtitle }}</h2>
 
-                            <div class="meta">
+                            <div class="c-grey2">
                                 {{ if (date | days_ago) < 21 }}
                                 {{ date | relative }}
                                 {{ elseif (date | format:Y) == now | format:Y }}
@@ -41,11 +41,11 @@
                                 {{ /if }}
                             </div>
                         </a>
-                    </div>
+                    </article>
                 </div>
             {{ /posts }}
 
             {{ partial:pagination }}
         {{ /collection:blog }}
     </div>
-</div>
+</section>

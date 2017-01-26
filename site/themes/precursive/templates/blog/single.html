@@ -1,5 +1,18 @@
-<section class="regular">
+<div class="masthead">
+    {{ asset:hero_image }}
+    <div class="masthead-bg" style="background-image:url({{ glide:url width="1440" height="500" }});">
+    </div>
+    {{ /asset:hero_image }}
+    <div class="masthead-content">
+        {{ partial:nav }}
+        <div class="container mt-4x mb-4x text-center">
+            <h1 class="h s-xl w-r mb-05x">{{ title }}</h1>
+            <h1 class="h s-md w-n mb-3x">{{ subtitle }}</h1>
+        </div>
+    </div>
+</div>
 
+<section class="regular">
 	<header>
 		<div class="meta clearfix">
 			<div class="author">
@@ -32,7 +45,7 @@
 			{{ /tags }}
             </ul>
 		{{ /relate:tags }}
-		
+
 		{{ if comments }}
 		comments enabled!
 		{{ else }}

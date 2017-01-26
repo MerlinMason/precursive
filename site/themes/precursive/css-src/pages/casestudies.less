@@ -3,6 +3,15 @@
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
+    position:relative;
+    .bg {
+        .position(absolute, 0, 0, 0, 0, 0);
+        background:linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    }
+    .body {
+        position:relative;
+        z-index:1;
+    }
     .related-logo {
         display:inline-block;
         margin:0 auto (@space * 2);

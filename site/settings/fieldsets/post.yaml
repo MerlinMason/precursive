@@ -5,7 +5,7 @@ fields:
     type: title
     display: Title
     localizable: true
-  sub_title:
+  subtitle:
     type: text
     display: Subtitle
     localizable: true
