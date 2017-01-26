@@ -1,5 +1,5 @@
 <blockquote class="replicator blockquote">
-    <p>{{ quote }}</p>
+    {{ quote | markdown }}
     {{ if source }}
     <cite>— {{ source }}</cite>
     {{ /if }}

@@ -8,3 +8,25 @@
         color:#fff;
     }
 }
+
+.author {
+    position:relative;
+    margin:(@space * 3) 0;
+    padding-top:@space;
+    &::before {
+        content:"";
+        display:block;
+        height:1px;
+        .brand-grad();
+        .position(absolute, 0, 0, auto, 0);
+    }
+    img {
+        .position(absolute, @space, auto, auto, 0, 0);
+        .square(100px);
+        border-radius:50%;
+        .shadow();
+    }
+    .body {
+        padding-left:(100px + @space);
+    }
+}
