@@ -1,20 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="17px" height="13px" viewBox="0 0 17 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="32px" height="33px" viewBox="0 0 32 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
     <title>icon/email</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <linearGradient x1="97.5013733%" y1="100%" x2="8.71859091%" y2="34.6101692%" id="linearGradient-1">
-            <stop stop-color="#50E3C2" offset="0%"></stop>
-            <stop stop-color="#00A1E0" offset="100%"></stop>
-        </linearGradient>
+        <rect id="path-1" x="2" y="2" width="27" height="27" rx="13.5"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="12" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.09 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+            </feMerge>
+        </filter>
     </defs>
-    <g id="Ready" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.750566123">
-        <g id="Contact-Success" transform="translate(-429.000000, -867.000000)" fill="url(#linearGradient-1)">
-            <g id="Group-2" transform="translate(287.000000, 211.000000)">
-                <g id="icon/email" transform="translate(142.400000, 656.000000)">
-                    <path d="M7.52786885,7.75919732 C7.73770492,7.94648829 8.02622951,7.94648829 8.23606557,7.75919732 L15.6590164,0.74916388 C15.7901639,0.481605351 15.7639344,0.0535117057 15.2393443,0.0535117057 L0.550819672,0.0802675585 C0.157377049,0.0802675585 -0.157377049,0.454849498 0.131147541,0.775919732 L7.52786885,7.75919732 Z M15.7377049,3.7458194 C15.7377049,3.39799331 15.3180328,3.21070234 15.0819672,3.45150502 L9.31147541,8.909699 C8.91803279,9.28428094 8.41967213,9.47157191 7.89508197,9.47157191 C7.3704918,9.47157191 6.87213115,9.28428094 6.47868852,8.909699 L0.681967213,3.45150502 C0.419672131,3.21070234 0.0262295082,3.39799331 0.0262295082,3.7458194 L0.0262295082,10.7023411 C0.0262295082,11.5852843 0.73442623,12.3076923 1.6,12.3076923 L14.1901639,12.3076923 C15.0557377,12.3076923 15.7639344,11.5852843 15.7639344,10.7023411 C15.7377049,10.7023411 15.7377049,5.88628763 15.7377049,3.7458194 Z" id="Shape"></path>
-                </g>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon/email" transform="translate(0.000000, 0.957111)">
+            <g id="Background">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#00C9B5" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <g transform="translate(8.000000, 9.000000)" id="Shape" fill="#FFFFFF">
+                <path d="M7.5088163,7.70568562 C7.71865237,7.89297659 8.00717696,7.89297659 8.21701302,7.70568562 L15.6399638,0.695652174 C15.7711114,0.428093645 15.7448819,0 15.2202917,0 L0.531767123,0.0267558528 C0.1383245,0.0267558528 -0.176429598,0.401337793 0.112094992,0.722408027 L7.5088163,7.70568562 Z M15.7186524,3.69230769 C15.7186524,3.34448161 15.2989802,3.15719064 15.0629147,3.39799331 L9.29242286,8.85618729 C8.89898024,9.23076923 8.40061958,9.4180602 7.87602942,9.4180602 C7.35143925,9.4180602 6.8530786,9.23076923 6.45963598,8.85618729 L0.662914664,3.39799331 C0.400619582,3.15719064 0.00717695893,3.34448161 0.00717695893,3.69230769 L0.00717695893,10.6488294 C0.00717695893,11.5317726 0.71537368,12.2541806 1.58094745,12.2541806 L14.1711114,12.2541806 C15.0366852,12.2541806 15.7448819,11.5317726 15.7448819,10.6488294 C15.7186524,10.6488294 15.7186524,5.83277592 15.7186524,3.69230769 Z"></path>
             </g>
         </g>
     </g>
