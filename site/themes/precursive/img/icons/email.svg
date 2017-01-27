@@ -1,31 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="32px" height="33px" viewBox="0 0 32 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
-    <title>icon/email</title>
+    <title>icons/email</title>
     <desc>Created with Sketch.</desc>
-    <defs>
-        <rect id="path-1" x="2" y="2" width="27" height="27" rx="13.5"></rect>
-        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
-            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-            <feGaussianBlur stdDeviation="12" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
-            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
-            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.09 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
-            <feMerge>
-                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
-                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
-            </feMerge>
-        </filter>
-    </defs>
+    <defs></defs>
     <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="icon/email" transform="translate(0.000000, 0.957111)">
-            <g id="Background">
-                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
-                <use fill="#00C9B5" fill-rule="evenodd" xlink:href="#path-1"></use>
-            </g>
-            <g transform="translate(8.000000, 9.000000)" id="Shape" fill="#FFFFFF">
-                <path d="M7.5088163,7.70568562 C7.71865237,7.89297659 8.00717696,7.89297659 8.21701302,7.70568562 L15.6399638,0.695652174 C15.7711114,0.428093645 15.7448819,0 15.2202917,0 L0.531767123,0.0267558528 C0.1383245,0.0267558528 -0.176429598,0.401337793 0.112094992,0.722408027 L7.5088163,7.70568562 Z M15.7186524,3.69230769 C15.7186524,3.34448161 15.2989802,3.15719064 15.0629147,3.39799331 L9.29242286,8.85618729 C8.89898024,9.23076923 8.40061958,9.4180602 7.87602942,9.4180602 C7.35143925,9.4180602 6.8530786,9.23076923 6.45963598,8.85618729 L0.662914664,3.39799331 C0.400619582,3.15719064 0.00717695893,3.34448161 0.00717695893,3.69230769 L0.00717695893,10.6488294 C0.00717695893,11.5317726 0.71537368,12.2541806 1.58094745,12.2541806 L14.1711114,12.2541806 C15.0366852,12.2541806 15.7448819,11.5317726 15.7448819,10.6488294 C15.7186524,10.6488294 15.7186524,5.83277592 15.7186524,3.69230769 Z"></path>
+        <g id="icons/email" transform="translate(0.000000, 0.957111)">
+            <rect id="Background" fill="#00C9B5" x="2" y="2" width="27" height="27" rx="13.5"></rect>
+            <g id="icon/email" transform="translate(8.000000, 9.000000)" fill="#FFFFFF">
+                <path d="M7.5088163,7.70568562 C7.71865237,7.89297659 8.00717696,7.89297659 8.21701302,7.70568562 L15.6399638,0.695652174 C15.7711114,0.428093645 15.7448819,0 15.2202917,0 L0.531767123,0.0267558528 C0.1383245,0.0267558528 -0.176429598,0.401337793 0.112094992,0.722408027 L7.5088163,7.70568562 Z M15.7186524,3.69230769 C15.7186524,3.34448161 15.2989802,3.15719064 15.0629147,3.39799331 L9.29242286,8.85618729 C8.89898024,9.23076923 8.40061958,9.4180602 7.87602942,9.4180602 C7.35143925,9.4180602 6.8530786,9.23076923 6.45963598,8.85618729 L0.662914664,3.39799331 C0.400619582,3.15719064 0.00717695893,3.34448161 0.00717695893,3.69230769 L0.00717695893,10.6488294 C0.00717695893,11.5317726 0.71537368,12.2541806 1.58094745,12.2541806 L14.1711114,12.2541806 C15.0366852,12.2541806 15.7448819,11.5317726 15.7448819,10.6488294 C15.7186524,10.6488294 15.7186524,5.83277592 15.7186524,3.69230769 Z" id="Shape"></path>
             </g>
         </g>
     </g>
