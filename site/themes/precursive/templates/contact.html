@@ -1,4 +1,42 @@
-<section class="regular">
+<div class="masthead">
+    {{ asset:masthead }}
+    <div class="masthead-bg" style="background-image:url({{ glide:url width="1440" height="500" }});">
+    </div>
+    {{ /asset:masthead }}
+    <div class="masthead-content">
+        {{ partial:nav }}
+
+        <div class="container mt-6x mb-6x">
+            <div class="island c-grey3 mb-2x">
+                <h1 class="h s-md w-n text-center">{{ form_heading }}</h1>
+                <hr>
+            </div>
+
+            <div class="island c-grey3 text-center">
+                <h1 class="h s-md w-n">{{ contact_heading }}</h1>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img src="{{ theme:img src='/icons/email.svg' }}" width="32px" alt="Salesforce logo">
+                        <p><a href="mailto:{{ site_email | obfuscate_email }}" class="link-royal" target="_blank">{{ site_email | obfuscate_email }}</a></p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="{{ theme:img src='/icons/call.svg' }}" width="32px" alt="Salesforce logo">
+                        <p>{{ site_phone }}</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="{{ theme:img src='/icons/intercom.png' }}" width="32px" alt="Salesforce logo">
+                        <p><a href="#" class="link-royal js-show-intercom">Live Chat</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- <section class="regular">
 
     <header>
         <h1>Contact</h1>
@@ -50,4 +88,4 @@
 
     </article>
 
-</section>
+</section> -->
