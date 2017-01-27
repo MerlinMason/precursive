@@ -27,3 +27,15 @@ fields:
   appexchange_description:
     type: textarea
     display: Appexhange Description
+  salesforce_heading:
+    type: text
+    display: SalesForce Heading
+  salesforce_description:
+    type: textarea
+    display: SalesForce Description
+  benefits_heading:
+    type: text
+    display: Benefits Heading
+  benefits_description:
+    type: textarea
+    display: Benefits Description

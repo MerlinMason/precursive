@@ -30,7 +30,7 @@
 
 <div class="bg-grey1 cf">
     <div class="container">
-        <h1 class="h s-lg w-n text-center mt-4x mb-2x">Customers of all sizes succeed with Precursive</h1>
+        <h1 class="h s-lg w-n text-center mt-4x mb-2x">{{ customers_heading }}</h1>
     </div>
     <div class="customer-carousel js-customer-carousel">
         {{ collection:customer }}
@@ -71,7 +71,7 @@
 <div class="bg-grey1 pt-4x pb-4x">
     <div class="container">
         <section class="island shadow text-center">
-            <h1 class="h s-md w-b">Connecting Sales and Delivery</h1>
+            <h1 class="h s-md w-b">{{ salesforce_heading }}</h1>
 
             <div class="connection css-animation">
                 <div class="part one"></div>
@@ -81,7 +81,7 @@
 
             <div class="row">
                 <div class="col-sm-8 col-sm-offset-2">
-                    <p>Workflow Automation. Align sales activities with delivery resources, manage people and projects more effectively and create an effortless customer experience.</p>
+                    <p>{{ salesforce_description }}</p>
                 </div>
             </div>
         </section>
@@ -92,8 +92,8 @@
     <div class="container">
         <section>
             <div class="text-center mb-3x">
-                <h1 class="h s-md w-b">Helping Your Business Succeed</h1>
-                <p>Maximise the performance and profitability of your people</p>
+                <h1 class="h s-md w-b">{{ benefits_heading }}</h1>
+                <p>{{ benefits_description }}</p>
             </div>
 
             {{ collection:benefits }}
@@ -128,22 +128,3 @@
 {{ partial:casestudy-carousel }}
 
 {{ partial:casestudy-promoted }}
-
-<!-- <section class="regular">
-
-    <h1 class="special centered">
-        <small>The Statamic</small>
-        Redwood Theme
-    </h1>
-
-	<article class="list">
-		{{ collection:blog limit="3" }}
-			{{ partial:block }}
-		{{ /collection:blog }}
-	</article>
-
-    <div class="read-more">
-        <a href="{{ link to='blog' }}">Read the rest of the blog</a>
-    </div>
-
-</section> -->
