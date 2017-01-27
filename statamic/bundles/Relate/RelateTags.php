@@ -8,6 +8,7 @@ use Statamic\API\User;
 use Statamic\API\Helper;
 use Statamic\API\Content;
 use Statamic\API\Pattern;
+use Statamic\Contracts\Data\Taxonomies\Term;
 use Statamic\Data\ContentCollection;
 use Statamic\Addons\Collection\CollectionTags;
 
@@ -22,7 +23,7 @@ class RelateTags extends CollectionTags
         $values = Helper::ensureArray(array_get($this->context, $var, []));
 
         foreach ($values as $value) {
-            $content = (Pattern::isUUID($value)) ? $this->getRelation($value) : Content::find($value);
+            $content = $this->getRelation($value);
 
             if (! $content) {
                 continue;
@@ -43,9 +44,13 @@ class RelateTags extends CollectionTags
         return $this->output();
     }
 
-    private function getRelation($id)
+    private function getRelation($value)
     {
-        return Data::find($id);
+        if ($value instanceof Term) {
+            return $value;
+        }
+
+        return Data::find($value);
     }
 
     protected function getSortOrder()

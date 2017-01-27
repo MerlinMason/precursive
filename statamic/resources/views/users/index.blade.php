@@ -16,7 +16,7 @@
                 </div>
             </div>
             <div class="card flush">
-                <dossier-table v-if="hasItems" :keyword.sync="keyword" :options="tableOptions"></dossier-table>
+                <dossier-table v-if="hasItems" :items="items" :keyword.sync="keyword" :options="tableOptions"></dossier-table>
             </div>
         </div>
     </user-listing>

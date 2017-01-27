@@ -1,6 +1,7 @@
 title: Globals
 hide: true
 create_title: Site wide information
+taxonomies: false
 fields:
   site_name:
     type: text

@@ -355,5 +355,9 @@ code.parent-url {
                 &:last-child { margin-bottom: 0; }
             }
         }
+
+        .publish-errors {
+            flex-basis: 100%;
+        }
     }
 }

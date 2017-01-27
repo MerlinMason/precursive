@@ -1,5 +1,6 @@
 title: Benefits
 create_title: Create a new benefit
+taxonomies: false
 fields:
   title:
     type: title

@@ -1,5 +1,6 @@
 hide: true
 title: ""
+taxonomies: false
 fields:
   username:
     type: text
@@ -31,4 +32,5 @@ fields:
     type: assets
     display: Avatar
     container: main
-    folder: /
+    folder: people
+    restrict: false

@@ -58,7 +58,7 @@
                     <h1>{{ translate_choice('cp.submissions', 5) }}</h1>
                 </div>
                 <div class="card flat-top">
-                    <dossier-table v-if="hasItems" :options="tableOptions"></dossier-table>
+                    <dossier-table v-if="hasItems" :items="items" :options="tableOptions"></dossier-table>
                 </div>
             </template>
         </div>

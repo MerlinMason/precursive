@@ -2,9 +2,12 @@
 
 namespace Statamic\Http\Controllers;
 
+use Statamic\API\Config;
 use Statamic\API\Helper;
 use Statamic\API\Taxonomy;
 use Statamic\API\Term;
+use Statamic\Presenters\PaginationPresenter;
+use Illuminate\Pagination\LengthAwarePaginator;
 
 /**
  * Controller for the taxonomies listing
@@ -46,18 +49,43 @@ class TaxonomyTermsController extends CpController
     public function get($folder)
     {
         $this->access("taxonomies:$folder:edit");
-        
+
         $taxonomy = Taxonomy::whereHandle($folder);
-        
+
+        $columns = array_get($taxonomy->data(), 'columns', ['slug', 'title', 'count']);
+
         $terms = $taxonomy->terms()->supplement('checked', function() {
             return false;
         })->values();
 
-        $columns = array_get($taxonomy->data(), 'columns', ['slug', 'title']);
+        if ($customSort = $this->request->sort) {
+            $terms = $terms->multisort($customSort);
+        }
+
+        if ($this->request->order == 'desc') {
+            $terms = $terms->reverse();
+        }
+
+        // Set up the paginator, since we don't want to display all the assets.
+        $totalTermCount = $terms->count();
+        $perPage = Config::get('cp.pagination_size');
+        $currentPage = (int) $this->request->page ?: 1;
+        $offset = ($currentPage - 1) * $perPage;
+        $terms = $terms->slice($offset, $perPage);
+        $paginator = new LengthAwarePaginator($terms, $totalTermCount, $perPage, $currentPage);
 
         return [
             'items' => $terms,
-            'columns' => $columns
+            'columns' => $columns,
+            'pagination' => [
+                'totalItems' => $totalTermCount,
+                'itemsPerPage' => $perPage,
+                'totalPages'    => $paginator->lastPage(),
+                'currentPage'   => $paginator->currentPage(),
+                'prevPage'      => $paginator->previousPageUrl(),
+                'nextPage'      => $paginator->nextPageUrl(),
+                'segments'      => array_get($paginator->render(new PaginationPresenter($paginator)), 'segments')
+            ]
         ];
     }
 

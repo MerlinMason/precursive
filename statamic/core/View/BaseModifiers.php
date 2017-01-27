@@ -552,7 +552,18 @@ class BaseModifiers extends Modifier
 
         // Convert the item to an array, since we'll want access to all the
         // supplemented data. Then grab the requested variable from there.
-        return array_get($item->toArray(), $var);
+        if ($arrayValue = array_get($item->toArray(), $var)) {
+            return $arrayValue;
+        }
+
+        // Finally, try to call a method on the object
+        $method = Str::slug($var);
+        if (method_exists($item, $method)) {
+            return $item->$method();
+        }
+
+        // If after all is said and done, there's still nothing, just show the original value.
+        return $value;
     }
 
     /**

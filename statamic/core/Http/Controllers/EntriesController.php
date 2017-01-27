@@ -2,11 +2,13 @@
 
 namespace Statamic\Http\Controllers;
 
+use Illuminate\Pagination\LengthAwarePaginator;
 use Statamic\API\Entry;
 use Statamic\API\Config;
 use Statamic\API\Helper;
 use Statamic\API\Content;
 use Statamic\API\Collection;
+use Statamic\Presenters\PaginationPresenter;
 
 /**
  * Controller for the entry listing
@@ -52,11 +54,14 @@ class EntriesController extends CpController
             $sort = 'order';
         }
 
+        $reorderable = $collection->order() === 'number' && $collection->count() <= Config::get('cp.pagination_size');
+
         return view('entries.index', [
             'collection' => $collection,
             'title' => $collection->title(),
             'sort' => $sort,
             'sort_order' => $sort_order,
+            'reorderable' => $reorderable,
             'new_entry_link' => route('entry.create', $collection->path())
         ]);
     }
@@ -78,7 +83,7 @@ class EntriesController extends CpController
         });
 
         if ($collection->order() === 'date') {
-            $format = Config::get('cp.date_format', 'Y/N/d');
+            $format = Config::get('cp.date_format');
 
             $entries->supplement('date_col_header', function ($entry) use ($format) {
                 return $entry->date()->format($format);
@@ -91,16 +96,41 @@ class EntriesController extends CpController
 
         if ($collection->order() === 'date') {
             $entries->reverse();
-            $columns[] = ['label' => 'date_col_header', 'field' => 'datestring'];
+            $columns[] = ['label' => 'date_col_header', 'field' => 'datestring', 'actual' => 'datestamp'];
         } elseif ($collection->order() === 'number') {
             $columns[] = 'order';
             // also actually sort by order
             $entries = $entries->multisort('order');
         }
 
+        if ($customSort = $this->request->sort) {
+            $entries = $entries->multisort($customSort);
+        }
+
+        if ($this->request->order == 'desc') {
+            $entries = $entries->reverse();
+        }
+
+        // Set up the paginator, since we don't want to display all the assets.
+        $totalEntryCount = $entries->count();
+        $perPage = Config::get('cp.pagination_size');
+        $currentPage = (int) $this->request->page ?: 1;
+        $offset = ($currentPage - 1) * $perPage;
+        $entries = $entries->slice($offset, $perPage);
+        $paginator = new LengthAwarePaginator($entries, $totalEntryCount, $perPage, $currentPage);
+
         return [
             'columns' => $columns,
-            'items' => $entries->toArray()
+            'items' => $entries->toArray(),
+            'pagination' => [
+                'totalItems' => $totalEntryCount,
+                'itemsPerPage' => $perPage,
+                'totalPages'    => $paginator->lastPage(),
+                'currentPage'   => $paginator->currentPage(),
+                'prevPage'      => $paginator->previousPageUrl(),
+                'nextPage'      => $paginator->nextPageUrl(),
+                'segments'      => array_get($paginator->render(new PaginationPresenter($paginator)), 'segments')
+            ]
         ];
     }
 

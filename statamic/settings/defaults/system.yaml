@@ -31,7 +31,7 @@ redactor:
   -
     name: Standard
     settings:
-      buttons: [formatting, bold, italic, unorderedlist, orderedlist, html]
+      buttons: [formatting, bold, italic, link, unorderedlist, orderedlist, html]
   -
     name: Basic
     settings:

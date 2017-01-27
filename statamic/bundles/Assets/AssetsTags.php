@@ -70,24 +70,31 @@ class AssetsTags extends Tags
     /**
      * Perform the asset lookups
      *
-     * @param string|array $ids  One ID, or array of IDs.
+     * @param string|array $urls  One URL, or array of URLs.
      * @return string
      */
-    protected function assets($ids)
+    protected function assets($urls)
     {
-        if (! $ids) {
+        if (! $urls) {
             return;
         }
 
-        $ids = Helper::ensureArray($ids);
+        $urls = Helper::ensureArray($urls);
 
         $this->assets = collect_assets();
 
-        foreach ($ids as $id) {
-            if ($asset = Asset::find($id)) {
-                $this->assets->put($asset->id(), $asset);
+        foreach ($urls as $url) {
+            if ($asset = Asset::find($url)) {
+                $this->assets->push($asset);
             }
         }
+
+        $this->assets->supplement(function ($asset) {
+            return [
+                'width'  => $asset->width(),
+                'height' => $asset->height()
+            ];
+        });
 
         return $this->output();
     }

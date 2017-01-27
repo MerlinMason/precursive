@@ -1,5 +1,9 @@
 module.exports = {
 
+    components: {
+        TaxonomyFieldsBuilder: require('./TaxonomyFieldsBuilder.vue')
+    },
+
     template: require('./builder.template.html'),
 
     props: {
@@ -48,7 +52,7 @@ module.exports = {
 
         getFieldset: function() {
             var self = this;
-            var url = cp_url('/fieldsets/' + get_from_segment(3) + '/get?partials=0');
+            var url = cp_url('/fieldsets/' + get_from_segment(3) + '/get?partials=0&editing=1');
             self.$http.get(url).success(function (data) {
                 var fieldset = this.registerFieldKeys(data);
 

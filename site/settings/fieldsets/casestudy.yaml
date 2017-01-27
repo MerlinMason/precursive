@@ -1,5 +1,8 @@
 title: Case Study
 create_title: Create a new case study
+taxonomies:
+  tags:
+    display: Tags
 fields:
   hero_image:
     type: assets
@@ -54,6 +57,3 @@ fields:
     type: toggle
     display: Promoted
     instructions: Toggle this on to feature this case study
-  tags:
-    type: tags
-    display: Tags

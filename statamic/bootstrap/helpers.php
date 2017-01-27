@@ -102,10 +102,6 @@ function site_locale($locale = null)
  */
 function default_locale()
 {
-    if (env('APP_ENV') === 'testing') {
-        return 'en';
-    }
-
     return Config::getDefaultLocale();
 }
 
@@ -363,14 +359,29 @@ function col_class($width)
 /**
  * SVG helper
  *
- * @param string $src Path to svg in the cp image directory
+ * Outputs a tag to reference a symbol in the sprite.
+ *
+ * @param string $name Name of svg
  * @return string
  */
-function svg($src)
+function svg($name)
 {
-    $svg = File::get(statamic_path('resources/img/' . $src . '.svg'));
+    return '<svg><use xlink:href="#'.$name.'" /></svg>';
+}
 
-    return Stringy::collapseWhitespace($svg);
+/**
+ * Inline SVG helper
+ *
+ * Outputs the contents of an svg file
+ *
+ * @param string $src Name of svg
+ * @return string
+ */
+function inline_svg($src)
+{
+    return Stringy::collapseWhitespace(
+        File::get(statamic_path("resources/dist/svg/{$src}.svg"))
+    );
 }
 
 /**
@@ -586,13 +597,13 @@ function cp_middleware()
  *
  * @return array
  */
-function sanitizeArray($array)
+function sanitize_array($array)
 {
     $result = array();
 
     foreach ($array as $key => $value) {
         $key = htmlentities($key);
-        $result[$key] = is_array($value) ? sanitizeArray($value) : htmlentities($value);
+        $result[$key] = is_array($value) ? sanitize_array($value) : htmlentities($value);
     }
 
     return $result;

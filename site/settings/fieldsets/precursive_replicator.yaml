@@ -1,4 +1,5 @@
 title: Precursive Replicator
+taxonomies: false
 fields:
   replicator_content:
     type: replicator

@@ -1,5 +1,6 @@
 title: Blog Home
 create_title: ""
+taxonomies: false
 fields:
   subtitle:
     type: text

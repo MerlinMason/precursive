@@ -263,6 +263,22 @@ abstract class Data implements DataContract
     }
 
     /**
+     * Get a key from the data, and fall back to the default locale
+     *
+     * @param string     $key     Key to retrieve
+     * @param mixed|null $default Fallback value
+     * @return mixed
+     */
+    public function getWithDefaultLocale($key, $default = null)
+    {
+        return Helper::pick(
+            $this->get($key),
+            array_get($this->defaultData(), $key),
+            $default
+        );
+    }
+
+    /**
      * Get a key from the data, and fall back to cascade (folder.yaml + default locale)
      *
      * @param string     $key     Key to retrieve
@@ -294,6 +310,17 @@ abstract class Data implements DataContract
         return $this->datastore(function ($store) use ($key) {
             return $store->has($key);
         });
+    }
+
+    /**
+     * Does the given key exist in the data, including the default locale?
+     *
+     * @param string $key
+     * @return bool
+     */
+    public function hasWithDefaultLocale($key)
+    {
+        return $this->getWithDefaultLocale($key) !== null;
     }
 
     /**
@@ -585,8 +612,9 @@ abstract class Data implements DataContract
         $content = $this->parseContent();
 
         $array = array_merge(
-            $this->supplements,
+            $this->cascadingData(),
             $this->dataWithDefaultLocale(),
+            $this->supplements,
             compact('content', 'content_raw')
         );
 

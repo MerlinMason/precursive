@@ -1,5 +1,6 @@
 title: Blog Post
 hide: true
+taxonomies: false
 fields:
   title:
     type: title
@@ -32,11 +33,6 @@ fields:
     type: toggle
     display: Most Read
     instructions: "Marks post as being 'most read'"
-    width: 50
-  tags:
-    type: taxonomy
-    taxonomy: tags
-    display: Tags
     width: 50
   author:
     type: users

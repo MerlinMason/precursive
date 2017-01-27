@@ -6,6 +6,8 @@
 
 	<body id="statamic" :class="{ 'nav-visible': navVisible }">
 
+		{!! inline_svg('sprite') !!}
+
 		@include('partials.nav-main')
 		@include('partials.shortcuts')
 

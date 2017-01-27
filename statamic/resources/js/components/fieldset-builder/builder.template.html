@@ -57,6 +57,15 @@
 								:root="true">
 				</fields-builder>
 			</div>
+
+			<div class="form-group">
+				<label class="block">{{ translate_choice('cp.taxonomies', 2) }}</label>
+				<small class="help-block">{{ translate('cp.fieldset_taxonomies_instructions') }}</small>
+				<taxonomy-fields-builder
+						:fields="fieldset.taxonomies"
+						:fieldtypes="fieldtypes">
+				</taxonomy-fields-builder>
+			</div>
 		</div>
 	</div>
 </div>

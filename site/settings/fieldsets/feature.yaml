@@ -1,5 +1,6 @@
 title: Feature
 create_title: Create a new feature
+taxonomies: false
 fields:
   title:
     type: title

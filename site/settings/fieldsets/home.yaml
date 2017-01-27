@@ -1,5 +1,6 @@
 title: 'Page - Home'
 create_title: ""
+taxonomies: false
 fields:
   demo_form_image:
     type: assets
@@ -7,12 +8,16 @@ fields:
     container: main
     folder: backgrounds
     max_files: "1"
+    restrict: false
   page_heading:
     type: text
     display: Page Heading
   page_subheading:
     type: text
     display: Page Subheading
+  customers_heading:
+    type: text
+    display: Customers Heading
   appexchange_heading:
     type: text
     display: Appexhange Heading

@@ -1,5 +1,6 @@
 title: Customer
 create_title: Create a new customer
+taxonomies: false
 fields:
   logo:
     type: assets
