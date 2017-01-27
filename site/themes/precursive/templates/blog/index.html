@@ -1,5 +1,8 @@
 <div class="masthead">
-    <div class="masthead-bg blog-index"></div>
+    {{ asset:masthead }}
+    <div class="masthead-bg" style="background-image:url({{ glide:url width="1440" height="500" }});">
+    </div>
+    {{ /asset:masthead }}
     <div class="masthead-content">
         {{ partial:nav }}
         <div class="text-center mt-4x mb-4x">

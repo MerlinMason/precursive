@@ -1,13 +1,14 @@
-title: Blog Home
+title: 'Page - Blog Home'
 create_title: ""
 taxonomies: false
 fields:
   subtitle:
     type: text
     display: Subtitle
-  hero:
+  masthead:
     type: assets
-    display: Hero
+    display: Masthead
     container: main
     folder: backgrounds
     max_files: "1"
+    restrict: false

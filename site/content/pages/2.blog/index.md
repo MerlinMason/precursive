@@ -1,11 +1,11 @@
----
-subtitle: 'home to all our latest news and thoughts '
+subtitle: 'Home to all our latest news and thoughts '
+masthead:
+  - /assets/backgrounds/working-1-1485428289.jpg
 hero:
-  - 2dce8a2e-0442-4ac2-8b0c-19797c38fa35
+  - /assets/backgrounds/working-3-1485428290.jpg
 title: Precursive Blog
 nav_title: Blog
 mount: blogs
 template: blog/index
 fieldset: bloghome
 id: 60962021-f154-4cd2-a1d7-035a12b6da9e
----
