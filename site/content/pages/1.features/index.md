@@ -1,7 +1,7 @@
 page_heading: 'If You Rely on Your People  You Can Count on Precursive'
 page_subheading: A comprehensive solution for all forms of delivery teams
 masthead:
-  - /assets/backgrounds/features-1485428288.jpg
+  - /assets/backgrounds/working-3-1485428290.jpg
 demo_form_image:
   - /assets/backgrounds/headache-1485428289.jpg
 title: Features
