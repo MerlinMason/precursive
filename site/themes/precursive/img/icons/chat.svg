@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Intercom bubble chat</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="27" height="27" rx="13.5"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="12" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.09 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Intercom-bubble-chat">
+            <g transform="translate(2.000000, 2.000000)">
+                <g id="Background">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#00C9B5" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <path d="M19.7279227,17.2250787 L19.7960526,17.202579 L19.7918002,21.2163547 L15.9937895,19.575 L10.2020059,19.575 C8.54404381,19.575 7.2,18.2267402 7.2,16.5681073 L7.2,9.75689269 C7.2,8.09623171 8.54842072,6.75 10.2020059,6.75 L16.7979941,6.75 C18.4559562,6.75 19.8,8.09825979 19.8,9.75689269 L19.8,16.5681073 C19.8,16.7937666 19.7751017,17.01362 19.7279227,17.2250787 Z M9.02014212,15.8328286 C8.9112992,15.9714265 8.91533453,16.2182093 9.01336979,16.4025783 C9.11140505,16.5869473 11.0964809,17.7677492 13.5664158,17.7677493 C16.0363506,17.7677494 17.8704312,16.6114658 18.0246494,16.4025783 C18.1788677,16.1936908 18.2308822,16.0431719 18.0246491,15.8522717 C17.818416,15.6613716 17.7375939,15.7395745 17.4701917,15.860282 C17.2027896,15.9809895 15.4498265,17.0238998 13.5283305,17.0061897 C11.6068345,16.9884795 9.99353734,16.091051 9.66416903,15.7883351 C9.33480073,15.4856191 9.12898504,15.6942306 9.02014212,15.8328286 Z" id="Icon" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>
