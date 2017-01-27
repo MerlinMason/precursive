@@ -7,6 +7,9 @@
     }
 }
 
+.form-group {
+    margin-bottom:@space;
+}
 
 .form-input {
     padding:(@space / 2);
@@ -19,6 +22,12 @@
     .placeholder();
     &:focus {
         outline:none;
+    }
+    textarea& {
+        min-height:200px;
+    }
+    .island & {
+        border:1px solid @jade;
     }
 }
 
@@ -103,4 +112,5 @@
 
 // Create common button styles
 .btn-jade   { .btn(@jade); }
+.btn-sky    { .btn(@sky); }
 .btn-white  { .btn(#fff, @sky); }

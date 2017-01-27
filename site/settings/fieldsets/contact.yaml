@@ -2,13 +2,6 @@ title: 'Page - Contact'
 create_title: ""
 taxonomies: false
 fields:
-  masthead:
-    type: assets
-    display: Masthead
-    container: main
-    folder: backgrounds
-    max_files: "1"
-    restrict: false
   form_heading:
     type: text
     display: Form Heading
