@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "50cefd67dafeb078aa30a8e37b6c8383",
-    "content-hash": "df77c468f7187da8b2db64247b546f97",
+    "hash": "980dffe80bbf73a234bad2af4a8da1b3",
+    "content-hash": "e08fb71e373bccc709fa66105cfd6735",
     "packages": [
         {
             "name": "algolia/algoliasearch-client-php",
@@ -1502,6 +1502,24 @@
                 "twitter"
             ],
             "time": "2016-08-17 00:36:58"
+        },
+        {
+            "name": "marbles/cookie-consent",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../site/addons/CookieConsent",
+                "reference": "68b129998c216e9aa5a6a6d228b97ba79029cec9",
+                "shasum": null
+            },
+            "type": "library",
+            "license": [
+                "MIT"
+            ],
+            "description": "Make your website comply with the crazy EU cookie law",
+            "transport-options": {
+                "symlink": false
+            }
         },
         {
             "name": "maximebf/debugbar",
@@ -5275,7 +5293,8 @@
         "michelf/php-smartypants": 20,
         "netcarver/textile": 20,
         "mmanos/laravel-search": 20,
-        "zendframework/zendsearch": 20
+        "zendframework/zendsearch": 20,
+        "marbles/cookie-consent": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

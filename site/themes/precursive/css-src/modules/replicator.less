@@ -41,16 +41,16 @@
             }
         }
         blockquote {
-            position:relative;
-            &::before {
-                content:"";
-                .position(absolute, 0, auto, 0, -1.4em, 0);
-                width:1px;
-                background:linear-gradient(to bottom, @royal, @jade);
-            }
             p {
+                position:relative;
                 font-style:italic;
                 line-height:1.8;
+                &::before {
+                    content:"";
+                    .position(absolute, 0, auto, 0, -1.4em, 0);
+                    width:1px;
+                    background:linear-gradient(to bottom, @royal, @jade);
+                }
             }
         }
         h1, h2, h3, h4, h5, h6 {

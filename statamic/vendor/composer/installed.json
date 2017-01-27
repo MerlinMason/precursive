@@ -3816,5 +3816,25 @@
             "lucene",
             "zf2"
         ]
+    },
+    {
+        "name": "marbles/cookie-consent",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "dist": {
+            "type": "path",
+            "url": "../site/addons/CookieConsent",
+            "reference": "68b129998c216e9aa5a6a6d228b97ba79029cec9",
+            "shasum": null
+        },
+        "type": "library",
+        "installation-source": "dist",
+        "license": [
+            "MIT"
+        ],
+        "description": "Make your website comply with the crazy EU cookie law",
+        "transport-options": {
+            "symlink": false
+        }
     }
 ]

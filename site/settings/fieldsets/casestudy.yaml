@@ -1,7 +1,6 @@
 title: Case Study
 create_title: Create a new case study
-taxonomies:
-  tags: true
+taxonomies: false
 fields:
   hero_image:
     type: assets

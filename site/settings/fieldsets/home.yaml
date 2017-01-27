@@ -2,19 +2,36 @@ title: 'Page - Home'
 create_title: ""
 taxonomies: false
 fields:
-  demo_form_image:
-    type: assets
-    display: Demo Form Image
-    container: main
-    folder: backgrounds
-    max_files: "1"
-    restrict: false
   page_heading:
     type: text
     display: Page Heading
   page_subheading:
     type: text
     display: Page Subheading
+  masthead_video_webm:
+    type: assets
+    display: Masthead Video webm
+    instructions: This needs to be in the webm format
+    container: main
+    folder: videos
+    restrict: false
+    max_files: "1"
+  masthead_video_mp4:
+    type: assets
+    display: Masthead Video MP4
+    instructions: This needs to be in the MP4 format
+    container: main
+    folder: videos
+    restrict: false
+    max_files: "1"
+  masthead_video_placeholder:
+    type: assets
+    display: Masthead Video Placeholder
+    instructions: An image to dispay before the video is played
+    container: main
+    folder: /
+    restrict: false
+    max_files: "1"
   customers_heading:
     type: text
     display: Customers Heading
@@ -27,6 +44,13 @@ fields:
   appexchange_description:
     type: textarea
     display: Appexhange Description
+  demo_form_image:
+    type: assets
+    display: Demo Form Image
+    container: main
+    folder: backgrounds
+    max_files: "1"
+    restrict: false
   salesforce_heading:
     type: text
     display: SalesForce Heading

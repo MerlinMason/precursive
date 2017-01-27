@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
     <meta name="HandheldFriendly" content="true">
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="description" content="Another awesome Statamic site">
-    <meta name="description" itemprop="description" content="{{ site.description }}"/>
-    <meta name="keywords" itemprop="keywords" content="thanksbox, employee, recognition, app, engagement"/>
+    <meta name="description" itemprop="description" content="">
+    <meta name="keywords" itemprop="keywords" content="">
 
     <title>{{ title ensure_right=" — " }}{{ site_name }}</title>
 
@@ -24,11 +24,14 @@
 
     {{ partial:footer }}
 
+    {{ cookie_consent }}
+    {{ cookie_consent:js }}
     <script src="{{ theme:js }}"></script>
     <script>
         window.intercomSettings = { app_id: "xc24ywss" };
         (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;
         function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/xc24ywss';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
     </script>
+
 </body>
 </html>

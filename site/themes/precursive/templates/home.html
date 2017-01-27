@@ -19,7 +19,9 @@
                     </a>
                 </div>
                 <div class="col-sm-6">
-
+                    <div class="masthead-video" style="background-image:url({{ asset:masthead_video_placeholder }}{{ glide:url width="500" height="300" }}{{ /asset:masthead_video_placeholder }});">
+                        <img src="{{ theme:img src='/icons/play.svg' }}" width="100px" class="play-icon js-play-video">
+                    </div>
                 </div>
             </div>
         </div>
@@ -128,3 +130,16 @@
 {{ partial:casestudy-carousel }}
 
 {{ partial:casestudy-promoted }}
+
+<div class="js-modal-video modal-video">
+    <video controls>
+        {{ asset:masthead_video_mp4 }}
+        <source src="{{ url }}" type="video/mp4">
+        {{ /asset:masthead_video_mp4 }}
+
+        {{ asset:masthead_video_webm }}
+        <source src="{{ url }}" type="video/webm">
+        {{ /asset:masthead_video_webm }}
+    </video>
+    <img src="{{ theme:img src='/icons/play.svg' }}" width="100px" class="close-icon js-hide-video">
+</div>
