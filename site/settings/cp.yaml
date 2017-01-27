@@ -1,5 +1,6 @@
 start_page: dashboard
 date_format: d/n/Y
+pagination_size: 25
 widgets:
   - 
     type: collection
@@ -10,14 +11,11 @@ widgets:
     type: collection
     collection: casestudies
     limit: 5
+    importance: 2
+  - 
+    type: collection
+    collection: customer
+    limit: 5
     importance: 1
   - 
     type: updater
-  - 
-    type: form
-    form: contact
-    limit: 5
-    title: Recent Submissions
-    fields:
-      - name
-      - email
