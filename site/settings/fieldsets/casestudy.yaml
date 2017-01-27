@@ -1,8 +1,7 @@
 title: Case Study
 create_title: Create a new case study
 taxonomies:
-  tags:
-    display: Tags
+  tags: true
 fields:
   hero_image:
     type: assets
@@ -11,6 +10,7 @@ fields:
     container: main
     folder: casestudies
     max_files: "1"
+    restrict: false
   main_image:
     type: assets
     display: Main Image
@@ -18,6 +18,7 @@ fields:
     container: main
     folder: casestudies
     max_files: "1"
+    restrict: false
   related_customer:
     type: collection
     display: Related Customer
@@ -26,12 +27,6 @@ fields:
       - customer
     max_items: "1"
     mode: tags
-  description:
-    type: markdown
-    display: Description
-    cheatsheet: true
-    container: main
-    folder: img
   client_testimonial:
     type: textarea
     display: Client Testimonial
@@ -50,6 +45,7 @@ fields:
     folder: /
     max_files: "1"
     instructions: Photo of person on client team
+    restrict: false
   results:
     type: list
     display: Results
@@ -57,3 +53,7 @@ fields:
     type: toggle
     display: Promoted
     instructions: Toggle this on to feature this case study
+  case_study_content:
+    type: partial
+    display: Case Study Content
+    fieldset: precursive_replicator

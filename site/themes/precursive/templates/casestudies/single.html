@@ -1,8 +1,8 @@
 <div class="masthead">
-    {{ asset:masthead }}
+    {{ asset:hero_image }}
     <div class="masthead-bg" style="background-image:url({{ glide:url width="1440" height="500" }});">
     </div>
-    {{ /asset:masthead }}
+    {{ /asset:hero_image }}
     <div class="masthead-content">
         {{ partial:nav }}
         <div class="container mt-4x mb-4x text-center">
@@ -14,7 +14,7 @@
 
 <div class="container pt-4x pb-4x">
     <article class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-7">
             <header class="mb-2x">
                 {{ relate:related_customer }}
                 {{ assets:logo }}
@@ -26,9 +26,11 @@
                 {{ /tags }}
             </header>
 
-            {{ description | markdown }}
+            {{ replicator_content }}
+                {{ partial src="replicator/{type}" }}
+            {{ /replicator_content }}
         </div>
-        <div class="col-sm-4 col-sm-offset-2">
+        <div class="col-sm-4 col-sm-offset-1">
             <h2 class="h s-sm w-r caps lined">Results seen with Precursive</h2>
             <ul class="ticklist">
                 {{ results }}
