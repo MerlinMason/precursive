@@ -12,8 +12,8 @@
                 <div class="col-sm-6">
                     <h1 class="h s-xl w-n">{{ page_heading }}</h1>
                     <h1 class="h s-md w-n">{{ page_subheading }}</h1>
-                    <a href="#" class="btn-white btn-large">Book a demo</a>
-                    <a href="{{ appexchange_link }}" class="btn-white btn-large has-image" target="_blank">
+                    <a href="#" class="btn-white btn-large hidden-m">Book a demo</a>
+                    <a href="{{ appexchange_link }}" class="btn-white btn-large has-image hidden-m" target="_blank">
                         <img src="{{ theme:img src='/logos/salesforce-blue.svg' }}" alt="Salesforce logo">
                         View on app exchange
                     </a>
@@ -51,19 +51,19 @@
         <section class="island">
             <div class="row">
                 <div class="col-sm-6">
-                    <div class="pt-1x pl-1x">
+                    <div class="pt-1x pl-1x appexchange-m">
                         <h1 class="h s-md w-n">
                             <b>{{ appexchange_heading }}</b>
                             <br>{{ appexchange_subheading }}
                         </h1>
                         <p>{{ appexchange_description }}</p>
                         <a href="{{ appexchange_link }}">
-                            <img src="{{ theme:img src='/logos/appexchange.svg' }}" width="200">
+                            <img src="{{ theme:img src='/logos/appexchange.svg' }}" width="200" class="appexchange-logo-m">
                         </a>
                     </div>
                 </div>
                 <div class="col-sm-5 col-sm-offset-1">
-                    <img src="{{ theme:img src='/misc/appexchange.png' }}" class="scale">
+                    <img src="{{ theme:img src='/misc/appexchange.png' }}" class="scale hidden-m">
                 </div>
             </div>
         </section>
@@ -90,36 +90,42 @@
     </div>
 </div>
 
-<div class="pt-4x pb-4x scroll-image-container">
+<div class="pt-4x pb-4x scroll-image-container brand-grad-m">
     <div class="container">
         <section>
             <div class="text-center mb-3x">
-                <h1 class="h s-md w-b">{{ benefits_heading }}</h1>
-                <p>{{ benefits_description }}</p>
+                <h1 class="h s-md w-b c-white-m">{{ benefits_heading }}</h1>
+                <p class="c-white-m">{{ benefits_description }}</p>
             </div>
 
             {{ collection:benefits }}
-                {{ if index > 1 }}<hr>{{ /if }}
+                {{ if index > 1 }}<hr class="hidden-m">{{ /if }}
 
-                <article class="row mb-3x">
-                    <div class="col-sm-5 col-sm-offset-1 {{ if index % 2 == 0 }}fr{{ /if }}">
-                        <h2 class="h s-lg w-n">{{ title }}</h2>
-                        <h3 class="h s-sm w-n">{{ subtitle }}</h3>
+                <div class="island-m mb-2x-m">
+                    <article class="row mb-3x mb-0-m">
+                        <div class="col-sm-5 col-sm-offset-1 {{ if index % 2 == 0 }}fr{{ /if }}">
+                            <h2 class="h s-lg w-n">{{ title }}</h2>
+                            <h3 class="h s-sm w-n">{{ subtitle }}</h3>
 
-                        <ul class="ticklist">
-                            {{ benefits_list }}
+                            <ul class="ticklist hidden-m">
+                                {{ benefits_list }}
                                 <li>{{ value }}</li>
-                            {{ /benefits_list }}
-                        </ul>
+                                {{ /benefits_list }}
+                            </ul>
 
-                        <a href="/features" class="link-sky">More about features ⇨</a>
-                    </div>
-                    <div class="col-sm-5 col-sm-offset-1 {{ if index % 2 == 0 }}fr{{ /if }}">
-                        {{ assets:image }}
+                            <a href="/features" class="link-sky hidden-m">More about features ⇨</a>
+                        </div>
+                        <div class="col-sm-5 col-sm-offset-1 {{ if index % 2 == 0 }}fr{{ /if }}">
+                            {{ assets:image }}
                             <img src="{{ glide:id width="500" }}" alt="{{ subtitle }}" title="{{ title }}" class="scale css-animation scroll-image">
-                        {{ /assets:image }}
-                    </div>
-                </article>
+                            {{ /assets:image }}
+
+                            <div class="text-center hidden show-m mt-1x">
+                                <a href="/features" class="btn-sky btn-inverse">More about features ⇨</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
             {{ /collection:benefits }}
         </section>
     </div>

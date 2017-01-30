@@ -1,0 +1,47 @@
+html {
+    @media (max-width: @mobile)  {
+        .show-m { display:block; }
+        .hidden-m { display:none; }
+        .pb-0-m { padding-bottom:0; }
+        .mb-0-m { margin-bottom:0; }
+        .mb-2x-m { margin-bottom:(@space * 2); }
+        .brand-grad-m { .brand-grad(); }
+        .c-white-m { color:#fff; }
+        .island-m { .island(); }
+        .appexchange-m { padding:0; }
+        .appexchange-logo-m {
+            width:70%;
+            margin:0 auto;
+            display:block;
+        }
+        .casestudy-carousel {
+            .flickity-prev-next-button {
+                height:50px;
+                width:30px;
+            }
+            .bg {
+                width:100%;
+                background:@grey1!important;
+            }
+            .body {
+                padding:@space (@space * 2);
+                img {
+                    .shadow();
+                    border-radius:@radius;
+                    display:block;
+                    margin:0 auto @space;
+                }
+            }
+        }
+        .connection {
+            .part.one {
+                background-size:70px auto;
+                background-position:calc(100% - 10px) 25px;
+            }
+            .part.two {
+                background-size:85px auto;
+                background-position:20px 36px;
+            }
+        }
+    }
+}

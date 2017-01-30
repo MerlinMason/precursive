@@ -10,6 +10,7 @@ export default () => {
             prevNextButtons: true,
             pageDots: false,
             wrapAround: true,
+            adaptiveHeight: true,
             imagesLoaded: true,
             draggable: true,
             arrowShape: {
