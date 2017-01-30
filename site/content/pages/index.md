@@ -3,7 +3,7 @@ page_subheading: The key to project success and making customers happy
 masthead_video_webm:
   - /assets/videos/welcome_to_precursive.webm
 masthead_video_placeholder:
-  - /assets/backgrounds/features-1485428288.jpg
+  - /assets/Video-option1-1485550825.jpg
 customers_heading: Customers of all sizes succeed with Precursive
 appexchange_heading: Available on the Salesforce AppExchange®
 appexchange_subheading: Precursive is Native to Salesforce
