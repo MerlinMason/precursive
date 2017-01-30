@@ -1,11 +1,11 @@
 IP: 46.101.16.196
 
 TODO:
-- mobile styles
-- masthead book demo CTA 
-- close icon for video
+- DONE mobile styles
+- DONE masthead book demo CTA 
+- DONE close icon for video
 - social sharing blog
-- demo form
+- DONE demo form linked to Salesforce
 - contact success page
 - demo success page
 - add analytics
