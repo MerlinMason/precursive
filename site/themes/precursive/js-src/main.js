@@ -11,3 +11,7 @@ $(".js-show-intercom").on("click", (e) => {
     e.preventDefault();
     window.Intercom("show");
 });
+
+$(".js-toggle-menu").on("click", () => {
+    $(".nav").toggleClass("show");
+});

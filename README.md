@@ -1,45 +1,16 @@
 IP: 46.101.16.196
 
-Content Structure
-
-- blog posts
-    -- title
-    -- content
-    -- preview image
-    -- hero image
-    -- authors
-    -- most read
-    -- latest
-    -- comments
-    -- tags
-- customers
-    -- name
-    -- logo
-    - case studies
-        -- featured image
-        -- hero image
-        -- title
-        -- content
-        -- overview text (extract)
-        -- client name
-        -- client photo
-        -- client role
-        -- tags
-        -- promoted
-        -- results
-- features
-    -- title
-    -- icon
-    -- description
-    -- subtitle
-    -- 2nd description
-    -- image
-    -- ticklist
-- benefits
-    -- title
-    -- subtitle
-    -- image
-    -- ticklist
-- users (authors)
-    -- name
-    -- photo
+TODO:
+- mobile styles
+- masthead book demo CTA 
+- close icon for video
+- social sharing blog
+- demo form
+- contact success page
+- demo success page
+- add analytics
+- add analytics goals
+- write README
+- sitewide news header
+- event landing page
+- standard page mutlicontent
