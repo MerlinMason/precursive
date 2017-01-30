@@ -38,3 +38,9 @@ fields:
     instructions: Link to appexchange
     width: 33
     validate: URL
+  overlay_form_heading:
+    type: text
+    display: Overlay Form Heading
+  overlay_form_subheading:
+    type: text
+    display: Overlay Form Subheading
