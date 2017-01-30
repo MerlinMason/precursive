@@ -115,3 +115,36 @@
 .btn-jade   { .btn(@jade); }
 .btn-sky    { .btn(@sky); }
 .btn-white  { .btn(#fff, @sky); }
+
+.form-modal {
+    .position(fixed, 0, 0, 0, 0, 9);
+    background:rgba(0, 0, 0, 0.8);
+    display:none;
+    .form-modal-inner {
+        text-align:center;
+        .brand-grad();
+        padding:(@space * 2);
+        border-radius:@radius;
+        .shadow();
+        width:90%;
+        max-width:650px;
+        .position(absolute, 10vh, auto, auto, 50%);
+        transform:translateY(-100vh) translateX(-50%);
+        will-change:transform;
+        transition:transform 0.2s ease-out;
+    }
+    &.show {
+        .form-modal-inner {
+            transform:translateY(0) translateX(-50%);
+        }
+    }
+    .close-icon {
+        .position(absolute, @space, @space, auto, auto);
+        cursor:pointer;
+        opacity:0.8;
+        transition:all 0.2s;
+        &:hover {
+            opacity:1;
+        }
+    }
+}

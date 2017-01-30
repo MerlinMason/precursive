@@ -15,3 +15,10 @@ $(".js-show-intercom").on("click", (e) => {
 $(".js-toggle-menu").on("click", () => {
     $(".nav").toggleClass("show");
 });
+
+$(".js-toggle-form-modal").on("click", (e) => {
+    e.preventDefault();
+    $(".js-form-modal").fadeToggle(400, function () {
+        $(this).toggleClass("show");
+    });
+});
