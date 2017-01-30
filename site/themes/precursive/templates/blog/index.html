@@ -17,7 +17,7 @@
         {{ collection:blog paginate="true" as="posts" limit="4" }}
             {{ posts }}
                 <div class="col-sm-4">
-                    <article class="post">
+                    <article class="post mb-2x">
                         {{ if index == 1 }}
                             <div class="label bg-jade">Most Recent</div>
                         {{ elseif most_read }}
