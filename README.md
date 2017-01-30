@@ -10,7 +10,7 @@ TODO:
 - demo success page
 - Image on demo form in blog section
 - DONE dynamic text on demo form overlay
-- dynamic text on demo form
+- DONE dynamic text on demo form
 - add analytics
 - add analytics goals
 - write README

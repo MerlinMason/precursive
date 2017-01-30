@@ -41,6 +41,16 @@ fields:
   overlay_form_heading:
     type: text
     display: Overlay Form Heading
+    width: 50
   overlay_form_subheading:
     type: text
     display: Overlay Form Subheading
+    width: 50
+  demo_form_heading:
+    type: text
+    display: Demo Form Heading
+    width: 50
+  demo_form_subheading:
+    type: text
+    display: Demo Form Subheading
+    width: 50
