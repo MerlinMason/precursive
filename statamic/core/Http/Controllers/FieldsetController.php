@@ -93,7 +93,12 @@ class FieldsetController extends CpController
             list($type, $fieldset) = explode('.', $fieldset);
         }
 
-        $fieldset = Fieldset::get($fieldset, $type);
+        // Create a temporary fieldset for when creating.
+        if ($fieldset === 'create' && $this->request->creating) {
+            $fieldset = Fieldset::create('temporary');
+        } else {
+            $fieldset = Fieldset::get($fieldset, $type);
+        }
 
         $fieldset->locale($this->request->input('locale', default_locale()));
 
@@ -354,6 +359,10 @@ class FieldsetController extends CpController
     {
         $title = $this->request->name;
         $name = Str::slug($title, '_');
+
+        if (Fieldset::exists($name)) {
+            return ['success' => true];
+        }
 
         $fieldset = Fieldset::create($name);
         $fieldset->title($title);

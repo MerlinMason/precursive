@@ -406,6 +406,7 @@ class Term extends Content implements TermContract
         $this->supplements['taxonomy_group'] = $this->taxonomyName(); // @todo: remove
         $this->supplements['taxonomy'] = $this->taxonomyName();
         $this->supplements['count'] = $this->count();
+        $this->supplements['relation_count'] = $this->count();
         $this->supplements['is_term'] = true;
         $this->supplements['results'] = $this->count();
     }

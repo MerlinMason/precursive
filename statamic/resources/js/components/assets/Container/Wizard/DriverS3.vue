@@ -97,15 +97,19 @@
         computed: {
             s3Regions: function () {
                 return [
-                    { value: 'us-east-1', text: 'US East / US Standard / us-east-1' },
-                    { value: 'us-west-2', text: 'US West (Oregon) / us-west-2' },
+                    { value: 'us-east-1', text: 'US East (N. Virginia) / US Standard / us-east-1' },
+                    { value: 'us-east-2', text: 'US East (Ohio) / us-east-2' },
                     { value: 'us-west-1', text: 'US West (N. California) / us-west-1' },
-                    { value: 'eu-west-1', text: 'EU (Ireland) / eu-west-1' },
-                    { value: 'eu-central-1', text: 'EU (Frankfurt) / eu-central-1' },
-                    { value: 'ap-southeast-1', text: 'Asia Pacific (Singapore) / ap-southeast-1' },
-                    { value: 'ap-northeast-1', text: 'Asia Pacific (Tokyo) / ap-northeast-1' },
-                    { value: 'ap-southeast-2', text: 'Asia Pacific (Sydney) / ap-southeast-2' },
+                    { value: 'us-west-2', text: 'US West (Oregon) / us-west-2' },
+                    { value: 'ca-central-1', text: 'Canada (Central) / ca-central-1' },
+                    { value: 'ap-south-1', text: 'Asia Pacific (Mumbai) / ap-south-1' },
                     { value: 'ap-northeast-2', text: 'Asia Pacific (Seoul) / ap-northeast-2' },
+                    { value: 'ap-southeast-1', text: 'Asia Pacific (Singapore) / ap-southeast-1' },
+                    { value: 'ap-southeast-2', text: 'Asia Pacific (Sydney) / ap-southeast-2' },
+                    { value: 'ap-northeast-1', text: 'Asia Pacific (Tokyo) / ap-northeast-1' },
+                    { value: 'eu-central-1', text: 'EU (Frankfurt) / eu-central-1' },
+                    { value: 'eu-west-1', text: 'EU (Ireland) / eu-west-1' },
+                    { value: 'eu-west-2', text: 'EU (London) / eu-west-2' },
                     { value: 'sa-east-1', text: 'South America (Sao Paulo) / sa-east-1)' }
                 ]
             },

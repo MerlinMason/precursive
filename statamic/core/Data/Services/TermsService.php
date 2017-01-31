@@ -34,7 +34,9 @@ class TermsService
      */
     public function all($includeUnassociated = true)
     {
-        return $this->taxonomyStache->getTerms($includeUnassociated);
+        return $this->sort(
+            $this->taxonomyStache->getTerms($includeUnassociated)
+        );
     }
 
     /**
@@ -46,9 +48,20 @@ class TermsService
      */
     public function taxonomy($taxonomy, $includeUnassociated = true)
     {
-        return ($includeUnassociated)
+        $collection = ($includeUnassociated)
             ? $this->taxonomyStache->getTermsInTaxonomy($taxonomy)
             : $this->taxonomyStache->getAssociatedTermsInTaxonomy($taxonomy);
+
+        return $this->sort($collection);
+    }
+
+    private function sort($collection)
+    {
+        $collection = $collection->all();
+
+        ksort($collection);
+
+        return collect_terms($collection);
     }
 
     public function id($id)

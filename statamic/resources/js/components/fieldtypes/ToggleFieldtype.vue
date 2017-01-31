@@ -17,7 +17,7 @@ module.exports = {
 
             // Allow the "on" state to be on when it's falsey.
             // Useful for example if the variable is "hidden" but the label is "visible".
-            if (this.config.reverse) {
+            if (this.config && this.config.reverse) {
                 match = false;
             }
 
@@ -27,6 +27,11 @@ module.exports = {
     methods: {
         toggle: function () {
             this.data = !this.data;
+        }
+    },
+    ready() {
+        if (this.data === null) {
+            this.data = false;
         }
     }
 };

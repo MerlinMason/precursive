@@ -52,7 +52,7 @@ class TaxonomyTermsController extends CpController
 
         $taxonomy = Taxonomy::whereHandle($folder);
 
-        $columns = array_get($taxonomy->data(), 'columns', ['slug', 'title', 'count']);
+        $columns = array_get($taxonomy->data(), 'columns', ['title', 'slug', 'count']);
 
         $terms = $taxonomy->terms()->supplement('checked', function() {
             return false;

@@ -105,7 +105,6 @@ class UpdateItem
 
     public function updateAssetContainer(AssetContainerSaved $event)
     {
-        \Log::debug('updating asset cntainer');
         $this->updateSavedItem($event->container);
     }
 

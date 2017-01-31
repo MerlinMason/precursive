@@ -1,8 +1,11 @@
 import $ from "jquery";
+import "openshare";
+
 import Home from "./pages/home";
 import CssAnimation from "./modules/css-animation";
 import CaseStudies from "./modules/case-studies";
 
+// console.log(Share);
 Home();
 CssAnimation();
 CaseStudies();
@@ -22,3 +25,10 @@ $(".js-toggle-form-modal").on("click", (e) => {
         $(this).toggleClass("show");
     });
 });
+
+// const share = new Share({
+//     type: "twitter",
+//     innerHTML: "Check it out!"
+// }, $(".js-twitter").get(0));
+
+// console.log(share);

@@ -26,13 +26,67 @@
     </div>
 </div>
 
-<div class="container">
-    <div class="col-sm-8 col-sm-offset-2 mt-4x mb-4x">
-        {{ replicator_content }}
-            {{ partial src="replicator/{type}" }}
-        {{ /replicator_content }}
+<div class="container mt-4x mb-4x">
+    <div class="row">
+        <div class="col-sm-2">
+            <a class="openshare" href="#"
+                data-open-share="facebook"
+                data-open-share-link="{{ current_url }}"
+                data-open-share-picture="{{ glide:intro_image width='600' height='300' }}"
+                data-open-share-caption="{{ site_name }}"
+                data-open-share-description="{{ title }}">
 
-        {{ relate:author }}
+                <span class="icon-facebook"></span>
+                <span class="count"
+                    data-open-share-count="facebook"
+                    data-open-share-count-url="{{ current_url }}">
+                </span>
+            </a>
+
+            <a class="openshare" href="#"
+                data-open-share="google"
+                data-open-share-url="{{ current_url }}">
+
+                <span class="icon-googleplus"></span>
+                <span class="count"
+                    data-open-share-count="google"
+                    data-open-share-count-url="{{ current_url }}">
+                </span>
+            </a>
+
+            <a class="openshare" href="#"
+                data-open-share="linkedin"
+                data-open-share-url="{{ current_url }}"
+                data-open-share-media="{{ glide:intro_image width='600' height='300' }}"
+                data-open-share-title="{{ site_name }} — {{ title }}">
+
+                <span class="icon-linkedin"></span>
+                <span class="count"
+                    data-open-share-count="linkedin"
+                    data-open-share-count-url="{{ current_url }}">
+                </span>
+            </a>
+
+            <a class="openshare" href="#"
+                data-open-share="twitter"
+                data-open-share-url="{{ current_url }}"
+                data-open-share-via="precursive"
+                data-open-share-text="{{ site_name }} — {{ title }}">
+
+                <span class="icon-twitter"></span>
+                <span class="count"
+                    data-open-share-count="twitter"
+                    data-open-share-count-url="{{ current_url }}"
+                    data-open-share-key="dstweets">
+                </span>
+            </a>
+        </div>
+        <div class="col-sm-8">
+            {{ replicator_content }}
+            {{ partial src="replicator/{type}" }}
+            {{ /replicator_content }}
+
+            {{ relate:author }}
             <div class="author">
                 {{ asset:avatar }}
                 <img src="{{ glide:url width="200" height="200" }}" alt="{{ name }}">
@@ -42,7 +96,8 @@
                     {{ content | markdown }}
                 </div>
             </div>
-        {{ /relate:author }}
+            {{ /relate:author }}
+        </div>
     </div>
 </div>
 
