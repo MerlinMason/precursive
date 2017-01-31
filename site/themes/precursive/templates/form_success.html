@@ -1,0 +1,41 @@
+<div class="masthead">
+    <div class="masthead-content">
+        {{ partial:nav }}
+
+        <div class="container mt-6x mb-6x text-center">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <h1 class="h s-xl w-b">{{ heading }}</h1>
+
+                    <div class="row">
+                        <div class="col-sm-4 mb-1x">
+                            <a href="mailto:{{ site_email | obfuscate_email }}" class="link-white" target="_blank">
+                                <img src="{{ theme:img src='/icons/email.svg' }}" width="50px">
+                                <div>{{ site_email | obfuscate_email }}</div>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 mb-1x">
+                            <img src="{{ theme:img src='/icons/call.svg' }}" width="50px">
+                            <p class="c-white">{{ site_phone }}</p>
+                        </div>
+                        <div class="col-sm-4 mb-1x">
+                            <a href="#" class="link-white js-show-intercom">
+                                <img src="{{ theme:img src='/icons/chat.svg' }}" width="50px">
+                                <div>Live Chat</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="island-trans">
+                        <div class="row">
+                            <div class="col-sm-6 col-sm-offset-3">
+                                <img src="{{ theme:img src='/icons/done.svg' }}" class="scale mb-1x">
+                            </div>
+                        </div>
+                        <h1 class="h s-md w-n mt-1x">{{ message }}</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

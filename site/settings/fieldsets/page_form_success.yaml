@@ -1,0 +1,12 @@
+title: 'Page - Form Success'
+taxonomies: false
+fields:
+  heading:
+    type: text
+    display: Page Heading
+  message:
+    type: text
+    display: Message
+  is_hidden:
+    type: toggle
+    display: Hide from navigation
