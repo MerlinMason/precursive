@@ -10,3 +10,6 @@ fields:
   is_hidden:
     type: toggle
     display: Hide from navigation
+  template:
+    type: template
+    display: Template
