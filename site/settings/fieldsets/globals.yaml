@@ -54,3 +54,11 @@ fields:
     type: text
     display: Demo Form Subheading
     width: 50
+  blog_demo_form_image:
+    type: assets
+    display: Blog Demo Form Image
+    instructions: For use on all blog posts.
+    container: main
+    folder: /
+    restrict: false
+    max_files: "1"
