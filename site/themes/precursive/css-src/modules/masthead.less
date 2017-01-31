@@ -147,11 +147,15 @@
     .close-icon {
         .position(absolute, 3vw, 6vw, auto, auto, 0);
         .square(50px);
-        margin:-25px -25px 0 0;
+        margin:@space @space 0 0;
+        background:rgba(0, 0, 0, 0.5);
+        padding:10px;
+        border-radius:50%;
         cursor:pointer;
         opacity:0.8;
         transition:all 0.2s;
         &:hover {
+            background:rgba(0, 0, 0, 0.7);
             opacity:1;
         }
     }
