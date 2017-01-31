@@ -12,7 +12,7 @@
                 <div class="col-sm-6">
                     <h1 class="h s-xl w-n">{{ page_heading }}</h1>
                     <h1 class="h s-md w-n">{{ page_subheading }}</h1>
-                    <a href="#" class="btn-white btn-large hidden-m js-toggle-form-modal">Book a demo</a>
+                    <a href="#" class="btn-white btn-large hidden-m js-toggle-form-modal mb-05x">Book a demo</a>
                     <a href="{{ appexchange_link }}" class="btn-white btn-large has-image hidden-m" target="_blank">
                         <img src="{{ theme:img src='/logos/salesforce-blue.svg' }}" alt="Salesforce logo">
                         View on app exchange
@@ -137,7 +137,7 @@
     </div>
 </div>
 
-{{ partial:form-demo image=assets:demo_form_image }}
+{{ partial:form-demo :image="demo_form_image" }}
 
 {{ partial:casestudy-carousel }}
 

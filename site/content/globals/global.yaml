@@ -8,4 +8,6 @@ overlay_form_heading: Arrange a demo with a member of our team
 overlay_form_subheading: 'Through an initial consultation  you will  understand how we can optimise your resourcing'
 demo_form_heading: Wave goodbye to spending your weekend working in spreadsheets
 demo_form_subheading: Get in touch to find out how much time you could save
+blog_demo_form_image:
+  - /assets/backgrounds/girl-smile-1485428288.jpg
 id: d9bfc09a-3a90-41d3-8acc-3f551f8432af

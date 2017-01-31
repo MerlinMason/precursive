@@ -3,7 +3,7 @@ masthead:
   - /assets/backgrounds/working-1-1485428289.jpg
 hero:
   - /assets/backgrounds/working-3-1485428290.jpg
-title: Precursive Blog
+title: Blog
 nav_title: Blog
 mount: blogs
 template: blog/index

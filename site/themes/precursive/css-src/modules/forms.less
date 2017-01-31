@@ -26,8 +26,8 @@
     textarea& {
         min-height:200px;
     }
-    .island & {
-        border:1px solid @jade;
+    &.bordered {
+        border:1px solid @grey2;
     }
 }
 
@@ -61,7 +61,6 @@
             height:auto;
         }
     }
-    +[class*="btn"] { margin-left:(@space / 2); }
 }
 
 // Button style mixin
