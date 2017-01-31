@@ -1,17 +1,21 @@
 .openshare {
+    float:right;
+    clear:both;
     transition:.3s;
     display:block;
-    margin:0 auto @space;
+    margin-bottom:@space;
     text-align:center;
     line-height:1;
     color:@grey2;
+    transition:color .3s ease-in-out;
     text-decoration:none;
-    font-size:60px;
+    font-size:50px;
     position:relative;
     .count {
-        transition:transform .3s ease-in-out;
-        transform:translate(-50%, 20px);
-        .position(absolute, -50px, auto, auto, 50%);
+        .position(absolute, -42px, auto, auto, 50%);
+        will-change:transform;
+        transition:all .3s ease-in-out;
+        transform:translateX(-50%) translateY(0);
         background:@jade;
         padding:9px @space;
         .s-md();
@@ -21,21 +25,22 @@
         line-height:1;
         opacity:0;
         &:after {
-            transform:translateX(-50%);
-            content:'';
+            content:"";
+            margin-left:-8px;
             display:block;
             width:0;
             height:0;
-            border-left:7px solid transparent;
-            border-right:7px solid transparent;
+            border-left:8px solid transparent;
+            border-right:8px solid transparent;
             border-top:10px solid @jade;
-            position:absolute;
-            bottom:-9px;
-            left:50%;
+            .position(absolute, auto, auto, -8px, 50%);
         }
     }
-    &:hover .count {
-        opacity:1;
-        transform:translate(-50%, 0);
+    &:hover {
+        color:darken(@grey2, 10%);
+        .count {
+            opacity:1;
+            transform:translateX(-50%) translateY(-10px);
+        }
     }
 }
