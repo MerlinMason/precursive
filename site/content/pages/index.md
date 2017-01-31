@@ -10,7 +10,7 @@ appexchange_subheading: Precursive is Native to Salesforce
 appexchange_description: 'Find out why Precursive is the #1 app on Salesforce AppExchange® for resource scheduling, project planning and timesheets.'
 demo_form_image:
   - /assets/backgrounds/girl-smile-1485428288.jpg
-salesforce_heading: 'Connecting Sales & Delivery'
+salesforce_heading: Connecting Sales and Delivery
 salesforce_description: >
   Workflow Automation. Align sales activities with delivery resources, manage people and projects more
   effectively and create an effortless customer experience.
