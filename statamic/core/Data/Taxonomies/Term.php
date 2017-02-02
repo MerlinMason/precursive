@@ -423,6 +423,17 @@ class Term extends Content implements TermContract
     }
 
     /**
+     * Get the value as a string
+     *
+     * @return string
+     * @throws \Statamic\Exceptions\ModifierException
+     */
+    public function __toString()
+    {
+        return $this->title();
+    }
+
+    /**
      * Write the files to disk
      *
      * @return void

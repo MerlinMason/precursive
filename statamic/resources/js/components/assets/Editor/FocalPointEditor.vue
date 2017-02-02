@@ -30,7 +30,7 @@
         </div>
         <div v-for="n in 9"
              class="frame frame-{{ n+1 }}"
-             :style="{ backgroundImage: 'url('+image+')', backgroundPosition: bgPosition }">
+             :style="{ backgroundImage: 'url('+bgImage+')', backgroundPosition: bgPosition }">
         </div>
     </div>
 
@@ -57,6 +57,10 @@ export default {
 
         bgPosition() {
             return this.x + '% ' + this.y + '%';
+        },
+
+        bgImage() {
+            return encodeURI(this.image);
         }
 
     },

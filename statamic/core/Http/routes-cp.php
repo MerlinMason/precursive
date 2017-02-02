@@ -34,7 +34,7 @@ Route::group(['prefix' => CP_ROUTE, 'middleware' => ['auth']], function () {
         post('/delete', 'PagesController@delete')->name('page.delete');
 
         post('publish', 'PublishPageController@save')->name('page.save');
-        get('create/{parent?}', 'PublishPageController@create')->name('page.create');
+        get('create/{parent?}', 'PublishPageController@create')->name('page.create')->where('parent', '.*');
         get('edit/{url?}', ['uses' => 'PublishPageController@edit', 'as' => 'page.edit'])->where('url', '.*');
 
         post('mount', ['uses' => 'PagesController@mountCollection', 'as' => 'page.mount']);

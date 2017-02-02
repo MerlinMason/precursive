@@ -48,7 +48,7 @@ module.exports = {
         config: {},
         name: {},
         required: Boolean,
-        hidden: { type: Boolean, default: function() { return true; }},
+        hidden: { type: Boolean, default: function() { return false; }},
         url: String,
     },
 

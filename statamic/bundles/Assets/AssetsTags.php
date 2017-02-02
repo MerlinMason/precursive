@@ -57,12 +57,11 @@ class AssetsTags extends Tags
         // Get the assets (container) by either ID or path.
         $container = ($id) ? AssetContainer::find($id) : AssetContainer::wherePath($path);
 
-        // Optionally target a folder
-        if ($folder = $this->get('folder')) {
-            $container = $container->folder($folder);
+        if (! $container) {
+            return $this->parseNoResults();
         }
 
-        $this->assets = $container->assets();
+        $this->assets = $container->assets($this->get('folder'));
 
         return $this->output();
     }

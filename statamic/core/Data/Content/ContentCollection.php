@@ -176,7 +176,12 @@ class ContentCollection extends DataCollection
     public function supplementTaxonomies()
     {
         return $this->map(function ($entry) {
+            if (!method_exists($entry, 'supplementTaxonomies')) {
+                return $entry;
+            }
+
             $entry->supplementTaxonomies();
+
             return $entry;
         });
     }

@@ -16,7 +16,7 @@
                         <template v-if="column.translation">{{ column.translation }}</template>
                         <template v-else>{{ translate('cp.'+column.label) }}</template>
                         <i v-if="isColumnActive(column)"
-                           class="icon icon-chevron-{{ sortOrder === 'asc' ? 'down' : 'up' }}"></i>
+                           class="icon icon-chevron-{{ sortOrder === 'asc' ? 'up' : 'down' }}"></i>
                     </th>
 
                     <th class="column-actions" v-if="hasActions"></th>
@@ -190,7 +190,7 @@ module.exports = {
             var columns = [];
             _.each(this.columns, function (column) {
                 if (typeof column === 'object') {
-                    columns.push({ label: column.label, field: column.actual || column.field, translation: column.translation });
+                    columns.push({ label: column.label, field: column.field, translation: column.translation });
                 } else {
                     columns.push({ label: column, field: column });
                 }

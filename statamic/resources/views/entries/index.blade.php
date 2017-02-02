@@ -54,6 +54,11 @@
                         @endcan
                     </div>
                 </template>
+
+                <div class="loading" v-if="loading">
+                    <span class="icon icon-circular-graph animation-spin"></span> {{ translate('cp.loading') }}
+                </div>
+
                 <dossier-table v-if="hasItems" :items="items" :keyword.sync="keyword" :options="tableOptions"></dossier-table>
             </div>
         </div>

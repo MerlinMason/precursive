@@ -608,3 +608,32 @@ function sanitize_array($array)
 
     return $result;
 }
+
+if (! function_exists('array_filter_use_both')) {
+    /**
+     * Polyfill for the array_filter constant ARRAY_FILTER_USE_BOTH.
+     *
+     * This filters the array passing the key as the second parameter
+     * for more complex filtering.
+     *
+     * BC for `array_filter($array, $callback, ARRAY_FILTER_USE_BOTH);`
+     *
+     * @param  array  $array
+     * @param  Closure  $callback
+     * @return array
+     */
+    function array_filter_use_both($array, $callback)
+    {
+        $items = [];
+
+        foreach ($array as $key => $value) {
+            if (! $callback($value, $key)) {
+                continue;
+            }
+
+            $items[$key] = $value;
+        }
+
+        return $items;
+    }
+}

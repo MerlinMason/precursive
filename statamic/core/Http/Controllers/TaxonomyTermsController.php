@@ -52,19 +52,33 @@ class TaxonomyTermsController extends CpController
 
         $taxonomy = Taxonomy::whereHandle($folder);
 
+        // Grab the terms from the taxonomy.
+        $terms = $taxonomy->terms()->values();
+
+        // The table Vue component uses a "checked" value for checkboxes. We'll initialize
+        // them all to an unchecked state so Vue can have an initial value to work with.
+        $terms->supplement('checked', function() {
+            return false;
+        });
+
+        // Set up the columns that the Vue component will be expecting. A developer may customize these
+        // columns in the taxonomy's configuration file, but if left blank we will set the defaults.
         $columns = array_get($taxonomy->data(), 'columns', ['title', 'slug', 'count']);
 
-        $terms = $taxonomy->terms()->supplement('checked', function() {
-            return false;
-        })->values();
+        // Set the default/fallback sort order
+        $sort = 'title';
+        $sortOrder = 'asc';
 
+        // Custom sorting will override anything predefined.
         if ($customSort = $this->request->sort) {
-            $terms = $terms->multisort($customSort);
+            $sort = $customSort;
+        }
+        if ($customOrder = $this->request->order) {
+            $sortOrder = $customOrder;
         }
 
-        if ($this->request->order == 'desc') {
-            $terms = $terms->reverse();
-        }
+        // Perform the sort!
+        $terms = $terms->multisort("$sort:$sortOrder");
 
         // Set up the paginator, since we don't want to display all the assets.
         $totalTermCount = $terms->count();

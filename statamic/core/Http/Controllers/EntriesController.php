@@ -78,40 +78,63 @@ class EntriesController extends CpController
     {
         $collection = Collection::whereHandle($folder);
 
-        $entries = $collection->entries()->supplement('checked', function() {
+        // Grab the entries from the collection.
+        $entries = $collection->entries()->values();
+
+        // The table Vue component uses a "checked" value for checkboxes. We'll initialize
+        // them all to an unchecked state so Vue can have an initial value to work with.
+        $entries->supplement('checked', function() {
             return false;
         });
 
-        if ($collection->order() === 'date') {
-            $format = Config::get('cp.date_format');
+        // Set the default/fallback sort order
+        $sort = 'title';
+        $sortOrder = 'asc';
 
+        // Set up the columns that the Vue component will be expecting. A developer may customize these
+        // columns in the collection's configuration file, but if left blank we will set the defaults.
+        $columns = array_get($collection->data(), 'columns', ['title', 'slug']);
+
+        // Special handling for date based collections.
+        if ($collection->order() === 'date') {
+            // Add a formatted date to each entry that will be used as the the displayed value.
+            // We name this date_col_header to make it clearer in the translation files what
+            // you are actually translating. The field names end up as the header string.
+            $format = Config::get('cp.date_format');
             $entries->supplement('date_col_header', function ($entry) use ($format) {
                 return $entry->date()->format($format);
             });
+
+            // Add a date column, which is displayed using the above formatted and
+            // supplemented date, but will actually use the datestamp for sorting.
+            $columns[] = ['label' => 'date_col_header', 'field' => 'datestamp'];
+
+            $sort = 'datestamp';
+            $sortOrder = 'desc';
         }
 
-        $entries = $entries->values();
-
-        $columns = array_get($collection->data(), 'columns', ['title', 'slug']);
-
-        if ($collection->order() === 'date') {
-            $entries->reverse();
-            $columns[] = ['label' => 'date_col_header', 'field' => 'datestring', 'actual' => 'datestamp'];
-        } elseif ($collection->order() === 'number') {
+        // Special handling for number based collections.
+        if ($collection->order() === 'number') {
             $columns[] = 'order';
-            // also actually sort by order
-            $entries = $entries->multisort('order');
         }
 
+        // Custom sorting will override anything predefined.
         if ($customSort = $this->request->sort) {
-            $entries = $entries->multisort($customSort);
+            $sort = $customSort;
+        }
+        if ($customOrder = $this->request->order) {
+            $sortOrder = $customOrder;
         }
 
-        if ($this->request->order == 'desc') {
-            $entries = $entries->reverse();
+        // If we've requested datestamp, we actually want date.
+        if ($sort === 'datestamp') {
+            $sort = 'date';
         }
 
-        // Set up the paginator, since we don't want to display all the assets.
+        // Perform the sort!
+        $entries = $entries->multisort("$sort:$sortOrder");
+
+        // Set up the paginator, since we don't want to display all the entries.
         $totalEntryCount = $entries->count();
         $perPage = Config::get('cp.pagination_size');
         $currentPage = (int) $this->request->page ?: 1;

@@ -1246,7 +1246,7 @@ class BaseModifiers extends Modifier
      */
     public function rawurlencode($value)
     {
-        return rawurlencode($value);
+        return implode('/', array_map('rawurlencode', explode('/', $value)));
     }
 
     /**
@@ -1842,7 +1842,7 @@ class BaseModifiers extends Modifier
      */
     public function urlencode($value)
     {
-        return urlencode($value);
+        return implode('/', array_map('urlencode', explode('/', $value)));
     }
 
     /**
