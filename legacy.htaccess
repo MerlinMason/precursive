@@ -1,0 +1,25 @@
+# Pages
+Redirect 301 /contact/ http://www.precursive.com/contact
+Redirect 301 /clients/ http://www.precursive.com/customers
+Redirect 301 /client/ http://www.precursive.com/customers
+Redirect 301 /features/signup/ http://www.precursive.com/features
+Redirect 301 /resource-management-software/timesheets-approvals/ http://www.precursive.com/features
+Redirect 301 /resource-management-software/resource-scheduling/ http://www.precursive.com/features
+Redirect 301 /resource-management-software/reports/ http://www.precursive.com/features
+Redirect 301 /resource-management-software/projects/ http://www.precursive.com/features
+
+# Case studies
+Redirect 301 /fujitsu-resource-management http://www.precursive.com/case-studies/fujitsu
+Redirect 301 /case-study-builtech/ http://www.precursive.com/case-studies/builtech
+Redirect 301 /case-study-agilisys/ http://www.precursive.com/case-studies/agilisys
+
+# Blog
+Redirect 301 /blog/ http://www.precursive.com/blog
+Redirect 301 /resource-management-for-responsiveness/ http://www.precursive.com/blog
+Redirect 301 /how-much-profit-are-your-projects-making/ http://www.precursive.com/blog
+Redirect 301 /how-millennials-could-ruin-your-software-purchase/ http://www.precursive.com/blog
+Redirect 301 /category/ http://www.precursive.com/blog
+Redirect 301 /tag/ http://www.precursive.com/blog
+
+# Everything else
+Redirect 301 / http://www.precursive.com

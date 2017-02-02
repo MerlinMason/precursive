@@ -1,8 +1,9 @@
 {{ if paginate:total_pages > 1 }}
-    {{ paginate }}
-        <hr>
-        <p>Page {{ current_page }} of {{ total_pages }} ({{ total_results }} total entries)</p>
-    {{ /paginate }}
-
-    {{ paginate:auto_links }}
+    <nav class="pagination">
+        {{ paginate }}
+            <a href="{{ prev_page }}" class="link-sky fl">Previous</a>
+            Page {{ current_page }} of {{ total_pages }}
+            <a href="{{ next_page }}" class="link-sky fr">Next</a>
+        {{ /paginate }}
+    </nav>
 {{ /if }}

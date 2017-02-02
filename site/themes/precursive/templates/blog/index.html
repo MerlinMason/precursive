@@ -13,7 +13,7 @@
 </div>
 
 <section class="container mt-4x">
-    {{ collection:blog paginate="true" as="posts" limit="4" }}
+    {{ collection:blog paginate="true" as="posts" limit="9" }}
         {{ posts }}
             {{ if zero_index % 3 == 0 }}<div class="row">{{ /if }}
                 <div class="col-sm-4">
@@ -45,7 +45,7 @@
                         </a>
                     </article>
                 </div>
-            {{ if index % 3 == 0 }}</div>{{ /if }}
+            {{ if last || index % 3 == 0 }}</div>{{ /if }}
         {{ /posts }}
 
         {{ partial:pagination }}
