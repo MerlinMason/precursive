@@ -10,7 +10,6 @@ demo_form_heading: Wave goodbye to spending your weekend working in spreadsheets
 demo_form_subheading: Get in touch to find out how much time you could save
 blog_demo_form_image:
   - /assets/backgrounds/girl-smile-1485428288.jpg
-enable_banner: true
 banner_text: "Did you know, we've got a blog?"
 banner_link: 'Show me '
 banner_link_page:
