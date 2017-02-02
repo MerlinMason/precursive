@@ -1,6 +1,7 @@
 .masthead {
     .cf();
     position:relative;
+    z-index:999;
     overflow:hidden;
     color:#fff;
     .nav {
@@ -36,7 +37,7 @@
         @media (max-width: @mobile)  {
             .hamburger {
                 display:block;
-                .position(fixed, 15px, auto, auto, 15px, 9);
+                .position(fixed, 15px, auto, auto, 15px, 2);
                 width:32px;
                 height:20px;
                 border-color:#fff;
@@ -58,7 +59,7 @@
             }
             .panel {
                 display:block;
-                .position(fixed, 0, 0, 0, 0);
+                .position(fixed, 0, 0, 0, 0, 1);
                 .brand-grad();
                 transform:translateX(-100%);
                 will-change:transform;

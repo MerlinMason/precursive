@@ -3,12 +3,12 @@
     position:relative;
     &::after {
         content:"";
-        .position(absolute, ~"calc(-@{angleheight} + 2px)", 0, auto, 0, 1);
+        .position(absolute, auto, 0, 0, 0, 1);
         width:0;
         height:0;
         border-style:solid;
         border-width:@angleheight 100vw 0 0;
-        border-color:transparent currentColor transparent transparent;
+        border-color:transparent @grey1 transparent transparent;
         &.alt::after {
             transform:rotateY(180deg);
         }

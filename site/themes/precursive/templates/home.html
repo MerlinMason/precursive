@@ -1,14 +1,14 @@
 <div class="masthead">
     <div class="masthead-bg">
-        <video autoplay loop webkit-playsinline playsinline>
+        <video class="hidden-m" autoplay loop webkit-playsinline playsinline>
             <source src="{{ theme:asset src="vid/home-masthead.mp4" }}" type="video/mp4">
             <source src="{{ theme:asset src="vid/home-masthead.webm" }}" type="video/webm">
         </video>
     </div>
-    <div class="masthead-content">
+    <div class="masthead-content angle">
         {{ partial:nav }}
         <div class="container">
-            <div class="row mt-4x pb-2x mb-angle">
+            <div class="row mt-4x mt-2x-m pb-2x mb-angle">
                 <div class="col-sm-6">
                     <h1 class="h s-xl w-n">{{ page_heading }}</h1>
                     <h1 class="h s-md w-n">{{ page_subheading }}</h1>
@@ -27,8 +27,6 @@
         </div>
     </div>
 </div>
-
-<div class="angle c-grey1"></div>
 
 <div class="bg-grey1 cf">
     <div class="container">
