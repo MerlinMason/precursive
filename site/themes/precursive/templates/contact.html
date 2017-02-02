@@ -64,8 +64,10 @@
                                 </a>
                             </div>
                             <div class="col-sm-4 mb-1x">
-                                <img src="{{ theme:img src='/icons/call.svg' }}" width="50px">
-                                <p>{{ site_phone }}</p>
+                                <a href="tel:{{ site_phone }}" class="link-royal">
+                                    <img src="{{ theme:img src='/icons/call.svg' }}" width="50px">
+                                    <div>{{ site_phone }}</div>
+                                </a>
                             </div>
                             <div class="col-sm-4 mb-1x">
                                 <a href="#" class="link-royal js-show-intercom">
