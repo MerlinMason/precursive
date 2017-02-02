@@ -17,7 +17,7 @@
         {{ collection:blog paginate="true" as="posts" limit="4" }}
             {{ posts }}
                 <div class="col-sm-4">
-                    <article class="post mb-2x">
+                    <article class="post mb-4x">
                         {{ if index == 1 }}
                             <div class="label bg-jade">Most Recent</div>
                         {{ elseif most_read }}
@@ -26,7 +26,7 @@
 
                         <a href="{{ url }}" class="text-center">
                             {{ if intro_image }}
-                                <img src="{{ glide:intro_image width='400' height='200' }}" class="scale mb-1x">
+                                <img src="{{ glide:intro_image width='400' height='250' fit='crop' }}" class="scale mb-1x">
                             {{ /if }}
 
                             <h1 class="h s-sm w-r caps c-jade mb-05x">{{ title }}</h1>
