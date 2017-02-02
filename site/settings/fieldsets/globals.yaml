@@ -3,6 +3,9 @@ hide: true
 create_title: Site wide information
 taxonomies: false
 fields:
+  links_and_contact_info:
+    type: section
+    display: 'Links & Contact Info'
   site_name:
     type: text
     display: Website Name
@@ -38,6 +41,9 @@ fields:
     instructions: Link to appexchange
     width: 33
     validate: URL
+  overlay_demo_form:
+    type: section
+    display: Overlay Demo Form
   overlay_form_heading:
     type: text
     display: Overlay Form Heading
@@ -62,3 +68,22 @@ fields:
     folder: /
     restrict: false
     max_files: "1"
+  news_banner:
+    type: section
+    display: News Banner
+  enable_banner:
+    type: toggle
+    display: Enable Banner
+    width: 50
+  banner_text:
+    type: text
+    display: Banner Text
+    width: 50
+  banner_link:
+    type: text
+    display: Banner Link Text
+    width: 50
+  banner_link_page:
+    type: pages
+    display: Banner Link Page
+    width: 50

@@ -1,0 +1,22 @@
+.news-banner {
+    position:relative;
+    .close-banner {
+        .position(absolute, 50%, @space, auto, auto);
+        margin-top:-0.5em;
+        opacity:0.8;
+        transition:all 0.2s;
+        cursor:pointer;
+        &:hover {
+            opacity:1;
+        }
+    }
+    @media (max-width: @mobile)  {
+        padding:(@space / 2) 35px!important;
+        > div {
+            .s-sm();
+        }
+        .close-banner {
+            width:16px;
+        }
+    }
+}

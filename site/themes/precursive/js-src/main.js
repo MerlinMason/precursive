@@ -26,9 +26,4 @@ $(".js-toggle-form-modal").on("click", (e) => {
     });
 });
 
-// const share = new Share({
-//     type: "twitter",
-//     innerHTML: "Check it out!"
-// }, $(".js-twitter").get(0));
-
-// console.log(share);
+$(".js-close-banner").on("click", () => $(".js-banner").hide());
