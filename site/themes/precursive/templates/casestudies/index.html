@@ -31,7 +31,15 @@
     <div class="row">
         {{ collection:casestudies }}
             <div class="col-sm-{{ if index % 3 == 0 }}6{{ else }}3{{ /if }}">
-                <a href="{{ url }}" class="case-study-tile" style="background-image:url({{ asset:main_image }}{{ glide:url width="500" height="500" }}{{ /asset:main_image }});">
+                <a
+                    href="{{ url }}"
+                    class="case-study-tile"
+                    {{ if index % 3 == 0 }}
+                        style="background-image:url({{ asset:main_image }}{{ glide:url width="500" height="250" fit="crop_focal" }}{{ /asset:main_image }});"
+                    {{ else }}
+                        style="background-image:url({{ asset:main_image }}{{ glide:url width="250" height="250" fit="crop_focal" }}{{ /asset:main_image }});"
+                    {{ /if }}
+                >
                     <article class="body">
                         <h1 class="h s-lg w-r">{{ relate:related_customer }}{{ title }}{{ /relate:related_customer }}</h1>
                         <h2 class="h s-sm w-n mb-2x">{{ title }}</h2>
