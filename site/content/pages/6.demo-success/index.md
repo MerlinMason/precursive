@@ -1,6 +1,7 @@
 heading: Thanks!
 message: "We'll be in touch shortly to arrange your demo"
-is_hidden: true
+is_hidden_header: true
+is_hidden_footer: true
 title: Demo Signup Success
 fieldset: page_form_success
 template: form_success

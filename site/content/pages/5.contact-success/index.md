@@ -1,6 +1,7 @@
 heading: Getting in touch with the team is easy
 message: Message sent successfully. We’ll be in touch shortly
-is_hidden: true
+is_hidden_header: true
+is_hidden_footer: true
 title: Contact Success
 fieldset: page_form_success
 template: form_success

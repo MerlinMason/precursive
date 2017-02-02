@@ -7,9 +7,12 @@ fields:
   message:
     type: text
     display: Message
-  is_hidden:
+  is_hidden_header:
     type: toggle
-    display: Hide from navigation
+    display: Hide from header navigation
+  is_hidden_footer:
+    type: toggle
+    display: Hide from footer navigation
   template:
     type: template
     display: Template

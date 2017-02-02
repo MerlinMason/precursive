@@ -2,7 +2,7 @@
     <div class="hamburger js-toggle-menu"></div>
     <a href="/" class="logo fl">{{ site_name }}</a>
     <span class="panel">
-        {{ nav from="/" is_hidden:isnt_set="true" include_home="true" }}
+        {{ nav from="/" is_hidden_header:isnt_set="true" include_home="true" }}
         <a {{ if is_current or is_parent }} class="active"{{ /if }} href="{{ url }}">{{ tag:nav_title or title }}</a>
         {{ /nav }}
         <a href="{{ login_link }}" class="fr">
