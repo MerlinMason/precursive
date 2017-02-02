@@ -1,6 +1,6 @@
 <div class="masthead">
     {{ asset:masthead }}
-    <div class="masthead-bg" style="background-image:url({{ glide:url width="1440" height="500" }});">
+    <div class="masthead-bg" style="background-image:url({{ glide:url width="1440" height="350" fit="crop" }});">
     </div>
     {{ /asset:masthead }}
     <div class="masthead-content">
@@ -13,9 +13,9 @@
 </div>
 
 <section class="container mt-4x">
-    <div class="row">
-        {{ collection:blog paginate="true" as="posts" limit="4" }}
-            {{ posts }}
+    {{ collection:blog paginate="true" as="posts" limit="4" }}
+        {{ posts }}
+            {{ if zero_index % 3 == 0 }}<div class="row">{{ /if }}
                 <div class="col-sm-4">
                     <article class="post mb-4x">
                         {{ if index == 1 }}
@@ -45,9 +45,9 @@
                         </a>
                     </article>
                 </div>
-            {{ /posts }}
+            {{ if index % 3 == 0 }}</div>{{ /if }}
+        {{ /posts }}
 
-            {{ partial:pagination }}
-        {{ /collection:blog }}
-    </div>
+        {{ partial:pagination }}
+    {{ /collection:blog }}
 </section>
