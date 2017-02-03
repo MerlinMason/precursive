@@ -1,6 +1,6 @@
 site_name: Precursive
 site_email: hi@precursive.com
-site_phone: +44 (0) 203 308 2525
+site_phone: +44 (0)208 737 383
 login_link: https://login.salesforce.com/
 support_link: https://precursive.zendesk.com/
 appexchange_link: https://appexchange.salesforce.com/listingDetail?listingId=a0N3000000B40RQEAZ
@@ -10,7 +10,7 @@ demo_form_heading: Wave goodbye to spending your weekend working in spreadsheets
 demo_form_subheading: Get in touch to find out how much time you could save
 blog_demo_form_image:
   - /assets/backgrounds/girl-smile-1485428288.jpg
-banner_text: "Did you know we've got a blog?"
+banner_text: "Did you know, we've got a blog?"
 banner_link: 'Show me '
 banner_link_page:
   - 60962021-f154-4cd2-a1d7-035a12b6da9e

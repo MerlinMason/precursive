@@ -71,9 +71,10 @@ fields:
   news_banner:
     type: section
     display: News Banner
-  enable_banner:
+  banner_enable:
     type: toggle
     display: Enable Banner
+    instructions: Turn on or off the site side news banner
     width: 50
   banner_text:
     type: text
