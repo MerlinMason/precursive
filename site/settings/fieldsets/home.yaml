@@ -8,6 +8,9 @@ fields:
   page_subheading:
     type: text
     display: Page Subheading
+  masthead_video_subtitle:
+    type: text
+    display: Masthead Video Subtitle
   masthead_video_webm:
     type: assets
     display: Masthead Video webm
