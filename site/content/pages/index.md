@@ -8,7 +8,7 @@ masthead_video_placeholder:
 customers_heading: Customers of all sizes succeed with Precursive
 appexchange_heading: Available on the Salesforce AppExchange®
 appexchange_subheading: Precursive is Native to Salesforce
-appexchange_description: 'Find out why Precursive is the #1 app on Salesforce AppExchange® for resource scheduling, project planning & timesheets.'
+appexchange_description: 'Find out why Precursive is the #1 app on Salesforce AppExchange® for resource scheduling, project planning and timesheets.'
 demo_form_image:
   - /assets/backgrounds/girl-smile-1485428288.jpg
 salesforce_heading: Connecting Sales and Delivery
