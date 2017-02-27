@@ -1,7 +1,12 @@
+---
 roles:
   - d32e14fb-08c9-44c2-aaf8-21200852bafd
 email: jgasteen@precursive.co.uk
 first_name: James
 last_name: Gasteen
+avatar:
+  - /assets/people/James-1024x1024.jpg
 id: 52e420fa-09df-4c7e-8deb-2ad05c059bb6
 password_hash: $2y$10$FhumGVPRKolYNGZF5QYY4..ImA9Xy.dOze2vwW9zXWLw3ac9cU1su
+---
+Precursive CEO and co-founder James Gasteen is a business and strategy consultant with experience in companies including Deloitte, Reed Elsevier and Royal Mail. His specialities include staffing, workplace 2.0, resource management, professional services project management and pricing analysis. 
