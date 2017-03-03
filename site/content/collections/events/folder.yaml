@@ -1,0 +1,4 @@
+title: Events
+order: date
+fieldset: Event Posts
+template: events/single

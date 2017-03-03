@@ -1,0 +1,36 @@
+taxonomies:
+  tags: true
+title: Event Posts
+fields:
+  sectionhero_greater_title:
+    type: text
+    display: 'SectionHero > Title'
+    width: 50
+  sectionhero_greater_subtitle:
+    type: text
+    display: 'SectionHero > Subtitle'
+    width: 50
+  sectionhero_greater_image:
+    type: assets
+    display: 'SectionHero > Image'
+    container: main
+    folder: /
+    restrict: false
+    width: 50
+    max_files: "1"
+  intro_image:
+    type: assets
+    display: Intro Image
+    container: main
+    folder: /
+    restrict: false
+    width: 50
+    max_files: "1"
+  hero_image:
+    type: assets
+    display: hero_image
+    container: main
+    folder: /
+    restrict: false
+    width: 50
+    max_files: "1"

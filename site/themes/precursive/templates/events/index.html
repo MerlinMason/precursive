@@ -1,0 +1,55 @@
+<div class="masthead">
+    {{ asset:masthead }}
+    <div class="masthead-bg" style="background-image:url({{ glide:url width="1440" height="350" fit="crop" }});">
+    </div>
+    {{ /asset:masthead }}
+    <div class="masthead-content">
+        {{ partial:nav }}
+        <div class="text-center ">
+            <h1 class="h s-xl w-n">{{ title }}</h1>
+            <h2 class="h s-md w-r">{{ subtitle }}</h2>
+        </div>
+    </div>
+</div>
+
+<section class="container mt-4x">
+
+    {{ collection:events paginate="true" as="events" limit="9" }}
+        {{ events }}
+            {{ if zero_index % 3 == 0 }}<div class="row">{{ /if }}
+                <div class="col-sm-4">
+                    <h1>{{ events }}</h1>
+                    <article class="post mb-4x">
+                        {{ if index == 1 }}
+                            <div class="label bg-jade">Most Recent</div>
+                        {{ elseif most_read }}
+                            <div class="label bg-flamingo">Most Read</div>
+                        {{ /if }}
+
+                        <a href="{{ url }}" class="text-center">
+
+                            {{ intro_image }}
+                                <img src="{{ glide:value width='400' height='250' fit='crop' }}" class="scale mb-1x">
+                            {{ /intro_image }}
+
+                            <h1 class="h s-sm w-r caps c-jade mb-05x">{{ sectionhero_greater_title }}</h1>
+                            <h2 class="h s-sm w-n c-grey3">{{ sectionhero_greater_subtitle }}</h2>
+
+                            <div class="c-grey2">
+                                {{ if (date | days_ago) < 21 }}
+                                {{ date | relative }}
+                                {{ elseif (date | format:Y) == now | format:Y }}
+                                {{ date format="M j" }}
+                                {{ else }}
+                                {{ date format="M j, Y" }}
+                                {{ /if }}
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            {{ if last || index % 3 == 0 }}</div>{{ /if }}
+        {{ /events }}
+
+        {{ partial:pagination }}
+    {{ /collection:events }}
+</section>

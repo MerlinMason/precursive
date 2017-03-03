@@ -1,4 +1,4 @@
-page_heading: 'Beautifully designed resource planning in Salesforce '
+page_heading: Beautifully designed resource planning in Salesforce
 page_subheading: The key to project success and making customers happy
 masthead_video_subtitle: Precursive is also available to non Salesforce customers
 masthead_video_webm:
