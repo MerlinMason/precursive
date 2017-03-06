@@ -2,6 +2,14 @@ taxonomies:
   tags: true
 title: Event Posts
 fields:
+  sectionhero_heroimage:
+      type: assets
+      display: SectionHero > Hero Image
+      container: main
+      folder: /
+      restrict: false
+      width: 50
+      max_files: "1"
   sectionhero_greater_title:
     type: text
     display: 'SectionHero > Title'
@@ -10,14 +18,22 @@ fields:
     type: text
     display: 'SectionHero > Subtitle'
     width: 50
-  sectionhero_greater_image:
+  sectionhero_greater_miniimage:
     type: assets
-    display: 'SectionHero > Image'
+    display: 'SectionHero > Mini Image'
     container: main
     folder: /
     restrict: false
     width: 50
     max_files: "1"
+  sectionhero_greater_title:
+      type: text
+      display: 'SectionHero > Title'
+      width: 50
+  sectionhero_greater_get_tickets_URL:
+      type: text
+      display: 'SectionHero > Get Tickets URL'
+      width: 50
   intro_image:
     type: assets
     display: Intro Image
@@ -26,11 +42,4 @@ fields:
     restrict: false
     width: 50
     max_files: "1"
-  hero_image:
-    type: assets
-    display: hero_image
-    container: main
-    folder: /
-    restrict: false
-    width: 50
-    max_files: "1"
+

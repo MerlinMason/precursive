@@ -1,4 +1,4 @@
 title: Events
 order: date
-fieldset: Event Posts
+fieldset: eventposts
 template: events/single
