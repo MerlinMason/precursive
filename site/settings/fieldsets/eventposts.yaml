@@ -26,6 +26,9 @@ fields:
     restrict: false
     width: 50
     max_files: "1"
+  section_hero_greater_form_book_slot:
+    type: text
+    display: 'Section Hero > Form Book Slot'
   sectionhero_greater_get_tickets_URL:
     type: text
     display: 'SectionHero > Get Tickets URL'
