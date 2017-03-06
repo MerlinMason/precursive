@@ -11,7 +11,6 @@
 }
 
 .benefit-container {
-  background-color: @grey1;
 
   ul{
     list-style:none;
@@ -30,8 +29,19 @@
     text-align: center;
     width: @rounded-icon-size;
     height: @rounded-icon-size;
-    -moz-border-radius: @rounded-icon-size;
     border-radius: 50%;
+  }
+}
+
+.picks-container {
+  .brand-grad-opposite();
+  padding: @4x @6x;
+
+  .pick-item-container {
+    background-color: white;
+    padding: @3x;
+    border: 1px solid rgba(216,216,216,0.26);
+    border-radius: 16px;
   }
 
 }
