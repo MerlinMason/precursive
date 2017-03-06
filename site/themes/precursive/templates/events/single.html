@@ -35,7 +35,11 @@
 
 <div class="container mt-4x mb-4x">
     <div class="row">
-
+         {{ replicator_content }}
+                {{ partial src="replicator/{type}" }}
+            {{ /replicator_content }}
     </div>
 </div>
+
+
 

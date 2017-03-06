@@ -42,4 +42,7 @@ fields:
     restrict: false
     width: 50
     max_files: "1"
-
+  event_content:
+    type: partial
+    display: Event Content
+    fieldset: precursive_replicator
