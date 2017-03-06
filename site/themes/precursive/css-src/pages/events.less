@@ -1,4 +1,5 @@
 
+@rounded-icon-size: 30px;
 
 .event-container {
   background-color: @grey1;
@@ -6,6 +7,31 @@
   ul {
     list-style:none;
     margin-bottom: 18px;
+  }
+}
+
+.benefit-container {
+  background-color: @grey1;
+
+  ul{
+    list-style:none;
+
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      height: 35px;
+    }
+  }
+
+  .icon-container {
+    display: inline-block;
+    background-color: @jade;
+    line-height: @rounded-icon-size;
+    text-align: center;
+    width: @rounded-icon-size;
+    height: @rounded-icon-size;
+    -moz-border-radius: @rounded-icon-size;
+    border-radius: 50%;
   }
 
 }

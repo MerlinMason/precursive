@@ -1,0 +1,24 @@
+<div class="benefit-container pt-4x pr-4x pb-4x pl-4x">
+    <div class="row">
+        <div class="col-sm-6">
+            <h1 class="h s-lg w-r">{{section_benefits_greater_title}}</h1>
+            <ul >
+                {{ section_benefits_greater_list }}
+                <li class="s-md mb-1x">
+                    <div class="icon-container mr-1x">
+                        <img src="{{ theme:img src="icons/white-tick.svg" }}" width="22px" >
+                    </div>
+                    <span class="s-sm">{{ content }}</span>
+                </li>
+                {{ /section_benefits_greater_list }}
+            </ul>
+        </div>
+        <div class="col-md-6">
+            {{ section_benefits_greater_image }}
+            <div class="col-xs-12">
+                <img src="{{ glide:value width='380' fit='crop' }}" class="scale">
+            </div>
+            {{ /section_benefits_greater_image }}
+        </div>
+    </div>
+</div>

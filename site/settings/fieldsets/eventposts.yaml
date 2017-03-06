@@ -117,3 +117,26 @@ fields:
     mode: table
     max_rows: "4"
     min_rows: "1"
+  section_benefits_greater_title:
+    type: text
+    display: 'Section Benefits >Title'
+    width: 50
+  section_benefits_greater_image:
+    type: assets
+    display: 'Section Benefits > Image'
+    container: main
+    folder: /
+    restrict: false
+    max_files: "1"
+  section_benefits_greater_list:
+    type: grid
+    display: 'Section Benefits > List'
+    fields:
+      content:
+        type: text
+        display: Content
+        instructions: null
+        default: Benefit Item
+    mode: table
+    max_rows: "5"
+    min_rows: "1"
