@@ -1,153 +1,167 @@
 .form-demo {
-    background-repeat:no-repeat;
-    background-size:auto 100%;
-    position:relative;
-    .bg {
-        .position(absolute, 0, 0, 0, 0, 0);
-    }
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  position: relative;
+  .bg {
+    .position(absolute, 0, 0, 0, 0, 0);
+  }
 }
 
 .form-group {
-    margin-bottom:@space;
+  margin-bottom: @space;
 }
 
 .form-input {
-    padding:30px;
-    border:none;
-    display:block;
-    width:100%;
-    line-height:1;
-    border-radius:@radius;
-    color:@grey3;
-    .placeholder();
-    &:focus {
-        outline:none;
-    }
-    textarea& {
-        min-height:200px;
-    }
-    &.bordered {
-        border:1px solid @grey2;
-    }
-    &.form-input-events{
-      padding: 12px;
-    }
+  padding: (@space / 2);
+  border: none;
+  display: block;
+  width: 100%;
+  line-height: 1;
+  border-radius: @radius;
+  color: @grey3;
+  .placeholder();
+  &:focus {
+    outline: none;
+  }
+  textarea& {
+    min-height: 200px;
+  }
+  &.bordered {
+    border: 1px solid @grey2;
+  }
+  &.form-input-events {
+    padding: 12px;
+  }
 }
-
 
 // Base Button Styles
 [class*="btn"] {
-    padding:11px @space;
-    border-radius:@radius;
-    position:relative;
-    border:none;
-    cursor:pointer;
-    .w-n();
-    .s-sm();
-    user-select:none;
-    transition:all 0.2s;
-    line-height:1;
-    display:inline-block;
-    text-align:center;
-    .shadow();
-    &:focus {
-        outline:none;
+  padding: 11px @space;
+  border-radius: @radius;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  .w-n();
+  .s-sm();
+  user-select: none;
+  transition: all 0.2s;
+  line-height: 1;
+  display: inline-block;
+  text-align: center;
+  .shadow();
+  &:focus {
+    outline: none;
+  }
+  &[disabled] {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  &.has-image {
+    padding-left: (55px + @space);
+    img {
+      .position(absolute, 5px, auto, auto, 8px, 0);
+      width: 50px;
+      height: auto;
     }
-    &[disabled] {
-        cursor:not-allowed;
-        opacity:0.5;
-    }
-    &.has-image {
-        padding-left:(55px + @space);
-        img {
-            .position(absolute, 5px, auto, auto, 8px, 0);
-            width:50px;
-            height:auto;
-        }
-    }
+  }
 }
 
 // Button style mixin
 .btn(@highlight, @text: #fff) {
-    background:@highlight;
-    color:@text;
-    &:link,
-    &:visited {
-        color:@text;
-    }
+  background: @highlight;
+  color: @text;
+  &:link,
+  &:visited {
+    color: @text;
+  }
+  &:hover {
+    background: darken(@highlight, 8%);
+  }
+  &[disabled]:hover {
+    background: @highlight;
+  }
+  &.btn-inverse {
+    box-shadow: inset 0 0 0 1px @highlight;
+    background: transparent;
+    color: @highlight;
     &:hover {
-        background:darken(@highlight, 8%);
+      color: darken(@highlight, 8%);
+      box-shadow: inset 0 0 0 1px darken(@highlight, 8%);
+      background: transparent;
     }
-    &[disabled]:hover {
-        background:@highlight;
-    }
-    &.btn-inverse {
-        box-shadow:inset 0 0 0 1px @highlight;
-        background:transparent;
-        color:@highlight;
-        &:hover {
-            color:darken(@highlight, 8%);
-            box-shadow:inset 0 0 0 1px darken(@highlight, 8%);
-            background:transparent;
-        }
-    }
+  }
 }
 
 @keyframes expandwidth {
-   0%   { right:90%; }
-   100% { right:10%; }
+  0% {
+    right: 90%;
+  }
+  100% {
+    right: 10%;
+  }
 }
 
 // Button layout modifiers
 .btn-fit {
-    width:100%;
+  width: 100%;
 }
+
 .btn-small {
-    .s-xxs();
-    padding:7px (@space / 2);
+  .s-xxs();
+  padding: 7px (@space / 2);
 }
+
 .btn-large {
-    padding:(@space * 0.75) (@space * 2);
+  padding: (@space * 0.75) (@space * 2);
 }
+
 .btn-wide {
-    padding-left:(@space * 2);
-    padding-right:(@space * 2);
+  padding-left: (@space * 2);
+  padding-right: (@space * 2);
 }
 
 // Create common button styles
-.btn-jade   { .btn(@jade); }
-.btn-sky    { .btn(@sky); }
-.btn-white  { .btn(#fff, @sky); }
+.btn-jade {
+  .btn(@jade);
+}
+
+.btn-sky {
+  .btn(@sky);
+}
+
+.btn-white {
+  .btn(#fff, @sky);
+}
 
 .form-modal {
-    .position(fixed, 0, 0, 0, 0, 1001);
-    background:rgba(0, 0, 0, 0.8);
-    display:none;
+  .position(fixed, 0, 0, 0, 0, 1001);
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  .form-modal-inner {
+    text-align: center;
+    .brand-grad();
+    padding: (@space * 2);
+    border-radius: @radius;
+    .shadow();
+    width: 90%;
+    max-width: 650px;
+    .position(absolute, 10vh, auto, auto, 50%);
+    transform: translateY(-100vh) translateX(-50%);
+    will-change: transform;
+    transition: transform 0.2s ease-out;
+  }
+  &.show {
     .form-modal-inner {
-        text-align:center;
-        .brand-grad();
-        padding:(@space * 2);
-        border-radius:@radius;
-        .shadow();
-        width:90%;
-        max-width:650px;
-        .position(absolute, 10vh, auto, auto, 50%);
-        transform:translateY(-100vh) translateX(-50%);
-        will-change:transform;
-        transition:transform 0.2s ease-out;
+      transform: translateY(0) translateX(-50%);
     }
-    &.show {
-        .form-modal-inner {
-            transform:translateY(0) translateX(-50%);
-        }
+  }
+  .close-icon {
+    .position(absolute, @space, @space, auto, auto);
+    cursor: pointer;
+    opacity: 0.8;
+    transition: all 0.2s;
+    &:hover {
+      opacity: 1;
     }
-    .close-icon {
-        .position(absolute, @space, @space, auto, auto);
-        cursor:pointer;
-        opacity:0.8;
-        transition:all 0.2s;
-        &:hover {
-            opacity:1;
-        }
-    }
+  }
 }
