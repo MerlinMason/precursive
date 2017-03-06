@@ -3,13 +3,13 @@ taxonomies:
 title: Event Posts
 fields:
   sectionhero_heroimage:
-      type: assets
-      display: SectionHero > Hero Image
-      container: main
-      folder: /
-      restrict: false
-      width: 50
-      max_files: "1"
+    type: assets
+    display: 'SectionHero > Hero Image'
+    container: main
+    folder: /
+    restrict: false
+    width: 50
+    max_files: "1"
   sectionhero_greater_title:
     type: text
     display: 'SectionHero > Title'
@@ -26,14 +26,10 @@ fields:
     restrict: false
     width: 50
     max_files: "1"
-  sectionhero_greater_title:
-      type: text
-      display: 'SectionHero > Title'
-      width: 50
   sectionhero_greater_get_tickets_URL:
-      type: text
-      display: 'SectionHero > Get Tickets URL'
-      width: 50
+    type: text
+    display: 'SectionHero > Get Tickets URL'
+    width: 50
   intro_image:
     type: assets
     display: Intro Image
@@ -42,7 +38,82 @@ fields:
     restrict: false
     width: 50
     max_files: "1"
-  event_content:
-    type: partial
-    display: Event Content
-    fieldset: precursive_replicator
+  replicator_content:
+    type: replicator
+    display: Replicator Content
+    sets:
+      paragraph:
+        display: Paragraph
+        instructions: ""
+        fields:
+          text:
+            type: markdown
+            display: text
+            instructions: null
+            cheatsheet: true
+            container: main
+            folder: /
+      blockquote:
+        display: Blockquote
+        instructions: ""
+        fields:
+          quote:
+            type: markdown
+            display: Quote
+            instructions: null
+            cheatsheet: false
+            container: null
+            folder: null
+          source:
+            type: text
+            display: Source
+            instructions: null
+      image:
+        display: Image
+        instructions: ""
+        fields:
+          image:
+            type: assets
+            display: Image
+            instructions: null
+            container: main
+            folder: /
+            max_files: "1"
+          caption:
+            type: text
+            display: Caption
+            instructions: null
+  section_event_greater_title:
+    type: text
+    display: 'Section Event > Title'
+    width: 50
+    default: Name of the event
+  section_event_greater_description:
+    type: text
+    display: 'Section Event > Description'
+    width: 50
+    default: Description of the event
+  section_event_greater_event_image:
+    type: assets
+    display: 'Section Event > Event Image'
+    container: main
+    folder: /
+    restrict: false
+    max_files: "1"
+    width: 50
+  section_event_greater_general_info:
+    type: grid
+    display: 'Section Event >General Info'
+    fields:
+      fieldname:
+        type: text
+        display: fieldName
+        instructions: null
+        default: ""
+      content:
+        type: text
+        display: content
+        instructions: null
+    mode: table
+    max_rows: "4"
+    min_rows: "1"
