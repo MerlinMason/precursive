@@ -1,28 +1,21 @@
 <div class="container mt-4x mb-4x">
     <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-8 col-md-8">
             <h1 class="h s-lg w-r mb-1x c-white">{{ sectionhero_greater_title }}</h1>
 
             <h2 class="h s-sm w-n mb-4x mb-2x-m c-white">{{ sectionhero_greater_subtitle }}</h2>
             {{ partial:events/form-book-slot}}
         </div>
-        <div class="col-sm-6">
-            <div class="col-xs-12 col-sm-12 text-center mt-1x">
-                <div class="col-sm-6"></div>
-                <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-6 text-center ">
-                    {{ sectionhero_greater_miniimage }}
-
-                        <img src="{{ glide:value width='400' height='250' }}" class="scale mb-1x">
-
-                    {{ /sectionhero_greater_miniimage }}
-                </div>
+        <div class="col-sm-4 col-md-4">
+            <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-2 col-lg-8 col-lg-offset-4 mt-1x hidden-m">
+                {{ sectionhero_greater_miniimage }}
+                    <img src="{{ glide:value width='400' height='250' }}" class="scale mb-1x">
+                {{ /sectionhero_greater_miniimage }}
             </div>
-            <div class="col-xs-12 col-sm-12 text-center">
-                <div class="col-xs-12 col-sm-6"></div>
-                <div class="col-xs-12 col-sm-6 text-center">
-                    <a target="_blank" href=" {{ sectionhero_greater_get_tickets_URL }}"
-                       class="btn-white btn-large">Get Tickets</a>
-                </div>
+            <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-2 col-lg-8 col-lg-offset-4 text-center hidden-m">
+
+                <a target="_blank" href=" {{ sectionhero_greater_get_tickets_URL }}"
+                   class="btn-white btn-large">Get Tickets</a>
             </div>
         </div>
     </div>

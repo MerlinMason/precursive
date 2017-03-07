@@ -1,20 +1,20 @@
-<div class="event-container pt-4x pr-4x pb-4x pl-4x">
-    <div class="row">
-        <div class="col-sm-6">
-            <h1 class="h s-md w-r">{{section_event_greater_title}}</h1>
-            <ul >
-                {{ section_event_greater_general_info }}
-                <li class="s-sm w-r">{{ fieldname }}: {{content}} </li>
-                {{ /section_event_greater_general_info }}
-            </ul>
-            <h4 class="h s-sm"> {{section_event_greater_description}}</h4>
-        </div>
-        <div class="col-md-6">
-            {{ section_event_greater_event_image }}
-            <div class="col-xs-12">
-                <img src="{{ glide:value width='380' fit='crop' }}" class="scale mb-1x">
+<div class="event-container pt-4x pb-4x">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h1 class="h s-md w-r">{{section_event_greater_title}}</h1>
+                <ul>
+                    {{ section_event_greater_general_info }}
+                    <li class="s-sm w-r">{{ fieldname }}: {{content}}</li>
+                    {{ /section_event_greater_general_info }}
+                </ul>
+                <h4 class="h s-sm"> {{section_event_greater_description}}</h4>
             </div>
-            {{ /section_event_greater_event_image }}
+            <div class="col-sm-6">
+                {{ section_event_greater_event_image }}
+                <img src="{{ glide:value width='380' fit='crop' }}" class="scale mb-1x">
+                {{ /section_event_greater_event_image }}
+            </div>
         </div>
     </div>
 </div>
