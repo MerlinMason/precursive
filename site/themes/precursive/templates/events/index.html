@@ -21,9 +21,9 @@
                     <h1>{{ events }}</h1>
                     <article class="post mb-4x">
                         {{ if index == 1 }}
-                            <div class="label bg-jade">Most Recent</div>
+                            <div class="label bg-jade">This month</div>
                         {{ elseif most_read }}
-                            <div class="label bg-flamingo">Most Read</div>
+                            <div class="label bg-flamingo">Just registered</div>
                         {{ /if }}
 
                         <a href="{{ url }}" class="text-center">
