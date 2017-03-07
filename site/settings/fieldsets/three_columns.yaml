@@ -1,0 +1,28 @@
+taxonomies:
+  tags: true
+title: Three Columns
+fields:
+  three_column_info:
+    type: grid
+    display: Three Column Info
+    fields:
+      image:
+        type: assets
+        display: image
+        instructions: null
+        container: main
+        folder: /
+        restrict: false
+        max_files: "1"
+      text:
+        type: markdown
+        display: text
+        instructions: ""
+        cheatsheet: false
+        container: null
+        folder: null
+        restrict_assets: false
+        default: '# Title ## Subtitle Description'
+    mode: table
+    max_rows: "3"
+    min_rows: "1"

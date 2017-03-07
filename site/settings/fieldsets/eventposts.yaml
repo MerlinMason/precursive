@@ -161,3 +161,7 @@ fields:
     display: 'Section Picks > Description'
     cheatsheet: false
     restrict_assets: false
+  three_column:
+    type: partial
+    display: three_column
+    fieldset: three_columns

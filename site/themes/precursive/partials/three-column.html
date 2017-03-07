@@ -1,0 +1,20 @@
+<div class="container mt-4x mb-4x three-column-container">
+    <div class="row">
+
+        {{ three_column_info }}
+        <div class="col-xs-12 col-sm-4">
+
+            {{ image }}
+            <div>
+                <img src="{{ glide:value width='100' fit='crop' }}" class="scale">
+            </div>
+            {{ /image }}
+
+            <div class="three-column-text mt-1x">
+                {{ text | markdown }}
+            </div>
+        </div>
+        {{ /three_column_info }}
+
+    </div>
+</div>
