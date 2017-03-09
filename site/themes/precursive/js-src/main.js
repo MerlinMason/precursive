@@ -26,4 +26,18 @@ $(".js-toggle-form-modal").on("click", (e) => {
     });
 });
 
+$("#formEvent").on("submit", (e) => {
+    e.preventDefault();
+    $.ajax({
+        url: $("#formEvent").attr("action"),
+        data: ({ name: $("#formEventName").val(), email: $("#formEventEmail").val(), company: $("#formEventCompany").val() }),
+        dataType: "jsonp",
+        timeout: 5000
+    }).done(() => {
+        console.log("Success!");
+    }).fail(() => {
+        console.log("Failed!");
+    });
+});
+
 $(".js-close-banner").on("click", () => $(".js-banner").hide());

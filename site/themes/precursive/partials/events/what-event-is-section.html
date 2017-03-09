@@ -2,17 +2,11 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
-                <h1 class="h s-md w-r">{{section_event_greater_title}}</h1>
-                <ul>
-                    {{ section_event_greater_general_info }}
-                    <li class="s-sm w-r">{{ fieldname }}: {{content}}</li>
-                    {{ /section_event_greater_general_info }}
-                </ul>
-                <h4 class="h s-sm"> {{section_event_greater_description}}</h4>
+                {{ section_event_greater_text | markdown }}
             </div>
             <div class="col-sm-6">
                 {{ section_event_greater_event_image }}
-                <img src="{{ glide:value width='380' fit='crop' }}" class="scale mb-1x">
+                    <img src="{{ glide:value width='380' fit='crop' }}" class="scale mb-1x">
                 {{ /section_event_greater_event_image }}
             </div>
         </div>

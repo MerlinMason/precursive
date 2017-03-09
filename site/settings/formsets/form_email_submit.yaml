@@ -1,0 +1,13 @@
+title: Form Email and Submit button
+fields:
+  name:
+    display: name
+  email:
+    display: email
+    validate: required|email
+columns:
+  - submit_button
+metrics:
+  - 
+    type: total
+    label: Total Submits

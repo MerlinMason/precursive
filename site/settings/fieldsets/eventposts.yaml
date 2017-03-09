@@ -10,29 +10,6 @@ fields:
     restrict: false
     width: 50
     max_files: "1"
-  sectionhero_greater_title:
-    type: text
-    display: 'SectionHero > Title'
-    width: 50
-  sectionhero_greater_subtitle:
-    type: text
-    display: 'SectionHero > Subtitle'
-    width: 50
-  sectionhero_greater_miniimage:
-    type: assets
-    display: 'SectionHero > Mini Image'
-    container: main
-    folder: /
-    restrict: false
-    width: 50
-    max_files: "1"
-  section_hero_greater_form_book_slot:
-    type: text
-    display: 'Section Hero > Form Book Slot'
-  sectionhero_greater_get_tickets_URL:
-    type: text
-    display: 'SectionHero > Get Tickets URL'
-    width: 50
   intro_image:
     type: assets
     display: Intro Image
@@ -41,6 +18,84 @@ fields:
     restrict: false
     width: 50
     max_files: "1"
+  section_event_greater_text:
+    type: markdown
+    display: 'Section Event > text'
+    cheatsheet: true
+    restrict_assets: false
+  section_event_greater_event_image:
+    type: assets
+    display: 'Section Event > Event Image'
+    container: main
+    folder: /
+    restrict: false
+    max_files: "1"
+    width: 50
+  section_benefits_greater_title:
+    type: text
+    display: 'Section Benefits >Title'
+    width: 50
+  section_benefits_greater_image:
+    type: assets
+    display: 'Section Benefits > Image'
+    container: main
+    folder: /
+    restrict: false
+    max_files: "1"
+  section_benefits_greater_list:
+    type: grid
+    display: 'Section Benefits > List'
+    fields:
+      content:
+        type: text
+        display: Content
+        instructions: null
+        default: Benefit Item
+    mode: table
+    max_rows: "5"
+    min_rows: "1"
+  section_picks_greater_title:
+    type: text
+    display: 'Section Picks > Title'
+  section_picks_greater_subtitle:
+    type: text
+    display: 'Section Picks > Subtitle'
+  section_picks_greater_image:
+    type: assets
+    display: 'Section Picks > Image'
+    container: main
+    folder: /
+    restrict: false
+    max_files: "1"
+  section_picks_greater_description:
+    type: markdown
+    display: 'Section Picks > Description'
+    cheatsheet: false
+    restrict_assets: false
+  three_column_info:
+    type: grid
+    display: Three Column Info
+    fields:
+      image:
+        type: assets
+        display: image
+        instructions: null
+        container: main
+        folder: /
+        restrict: false
+        max_files: "1"
+      text:
+        type: markdown
+        display: text
+        instructions: ""
+        cheatsheet: false
+        container: null
+        folder: null
+        restrict_assets: false
+        default: '# Title ## Subtitle Description'
+    mode: table
+    max_rows: "3"
+    min_rows: "1"
   replicator_content:
     type: replicator
     display: Replicator Content
@@ -86,82 +141,32 @@ fields:
             type: text
             display: Caption
             instructions: null
-  section_event_greater_title:
-    type: text
-    display: 'Section Event > Title'
-    width: 50
-    default: Name of the event
-  section_event_greater_description:
-    type: text
-    display: 'Section Event > Description'
-    width: 50
-    default: Description of the event
-  section_event_greater_event_image:
-    type: assets
-    display: 'Section Event > Event Image'
-    container: main
-    folder: /
-    restrict: false
-    max_files: "1"
-    width: 50
-  section_event_greater_general_info:
-    type: grid
-    display: 'Section Event >General Info'
-    fields:
-      fieldname:
-        type: text
-        display: fieldName
-        instructions: null
-        default: ""
-      content:
-        type: text
-        display: content
-        instructions: null
-    mode: table
-    max_rows: "4"
-    min_rows: "1"
-  section_benefits_greater_title:
-    type: text
-    display: 'Section Benefits >Title'
-    width: 50
-  section_benefits_greater_image:
-    type: assets
-    display: 'Section Benefits > Image'
-    container: main
-    folder: /
-    restrict: false
-    max_files: "1"
-  section_benefits_greater_list:
-    type: grid
-    display: 'Section Benefits > List'
-    fields:
-      content:
-        type: text
-        display: Content
-        instructions: null
-        default: Benefit Item
-    mode: table
-    max_rows: "5"
-    min_rows: "1"
-  section_picks_greater_title:
-    type: text
-    display: 'Section Picks > Title'
-  section_picks_greater_subtitle:
-    type: text
-    display: 'Section Picks > Subtitle'
-  section_picks_greater_image:
-    type: assets
-    display: 'Section Picks > Image'
-    container: main
-    folder: /
-    restrict: false
-    max_files: "1"
-  section_picks_greater_description:
-    type: markdown
-    display: 'Section Picks > Description'
-    cheatsheet: false
-    restrict_assets: false
-  three_column:
-    type: partial
-    display: three_column
-    fieldset: three_columns
+  masthead_replicator:
+    type: replicator
+    display: Masthead Replicator
+    sets:
+      masthead_replicator:
+        display: Masthead Replicator
+        instructions: ""
+        fields:
+          replicator_grid:
+            type: grid
+            display: Replicator Grid
+            instructions: null
+            fields:
+              text:
+                type: markdown
+                display: text
+                instructions: null
+                cheatsheet: true
+                container: null
+                folder: null
+                restrict_assets: false
+              form_action_url:
+                type: text
+                display: Form Action URL
+                instructions: null
+            mode: table
+            max_rows: "1"
+            min_rows: "1"
+            add_row: null

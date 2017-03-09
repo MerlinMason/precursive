@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row">
+
+        {{ replicator_grid }}
+        <div class="text-container col-xs-12">
+            {{ text | markdown }}
+        </div>
+
+        <div class="form-container col-xs-12">
+            <form id="formEvent" action="{{ form_action_url }}" method="POST">
+                <div class="col-xs-12 col-sm-4  col-md-4 mb-1x">
+                    <input id="formEventName" type="text" class="form-input form-input-events" placeholder="Enter your Name" maxlength="80"
+                           name="name" validate="">
+                </div>
+
+                <div class="col-xs-12 col-sm-4  col-md-4 mb-1x">
+                    <input id="formEventEmail" type="email" class="form-input form-input-events" placeholder="Enter your Email" maxlength="80"
+                           name="email" validate="">
+                </div>
+                <div class="col-xs-12 col-sm-4  col-md-4 mb-1x">
+                    <input id="formEventCompany" type="text" class="form-input form-input-events" placeholder="Enter your Company" maxlength="80"
+                           name="company" validate="">
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <button class="btn-white btn-large btn-fit" type="submit">Book a slot</button>
+                </div>
+            </form>
+        </div>
+        {{ /replicator_grid }}
+
+    </div>
+</div>
+
+
+
+
