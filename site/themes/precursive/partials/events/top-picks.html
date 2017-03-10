@@ -6,19 +6,10 @@
                 <h4 class="h w-r c-white mb-2x mt-2x">{{section_picks_greater_subtitle}}</h4>
             </div>
         </div>
-        <section class="island-big pick-item-container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-4">
-                    {{ section_picks_greater_image }}
-                    <div class="col-xs-8 col-xs-offset-2">
-                        <img src="{{ glide:value }}" class="scale">
-                    </div>
-                    {{ /section_picks_greater_image }}
-                </div>
-                <div class="col-xs-12 col-sm-8 mt-1x">
-                    {{ section_picks_greater_description | markdown }}
-                </div>
-            </div>
-        </section>
+
+        {{ top_picks_replicator }}
+        {{ partial src="replicator/top-picks" }}
+        {{ /top_picks_replicator }}
+
     </div>
 </div>

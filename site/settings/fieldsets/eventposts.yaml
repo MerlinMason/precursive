@@ -18,6 +18,44 @@ fields:
     restrict: false
     width: 50
     max_files: "1"
+  masthead_replicator:
+    type: replicator
+    display: Masthead Replicator
+    sets:
+      masthead_replicator:
+        display: Masthead Replicator
+        instructions: ""
+        fields:
+          replicator_grid:
+            type: grid
+            display: Replicator Grid
+            instructions: null
+            fields:
+              text:
+                type: markdown
+                display: text
+                instructions: null
+                cheatsheet: true
+                container: null
+                folder: null
+                restrict_assets: false
+              filter_name:
+                type: text
+                display: Filter Name
+                instructions: null
+              form_action_url:
+                type: text
+                display: Form Action URL
+                instructions: null
+              submit_success_message:
+                type: text
+                display: Submit Success Message
+                instructions: null
+                default: Thanks for send the request!
+            mode: table
+            max_rows: "1"
+            min_rows: "1"
+            add_row: null
   section_event_greater_text:
     type: markdown
     display: 'Section Event > text'
@@ -60,42 +98,43 @@ fields:
   section_picks_greater_subtitle:
     type: text
     display: 'Section Picks > Subtitle'
-  section_picks_greater_image:
-    type: assets
-    display: 'Section Picks > Image'
-    container: main
-    folder: /
-    restrict: false
-    max_files: "1"
-  section_picks_greater_description:
-    type: markdown
-    display: 'Section Picks > Description'
-    cheatsheet: false
-    restrict_assets: false
-  three_column_info:
-    type: grid
-    display: Three Column Info
-    fields:
-      image:
-        type: assets
-        display: image
-        instructions: null
-        container: main
-        folder: /
-        restrict: false
-        max_files: "1"
-      text:
-        type: markdown
-        display: text
+  top_picks_replicator:
+    type: replicator
+    display: Top Picks Replicator
+    sets:
+      top_picks_grid:
+        display: Top Picks Grid
         instructions: ""
-        cheatsheet: false
-        container: null
-        folder: null
-        restrict_assets: false
-        default: '# Title ## Subtitle Description'
-    mode: table
-    max_rows: "3"
-    min_rows: "1"
+        fields:
+          image:
+            type: assets
+            display: image
+            instructions: null
+            container: main
+            folder: /
+            restrict: false
+            max_files: "1"
+          text:
+            type: markdown
+            display: text
+            instructions: null
+            cheatsheet: true
+            container: null
+            folder: null
+            restrict_assets: false
+      set_2:
+        display: Set 2
+        instructions: ""
+        fields:
+          field_1:
+            type: grid
+            display: Field 1
+            instructions: null
+            fields: [ ]
+            mode: table
+            max_rows: null
+            min_rows: null
+            add_row: null
   replicator_content:
     type: replicator
     display: Replicator Content
@@ -141,37 +180,27 @@ fields:
             type: text
             display: Caption
             instructions: null
-  masthead_replicator:
-    type: replicator
-    display: Masthead Replicator
-    sets:
-      masthead_replicator:
-        display: Masthead Replicator
+  three_column_info:
+    type: grid
+    display: Three Column Info
+    fields:
+      image:
+        type: assets
+        display: image
+        instructions: null
+        container: main
+        folder: /
+        restrict: false
+        max_files: "1"
+      text:
+        type: markdown
+        display: text
         instructions: ""
-        fields:
-          replicator_grid:
-            type: grid
-            display: Replicator Grid
-            instructions: null
-            fields:
-              text:
-                type: markdown
-                display: text
-                instructions: null
-                cheatsheet: true
-                container: null
-                folder: null
-                restrict_assets: false
-              form_action_url:
-                type: text
-                display: Form Action URL
-                instructions: null
-              submit_success_message:
-                type: text
-                display: Submit Success Message
-                instructions: null
-                default: Thanks for send the request!
-            mode: table
-            max_rows: "1"
-            min_rows: "1"
-            add_row: null
+        cheatsheet: false
+        container: null
+        folder: null
+        restrict_assets: false
+        default: '# Title ## Subtitle Description'
+    mode: table
+    max_rows: "3"
+    min_rows: "1"
