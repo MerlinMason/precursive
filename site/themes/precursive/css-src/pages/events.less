@@ -36,8 +36,34 @@
       }
     }
 
+    form {
+      display: block;
+
+      &.fadeOut {
+        transition: all 1s ease-in-out;
+        display: none;
+      }
+    }
+
+    .submit-message-container {
+      height: 110px;
+      display: none;
+
+      h1 {
+        .h();
+        .s-md();
+        .w-r();
+      }
+
+      &.fadeIn {
+        transition: all 1s ease-in-out;
+        display: block;
+      }
+    }
   }
 }
+
+
 
 .event-container {
   background-color: @grey1;

@@ -166,6 +166,11 @@ fields:
                 type: text
                 display: Form Action URL
                 instructions: null
+              submit_success_message:
+                type: text
+                display: Submit Success Message
+                instructions: null
+                default: Thanks for send the request!
             mode: table
             max_rows: "1"
             min_rows: "1"
