@@ -1,35 +1,58 @@
-<div class="container">
+<div class="container text-form-container">
     <div class="row">
 
         {{ replicator_grid }}
-        <div class="text-container col-xs-12">
+        <div class="text-container col-xs-12 col-sm-6">
+
+            <div class="logo-container">
+                <a href="/" class="logo">{{ site_name }}</a>
+            </div>
+
             {{ text | markdown }}
         </div>
 
-        <div class="form-container col-xs-12">
-            <form id="formEvent" action="{{ form_action_url }}" method="POST">
 
-                <input id="formEventFilter" type="hidden" name="Lead Source" value="{{ filter_name }}">
+        <div class="form-container col-xs-12 col-sm-4 col-sm-offset-2">
 
-                <div class="col-xs-12 col-sm-4  col-md-4 mb-1x">
-                    <input id="formEventName" type="text" class="form-input form-input-events" placeholder="Enter your Name" maxlength="80"
-                           name="name" validate="">
+            <div class="form-submitted col-xs-12 col-sm-12">
+                <div class="tickIcon">
                 </div>
 
-                <div class="col-xs-12 col-sm-4  col-md-4 mb-1x">
-                    <input id="formEventEmail" type="email" class="form-input form-input-events" placeholder="Enter your Email" maxlength="80"
-                           name="email" validate="">
+                <div class="text-center submit-message-container mt-1x">
+                    <h1>{{ submit_success_message }}</h1>
                 </div>
-                <div class="col-xs-12 col-sm-4  col-md-4 mb-1x">
-                    <input id="formEventCompany" type="text" class="form-input form-input-events" placeholder="Enter your Company" maxlength="80"
-                           name="company" validate="">
+            </div>
+
+            <div class="form-no-submitted col-xs-12 col-sm-12">
+
+                <h1 class="form-title text-center">{{ form_title }}</h1>
+                
+                <div class="event-form">
+                    <form id="formEvent" action="{{ form_action_url }}" method="POST">
+
+                        <input id="formEventFilter" type="hidden" name="Lead Source" value="{{ filter_name }}">
+
+                        <div class="mb-1x">
+                            <input id="formEventName" type="text" class="form-input form-input-events"
+                                   placeholder="Enter your Name" maxlength="80"
+                                   name="name" validate="">
+                        </div>
+
+                        <div class="mb-1x">
+                            <input id="formEventEmail" type="email" class="form-input form-input-events"
+                                   placeholder="Enter your Email" maxlength="80"
+                                   name="email" validate="">
+                        </div>
+                        <div class="mb-1x">
+                            <input id="formEventCompany" type="text" class="form-input form-input-events"
+                                   placeholder="Enter your Company" maxlength="80"
+                                   name="company" validate="">
+                        </div>
+                        <div>
+                            <button class="btn-sky btn-large btn-fit" type="submit">Book your session</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                    <button class="btn-white btn-large btn-fit" type="submit">Book your session</button>
-                </div>
-            </form>
-            <div class="submit-message-container col-xs-12">
-                <h1>{{ submit_success_message }}</h1>
             </div>
         </div>
 

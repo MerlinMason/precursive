@@ -3,13 +3,15 @@
 
   .logo-container {
 
+
     a.logo{
       background:url('../img/logos/precursive-white.svg') no-repeat center;
       background-size:100% auto;
       text-indent:-9999px;
       display:inline-block;
       width:200px;
-      height:126px;
+      height:124px;
+      margin-bottom: @1x;
     }
   }
 
@@ -20,7 +22,7 @@
         .h();
         .s-xl();
         .w-r();
-        margin-bottom: 12px;
+        margin-bottom: 24px;
       }
 
       h2 {
@@ -38,29 +40,68 @@
       }
     }
 
-    form {
-      display: block;
+    .form-container {
+      padding: 36px 12px;
+      background-color: white;
+      -webkit-border-radius: 12px;
+      -moz-border-radius: 12px;
+      border-radius: 12px;
 
-      &.fadeOut {
-        transition: all 1s ease-in-out;
-        display: none;
-      }
-    }
-
-    .submit-message-container {
-      height: 110px;
-      display: none;
 
       h1 {
         .h();
         .s-md();
         .w-r();
+        .c-grey3();
       }
 
-      &.fadeIn {
-        transition: all 1s ease-in-out;
-        display: block;
+      .form-input {
+        border: 1px solid #b5b5b5;
       }
+
+
+      .form-submitted {
+        display: none;
+
+        .tickIcon {
+          display: block;
+          width: 180px;
+          margin: 41px auto;
+          text-align: center;
+          text-indent: -9999px;
+          height: 180px;
+          background: url('../img/icons/circle-done.svg');
+          background-size: 180px 180px;
+        }
+
+        .submit-message-container {
+          h1 {
+            .h();
+            .w-r();
+            font-size: 22px;
+          }
+        }
+
+        &.fadeIn {
+          transition: all 1s ease-in-out;
+          display: block;
+        }
+      }
+
+      .form-no-submitted {
+
+        h1 {
+          .h();
+          .s-md();
+          .w-r();
+        }
+
+        &.fadeOut {
+          transition: all 1s ease-in-out;
+          display: none;
+        }
+      }
+
     }
   }
 }
@@ -99,6 +140,7 @@
       .w-r();
       color: @sky;
     }
+
   }
 
 }

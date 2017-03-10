@@ -39,8 +39,8 @@ $("#formEvent").on("submit", (e) => {
         timeout: 5000
     }).done(() => {
         console.log("Success!");
-        $("#formEvent").hide("fadeOut");
-        $(".submit-message-container").addClass("fadeIn");
+        $(".form-no-submitted").addClass("fadeOut");
+        $(".form-submitted").addClass("fadeIn");
         /* $("#form-container").hide();
         $("#submit-message-container").show();*/
     }).fail(() => {

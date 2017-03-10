@@ -43,6 +43,10 @@ fields:
                 type: text
                 display: Filter Name
                 instructions: null
+              form_title:
+                type: text
+                display: form_title
+                instructions: null
               form_action_url:
                 type: text
                 display: Form Action URL
