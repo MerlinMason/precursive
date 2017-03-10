@@ -9,7 +9,7 @@
         <div class="form-container col-xs-12">
             <form id="formEvent" action="{{ form_action_url }}" method="POST">
 
-                <input type="hidden" name="Lead Source" value="{{ filter_name }}">
+                <input id="formEventFilter" type="hidden" name="Lead Source" value="{{ filter_name }}">
 
                 <div class="col-xs-12 col-sm-4  col-md-4 mb-1x">
                     <input id="formEventName" type="text" class="form-input form-input-events" placeholder="Enter your Name" maxlength="80"

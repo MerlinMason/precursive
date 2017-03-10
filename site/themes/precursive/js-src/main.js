@@ -30,7 +30,11 @@ $("#formEvent").on("submit", (e) => {
     e.preventDefault();
     $.ajax({
         url: $("#formEvent").attr("action"),
-        data: ({ name: $("#formEventName").val(), email: $("#formEventEmail").val(), company: $("#formEventCompany").val() }),
+        data: ({
+            name: $("#formEventName").val(),
+            email: $("#formEventEmail").val(),
+            leadSource: $("#formEventFilter").val(),
+            company: $("#formEventCompany").val() }),
         dataType: "jsonp",
         timeout: 5000
     }).done(() => {

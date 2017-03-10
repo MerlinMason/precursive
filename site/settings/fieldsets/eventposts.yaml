@@ -69,29 +69,6 @@ fields:
     restrict: false
     max_files: "1"
     width: 50
-  section_benefits_greater_title:
-    type: text
-    display: 'Section Benefits >Title'
-    width: 50
-  section_benefits_greater_image:
-    type: assets
-    display: 'Section Benefits > Image'
-    container: main
-    folder: /
-    restrict: false
-    max_files: "1"
-  section_benefits_greater_list:
-    type: grid
-    display: 'Section Benefits > List'
-    fields:
-      content:
-        type: text
-        display: Content
-        instructions: null
-        default: Benefit Item
-    mode: table
-    max_rows: "5"
-    min_rows: "1"
   section_picks_greater_title:
     type: text
     display: 'Section Picks > Title'
@@ -135,72 +112,3 @@ fields:
             max_rows: null
             min_rows: null
             add_row: null
-  replicator_content:
-    type: replicator
-    display: Replicator Content
-    sets:
-      paragraph:
-        display: Paragraph
-        instructions: ""
-        fields:
-          text:
-            type: markdown
-            display: text
-            instructions: null
-            cheatsheet: true
-            container: main
-            folder: /
-      blockquote:
-        display: Blockquote
-        instructions: ""
-        fields:
-          quote:
-            type: markdown
-            display: Quote
-            instructions: null
-            cheatsheet: false
-            container: null
-            folder: null
-          source:
-            type: text
-            display: Source
-            instructions: null
-      image:
-        display: Image
-        instructions: ""
-        fields:
-          image:
-            type: assets
-            display: Image
-            instructions: null
-            container: main
-            folder: /
-            max_files: "1"
-          caption:
-            type: text
-            display: Caption
-            instructions: null
-  three_column_info:
-    type: grid
-    display: Three Column Info
-    fields:
-      image:
-        type: assets
-        display: image
-        instructions: null
-        container: main
-        folder: /
-        restrict: false
-        max_files: "1"
-      text:
-        type: markdown
-        display: text
-        instructions: ""
-        cheatsheet: false
-        container: null
-        folder: null
-        restrict_assets: false
-        default: '# Title ## Subtitle Description'
-    mode: table
-    max_rows: "3"
-    min_rows: "1"
