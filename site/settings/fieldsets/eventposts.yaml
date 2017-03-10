@@ -65,14 +65,6 @@ fields:
     display: 'Section Event > text'
     cheatsheet: true
     restrict_assets: false
-  section_event_greater_event_image:
-    type: assets
-    display: 'Section Event > Event Image'
-    container: main
-    folder: /
-    restrict: false
-    max_files: "1"
-    width: 50
   section_picks_greater_title:
     type: text
     display: 'Section Picks > Title'
