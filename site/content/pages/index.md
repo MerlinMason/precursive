@@ -19,7 +19,8 @@ benefits_heading: Helping Your Business Succeed
 benefits_description: Maximise the performance and profitability of your people
 case_studies_header:
   - 
-    case_studies_title: Customers Success
+    case_studies_title: Customer Success Stories
+    case_studies_subtitle: Learn how customers of all sizes succeed with Precursive
 case_studies_header_section:
   - [ ]
 cases_studies_header:
