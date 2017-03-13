@@ -56,6 +56,11 @@ fields:
                 display: Submit Success Message
                 instructions: null
                 default: Thanks for send the request!
+              text_button_cta:
+                type: text
+                display: 'Text Button CTA '
+                instructions: null
+                default: Book your meeting
             mode: table
             max_rows: "1"
             min_rows: "1"
