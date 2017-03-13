@@ -17,6 +17,14 @@ salesforce_description: >
   effectively and create an effortless customer experience.
 benefits_heading: Helping Your Business Succeed
 benefits_description: Maximise the performance and profitability of your people
+case_studies_header:
+  - 
+    case_studies_title: Customers Success
+case_studies_header_section:
+  - [ ]
+cases_studies_header:
+  - 
+    case_studies_title: Customers Success
 title: Home
 template: home
 fieldset: home

@@ -66,3 +66,18 @@ fields:
   benefits_description:
     type: textarea
     display: Benefits Description
+  case_studies_header:
+    type: grid
+    display: Cases Studies Header
+    fields:
+      case_studies_title:
+        type: text
+        display: case_studies_title
+        instructions: null
+      case_studies_subtitle:
+        type: text
+        display: case_studies_subtitle
+        instructions: null
+    mode: table
+    max_rows: "1"
+    min_rows: "1"
