@@ -13,9 +13,26 @@ fields:
     container: main
     folder: backgrounds
     max_files: "1"
+    restrict: false
   demo_form_image:
     type: assets
     display: Demo Form Image
     container: main
     folder: backgrounds
     max_files: "1"
+    restrict: false
+  case_studies_header:
+    type: grid
+    display: Case Studies Header
+    fields:
+      case_studies_title:
+        type: text
+        display: Case Studies Title
+        instructions: null
+      case_studies_subtitle:
+        type: text
+        display: Case Studies Subtitle
+        instructions: null
+    mode: table
+    max_rows: "1"
+    min_rows: "1"

@@ -4,6 +4,10 @@ masthead:
   - /assets/backgrounds/working-3-1485428290.jpg
 demo_form_image:
   - /assets/backgrounds/headache-1485428289.jpg
+case_studies_header:
+  - 
+    case_studies_title: Customer Success Stories
+    case_studies_subtitle: Learn how customers of all sizes succeed with Precursive
 title: Customers
 template: casestudies/index
 fieldset: page_clients
