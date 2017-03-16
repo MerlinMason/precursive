@@ -17,8 +17,8 @@ $(".js-show-intercom").on("click", (e) => {
     /* eslint-disable no-undef*/
     ga("send", {
         eventCategory: "Intercom",
-        eventAction: "open",
-        eventLabel: "Intercom Widget"
+        eventAction: "open Intercom Widget",
+        eventLabel: "Contact Live Chat"
     });
     /* eslint-disable no-undef*/
 });
