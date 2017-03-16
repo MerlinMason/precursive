@@ -13,6 +13,14 @@ CaseStudies();
 $(".js-show-intercom").on("click", (e) => {
     e.preventDefault();
     window.Intercom("show");
+
+    /* eslint-disable no-undef*/
+    ga("send", {
+        eventCategory: "Intercom",
+        eventAction: "open",
+        eventLabel: "Intercom Widget"
+    });
+    /* eslint-disable no-undef*/
 });
 
 $(".js-toggle-menu").on("click", () => {
@@ -41,8 +49,15 @@ $("#formEvent").on("submit", (e) => {
         console.log("Success!");
         $(".form-no-submitted").addClass("fadeOut");
         $(".form-submitted").addClass("fadeIn");
-        /* $("#form-container").hide();
-        $("#submit-message-container").show();*/
+
+        /* Send data to GA */
+        /* eslint-disable no-undef*/
+        ga("send", {
+            eventCategory: "Booking",
+            eventAction: "submit",
+            eventLabel: "Events Campaign"
+        });
+        /* eslint-disable no-undef */
     }).fail(() => {
         console.log("Failed!");
     });
