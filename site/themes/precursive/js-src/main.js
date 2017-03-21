@@ -13,7 +13,7 @@ CaseStudies();
 $(".js-show-intercom").on("click", (e) => {
     e.preventDefault();
     window.Intercom("show");
-
+    console.log("Intercom Live Chat");
     /* eslint-disable no-undef*/
     ga("send", {
         eventCategory: "Intercom",
@@ -46,7 +46,7 @@ $("#formEvent").on("submit", (e) => {
         dataType: "jsonp",
         timeout: 5000
     }).done(() => {
-        console.log("Success!");
+        console.log("Form Sent Successfully!");
         $(".form-no-submitted").addClass("fadeOut");
         $(".form-submitted").addClass("fadeIn");
 
