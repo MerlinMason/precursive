@@ -16,6 +16,7 @@ $(".js-show-intercom").on("click", (e) => {
     console.log("Intercom Live Chat");
     /* eslint-disable no-undef*/
     ga("send", {
+        hitType: "event",
         eventCategory: "Intercom",
         eventAction: "open Intercom Widget",
         eventLabel: "Contact Live Chat"
@@ -53,6 +54,7 @@ $("#formEvent").on("submit", (e) => {
         /* Send data to GA */
         /* eslint-disable no-undef*/
         ga("send", {
+            hitType: "event",
             eventCategory: "Booking",
             eventAction: "submit",
             eventLabel: "Events Campaign"
