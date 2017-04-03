@@ -1,4 +1,4 @@
-subtitle: Check it out all our next events at Precursive
+subtitle: Check out our upcoming events at Precursive
 masthead:
   - /assets/backgrounds/pexels-photo-99560.jpeg
 is_hidden_header: true
