@@ -66,12 +66,12 @@ fields:
             type: text
             display: Contact Form Header Text
             instructions: null
-            default: Header Text
+            default: Getting in touch with the team is easy
           contact_form_action:
             type: text
             display: Contact Form Action
             instructions: null
-            default: actionURL
+            default: https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8
           contact_form_data:
             type: grid
             display: Contact Form Data
@@ -81,17 +81,17 @@ fields:
                 type: text
                 display: oid
                 instructions: null
-                default: Salesforce ID
+                default: 00DD0000000DBV2
               returl:
                 type: text
                 display: retURL
                 instructions: null
-                default: Redirected Page
+                default: http://precursive.com/contact-success
               oidmessage:
                 type: text
                 display: oidMessage
                 instructions: null
-                default: Salesforce ID Name Message
+                default: 00ND0000006QJTk
             mode: table
             max_rows: "1"
             min_rows: "1"
@@ -105,6 +105,11 @@ fields:
             type: toggle
             display: Show Contact Us
             instructions: null
+          contact_us_header:
+            type: text
+            display: Contact Us Header
+            instructions: null
+            default: Other ways to contact us
       image:
         display: image
         instructions: ""
