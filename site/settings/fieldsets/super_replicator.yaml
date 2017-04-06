@@ -1,0 +1,382 @@
+taxonomies:
+  tags: true
+title: Super Replicator
+fields:
+  components:
+    type: replicator
+    display: Components
+    sets:
+      masthead:
+        display: Masthead
+        instructions: ""
+        fields:
+          show_navigation_bar:
+            type: toggle
+            display: Show Navigation bar
+            instructions: null
+            default: ""
+          show_form:
+            type: toggle
+            display: Show Form
+            instructions: null
+          filter_name:
+            type: text
+            display: Filter Name
+            instructions: null
+            default: no_filter
+          form_title:
+            type: text
+            display: Form Title
+            instructions: null
+            default: Default Form Title
+          form_action:
+            type: text
+            display: Form Action
+            instructions: null
+            default: https://precursive.com/
+            validate: required|url
+          form_action_text:
+            type: text
+            display: Form Action Text
+            instructions: null
+            default: Submit
+          form_success_message:
+            type: text
+            display: Form Success Message
+            instructions: null
+            default: Form has been sent successfully!
+          text:
+            type: markdown
+            display: text
+            instructions: null
+            cheatsheet: true
+            container: null
+            folder: null
+            restrict_assets: false
+            default: ""
+      contact_form:
+        display: Contact Form
+        instructions: ""
+        fields:
+          show_contact_form:
+            type: toggle
+            display: show Contact Form
+            instructions: null
+          contact_form_header_text:
+            type: text
+            display: Contact Form Header Text
+            instructions: null
+            default: Header Text
+          contact_form_action:
+            type: text
+            display: Contact Form Action
+            instructions: null
+            default: actionURL
+          contact_form_data:
+            type: grid
+            display: Contact Form Data
+            instructions: null
+            fields:
+              oid:
+                type: text
+                display: oid
+                instructions: null
+                default: Salesforce ID
+              returl:
+                type: text
+                display: retURL
+                instructions: null
+                default: Redirected Page
+              oidmessage:
+                type: text
+                display: oidMessage
+                instructions: null
+                default: Salesforce ID Name Message
+            mode: table
+            max_rows: "1"
+            min_rows: "1"
+            add_row: null
+          contact_form_action_text:
+            type: text
+            display: Contact Form Action Text
+            instructions: null
+            default: Submit
+          show_contact_us:
+            type: toggle
+            display: Show Contact Us
+            instructions: null
+      image:
+        display: image
+        instructions: ""
+        fields:
+          image:
+            type: assets
+            display: image
+            instructions: null
+            container: main
+            folder: /
+            restrict: false
+            max_files: "1"
+          image_text:
+            type: text
+            display: image_text
+            instructions: null
+            default: Text on the Image
+      demo_CTA:
+        display: demo CTA
+        instructions: ""
+        fields:
+          text:
+            type: markdown
+            display: text
+            instructions: null
+            cheatsheet: true
+            container: null
+            folder: null
+            restrict_assets: false
+            default: Here is the text
+          form_data:
+            type: grid
+            display: form data
+            instructions: null
+            fields:
+              form_action:
+                type: text
+                display: Form Action
+                instructions: null
+                default: Action URL
+              oid:
+                type: text
+                display: oid
+                instructions: null
+                default: SalesforceID
+              returl:
+                type: text
+                display: retURL
+                instructions: null
+                default: Redirection URL
+            mode: table
+            max_rows: "1"
+            min_rows: "1"
+            add_row: null
+          form_action_text:
+            type: text
+            display: Form Action Text
+            instructions: null
+            default: Book a demo
+          image_background:
+            type: assets
+            display: image_background
+            instructions: null
+            container: main
+            folder: /
+            restrict: false
+            max_files: "1"
+      link_CTA:
+        display: link_CTA
+        instructions: ""
+        fields:
+          text:
+            type: markdown
+            display: text
+            instructions: null
+            cheatsheet: true
+            container: null
+            folder: null
+            restrict_assets: false
+            default: Here is the Text
+          show_button_1:
+            type: toggle
+            display: Show Button 1
+            instructions: null
+            default: ""
+          button_1_data:
+            type: grid
+            display: Button 1 Data
+            instructions: null
+            fields:
+              action_url:
+                type: text
+                display: action_url
+                instructions: null
+                default: '#'
+              button_text:
+                type: text
+                display: button_text
+                instructions: null
+                default: Submit
+            mode: table
+            max_rows: "1"
+            min_rows: "1"
+            add_row: null
+          show_button_2:
+            type: toggle
+            display: Show Button 2
+            instructions: null
+          button_2_data:
+            type: grid
+            display: button_2_data
+            instructions: null
+            fields:
+              action_url:
+                type: text
+                display: action_url
+                instructions: null
+                default: '#'
+              button_text:
+                type: text
+                display: button_text
+                instructions: null
+                default: Submit
+            mode: table
+            max_rows: "1"
+            min_rows: "1"
+            add_row: null
+          image_background:
+            type: assets
+            display: image_background
+            instructions: null
+            container: main
+            folder: /
+            restrict: false
+            max_files: "1"
+          image_front_right:
+            type: assets
+            display: image_front_right
+            instructions: null
+            container: main
+            folder: /
+            restrict: false
+            max_files: "1"
+      entire_template:
+        display: Entire Template
+        instructions: ""
+        fields:
+          entire_template:
+            type: template
+            display: Entire Template
+            instructions: null
+      header_template:
+        display: Header Template (customized)
+        instructions: ""
+        fields:
+          header data:
+            type: grid
+            display: Header Data
+            instructions: null
+            fields:
+              header_title:
+                type: title
+                display: Header Title
+                instructions: null
+                default: header Title
+              header_subtitle:
+                type: text
+                display: Header Subtitle
+                instructions: null
+                default: Header Subtitle
+              show_separator_line:
+                type: toggle
+                display: Show Separator Line
+                instructions: null
+            mode: table
+            max_rows: "1"
+            min_rows: "1"
+            add_row: null
+      top_picks:
+        display: Top Picks
+        instructions: ""
+        fields:
+          top_picks_title:
+            type: title
+            display: Top Picks Title
+            instructions: null
+            default: Top Picks Title
+          top_picks_subtitle:
+            type: text
+            display: Top Picks Subtitle
+            instructions: null
+            default: Top Picks Subtitle
+          top_picks_speakers:
+            type: grid
+            display: Top Picks Speakers
+            instructions: null
+            fields:
+              image_speaker:
+                type: assets
+                display: Image Speaker
+                instructions: null
+                container: main
+                folder: /
+                restrict: false
+                max_files: "1"
+              text_speaker:
+                type: markdown
+                display: Text Speaker
+                instructions: null
+                cheatsheet: true
+                container: null
+                folder: null
+                restrict_assets: false
+            mode: table
+            max_rows: "4"
+            min_rows: "1"
+            add_row: null
+      multi_columns:
+        display: Multi Columns
+        instructions: ""
+        fields:
+          multi_columns_grid:
+            type: grid
+            display: Multi Columns Grid
+            instructions: null
+            fields:
+              image_column:
+                type: assets
+                display: Image Column
+                instructions: null
+                container: main
+                folder: /
+                restrict: false
+                max_files: "1"
+              text_column:
+                type: markdown
+                display: text_column
+                instructions: null
+                cheatsheet: true
+                container: null
+                folder: null
+                restrict_assets: false
+                default: ""
+            mode: table
+            max_rows: "3"
+            min_rows: "1"
+            add_row: null
+      image_and_text:
+        display: 'Image & Text'
+        instructions: ""
+        fields:
+          text:
+            type: markdown
+            display: text
+            instructions: null
+            cheatsheet: true
+            container: null
+            folder: null
+            restrict_assets: false
+            default: ""
+          image:
+            type: assets
+            display: image
+            instructions: null
+            container: main
+            folder: /
+            restrict: false
+            max_files: "1"
+          distribution:
+            type: radio
+            display: Distribution
+            instructions: null
+            options:
+              1: 'Image & Text'
+              2: 'Text & Image'
