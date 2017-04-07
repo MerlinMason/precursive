@@ -10,6 +10,18 @@ fields:
         display: Masthead
         instructions: ""
         fields:
+          image_background:
+            type: assets
+            display: Image Background
+            instructions: null
+            container: main
+            folder: /
+            restrict: false
+            max_files: "1"
+          show_precursive_logo:
+            type: toggle
+            display: Show Precursive Logo
+            instructions: null
           show_navigation_bar:
             type: toggle
             display: Show Navigation bar
@@ -122,11 +134,11 @@ fields:
             folder: /
             restrict: false
             max_files: "1"
-          image_text:
+          caption:
             type: text
-            display: image_text
+            display: caption
             instructions: null
-            default: Text on the Image
+            default: Caption
       demo_CTA:
         display: demo CTA
         instructions: ""

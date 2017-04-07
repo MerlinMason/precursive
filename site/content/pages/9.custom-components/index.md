@@ -10,8 +10,26 @@ components:
         oidmessage: 00ND0000006QJTk
     contact_form_action_text: Submit
     contact_us_header: Other ways to contact us
-    show_contact_form: true
     show_contact_us: true
+  - 
+    type: image
+    image:
+      - /assets/29_-_introducing_Salesforce_DX_qklwxw-1488882866.png
+    caption: This is text on the image
+  - 
+    type: masthead
+    filter_name: no_filter
+    form_title: Default Form Title
+    form_action: https://precursive.com/
+    form_action_text: Submit
+    form_success_message: Form has been sent successfully!
+    text: |
+      # This is text
+      ## This is text 2
+      ### This is text 3
+      This is normal text
+    image_background:
+      - /assets/2_hub_article_banner_672x357px_eng_no_title_v2_tcm1374-492843_1.jpg
 title: Custom Components
 fieldset: super_replicator
 template: custom_components
