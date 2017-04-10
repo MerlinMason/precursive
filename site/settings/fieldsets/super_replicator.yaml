@@ -201,6 +201,10 @@ fields:
             folder: /
             restrict: false
             max_files: "1"
+          show_angle:
+            type: toggle
+            display: Show Angle
+            instructions: null
           show_navigation_bar:
             type: toggle
             display: show_navigation_bar
@@ -228,16 +232,16 @@ fields:
             display: Button 1 Data
             instructions: null
             fields:
-              action_url:
+              url_redirection:
                 type: text
-                display: action_url
+                display: Url Redirection
                 instructions: null
                 default: '#'
               button_text:
                 type: text
                 display: button_text
                 instructions: null
-                default: Submit
+                default: Go To Page
             mode: table
             max_rows: "1"
             min_rows: "1"
@@ -251,16 +255,16 @@ fields:
             display: button_2_data
             instructions: null
             fields:
-              action_url:
+              url_redirection:
                 type: text
-                display: action_url
+                display: Url Redirection
                 instructions: null
                 default: '#'
               button_text:
                 type: text
                 display: button_text
                 instructions: null
-                default: Submit
+                default: Go To Page
             mode: table
             max_rows: "1"
             min_rows: "1"
@@ -270,8 +274,8 @@ fields:
             display: show_video_or_image
             instructions: null
             options:
-              1: Show Image
-              2: Show Video
+              1: Show Video
+              2: Show Imagen
           video_on_the_right:
             type: assets
             display: video_on_the_right
@@ -280,6 +284,11 @@ fields:
             folder: /
             restrict: false
             max_files: "1"
+          video_on_the_right_subtitle:
+            type: text
+            display: Video Subtitle
+            instructions: null
+            default: This is a message at the bottom of the video
           image_on_the_right:
             type: assets
             display: image_on_the_right
