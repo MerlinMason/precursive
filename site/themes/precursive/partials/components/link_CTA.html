@@ -1,0 +1,64 @@
+<div class="masthead">
+    {{ asset:image_background }}
+    <div class="masthead-bg" style="background-image:url({{ glide:url width='1440' height='500' fit='crop' }});">
+    </div>
+    {{ /asset:image_background }}
+    <div class="masthead-content {{ if show_angle }} angle-white {{ /if }}">
+
+        {{ if show_navigation_bar }}
+            {{ partial:nav }}
+        {{ /if }}
+        <div class="container">
+            <div class="row mt-4x mt-2x-m pb-2x mb-angle">
+                <div class="col-sm-6">
+
+                    {{ if show_precursive_logo }}
+                    <div class="logo-container">
+                        <a href="/" class="logo">{{ site_name }}</a>
+                    </div>
+                    {{ /if }}
+
+                    {{ text | markdown }}
+
+                    {{ if show_button_1 }}
+                    {{ button_1_data }}
+                    <a href="{{ url_redirection }}" class="btn-white btn-large hidden-m js-toggle-form-modal mb-05x">{{ button_text }}</a>
+                    {{ /button_1_data }}
+                    {{ /if }}
+
+                    {{ if show_button_1 }}
+                    {{ button_2_data }}
+                    <a href="{{ url_redirection }}" class="btn-white btn-large has-image hidden-m" target="_blank">
+                        <!--<img src="{{ theme:img src='/logos/salesforce-blue.svg' }}" alt="Salesforce logo">-->
+                        {{ button_text }}
+                    </a>
+                    {{ /button_2_data }}
+                    {{ /if }}
+
+                </div>
+
+                {{ if show_video_or_image == 1 }}
+                <div class="col-sm-6">
+                    <div class="masthead-video"
+                         style="background-image:url({{ asset:video_on_the_right }}{{ glide:url width="500" height="300" }}
+                    {{ /asset:video_on_the_right }});">
+                    <img src="{{ theme:img src='/icons/play.svg' }}" width="100px" class="play-icon js-play-video">
+                    </div>
+                    <p class="s-xs c-white text-center mt-05x">{{ video_on_the_right_subtitle }}</p>
+                </div>
+                {{ /if }}
+
+                {{ if show_video_or_image == 2 }}
+                <div class="col-sm-5 col-sm-offset-1">
+                    {{ asset:image_on_the_right }}
+                    <img src="{{ glide:url }}" class="scale hidden-m" alt="{{ caption }}">
+                    {{ /asset:image_on_the_right }}
+
+                </div>
+                {{ /if }}
+
+
+            </div>
+        </div>
+    </div>
+</div>
