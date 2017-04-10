@@ -1,0 +1,29 @@
+{{ asset:image_background }}
+<div class="form-demo form-demo-container pt-4x pb-4x pt-2x-m pb-2x-m" style="background-image:  url({{ glide:url width='500' }});">
+{{ /asset:image_background }}
+
+<!--<div class="form-demo pt-4x pb-4x pt-2x-m pb-2x-m"
+     style="background-image:url({{ asset:image_background }}{{ glide:url width="500" }}{{ /asset:image_background }});">-->
+  <div class="bg brand-grad-trans"></div>
+  <div class="container">
+    <section class="row">
+      <div class="col-sm-6 col-sm-offset-6">
+        {{ text | markdown }}
+
+        {{ form_data_grid }}
+        <form class="row-sm" action="{{ form_action }}" method="POST">
+          <input type=hidden name="oid" value="{{ oid }}">
+          <input type=hidden name="retURL" value="{{ returl }}">
+          <div class="col-xs-7 col-sm-8">
+            <input type="email" class="form-input" placeholder="Enter your email"
+                   required="required" maxlength="80" name="email">
+          </div>
+          <div class="col-xs-5 col-sm-4">
+            <button class="btn-white btn-fit" type="submit">{{ form_action_text }}</button>
+          </div>
+        </form>
+        {{ /form_data_grid }}
+      </div>
+    </section>
+  </div>
+</div>

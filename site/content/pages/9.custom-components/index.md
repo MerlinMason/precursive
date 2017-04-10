@@ -30,6 +30,22 @@ components:
       This is normal text
     image_background:
       - /assets/2_hub_article_banner_672x357px_eng_no_title_v2_tcm1374-492843_1.jpg
+    show_navigation_bar: true
+  - 
+    type: demo_CTA
+    text: |
+      # This is the title
+      ## This is the subtitle
+      
+      Some text
+    form_data_grid:
+      - 
+        form_action: https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8
+        oid: 00DD0000000DBV2
+        returl: http://precursive.com/demo-success
+    form_action_text: Book a demo
+    image_background:
+      - /assets/backgrounds/girl-smile-1485428288.jpg
 title: Custom Components
 fieldset: super_replicator
 template: custom_components

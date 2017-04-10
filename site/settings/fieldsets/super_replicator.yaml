@@ -193,6 +193,22 @@ fields:
         display: link_CTA
         instructions: ""
         fields:
+          image_background:
+            type: assets
+            display: image_background
+            instructions: null
+            container: main
+            folder: /
+            restrict: false
+            max_files: "1"
+          show_navigation_bar:
+            type: toggle
+            display: show_navigation_bar
+            instructions: null
+          show_precursive_logo:
+            type: toggle
+            display: Show Precursive Logo
+            instructions: null
           text:
             type: markdown
             display: text
@@ -249,17 +265,24 @@ fields:
             max_rows: "1"
             min_rows: "1"
             add_row: null
-          image_background:
+          show_video_or_image:
+            type: radio
+            display: show_video_or_image
+            instructions: null
+            options:
+              1: Show Image
+              2: Show Video
+          video_on_the_right:
             type: assets
-            display: image_background
+            display: video_on_the_right
             instructions: null
             container: main
             folder: /
             restrict: false
             max_files: "1"
-          image_front_right:
+          image_on_the_right:
             type: assets
-            display: image_front_right
+            display: image_on_the_right
             instructions: null
             container: main
             folder: /
