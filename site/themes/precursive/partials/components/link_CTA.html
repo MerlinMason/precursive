@@ -9,8 +9,8 @@
             {{ partial:nav }}
         {{ /if }}
         <div class="container">
-            <div class="row mt-4x mt-2x-m pb-2x mb-angle">
-                <div class="col-sm-6">
+            <div class="row mt-3x mt-2x-m pb-2x mb-angle">
+                <div class="col-sm-6 text-container">
 
                     {{ if show_precursive_logo }}
                     <div class="logo-container">
@@ -22,13 +22,13 @@
 
                     {{ if show_button_1 }}
                     {{ button_1_data }}
-                    <a href="{{ url_redirection }}" class="btn-white btn-large hidden-m js-toggle-form-modal mb-05x">{{ button_text }}</a>
+                    <a href="{{ url_redirection }}" class="btn-white btn-large hidden-m mb-05x">{{ button_text }}</a>
                     {{ /button_1_data }}
                     {{ /if }}
 
-                    {{ if show_button_1 }}
+                    {{ if show_button_2 }}
                     {{ button_2_data }}
-                    <a href="{{ url_redirection }}" class="btn-white btn-large has-image hidden-m" target="_blank">
+                    <a href="{{ url_redirection }}" class="btn-white btn-large hidden-m" target="_blank">
                         <!--<img src="{{ theme:img src='/logos/salesforce-blue.svg' }}" alt="Salesforce logo">-->
                         {{ button_text }}
                     </a>
@@ -40,8 +40,8 @@
                 {{ if show_video_or_image == 1 }}
                 <div class="col-sm-6">
                     <div class="masthead-video"
-                         style="background-image:url({{ asset:video_on_the_right }}{{ glide:url width="500" height="300" }}
-                    {{ /asset:video_on_the_right }});">
+                         style="background-image:url({{ asset:video_placeholder }}{{ glide:url width="500" height="300" }}
+                    {{ /asset:video_placeholder }});">
                     <img src="{{ theme:img src='/icons/play.svg' }}" width="100px" class="play-icon js-play-video">
                     </div>
                     <p class="s-xs c-white text-center mt-05x">{{ video_on_the_right_subtitle }}</p>
@@ -60,5 +60,17 @@
 
             </div>
         </div>
+    </div>
+</div>
+
+<div class="js-modal-video modal-video">
+    <video controls>
+        {{ asset:video_on_the_right }}
+        <source src="{{ url }}" type="video/webm">
+        {{ /asset:video_on_the_right }}
+
+    </video>
+    <div class="close-icon js-hide-video">
+        <img src="{{ theme:img src='/icons/x.svg' }}" width="30px">
     </div>
 </div>

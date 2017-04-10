@@ -1,6 +1,7 @@
 taxonomies:
   tags: true
 title: Super Replicator
+create_title: ""
 fields:
   components:
     type: replicator
@@ -236,7 +237,7 @@ fields:
                 type: text
                 display: Url Redirection
                 instructions: null
-                default: '#'
+                default: https://precursive.com/
               button_text:
                 type: text
                 display: button_text
@@ -259,7 +260,7 @@ fields:
                 type: text
                 display: Url Redirection
                 instructions: null
-                default: '#'
+                default: https://precursive.com/
               button_text:
                 type: text
                 display: button_text
@@ -271,14 +272,22 @@ fields:
             add_row: null
           show_video_or_image:
             type: radio
-            display: show_video_or_image
+            display: What do you want to display on the right?
             instructions: null
             options:
               1: Show Video
               2: Show Imagen
+          video_placeholder:
+            type: assets
+            display: Video Placeholder
+            instructions: null
+            container: main
+            folder: /
+            restrict: false
+            max_files: "1"
           video_on_the_right:
             type: assets
-            display: video_on_the_right
+            display: Video (webm type)
             instructions: null
             container: main
             folder: /
