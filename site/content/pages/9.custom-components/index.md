@@ -99,6 +99,19 @@ components:
       ## Precursive is Native to Salesforce
       
       Find out why Precursive is the #1 app on Salesforce AppExchange® for resource scheduling, project planning and timesheets.
+  - 
+    type: download_guide
+    text: |
+      #### Download the Guide to Buying Resource Management Software
+      
+      Considering purchasing resource management software? This guide will take you through best practices for each step in the process, from building a business case to preparing for implementation.
+    form_heading: Download the guide now
+    form_data:
+      - 
+        action_url: https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8
+        oid: 00DD0000000DBV2
+        ret_url: http://precursive.com/buying-guide-success
+        button_text: Download
 title: Custom Components
 fieldset: super_replicator
 template: custom_components

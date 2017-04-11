@@ -474,3 +474,56 @@ fields:
             container: null
             folder: null
             restrict_assets: false
+      download_guide:
+        display: Download Guide
+        instructions: |
+          #### Download the Guide to Buying Resource Management Software
+          
+          Considering purchasing resource management software? This guide will take you through best practices for each step in the process, from building a business case to preparing for implementation.
+        fields:
+          text:
+            type: markdown
+            display: text
+            instructions: |
+              #### Download the Guide to Buying Resource Management Software
+              
+              Considering purchasing resource management software? This guide will take you through best practices for each step in the process, from building a business case to preparing for implementation.
+            cheatsheet: true
+            container: null
+            folder: null
+            restrict_assets: false
+            default: ""
+          form_heading:
+            type: text
+            display: Form Heading
+            instructions: null
+            default: Download the guide now
+          form_data:
+            type: grid
+            display: Form Data
+            instructions: null
+            fields:
+              action_url:
+                type: text
+                display: Action URL
+                instructions: null
+                default: https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8
+              oid:
+                type: text
+                display: oid
+                instructions: null
+                default: 00DD0000000DBV2
+              ret_url:
+                type: text
+                display: Ret URL
+                instructions: null
+                default: http://precursive.com/buying-guide-success
+              button_text:
+                type: text
+                display: Button Text
+                instructions: null
+                default: Download
+            mode: table
+            max_rows: "1"
+            min_rows: "1"
+            add_row: null
