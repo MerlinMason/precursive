@@ -112,6 +112,30 @@ components:
         oid: 00DD0000000DBV2
         ret_url: http://precursive.com/buying-guide-success
         button_text: Download
+  - 
+    type: standard_header
+    header_data:
+      - 
+        header_title: Customer Success Stories
+        header_subtitle: Learn how customers of all sizes succeed with Precursive
+  - 
+    type: multi_columns
+    columns_to_display: 2
+    multi_columns_grid:
+      - 
+        image:
+          - /assets/busy image.jpg
+        text: |
+          # Available on the Salesforce
+          ## Native to Salesforce
+          Today, many people rely on computers to do homework, work, and create or store useful information.
+      - 
+        image:
+          - /assets/2_hub_article_banner_672x357px_eng_no_title_v2_tcm1374-492843_1.jpg
+        text: |
+          # Available on the Salesforce
+          ## Native to Salesforce
+          Today, many people rely on computers to do homework, work, and create or store useful information.
 title: Custom Components
 fieldset: super_replicator
 template: custom_components

@@ -1,0 +1,23 @@
+<div class="container mt-1x mb-1x three-column-container">
+    <div class="row">
+        {{ multi_columns_grid }}
+        <div class="col-xs-12
+         {{ if columns_to_display == 1 }} col-sm-12 {{ /if}}
+         {{ if columns_to_display == 2 }} col-sm-6  {{ /if}}
+         {{ if columns_to_display == 3 }} col-sm-4  {{ /if}}">
+            {{ image }}
+            <div>
+                <img src="{{ glide:value }}" class="scale-columns
+                 {{ if columns_to_display == 1 }} img-one-col {{ /if}}
+                 {{ if columns_to_display == 2 }} img-two-col  {{ /if}}
+                 {{ if columns_to_display == 3 }} img-three-col  {{ /if}}">
+            </div>
+            {{ /image }}
+
+            <div class="three-column-text mt-1x">
+                {{ text | markdown }}
+            </div>
+        </div>
+        {{ /multi_columns_grid }}
+    </div>
+</div>

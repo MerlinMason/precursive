@@ -306,11 +306,11 @@ fields:
             folder: /
             restrict: false
             max_files: "1"
-      header_template:
-        display: Header Template (customized)
+      standard_header:
+        display: Standard Header
         instructions: ""
         fields:
-          header data:
+          header_data:
             type: grid
             display: Header Data
             instructions: null
@@ -376,22 +376,31 @@ fields:
         display: Multi Columns
         instructions: ""
         fields:
+          columns_to_display:
+            type: radio
+            display: How many columns do you want to display ?
+            instructions: null
+            options:
+              1: One
+              2: Two
+              3: Three
+            validate: required
           multi_columns_grid:
             type: grid
             display: Multi Columns Grid
             instructions: null
             fields:
-              image_column:
+              image:
                 type: assets
-                display: Image Column
+                display: Image
                 instructions: null
                 container: main
                 folder: /
                 restrict: false
                 max_files: "1"
-              text_column:
+              text:
                 type: markdown
-                display: text_column
+                display: text
                 instructions: null
                 cheatsheet: true
                 container: null
@@ -476,10 +485,7 @@ fields:
             restrict_assets: false
       download_guide:
         display: Download Guide
-        instructions: |
-          #### Download the Guide to Buying Resource Management Software
-          
-          Considering purchasing resource management software? This guide will take you through best practices for each step in the process, from building a business case to preparing for implementation.
+        instructions: Use 4 hashes (h4) to style the title and use normal text for the parapraph.
         fields:
           text:
             type: markdown
