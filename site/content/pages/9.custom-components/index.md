@@ -80,6 +80,25 @@ components:
     show_angle: true
     video_placeholder:
       - /assets/download.jpeg
+  - 
+    type: hero_casestudy
+  - 
+    type: carousel_casestudy
+  - 
+    type: all_benefits_section
+  - 
+    type: sales_delivery
+    salesforce_heading: Connecting Sales and Delivery
+    salesforce_description: >
+      Workflow Automation. Align sales activities with delivery resources, manage people and projects more
+      effectively and create an effortless customer experience.
+  - 
+    type: app_exchange
+    text: |
+      # Available on the Salesforce AppExchange®
+      ## Precursive is Native to Salesforce
+      
+      Find out why Precursive is the #1 app on Salesforce AppExchange® for resource scheduling, project planning and timesheets.
 title: Custom Components
 fieldset: super_replicator
 template: custom_components

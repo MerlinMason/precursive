@@ -306,14 +306,6 @@ fields:
             folder: /
             restrict: false
             max_files: "1"
-      entire_template:
-        display: Entire Template
-        instructions: ""
-        fields:
-          entire_template:
-            type: template
-            display: Entire Template
-            instructions: null
       header_template:
         display: Header Template (customized)
         instructions: ""
@@ -438,3 +430,47 @@ fields:
             options:
               1: 'Image & Text'
               2: 'Text & Image'
+      hero_casestudy:
+        display: Hero Casestudy
+        instructions: ""
+        fields: [ ]
+      carousel_casestudy:
+        display: Carousel Casestudy
+        instructions: ""
+        fields: [ ]
+      all_benefits_section:
+        display: "All Benefit's Section"
+        instructions: ""
+        fields: [ ]
+      sales_delivery:
+        display: Sales + Delivery
+        instructions: ""
+        fields:
+          salesforce_heading:
+            type: title
+            display: Salesforce Heading
+            instructions: null
+            default: Connecting Sales and Delivery
+          salesforce_description:
+            type: text
+            display: Salesforce Description
+            instructions: null
+            default: >
+              Workflow Automation. Align sales activities with delivery resources, manage people and projects more
+              effectively and create an effortless customer experience.
+      app_exchange:
+        display: App Exchange
+        instructions: ""
+        fields:
+          text:
+            type: markdown
+            display: text
+            instructions: |
+              # Available on the Salesforce AppExchange®
+              ## Precursive is Native to Salesforce
+              
+              Find out why Precursive is the #1 app on Salesforce AppExchange® for resource scheduling, project planning and timesheets.
+            cheatsheet: false
+            container: null
+            folder: null
+            restrict_assets: false
