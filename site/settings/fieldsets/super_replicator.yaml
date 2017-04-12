@@ -141,7 +141,7 @@ fields:
             instructions: null
             default: Caption
       demo_CTA:
-        display: demo CTA
+        display: Demo CTA (Form on the right)
         instructions: ""
         fields:
           text:
@@ -191,7 +191,7 @@ fields:
             restrict: false
             max_files: "1"
       link_CTA:
-        display: link_CTA
+        display: 'Link CTA (Text, 2 Buttons, Image, Video & Only Text)'
         instructions: ""
         fields:
           image_background:
@@ -270,13 +270,14 @@ fields:
             max_rows: "1"
             min_rows: "1"
             add_row: null
-          show_video_or_image:
+          distribution:
             type: radio
             display: What do you want to display on the right?
             instructions: null
             options:
               1: Show Video
               2: Show Imagen
+              3: Show Only Text
           video_placeholder:
             type: assets
             display: Video Placeholder
@@ -341,35 +342,35 @@ fields:
             type: title
             display: Top Picks Title
             instructions: null
-            default: Top Picks Title
+            default: Our Top Picks
           top_picks_subtitle:
             type: text
             display: Top Picks Subtitle
             instructions: null
-            default: Top Picks Subtitle
-          top_picks_speakers:
+            default: Come to visit us !
+          top_picks_grid:
             type: grid
-            display: Top Picks Speakers
+            display: Top Picks Grid
             instructions: null
             fields:
-              image_speaker:
+              image:
                 type: assets
-                display: Image Speaker
+                display: image
                 instructions: null
                 container: main
                 folder: /
                 restrict: false
                 max_files: "1"
-              text_speaker:
+              text:
                 type: markdown
-                display: Text Speaker
+                display: text
                 instructions: null
                 cheatsheet: true
                 container: null
                 folder: null
                 restrict_assets: false
             mode: table
-            max_rows: "4"
+            max_rows: "5"
             min_rows: "1"
             add_row: null
       multi_columns:

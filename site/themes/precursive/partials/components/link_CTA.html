@@ -9,8 +9,10 @@
             {{ partial:nav }}
         {{ /if }}
         <div class="container">
-            <div class="row mt-3x mt-2x-m pb-2x mb-angle">
-                <div class="col-sm-6 text-container">
+            <div class="row mt-4x mt-2x-m pb-2x mb-angle">
+
+                {{ if distribution == 3 }}
+                    <div class="col-xs-12 col-sm-12 text-container">
 
                     {{ if show_precursive_logo }}
                     <div class="logo-container">
@@ -36,9 +38,39 @@
                     {{ /if }}
 
                 </div>
+                {{ /if }}
 
-                {{ if show_video_or_image == 1 }}
-                <div class="col-sm-6">
+                {{ if distribution != 3 }}
+                <div class="col-xs-12 col-sm-6 text-container">
+
+                    {{ if show_precursive_logo }}
+                    <div class="logo-container">
+                        <a href="/" class="logo">{{ site_name }}</a>
+                    </div>
+                    {{ /if }}
+
+                    {{ text | markdown }}
+
+                    {{ if show_button_1 }}
+                    {{ button_1_data }}
+                    <a href="{{ url_redirection }}" class="btn-white btn-large hidden-m mb-05x">{{ button_text }}</a>
+                    {{ /button_1_data }}
+                    {{ /if }}
+
+                    {{ if show_button_2 }}
+                    {{ button_2_data }}
+                    <a href="{{ url_redirection }}" class="btn-white btn-large hidden-m" target="_blank">
+                        <!--<img src="{{ theme:img src='/logos/salesforce-blue.svg' }}" alt="Salesforce logo">-->
+                        {{ button_text }}
+                    </a>
+                    {{ /button_2_data }}
+                    {{ /if }}
+
+                </div>
+                {{ /if }}
+
+                {{ if distribution == 1 }}
+                <div class="col-xs-12 col-sm-6">
                     <div class="masthead-video"
                          style="background-image:url({{ asset:video_placeholder }}{{ glide:url width="500" height="300" }}
                     {{ /asset:video_placeholder }});">
@@ -48,7 +80,7 @@
                 </div>
                 {{ /if }}
 
-                {{ if show_video_or_image == 2 }}
+                {{ if distribution == 2 }}
                 <div class="col-sm-5 col-sm-offset-1">
                     {{ asset:image_on_the_right }}
                     <img src="{{ glide:url }}" class="scale hidden-m" alt="{{ caption }}">

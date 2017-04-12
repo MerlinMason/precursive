@@ -75,6 +75,7 @@ components:
     video_placeholder:
       - /assets/download.jpeg
     show_button_1: true
+    distribution: 1
   - 
     type: hero_casestudy
   - 
@@ -131,6 +132,20 @@ components:
           # Available on the Salesforce
           ## Native to Salesforce
           Today, many people rely on computers to do homework, work, and create or store useful information.
+      - 
+        image:
+          - /assets/1383944_41477562-1024x682.jpg
+        text: |
+          # Available on the Salesforce
+          ## Native to Salesforce
+          Today, many people rely on computers to do homework, work, and create or store useful information.
+      - 
+        image:
+          - /assets/BaCHBv6CIAIvp1m.jpg-large-1488276030.jpeg
+        text: |
+          # Available on the Salesforce
+          ## Native to Salesforce
+          Today, many people rely on computers to do homework, work, and create or store useful information.
   - 
     type: image_and_text
     text: |
@@ -141,6 +156,25 @@ components:
     image:
       - /assets/29_-_introducing_Salesforce_DX_qklwxw-1488882866.png
     distribution: 2
+  - 
+    type: top_picks
+    top_picks_title: Our Top Picks
+    top_picks_subtitle: Come to visit us !
+    top_picks_grid:
+      - 
+        image:
+          - /assets/events/Marc-Jarvis.jpg
+        text: |
+          # Marc Jarvis
+          ## **Co-founder & Managing Director APAC**
+          
+          Hailing from the UK, Marc is driving our mission to bring beautifully designed resource planning to the land Down Under.
+      - 
+        image:
+          - /assets/events/Precursive_Booth_babes.jpg
+        text: |
+          # Resource Therapists
+          Precursive’s professional resource therapists are guaranteed to relieve stress, improve productivity and cure you of your busy-ness.
 title: Custom Components
 fieldset: super_replicator
 template: custom_components
