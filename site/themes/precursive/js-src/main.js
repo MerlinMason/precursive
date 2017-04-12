@@ -4,11 +4,14 @@ import "openshare";
 import Home from "./pages/home";
 import CssAnimation from "./modules/css-animation";
 import CaseStudies from "./modules/case-studies";
+import TopPicks from "./modules/top-picks";
 
 // console.log(Share);
 Home();
 CssAnimation();
 CaseStudies();
+TopPicks();
+
 
 $(".js-show-intercom").on("click", (e) => {
     e.preventDefault();

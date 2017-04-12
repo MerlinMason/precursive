@@ -1,0 +1,22 @@
+{{ collection:casestudies promoted:is="true" limit="1" sort="random" }}
+    <section class="casestudy-promoted" style="background-image:url({{ asset:hero_image }}{{ glide:url width="1440" }}{{ /asset:hero_image }});">
+        <div class="bg"></div>
+        <div class="container sm text-center body">
+            {{ relate:related_customer }}
+                {{ assets:logo }}
+                    <img src="{{ glide:id width="150" height="60" }}" alt="logo for {{ title }}" title="{{ title }}" class="related-logo">
+                {{ /assets:logo }}
+            {{ /relate:related_customer }}
+
+            <h1 class="h s-lg w-b c-white">{{ title }}</h1>
+
+            <a href="{{ url }}" class="btn-white">
+                Read
+                {{ relate:related_customer }}
+                    {{ title }}
+                {{ /relate:related_customer }}
+                case study
+            </a>
+        </div>
+    </section>
+{{ /collection:casestudies }}

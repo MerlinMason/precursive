@@ -1,0 +1,16 @@
+figure.image {
+    margin:(@space * 2);
+
+    position:relative;
+    img {
+        .scale();
+    }
+    figcaption {
+        .brand-grad-trans();
+        padding:@space;
+        .position(absolute, auto, 0, 0, 0, 1);
+        color:#fff;
+        .w-b();
+        .shadow();
+    }
+}

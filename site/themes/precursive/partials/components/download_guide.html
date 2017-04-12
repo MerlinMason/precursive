@@ -1,0 +1,41 @@
+<section class="container download-guide-container pt-3x pb-3x">
+    <div class="row">
+        <div class="col-sm-3">
+            <img src="{{ theme:img src="misc/guide-to-buying.png" }}" class="scale">
+        </div>
+        <div class="col-sm-5">
+            {{ text | markdown }}
+        </div>
+        <div class="col-sm-4">
+            {{ form_data }}
+            <h6 class="h s-md">{{ form_heading }}</h6>
+            <form action="{{ action_url }}" method="POST">
+                <input type=hidden name="oid" value="{{ oid }}">
+                <input type=hidden name="retURL" value="{{ ret_url}}">
+
+                <div class="row-sm">
+                    <div class="col-xs-6">
+                        <div class="form-group">
+                            <input maxlength="40" name="first_name" type="text" class="form-input bordered"
+                                   required="required" placeholder="Forename">
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="form-group">
+                            <input maxlength="80" name="last_name" type="text" class="form-input bordered"
+                                   required="required" placeholder="Surname">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <input maxlength="80" name="email" type="text" class="form-input bordered"
+                           required="required" placeholder="Email">
+                </div>
+
+                <button type="submit" class="btn-sky btn-fit">{{ button_text }}</button>
+            </form>
+            {{ /form_data }}
+        </div>
+    </div>
+</section>

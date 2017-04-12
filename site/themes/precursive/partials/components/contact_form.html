@@ -1,0 +1,98 @@
+<div class="contactFormContainer pt-4x pb-4x">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+
+        {{ if show_contact_form }}
+        <div class="island c-grey3 mb-2x">
+
+          <h1 class="h s-md w-n text-center mt-1x">{{ contact_form_header_text }}</h1>
+          <hr>
+
+          {{ contact_form_data }}
+          <form action="{{ contact_form_action }}" method="POST">
+            <input type=hidden name="oid" value="{{oid}}">
+            <input type=hidden name="retURL" value="{{ returl }}">
+
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label>First Name</label>
+                  <input maxlength="40" required="required" name="first_name"
+                         type="text" class="form-input bordered">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label>Last Name</label>
+                  <input maxlength="80" required="required" name="last_name"
+                         type="text" class="form-input bordered">
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label>Email</label>
+                  <input maxlength="80" name="email" type="email" required="required"
+                         class="form-input bordered">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label>Company</label>
+                  <input maxlength="40" name="company" type="text" required="required"
+                         class="form-input bordered">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+                                <textarea name="{{oidmessage}}" required="required" wrap="soft"
+                                          class="form-input bordered"
+                                          placeholder="Add a message"></textarea>
+            </div>
+
+            <div class="text-right">
+              <button type="submit" class="btn-sky btn-wide">{{contact_form_action_text}}</button>
+            </div>
+          </form>
+          {{ /contact_form_data }}
+
+        </div>
+        {{ /if }}
+
+        {{ if show_contact_us }}
+        <div class="island c-grey3 text-center">
+          <h1 class="h s-md w-n mt-1x">{{ contact_us_header }}</h1>
+          <hr>
+          <div class="row">
+            <div class="col-sm-4 mb-1x">
+              <a href="mailto:{{ site_email | obfuscate_email }}" class="link-royal" target="_blank">
+                <img src="{{ theme:img src='/icons/email.svg' }}" width="50px">
+
+                <div>{{ site_email | obfuscate_email }}</div>
+              </a>
+            </div>
+            <div class="col-sm-4 mb-1x">
+              <a href="tel:{{ site_phone }}" class="link-royal">
+                <img src="{{ theme:img src='/icons/call.svg' }}" width="50px">
+
+                <div>{{ site_phone }}</div>
+              </a>
+            </div>
+            <div class="col-sm-4 mb-1x">
+              <a href="#" class="link-royal js-show-intercom">
+                <img src="{{ theme:img src='/icons/chat.svg' }}" width="50px">
+
+                <div>Live Chat</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        {{ /if }}
+      </div>
+    </div>
+  </div>
+</div>
