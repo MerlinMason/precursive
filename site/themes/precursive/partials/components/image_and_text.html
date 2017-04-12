@@ -1,0 +1,29 @@
+<div class="container image-text-container">
+  {{ if distribution == 1 }}
+  <div class="row">
+    <div class="col-xs-12 col-sm-6">
+      {{ asset:image }}
+        <img src="{{ glide:url }}" class="scale" alt="{{ caption }}">
+      {{ /asset:image }}
+    </div>
+
+    <div class="col-xs-12 col-sm-6">
+      {{ text | markdown }}
+    </div>
+  </div>
+  {{ /if }}
+
+  {{ if distribution == 2 }}
+  <div class="row">
+    <div class="col-xs-12 col-sm-6">
+      {{ text | markdown }}
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      {{ asset:image }}
+      <img src="{{ glide:url }}" class="scale" alt="{{ caption }}">
+      {{ /asset:image }}
+    </div>
+  </div>
+  {{ /if }}
+
+</div>

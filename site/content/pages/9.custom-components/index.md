@@ -53,10 +53,6 @@ components:
         returl: Redirection URL
   - 
     type: link_CTA
-    image_background:
-      - /assets/29_-_introducing_Salesforce_DX_qklwxw-1488882866.png
-    show_navigation_bar: true
-    show_precursive_logo: true
     text: |
       # This is text
       ## This is text 2
@@ -66,7 +62,6 @@ components:
       - 
         url_redirection: https://precursive.com/
         button_text: Go To Page
-    show_button_2: true
     button_2_data:
       - 
         url_redirection: https://precursive.com/
@@ -77,9 +72,9 @@ components:
     image_on_the_right:
       - /assets/Avatars.jpg
     video_on_the_right_subtitle: This is a message at the bottom of the video
-    show_angle: true
     video_placeholder:
       - /assets/download.jpeg
+    show_button_1: true
   - 
     type: hero_casestudy
   - 
@@ -136,6 +131,16 @@ components:
           # Available on the Salesforce
           ## Native to Salesforce
           Today, many people rely on computers to do homework, work, and create or store useful information.
+  - 
+    type: image_and_text
+    text: |
+      # This is text
+      ## More text
+      
+      Normal Text
+    image:
+      - /assets/29_-_introducing_Salesforce_DX_qklwxw-1488882866.png
+    distribution: 2
 title: Custom Components
 fieldset: super_replicator
 template: custom_components

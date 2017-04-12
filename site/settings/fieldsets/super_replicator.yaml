@@ -408,7 +408,7 @@ fields:
                 restrict_assets: false
                 default: ""
             mode: table
-            max_rows: "3"
+            max_rows: "6"
             min_rows: "1"
             add_row: null
       image_and_text:
