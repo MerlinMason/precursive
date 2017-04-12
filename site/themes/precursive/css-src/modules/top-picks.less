@@ -1,9 +1,28 @@
 .top-picks-carousel {
   .carousel-cell {
     width:100%;
-    max-width:800px;
-    margin:0 (@space * 2) (@space *2);
-    border:1px solid @grey1;
-    background:#fff;
+
+    .carousel-margin {
+      margin: 0 @2x;
+    }
+
+    h1 {
+      .s-sm();
+      .w-b();
+      color: @sky;
+    }
+
+    h2 {
+      .s-sm();
+      .w-b();
+    }
+
+    h3 {
+      .s-sm();
+    }
+
+    p {
+      margin-top: @1x;
+    }
   }
 }

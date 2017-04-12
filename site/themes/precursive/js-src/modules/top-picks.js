@@ -11,16 +11,8 @@ export default () => {
             pageDots: true,
             wrapAround: true,
             adaptiveHeight: true,
-            imagesLoaded: true,
-            draggable: true,
-            arrowShape: {
-                x0: 30,
-                x1: 60,
-                y1: 50,
-                x2: 65,
-                y2: 50,
-                x3: 35
-            }
+            imagesLoaded: false,
+            draggable: true
         });
     }
 };

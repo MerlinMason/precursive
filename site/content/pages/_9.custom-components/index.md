@@ -11,6 +11,7 @@ components:
     contact_form_action_text: Submit
     contact_us_header: Other ways to contact us
     show_contact_us: true
+    show_contact_form: true
   - 
     type: image
     image:
@@ -31,6 +32,8 @@ components:
     image_background:
       - /assets/2_hub_article_banner_672x357px_eng_no_title_v2_tcm1374-492843_1.jpg
     show_navigation_bar: true
+    show_precursive_logo: true
+    show_form: true
   - 
     type: demo_CTA
     text: |
@@ -75,7 +78,8 @@ components:
     video_placeholder:
       - /assets/download.jpeg
     show_button_1: true
-    distribution: 1
+    distribution: 3
+    show_navigation_bar: true
   - 
     type: hero_casestudy
   - 
@@ -114,9 +118,10 @@ components:
       - 
         header_title: Customer Success Stories
         header_subtitle: Learn how customers of all sizes succeed with Precursive
+        show_separator_line: true
   - 
     type: multi_columns
-    columns_to_display: 2
+    columns_to_display: 1
     multi_columns_grid:
       - 
         image:
@@ -155,7 +160,7 @@ components:
       Normal Text
     image:
       - /assets/29_-_introducing_Salesforce_DX_qklwxw-1488882866.png
-    distribution: 2
+    distribution: 1
   - 
     type: top_picks
     top_picks_title: Our Top Picks
@@ -166,7 +171,7 @@ components:
           - /assets/events/Marc-Jarvis.jpg
         text: |
           # Marc Jarvis
-          ## **Co-founder & Managing Director APAC**
+          ## Co-founder & Managing Director APAC
           
           Hailing from the UK, Marc is driving our mission to bring beautifully designed resource planning to the land Down Under.
       - 
