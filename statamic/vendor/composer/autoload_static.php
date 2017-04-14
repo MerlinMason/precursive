@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitb28ea7daffccf1cd979625c880d6ea09
+class ComposerStaticInit39a83a9345a5e7d95cf3602d5c905610
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -2768,7 +2768,6 @@ class ComposerStaticInitb28ea7daffccf1cd979625c880d6ea09
         'Statamic\\Exceptions\\FatalException' => __DIR__ . '/../..' . '/core/Exceptions/FatalException.php',
         'Statamic\\Exceptions\\FileNotFoundException' => __DIR__ . '/../..' . '/core/Exceptions/FileNotFoundException.php',
         'Statamic\\Exceptions\\Handler' => __DIR__ . '/../..' . '/core/Exceptions/Handler.php',
-        'Statamic\\Exceptions\\HoneypotException' => __DIR__ . '/../..' . '/core/Exceptions/HoneypotException.php',
         'Statamic\\Exceptions\\InvalidEntryTypeException' => __DIR__ . '/../..' . '/core/Exceptions/InvalidEntryTypeException.php',
         'Statamic\\Exceptions\\MethodNotFoundException' => __DIR__ . '/../..' . '/core/Exceptions/MethodNotFoundException.php',
         'Statamic\\Exceptions\\ModifierException' => __DIR__ . '/../..' . '/core/Exceptions/ModifierException.php',
@@ -2777,6 +2776,7 @@ class ComposerStaticInitb28ea7daffccf1cd979625c880d6ea09
         'Statamic\\Exceptions\\PublishException' => __DIR__ . '/../..' . '/core/Exceptions/PublishException.php',
         'Statamic\\Exceptions\\RedirectException' => __DIR__ . '/../..' . '/core/Exceptions/RedirectException.php',
         'Statamic\\Exceptions\\ResourceNotFoundException' => __DIR__ . '/../..' . '/core/Exceptions/ResourceNotFoundException.php',
+        'Statamic\\Exceptions\\SilentFormFailureException' => __DIR__ . '/../..' . '/core/Exceptions/SilentFormFailureException.php',
         'Statamic\\Exceptions\\UnauthorizedHttpException' => __DIR__ . '/../..' . '/core/Exceptions/UnauthorizedHttpException.php',
         'Statamic\\Exceptions\\UnlicensedException' => __DIR__ . '/../..' . '/core/Exceptions/UnlicensedException.php',
         'Statamic\\Exceptions\\UrlNotFoundException' => __DIR__ . '/../..' . '/core/Exceptions/UrlNotFoundException.php',
@@ -3792,10 +3792,10 @@ class ComposerStaticInitb28ea7daffccf1cd979625c880d6ea09
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitb28ea7daffccf1cd979625c880d6ea09::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitb28ea7daffccf1cd979625c880d6ea09::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitb28ea7daffccf1cd979625c880d6ea09::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInitb28ea7daffccf1cd979625c880d6ea09::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit39a83a9345a5e7d95cf3602d5c905610::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit39a83a9345a5e7d95cf3602d5c905610::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit39a83a9345a5e7d95cf3602d5c905610::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit39a83a9345a5e7d95cf3602d5c905610::$classMap;
 
         }, null, ClassLoader::class);
     }

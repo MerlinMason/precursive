@@ -175,6 +175,7 @@ class AssetContainer implements AssetContainerContract
         $data = $this->data();
 
         $data['id'] = $this->id();
+        $data['driver'] = $this->driver();
 
         return $data;
     }

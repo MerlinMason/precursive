@@ -10,6 +10,7 @@ use Statamic\API\AssetContainer;
 use Statamic\API\Config;
 use Illuminate\Http\Request;
 use Statamic\Imaging\ImageGenerator;
+use League\Flysystem\FileNotFoundException;
 use League\Glide\Signatures\SignatureFactory;
 use League\Glide\Signatures\SignatureException;
 
@@ -57,15 +58,11 @@ class GlideController extends Controller
         // given path in order to get its focal point. A little overhead for convenience.
         if (Config::get('assets.auto_crop')) {
             if ($asset = Asset::find(Str::ensureLeft($path, '/'))) {
-                return $this->createResponse(
-                    $this->generator->generateByAsset($asset, $this->request->all())
-                );
+                return $this->createResponse($this->generateBy('asset', $asset));
             }
         }
 
-        return $this->createResponse(
-            $this->generator->generateByPath($path, $this->request->all())
-        );
+        return $this->createResponse($this->generateBy('path', $path));
     }
 
     /**
@@ -80,9 +77,7 @@ class GlideController extends Controller
 
         $url = base64_decode($url);
 
-        return $this->createResponse(
-            $this->generator->generateByUrl($url, $this->request->all())
-        );
+        return $this->createResponse($this->generateBy('url', $url));
     }
 
     /**
@@ -103,9 +98,25 @@ class GlideController extends Controller
 
         $asset = AssetContainer::find($container)->asset($path);
 
-        return $this->createResponse(
-            $this->generator->generateByAsset($asset, $this->request->all())
-        );
+        return $this->createResponse($this->generateBy('asset', $asset));
+    }
+
+    /**
+     * Generate an image
+     *
+     * @param $type
+     * @param $item
+     * @return mixed
+     */
+    private function generateBy($type, $item)
+    {
+        $method = 'generateBy' . ucfirst($type);
+
+        try {
+            return $this->generator->$method($item, $this->request->all());
+        } catch (FileNotFoundException $e) {
+            abort(404);
+        }
     }
 
     /**

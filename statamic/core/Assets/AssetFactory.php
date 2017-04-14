@@ -40,6 +40,11 @@ class AssetFactory
         return $this;
     }
 
+    public function folder($folder)
+    {
+        throw new \Exception('Cannot set a folder. Instead, set a path to the file..');
+    }
+
     /**
      * @param string $file
      * @return $this

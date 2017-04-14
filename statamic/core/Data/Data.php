@@ -6,6 +6,8 @@ use Statamic\API\Config;
 use Statamic\API\Helper;
 use Statamic\API\Parse;
 use Statamic\API\Str;
+use Statamic\API\Term;
+use Statamic\API\Taxonomy;
 use Statamic\Exceptions\UuidExistsException;
 use Statamic\Exceptions\UrlNotFoundException;
 use Statamic\Contracts\Data\Data as DataContract;
@@ -46,6 +48,13 @@ abstract class Data implements DataContract
      * @var array
      */
     protected $supplements = [];
+
+    /**
+     * Whether taxonomies should be supplemented
+     *
+     * @var bool
+     */
+    protected $supplement_taxonomies;
 
     /**
      * Data constructor.
@@ -698,4 +707,45 @@ abstract class Data implements DataContract
      * @return mixed
      */
     abstract public function delete();
+
+    /**
+     * Enable taxonomies to be added when supplementing occurs
+     *
+     * @return void
+     */
+    public function supplementTaxonomies()
+    {
+        $this->supplement_taxonomies = true;
+    }
+
+    /**
+     * Supplement the data with taxonomies
+     *
+     * @return void
+     */
+    protected function addTaxonomySupplements()
+    {
+        Taxonomy::all()->each(function ($taxonomy, $taxonomy_handle) {
+            if (! $this->hasWithDefaultLocale($taxonomy_handle)) {
+                return;
+            }
+
+            $terms = $this->getWithDefaultLocale($taxonomy_handle);
+
+            $this->supplements[$taxonomy_handle.'_raw'] = $terms;
+
+            $is_array = is_array($terms);
+
+            // Do nothing if there's a blank field.
+            if ($terms == '') {
+                return;
+            }
+
+            $terms = collect($terms)->map(function ($term) use ($taxonomy_handle) {
+                return Term::whereSlug(Term::normalizeSlug($term), $taxonomy_handle);
+            });
+
+            $this->supplements[$taxonomy_handle] = ($is_array) ? $terms->all() : $terms->first();
+        });
+    }
 }

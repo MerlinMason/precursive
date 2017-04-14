@@ -80,7 +80,7 @@ class MigrateTaxonomies extends Update
     {
         $this->files = collect(
             Folder::disk('content')
-                ->getFilesByTypeRecursively('taxonomies', ['yaml', 'md'])
+                ->getFilesByTypeRecursively('taxonomies', ['yaml', 'md', 'html'])
         );
     }
 
@@ -113,7 +113,7 @@ class MigrateTaxonomies extends Update
     private function getTerms()
     {
         $this->terms = $this->files->filter(function ($path) {
-            return Str::endsWith($path, '.md');
+            return Str::endsWith($path, ['.md', '.html']);
         })->map(function ($path) {
             $data = YAML::parse(File::disk('content')->get($path));
 
@@ -299,7 +299,7 @@ class MigrateTaxonomies extends Update
     private function deleteOldTerms()
     {
         $this->files->each(function ($path) {
-            if (Str::endsWith($path, ['.md', '/folder.yaml'])) {
+            if (Str::endsWith($path, ['.md', '.html', '/folder.yaml'])) {
                 File::disk('content')->delete($path);
             }
         });
@@ -347,14 +347,26 @@ class MigrateTaxonomies extends Update
      */
     private function gatherContentFiles()
     {
-        $this->contentFiles = collect(
+        $content = collect(
             Folder::disk('content')->getFilesRecursively('/')
-        )->reject(function ($path) {
-            return Str::endsWith($path, '.DS_Store'); // yuck
-        })->map(function ($path) {
-            $contents = File::disk('content')->get($path);
-            return compact('path', 'contents');
-        })->keyBy('path');
+        )->map(function ($path) {
+            $disk = 'content';
+            $contents = File::disk($disk)->get($path);
+            return compact('disk', 'path', 'contents');
+        });
+
+        $users = collect(
+            Folder::disk('users')->getFiles('/')
+        )->map(function ($path) {
+            $disk = 'users';
+            $contents = File::disk($disk)->get($path);
+            return compact('disk', 'path', 'contents');
+        });
+
+        $this->contentFiles = $content->merge($users)
+            ->reject(function ($file) {
+                return Str::endsWith($file['path'], '.DS_Store'); // yuck
+            });
     }
 
     /**
@@ -379,7 +391,7 @@ class MigrateTaxonomies extends Update
     private function findAndReplaceId($find, $replace)
     {
         $this->contentFiles->each(function ($file) use ($find, $replace) {
-            $path = $file['path'];
+            $path = $file['disk'] . '::' . $file['path'];
 
             $original = $this->replacedContentFiles->has($path)
                 ? $this->replacedContentFiles->get($path)
@@ -403,7 +415,8 @@ class MigrateTaxonomies extends Update
     private function writeContentReplacements()
     {
         $this->replacedContentFiles->each(function ($contents, $path) {
-            File::disk('content')->put($path, $contents);
+            list($disk, $path) = explode('::', $path);
+            File::disk($disk)->put($path, $contents);
         });
     }
 }

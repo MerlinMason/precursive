@@ -386,14 +386,34 @@ class MigrateAssets extends Update
      */
     private function gatherContentFiles()
     {
-        $this->contentFiles = collect(
+        $content = collect(
             Folder::disk('content')->getFilesRecursively('/')
-        )->reject(function ($path) {
-            return Str::endsWith($path, '.DS_Store'); // yuck
-        })->map(function ($path) {
-            $contents = File::disk('content')->get($path);
-            return compact('path', 'contents');
-        })->keyBy('path');
+        )->map(function ($path) {
+            $disk = 'content';
+            $contents = File::disk($disk)->get($path);
+            return compact('disk', 'path', 'contents');
+        });
+
+        $storage = collect(
+            Folder::disk('storage')->getFilesRecursively('/')
+        )->map(function ($path) {
+            $disk = 'storage';
+            $contents = File::disk($disk)->get($path);
+            return compact('disk', 'path', 'contents');
+        });
+
+        $users = collect(
+            Folder::disk('users')->getFiles('/')
+        )->map(function ($path) {
+            $disk = 'users';
+            $contents = File::disk($disk)->get($path);
+            return compact('disk', 'path', 'contents');
+        });
+
+        $this->contentFiles = $content->merge($storage)->merge($users)
+            ->reject(function ($file) {
+                return Str::endsWith($file['path'], '.DS_Store'); // yuck
+            });
     }
 
     /**
@@ -423,7 +443,7 @@ class MigrateAssets extends Update
     private function findAndReplaceId($find, $replace)
     {
         $this->contentFiles->each(function ($file) use ($find, $replace) {
-            $path = $file['path'];
+            $path = $file['disk'] . '::' . $file['path'];
 
             $original = $this->replacedContentFiles->has($path)
                 ? $this->replacedContentFiles->get($path)
@@ -447,7 +467,8 @@ class MigrateAssets extends Update
     private function writeContentReplacements()
     {
         $this->replacedContentFiles->each(function ($contents, $path) {
-            File::disk('content')->put($path, $contents);
+            list($disk, $path) = explode('::', $path);
+            File::disk($disk)->put($path, $contents);
         });
     }
 
@@ -459,7 +480,6 @@ class MigrateAssets extends Update
      *
      * @param string $containerId
      * @return string
-     * @todo support s3
      */
     private function getContainerPrefix($containerId)
     {

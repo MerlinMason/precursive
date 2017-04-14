@@ -94,6 +94,7 @@ class CollectionsServiceProvider extends ServiceProvider
          * Extract the translations from the files and transform them for
          * usage for the javascript helper.
          *
+         * @param  string  $locale
          * @param  string  $prefix  This is for prefixing the keys for our addons.
          */
         Collection::macro('localize', function ($prefix = null) {
@@ -101,8 +102,8 @@ class CollectionsServiceProvider extends ServiceProvider
                 ->filter(function ($item) {
                     return pathinfo($item, PATHINFO_EXTENSION) == 'php';
                 })
-                ->keyBy(function ($item) use ($prefix) {
-                    return site_locale() . '.' . $prefix . pathinfo($item, PATHINFO_FILENAME);
+                ->keyBy(function ($item) use ($prefix){
+                    return $prefix . pathinfo($item, PATHINFO_FILENAME);
                 })
                 ->map(function ($item) {
                     return require root_path($item);

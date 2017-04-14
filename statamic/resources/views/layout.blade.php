@@ -19,7 +19,7 @@
 		<div class="content @yield('content-class')">
 
 			<div class="cp-head">
-			    <typeahead v-ref:search src="/cp/search/perform" :limit="10"></typeahead>
+			    <typeahead v-ref:search :src="cp_url('search/perform')" :limit="10"></typeahead>
 
 		        <a href="{{ route('site') }}" target="_blank" class="view" v-cloak>
 		    	    <span class="icon icon-eye"></span> {{ translate('cp.view_site') }}
@@ -43,7 +43,7 @@
 		<script>
 			Statamic.translations = {!! $translations !!};
 			Statamic.permissions = '{!! $permissions !!}';
-            Statamic.version = '{!! STATAMIC_VERSION !!}';
+			Statamic.version = '{!! STATAMIC_VERSION !!}';
 		</script>
 		@include('partials.scripts')
 		@yield('scripts')

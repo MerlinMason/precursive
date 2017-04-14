@@ -5,10 +5,8 @@ namespace Statamic\Data\Content;
 use Statamic\API\Config;
 use Statamic\API\File;
 use Statamic\API\Helper;
-use Statamic\API\Taxonomy;
 use Statamic\API\URL;
 use Statamic\API\YAML;
-use Statamic\API\Term as TermAPI;
 use Statamic\Contracts\Data\Entries\Entry;
 use Statamic\Contracts\Data\Globals\GlobalSet;
 use Statamic\Contracts\Data\Pages\Page;
@@ -20,13 +18,6 @@ use Statamic\Contracts\Data\Content\Content as ContentContract;
 
 abstract class Content extends Data implements ContentContract
 {
-    /**
-     * Whether taxonomies should be supplemented
-     *
-     * @var bool
-     */
-    protected $supplement_taxonomies;
-
     /**
      * Get or set the slug
      *
@@ -105,47 +96,6 @@ abstract class Content extends Data implements ContentContract
         if ($this->supplement_taxonomies) {
             $this->addTaxonomySupplements();
         }
-    }
-
-    /**
-     * Enable taxonomies to be added when supplementing occurs
-     *
-     * @return void
-     */
-    public function supplementTaxonomies()
-    {
-        $this->supplement_taxonomies = true;
-    }
-
-    /**
-     * Supplement the data with taxonomies
-     *
-     * @return void
-     */
-    protected function addTaxonomySupplements()
-    {
-        Taxonomy::all()->each(function ($taxonomy, $taxonomy_handle) {
-            if (! $this->hasWithDefaultLocale($taxonomy_handle)) {
-                return;
-            }
-
-            $terms = $this->getWithDefaultLocale($taxonomy_handle);
-
-            $this->supplements[$taxonomy_handle.'_raw'] = $terms;
-
-            $is_array = is_array($terms);
-
-            // Do nothing if there's a blank field.
-            if ($terms == '') {
-                return;
-            }
-
-            $terms = collect($terms)->map(function ($term) use ($taxonomy_handle) {
-                return TermAPI::whereSlug(TermAPI::normalizeSlug($term), $taxonomy_handle);
-            });
-
-            $this->supplements[$taxonomy_handle] = ($is_array) ? $terms->all() : $terms->first();
-        });
     }
 
     /**

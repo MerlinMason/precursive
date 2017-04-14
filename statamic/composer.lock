@@ -1296,16 +1296,16 @@
         },
         {
             "name": "league/glide",
-            "version": "1.1.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/glide.git",
-                "reference": "5d71f2fb030907fdd9552b4952d1ecdc1804702e"
+                "reference": "ae6351088b148ed73ebd1270e312b07fd35dd37d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/glide/zipball/5d71f2fb030907fdd9552b4952d1ecdc1804702e",
-                "reference": "5d71f2fb030907fdd9552b4952d1ecdc1804702e",
+                "url": "https://api.github.com/repos/thephpleague/glide/zipball/ae6351088b148ed73ebd1270e312b07fd35dd37d",
+                "reference": "ae6351088b148ed73ebd1270e312b07fd35dd37d",
                 "shasum": ""
             },
             "require": {
@@ -1353,7 +1353,7 @@
                 "manipulation",
                 "processing"
             ],
-            "time": "2016-08-19 20:49:36"
+            "time": "2017-01-19 01:26:54"
         },
         {
             "name": "league/glide-laravel",

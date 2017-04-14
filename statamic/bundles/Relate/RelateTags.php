@@ -8,6 +8,7 @@ use Statamic\API\User;
 use Statamic\API\Helper;
 use Statamic\API\Content;
 use Statamic\API\Pattern;
+use Statamic\API\Term as TermAPI;
 use Statamic\Contracts\Data\Taxonomies\Term;
 use Statamic\Data\ContentCollection;
 use Statamic\Addons\Collection\CollectionTags;
@@ -55,6 +56,12 @@ class RelateTags extends CollectionTags
     {
         if ($value instanceof Term) {
             return $value;
+        }
+
+        // If the value is a term value (not a term id), the developer may add a taxonomy
+        // parameter to provide a hint to which taxonomy the value is located within.
+        if ($taxonomy = $this->get('taxonomy')) {
+            return TermAPI::whereSlug(TermAPI::normalizeSlug($value), $taxonomy);
         }
 
         return Data::find($value);
