@@ -2,20 +2,19 @@ taxonomies:
   tags: true
 title: Event Posts
 fields:
-  intro_image:
+  thumbnail_greater_image:
     type: assets
-    display: Intro Image
+    display: 'Thumbnail > Image'
     container: main
     folder: /
-    width: 50
     max_files: 1
-  sectionhero_greater_title:
+  thumbnail_greater_title:
     type: title
-    display: 'SectionHero > Title'
+    display: 'Thumbnail > Title'
     default: Title
-  sectionhero_greater_subtitle:
+  thumbnail_greater_subtitle:
     type: title
-    display: 'SectionHero > Subtitle'
+    display: 'Thumbnail > Subtitle'
     default: Subtitle
   components:
     type: partial

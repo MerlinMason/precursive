@@ -27,13 +27,12 @@
                         {{ /if }}
 
                         <a href="{{ url }}" class="text-center">
+                            {{ asset:thumbnail_greater_image }}
+                                <img src="{{ glide:url width='400' height='250' fit='crop' }}" class="scale mb-1x">
+                            {{ /asset:thumbnail_greater_image }}
 
-                            {{ intro_image }}
-                                <img src="{{ glide:value width='400' height='250' fit='crop' }}" class="scale mb-1x">
-                            {{ /intro_image }}
-
-                            <h1 class="h s-sm w-r caps c-jade mb-05x">{{ sectionhero_greater_title }}</h1>
-                            <h2 class="h s-sm w-n c-grey3">{{ sectionhero_greater_subtitle }}</h2>
+                            <h1 class="h s-sm w-r caps c-jade mb-05x">{{ thumbnail_greater_title }}</h1>
+                            <h2 class="h s-sm w-n c-grey3">{{ thumbnail_greater_subtitle }}</h2>
 
                             <div class="c-grey2">
                                 {{ if (date | days_ago) < 21 }}
