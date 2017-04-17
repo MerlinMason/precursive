@@ -1,40 +1,46 @@
 <section class="case-studies-header">
   <div class="casestudy-carousel js-casestudy-carousel">
-{{ collection:casestudies }}
+    {{ collection:casestudies }}
 
-  <div class="carousel-cell">
-      <div class="bg" style="background-image:url({{ asset:main_image }}{{ glide:url width="300" height="500" fit="crop_focal" }}{{ /asset:main_image }});"></div>
-    <div class="row">
-        <div class="col-sm-8 col-sm-offset-4">
-            <div class="body">
-                {{ relate:related_customer }}
-                {{ asset:logo }}
-                <img src="{{ glide:url width="150" height="60" }}" alt="logo for {{ title }}" title="{{ title }}">
-                {{ /asset:logo }}
-                {{ /relate:related_customer }}
-
-                <p>{{ client_testimonial }}</p>
-                <div class="media">
-                    <div class="img">
-                        {{ asset:client_photo }}
-                        <img src="{{ glide:url width="60" height="60" fit="crop" }}" alt="Photo of {{ client_name }}" title="{{ client_name }}" class="round">
-                        {{ /asset:client_photo }}
-                    </div>
-                    <p class="bd w-b">
-                        {{ client_name }},
-                        <br>
-                        {{ client_role }} — {{ relate:related_customer }}{{ title }}{{ /relate:related_customer }}
-                    </p>
-                </div>
-                <a href="{{ url }}" class="link-sky">
-                    Read full case study
-                    <img src="{{ theme:img src="icons/link-arrow.svg" }}" width="22px">
-                </a>
-            </div>
-        </div>
+    <div class="carousel-cell">
+      <div class="bg" style="background-image:url({{ asset:main_image }}{{ glide:url width=" 300
+      " height="500" fit="crop_focal" }}{{ /asset:main_image }});">
     </div>
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-4">
+        <div class="body">
+          {{ relate:related_customer }}
+          {{ asset:logo }}
+          <img src="{{ glide:url width=" 150" height="60" }}" alt="logo for {{ title }}" title="{{ title }}">
+          {{ /asset:logo }}
+          {{ /relate:related_customer }}
+
+          <p>{{ client_testimonial }}</p>
+
+          <div class="media">
+            <div class="img">
+              {{ asset:client_photo }}
+              <img src="{{ glide:url width=" 60" height="60" fit="crop" }}" alt="Photo of {{ client_name }}" title="{{
+              client_name }}" class="round">
+              {{ /asset:client_photo }}
+            </div>
+            <p class="bd w-b">
+              {{ client_name }},
+              <br>
+              {{ client_role }} — {{ relate:related_customer }}{{ title }}{{ /relate:related_customer }}
+            </p>
+          </div>
+          <a href="{{ url }}" class="link-sky">
+            Read full case study
+            <img src="{{ theme:img src="icons/link-arrow.svg" }}" width="22px">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    </div>
+    {{ /collection:casestudies }}
   </div>
 
-{{ /collection:casestudies }}
-  </div>
+
 </section>
