@@ -50,7 +50,10 @@ components:
       
       Find out why Precursive is the #1 app on Salesforce AppExchange® for resource scheduling, project planning and timesheets.
       
-      [![](http://localhost:8888/img/containers/main/logos/Builtech%20Logo.png/0f9102993975131d04eea782a09ab7a5.png)](dude.com)
+      [![](http://localhost:8888/site/themes/precursive/img/logos/appexchange.svg)](dude.com)
+  - 
+    type: image
+    caption: Caption
 title: Task Feed and Precursive Integration
 fieldset: super_replicator
 template: custom_components
