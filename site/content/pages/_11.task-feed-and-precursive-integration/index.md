@@ -7,7 +7,7 @@ components:
     form_action: https://precursive.com/
     form_action_text: Submit
     form_success_message: Form has been sent successfully!
-    text: '### Integrate resourcing and related task management'
+    text: '## Integrate resourcing and related task management'
   - 
     type: standard_header
     header_data:
