@@ -1,5 +1,11 @@
 components:
   - 
+    type: standard_header
+    header_data:
+      - 
+        header_title: Contact Form
+        header_subtitle: Create a form in Salesforce to get the url
+  - 
     type: contact_form
     contact_form_header_text: Getting in touch with the team is easy
     contact_form_action: https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8
@@ -167,16 +173,12 @@ components:
     top_picks_subtitle: Come to visit us !
     top_picks_grid:
       - 
-        image:
-          - /assets/events/Marc-Jarvis.jpg
         text: |
           # Marc Jarvis
           ## Co-founder & Managing Director APAC
           
           Hailing from the UK, Marc is driving our mission to bring beautifully designed resource planning to the land Down Under.
       - 
-        image:
-          - /assets/events/Precursive_Booth_babes.jpg
         text: |
           # Resource Therapists
           Precursive’s professional resource therapists are guaranteed to relieve stress, improve productivity and cure you of your busy-ness.
