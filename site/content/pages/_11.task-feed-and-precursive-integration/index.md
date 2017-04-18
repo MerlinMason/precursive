@@ -39,7 +39,7 @@ components:
         form_action: Action URL
         oid: SalesforceID
         returl: Redirection URL
-    form_action_text: Wave goodbye to spending your weekend working in spreadsheets
+    form_action_text: Demo
     image_background:
       - /assets/backgrounds/headache-1485428289.jpg
 title: Task Feed and Precursive Integration
