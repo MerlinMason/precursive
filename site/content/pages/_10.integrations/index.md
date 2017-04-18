@@ -48,6 +48,28 @@ components:
     image:
       - /assets/p-taskfeed.png
     caption: Caption
+  - 
+    type: link_CTA
+    image_background:
+      - /assets/working-2.jpg
+    show_precursive_logo: true
+    text: |
+      Still managing resources in multiple spreadsheets?
+      
+      Precursive is a resourcing and scheduling tool assist you and your team in optimizing your project mangement.
+    show_button_1: true
+    button_1_data:
+      - 
+        url_redirection: https://precursive.com/
+        button_text: Book a demo
+    button_2_data:
+      - 
+        url_redirection: https://precursive.com/
+        button_text: Go To Page
+    distribution: 2
+    video_on_the_right_subtitle: This is a message at the bottom of the video
+    image_on_the_right:
+      - /assets/messy-spreadsheets.png
 title: Integrations
 fieldset: super_replicator
 template: custom_components
