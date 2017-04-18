@@ -29,6 +29,19 @@ components:
     image:
       - /assets/Brand/how-does-taskfeed-integrate.png
     distribution: 2
+  - 
+    type: demo_CTA
+    text: |
+      ## Wave goodbye to spending your weekend working in spreadsheets
+      Get in touch to find out how much time you could save
+    form_data:
+      - 
+        form_action: Action URL
+        oid: SalesforceID
+        returl: Redirection URL
+    form_action_text: Wave goodbye to spending your weekend working in spreadsheets
+    image_background:
+      - /assets/backgrounds/headache-1485428289.jpg
 title: Task Feed and Precursive Integration
 fieldset: super_replicator
 template: custom_components
