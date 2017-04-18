@@ -7,8 +7,9 @@ export default () => {
 
     if (el.length) {
         new Flickity(el.get(0), {
-            prevNextButtons: false,
-            pageDots: true,
+            prevNextButtons: true,
+            pageDots: false,
+            autoPlay: 4500,
             wrapAround: true,
             adaptiveHeight: true,
             imagesLoaded: false,
