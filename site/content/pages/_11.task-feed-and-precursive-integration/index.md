@@ -9,18 +9,6 @@ components:
     form_success_message: Form has been sent successfully!
     text: '## Integrate resourcing and related task management'
   - 
-    type: multi_columns
-    columns_to_display: 2
-    multi_columns_grid:
-      - 
-        image:
-          - /assets/Brand/precursive.png
-        text: Manage what projects your people are working on with Precursive
-      - 
-        text: 'Manage what tasks need to be done for each '
-        image:
-          - /assets/Brand/taskfeed.png
-  - 
     type: standard_header
     header_data:
       - 
@@ -28,6 +16,19 @@ components:
         header_subtitle: >
           Precursive helps you manage and schedule your resources, our friends over at Taskfeed have built a
           task management Salesforce app which seemless links to Precursive.
+  - 
+    type: image
+    image:
+      - /assets/p-taskfeed-1492554911.png
+    caption: Caption
+  - 
+    type: image_and_text
+    text: |
+      ## Scheduling and task management
+      Most firms are unable to see exactly how their staff are spending their time, and therefore unable to maximise resource utilization. Precursive with Taskfeed creates a complete project and resource management solution opening up visibility in utilization, and project delivery.
+    image:
+      - /assets/Brand/how-does-taskfeed-integrate.png
+    distribution: 2
 title: Task Feed and Precursive Integration
 fieldset: super_replicator
 template: custom_components
