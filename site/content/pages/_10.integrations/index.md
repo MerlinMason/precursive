@@ -34,7 +34,6 @@ components:
     type: image
     image:
       - /assets/sf-pc.png
-    caption: Caption
 title: Integrations
 fieldset: super_replicator
 template: custom_components
