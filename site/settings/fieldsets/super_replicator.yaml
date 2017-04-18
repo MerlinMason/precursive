@@ -73,7 +73,7 @@ fields:
         fields:
           show_contact_form:
             type: toggle
-            display: show Contact Form
+            display: Show Contact Form
             instructions: null
           contact_form_header_text:
             type: text
@@ -320,7 +320,7 @@ fields:
                 type: title
                 display: Header Title
                 instructions: null
-                default: header Title
+                default: Header Title
               header_subtitle:
                 type: text
                 display: Header Subtitle
