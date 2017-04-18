@@ -1,5 +1,5 @@
 components:
-  - 
+  -
     type: masthead
     show_navigation_bar: true
     filter_name: no_filter
@@ -12,11 +12,12 @@ components:
       Automate Workflows: So you can focus on your most important work and keep all data in one place
     image_background:
       - /assets/masthead-patter.png
-  - 
+  -
     type: image
     image:
       - /assets/29_-_introducing_Salesforce_DX_qklwxw-1488882866.png
     caption: Caption
 title: Integrations
 fieldset: super_replicator
+template: custom_components
 id: e18c6b9f-b781-4270-9aac-f48027b1ff59
