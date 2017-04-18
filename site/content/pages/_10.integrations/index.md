@@ -19,6 +19,7 @@ components:
       
       We built Precursive on the Salesforce platform with the focus on using data from Saleforce. These maybe Salestriggers like ‘Deal Closed’ to anything which works for your business. Precursive also has an open API that can be configured for any integration.
       
+      
       ![Image](http://localhost:8888/cp/assets/download/main/O3b_LOGO.png)
       
       We connected our Sales team with Precursive and our project management tool Taskfeed, seemlessly without any loss of data. It’s such a nice workflow!
