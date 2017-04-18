@@ -34,6 +34,20 @@ components:
     type: image
     image:
       - /assets/sf-pc.png
+  - 
+    type: standard_header
+    header_data:
+      - 
+        header_title: 'TaskFeed Project Management '
+        header_subtitle: >
+          Have a finger on the pulse of all your projects! See what is happening in realtime with our clean
+          and clear dashboards. See how much time is spent on projects, if costs are going up and when margin
+          is lost.
+  - 
+    type: image
+    image:
+      - /assets/p-taskfeed.png
+    caption: Caption
 title: Integrations
 fieldset: super_replicator
 template: custom_components
