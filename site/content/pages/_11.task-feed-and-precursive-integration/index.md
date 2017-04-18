@@ -44,6 +44,11 @@ components:
       - /assets/backgrounds/headache-1485428289.jpg
   - 
     type: app_exchange
+    text: |
+      ## Available on the Salesforce AppExchange®
+      ### Precursive is Native to Salesforce
+      
+      Find out why Precursive is the #1 app on Salesforce AppExchange® for resource scheduling, project planning and timesheets.
 title: Task Feed and Precursive Integration
 fieldset: super_replicator
 template: custom_components
