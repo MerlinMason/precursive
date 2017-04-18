@@ -12,7 +12,7 @@ components:
     type: standard_header
     header_data:
       - 
-        header_title: We’re integration to Taskfeed
+        header_title: We’re integrated to Taskfeed
         header_subtitle: >
           Precursive helps you manage and schedule your resources, our friends over at Taskfeed have built a
           task management Salesforce app which seemless links to Precursive.
