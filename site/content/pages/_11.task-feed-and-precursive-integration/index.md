@@ -36,9 +36,9 @@ components:
       Get in touch to find out how much time you could save
     form_data:
       - 
-        form_action: Action URL
-        oid: SalesforceID
-        returl: Redirection URL
+        form_action: http://www.salesforcegotforms.com
+        oid: "3092830982"
+        returl: www.precursive.com/you-got-mail
     form_action_text: Demo
     image_background:
       - /assets/backgrounds/headache-1485428289.jpg
