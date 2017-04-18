@@ -3,8 +3,8 @@ components:
     type: standard_header
     header_data:
       - 
-        header_title: Contact Form
-        header_subtitle: Create a form in Salesforce to get the url
+        header_title: Carousel
+        header_subtitle: Multi box carousel
   - 
     type: contact_form
     contact_form_header_text: Getting in touch with the team is easy
