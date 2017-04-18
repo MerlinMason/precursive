@@ -18,6 +18,8 @@ components:
         text: Manage what projects your people are working on with Precursive
       - 
         text: 'Manage what tasks need to be done for each '
+        image:
+          - /assets/Brand/taskfeed.png
   - 
     type: standard_header
     header_data:
