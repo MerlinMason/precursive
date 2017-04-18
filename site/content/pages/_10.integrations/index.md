@@ -1,5 +1,5 @@
 components:
-  -
+  - 
     type: masthead
     show_navigation_bar: true
     filter_name: no_filter
@@ -12,11 +12,15 @@ components:
       Automate Workflows: So you can focus on your most important work and keep all data in one place
     image_background:
       - /assets/masthead-patter.png
-  -
-    type: image
+  - 
+    type: image_and_text
+    text: |
+      ## Connecting data that you assume would be connected
+      
+      We built Precursive on the Salesforce platform with the focus on using data from Saleforce. These maybe Salestriggers like ‘Deal Closed’ to anything which works for your business. Precursive also has an open API that can be configured for any integration.
     image:
-      - /assets/29_-_introducing_Salesforce_DX_qklwxw-1488882866.png
-    caption: Caption
+      - /assets/integrations.png
+    distribution: 2
 title: Integrations
 fieldset: super_replicator
 template: custom_components
