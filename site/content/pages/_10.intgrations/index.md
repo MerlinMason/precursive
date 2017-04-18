@@ -10,6 +10,8 @@ components:
     text: |
       ## Integrate and Connect Precursive With Your Other Apps
       Automate Workflows: So you can focus on your most important work and keep all data in one place
+    image_background:
+      - /assets/masthead-patter.png
 title: Integrations
 fieldset: super_replicator
 id: e18c6b9f-b781-4270-9aac-f48027b1ff59
