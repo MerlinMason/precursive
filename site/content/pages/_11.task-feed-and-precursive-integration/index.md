@@ -9,6 +9,16 @@ components:
     form_success_message: Form has been sent successfully!
     text: '## Integrate resourcing and related task management'
   - 
+    type: multi_columns
+    columns_to_display: 2
+    multi_columns_grid:
+      - 
+        image:
+          - /assets/Brand/precursive.png
+        text: Manage what projects your people are working on with Precursive
+      - 
+        text: 'Manage what tasks need to be done for each '
+  - 
     type: standard_header
     header_data:
       - 
