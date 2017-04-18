@@ -42,6 +42,8 @@ components:
     form_action_text: Demo
     image_background:
       - /assets/backgrounds/headache-1485428289.jpg
+  - 
+    type: carousel_casestudy
 title: Task Feed and Precursive Integration
 fieldset: super_replicator
 template: custom_components
