@@ -43,7 +43,7 @@ components:
     image_background:
       - /assets/backgrounds/headache-1485428289.jpg
   - 
-    type: carousel_casestudy
+    type: app_exchange
 title: Task Feed and Precursive Integration
 fieldset: super_replicator
 template: custom_components
