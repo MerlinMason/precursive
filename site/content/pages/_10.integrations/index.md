@@ -15,7 +15,7 @@ components:
   - 
     type: image_and_text
     text: |
-      # Connecting data that you assume would be connected
+      ### Connecting data that you assume would be connected
       
       We built Precursive on the Salesforce platform with the focus on using data from Saleforce. These maybe Salestriggers like ‘Deal Closed’ to anything which works for your business. Precursive also has an open API that can be configured for any integration.
     image:
