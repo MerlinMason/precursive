@@ -168,6 +168,12 @@ components:
       - /assets/29_-_introducing_Salesforce_DX_qklwxw-1488882866.png
     distribution: 1
   - 
+    type: standard_header
+    header_data:
+      - 
+        header_title: Header Title
+        header_subtitle: Header Subtitle
+  - 
     type: top_picks
     top_picks_title: Our Top Picks
     top_picks_subtitle: Come to visit us !
