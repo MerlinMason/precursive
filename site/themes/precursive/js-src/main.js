@@ -38,25 +38,6 @@ $(".js-toggle-form-modal").on("click", (e) => {
     });
 });
 
-$("#contactUsForm").on("submit", (e) => {
-    const form = $("#contactUsForm");
-
-    if (grecaptcha.getResponse() === "") {
-        e.preventDefault();
-        console.log("You can't proceed!");
-    } else {
-        $.ajax({
-            url: form.attr("action"),
-            type: form.attr("method"),
-            data: form.serialize()
-        }).done(() => {
-            console.log("Thank you!");
-        }).fail(() => {
-            console.log("Failed!");
-        });
-    }
-});
-
 $("#formEvent").on("submit", (e) => {
     e.preventDefault();
     $.ajax({
@@ -89,7 +70,28 @@ $("#formEvent").on("submit", (e) => {
 
 $(".js-close-banner").on("click", () => $(".js-banner").hide());
 
-window.formsOnSubmit = function (param1) {
-    console.log("formsOnSubmit");
-    console.log(param1);
+$("#contactUsForm").on("submit", (e) => {
+    if (grecaptcha.getResponse() === "") {
+        e.preventDefault();
+        console.log("You can't proceed !");
+    }
+
+    grecaptcha.execute();
+});
+
+window.formsOnSubmit = function () {
+    console.log("This is callback from captcha !");
+    $("#contactUsForm").submit();
+
+   /* if (grecaptcha.getResponse() === "") {
+        e.preventDefault();
+        console.log("You can't proceed !");
+    } else {
+        const $myForm = $("#contactUsForm");
+        if (!$myForm[0].checkValidity()) {
+            // If the form is invalid, submit it. The form won't actually submit;
+            // this will just cause the browser to display the native HTML5 error messages.
+            $myForm.find("#submitContactForm").click();
+        }
+    }*/
 };

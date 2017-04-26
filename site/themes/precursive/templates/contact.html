@@ -14,11 +14,11 @@
                             <input type=hidden name='captcha_settings' value='{"keyname":"precursiveWebsite","fallback":"true","orgId":"00DD0000000DBV2","ts":""}'>
                             <input type=hidden name="oid" value="00DD0000000DBV2">
                             <input type=hidden name="retURL" value="http://precursive.com/contact-success">
+                            <input type=hidden name="leadSource" value="contactUsLeadSource">
 
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
-
                                         <label>First Name</label>
                                         <input maxlength="40" required="required" name="first_name"
                                                type="text" class="form-input bordered">
@@ -55,10 +55,16 @@
                                           placeholder="Add a message" type="text"></textarea>
                             </div>
 
-                            <div class="g-recaptcha" data-sitekey="6Ld2yR4UAAAAABOFcKrT2vFvvoI1fIxaAa_PCxzq"></div>
+                            <div style="visibility: hidden;" class="text-right">
+                              <button class="btn-sky btn-wide g-recaptcha"
+                                data-sitekey="6Ld2yR4UAAAAABOFcKrT2vFvvoI1fIxaAa_PCxzq"
+                                data-callback="formsOnSubmit">
+                                  Submit
+                              </button>
+                            </div>
 
-                            <div class="text-right">
-                                <button type="submit" class="btn-sky btn-wide">Submit</button>
+                            <div  class="text-right">
+                                <button id="submitContactForm" type="submit" class="btn-sky btn-wide">Submit</button>
                             </div>
                         </form>
                     </div>
