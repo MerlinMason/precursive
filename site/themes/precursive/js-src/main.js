@@ -69,3 +69,8 @@ $("#formEvent").on("submit", (e) => {
 });
 
 $(".js-close-banner").on("click", () => $(".js-banner").hide());
+
+window.formsOnSubmit = function (param1) {
+    console.log("formsOnSubmit");
+    console.log(param1);
+};
