@@ -43,12 +43,22 @@
                 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-
         ga('create', 'UA-36029039-1', 'auto');
         ga('send', 'pageview');
     </script>
     <!-- End Google Analytics -->
 
+    <!-- Google Recaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!--<script>
+        function timestamp() {
+            var response = document.getElementById("g-recaptcha-response");
+            if ( (response == null || response.value.trim() == "") && document.getElementsByName("captcha_settings"))
+            {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);
+                elems["ts"] = JSON.stringify(new Date().getTime());
+                document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } }
+        setInterval(timestamp, 500);
+    </script>-->
 
     <link rel="stylesheet" href="{{ theme:css }}">
     <link rel="shortcut icon" type="image/png" href="{{ theme:img src='/favicon.png' }}">

@@ -69,3 +69,15 @@ $("#formEvent").on("submit", (e) => {
 });
 
 $(".js-close-banner").on("click", () => $(".js-banner").hide());
+
+$("#contactUsForm").on("submit", (e) => {
+    if (grecaptcha.getResponse() === "") {
+        e.preventDefault();
+    }
+
+    grecaptcha.execute();
+});
+
+window.formsOnSubmit = function () {
+    $("#contactUsForm").submit();
+};

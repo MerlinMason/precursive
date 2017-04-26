@@ -10,9 +10,11 @@
                         <h1 class="h s-md w-n text-center mt-1x">{{ form_heading }}</h1>
                         <hr>
 
-                        <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+                        <form id="contactUsForm" action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+                            <input type=hidden name='captcha_settings' value='{"keyname":"precursiveWebsite","fallback":"true","orgId":"00DD0000000DBV2","ts":""}'>
                             <input type=hidden name="oid" value="00DD0000000DBV2">
                             <input type=hidden name="retURL" value="http://precursive.com/contact-success">
+                            <input type=hidden name="leadSource" value="contactUsLeadSource">
 
                             <div class="row">
                                 <div class="col-sm-6">
@@ -49,12 +51,21 @@
                             </div>
 
                             <div class="form-group">
-                                <textarea name="contactUsMessage" required="required" wrap="soft" class="form-input bordered"
-                                          placeholder="Add a message"></textarea>
+                                <textarea id="00ND0000006QJTk" name="00ND0000006QJTk" required="required" wrap="soft" class="form-input bordered"
+                                          placeholder="Add a message" type="text"></textarea>
                             </div>
 
-                            <div class="text-right">
-                                <button type="submit" class="btn-sky btn-wide">Submit</button>
+                            <div style="visibility: hidden;" class="text-right">
+                              <button class="btn-sky btn-wide g-recaptcha"
+                                data-sitekey="6Ld2yR4UAAAAABOFcKrT2vFvvoI1fIxaAa_PCxzq"
+                                data-callback="formsOnSubmit">
+                                  Submit
+                              </button>
+                            </div>
+
+
+                            <div  class="text-right">
+                                <button id="submitContactForm" type="submit" class="btn-sky btn-wide">Submit</button>
                             </div>
                         </form>
                     </div>
