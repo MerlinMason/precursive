@@ -38,6 +38,25 @@ $(".js-toggle-form-modal").on("click", (e) => {
     });
 });
 
+$("#contactUsForm").on("submit", (e) => {
+    const form = $("#contactUsForm");
+
+    if (grecaptcha.getResponse() === "") {
+        e.preventDefault();
+        console.log("You can't proceed!");
+    } else {
+        $.ajax({
+            url: form.attr("action"),
+            type: form.attr("method"),
+            data: form.serialize()
+        }).done(() => {
+            console.log("Thank you!");
+        }).fail(() => {
+            console.log("Failed!");
+        });
+    }
+});
+
 $("#formEvent").on("submit", (e) => {
     e.preventDefault();
     $.ajax({
