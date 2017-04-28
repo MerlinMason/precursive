@@ -2,7 +2,7 @@ subtitle: Check out our upcoming events at Precursive
 masthead:
   - /assets/backgrounds/pexels-photo-99560.jpeg
 is_hidden_header: true
-is_hidden_footer: true
+is_hidden_footer: false
 title: Events
 nav_title: Events
 fieldset: bloghome
