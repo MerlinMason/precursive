@@ -1,17 +1,16 @@
 components:
-  - 
-    type: app_exchange
-    text: |
-      # Available on the Salesforce AppExchange®
-      ## Precursive is Native to Salesforce
-      
-      Find out why Precursive is the #1 app on Salesforce AppExchange® for resource scheduling, project planning and timesheets.
-  - 
+  -
+    type: standard_header
+    header_data:
+      -
+        header_title: Carousel
+        header_subtitle: Multi box carousel
+  -
     type: contact_form
     contact_form_header_text: Getting in touch with the team is easy
     contact_form_action: https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8
     contact_form_data:
-      - 
+      -
         oid: 00DD0000000DBV2
         returl: http://precursive.com/contact-success
         oidmessage: 00ND0000006QJTk
@@ -19,10 +18,10 @@ components:
     contact_us_header: Other ways to contact us
     show_contact_us: true
     show_contact_form: true
-  - 
+  -
     type: image
     image: /assets/29_-_introducing_Salesforce_DX_qklwxw-1488882866.png
-  - 
+  -
     type: masthead
     filter_name: no_filter
     form_title: Default Form Title
@@ -38,26 +37,26 @@ components:
     show_navigation_bar: true
     show_precursive_logo: true
     show_form: true
-  - 
+  -
     type: demo_CTA
     text: |
       # This is the title
       ## This is the subtitle
-      
+
       Some text
     form_data_grid:
-      - 
+      -
         form_action: https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8
         oid: 00DD0000000DBV2
         returl: http://precursive.com/demo-success
     form_action_text: Book a demo
     image_background: /assets/backgrounds/girl-smile-1485428288.jpg
     form_data:
-      - 
+      -
         form_action: Action URL
         oid: SalesforceID
         returl: Redirection URL
-  - 
+  -
     type: link_CTA
     text: |
       # This is text
@@ -65,11 +64,11 @@ components:
       ### This is text 3
       This is normal text
     button_1_data:
-      - 
+      -
         url_redirection: https://precursive.com/
         button_text: Go To Page
     button_2_data:
-      - 
+      -
         url_redirection: https://precursive.com/
         button_text: Go To Page
     show_video_or_image: 2
@@ -80,87 +79,93 @@ components:
     show_button_1: true
     distribution: 3
     show_navigation_bar: true
-  - 
+  -
     type: hero_casestudy
     enable: true
-  - 
+  -
     type: carousel_casestudy
     enable: true
-  - 
+  -
     type: all_benefits_section
-  - 
+  -
     type: sales_delivery
     salesforce_heading: Connecting Sales and Delivery
     salesforce_description: >
       Workflow Automation. Align sales activities with delivery resources, manage people and projects more
       effectively and create an effortless customer experience.
-  - 
+  -
     type: download_guide
     text: |
       #### Download the Guide to Buying Resource Management Software
-      
+
       [Link Here](http://precursive.com)
-      
+
       Considering purchasing resource management software? This guide will take you through best practices for each step in the process, from building a business case to preparing for implementation.
     form_heading: Download the guide now
     form_data:
-      - 
+      -
         action_url: https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8
         oid: 00DD0000000DBV2
         ret_url: http://precursive.com/buying-guide-success
         button_text: Download
-  - 
+  -
     type: standard_header
     header_data:
-      - 
+      -
         header_title: Customer Success Stories
         header_subtitle: Learn how customers of all sizes succeed with Precursive
         show_separator_line: true
         image: /assets/Avatars.jpg
-  - 
+  -
     type: image_and_text
     text: |
       # This is text
       ## More text
-      
+
       Normal Text
     image: /assets/29_-_introducing_Salesforce_DX_qklwxw-1488882866.png
     distribution: 1
     background_color: '#e2f7d9'
-  - 
+  -
+    type: standard_header
+    header_data:
+      -
+        header_title: Header Title
+        header_subtitle: Header Subtitle
+  -
     type: top_picks
     top_picks_title: Our Top Picks
     top_picks_subtitle: Come to visit us !
     top_picks_grid:
-      - 
+      -
         text: |
           # Marc Jarvis
           ## Co-founder & Managing Director APAC
-          
+
           Hailing from the UK, Marc is driving our mission to bring beautifully designed resource planning to the land Down Under.
-      - 
+      -
         text: |
           # Resource Therapists
           Precursive’s professional resource therapists are guaranteed to relieve stress, improve productivity and cure you of your busy-ness.
-  - 
+  -
     type: blockquote
     quote: "There needs to be a 'reinvention of productivity' in order to find new ways for companies to tackle the world's biggest problems"
     source: Jeff Immelt, CEO | General Electric
-  - 
+  -
     type: paragraph
     text: |
       We speak to lots of companies who tell a similar story which reads like some sort of nightmarish nursery rhyme starring a range of familiar characters. It begins with a sales person aka 'the villain' bringing in a deal where the customer 'doesn't really know what they want', the quality of scoping and estimation is poor and surprise surprise we've discounted the business so our margin is lower than what we aim for. In the second act, we get introduced to the 'hero' aka our delivery team who end up having to rescope the project and throw more resources at it, battle through numerous meetings with stakeholders to 'get their buyin' and end up working all hours to get the solution out the door to meet some degree of customers expectations. After moving mountains, blood sweat and tears and a few internal shouting matches - you have that *'TA DA'* moment when you unveil your solution to the customer and they frown and say 'Hmmm that's OK' or worse 'That's not what I asked for and I want my money back!'.
-      
+
       *So what can we do to begin to fix this?*
-      
+
       [Link Here](http://precursive.com)
-      
+
       **Here are three things we have seen work well**
-  - 
+  -
     type: demo_CTA
     text: Here is the text
     form_data:
-      - 
+      -
         form_action: http://precursive.com/
         oid: "123123123"
         returl: http://precursive.com/
