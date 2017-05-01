@@ -10,8 +10,7 @@ components:
     text: |
       ## Integrate and Connect Precursive With Your Other Apps
       Automate Workflows: So you can focus on your most important work and keep all data in one place
-    image_background:
-      - /assets/masthead-patter.png
+    image_background: /assets/masthead-patter.png
   - 
     type: image_and_text
     text: |
@@ -26,9 +25,9 @@ components:
       Everyone in the business is not on the same page.
       
       [Read full case study]()
-    image:
-      - /assets/integrations.png
+    image: /assets/integrations.png
     distribution: 2
+    background_color: '#f8f7fc'
   - 
     type: standard_header
     header_data:
@@ -38,10 +37,12 @@ components:
           Have a finger on the pulse of all your projects! See what is happening in realtime with our clean
           and clear dashboards. See how much time is spent on projects, if costs are going up and when margin
           is lost.
+        image: /assets/Brand/integ-salesforce.png
+        show_separator_line: true
+        full_width_separator_line: true
   - 
     type: image
-    image:
-      - /assets/sf-pc.png
+    image: /assets/sf-pc.png
   - 
     type: standard_header
     header_data:
@@ -53,13 +54,13 @@ components:
           is lost.
   - 
     type: image
-    image:
-      - /assets/p-taskfeed.png
-    caption: Caption
+    image: /assets/p-taskfeed.png
+  - 
+    type: carousel_casestudy
+    enable: true
   - 
     type: link_CTA
-    image_background:
-      - /assets/working-2.jpg
+    image_background: /assets/working-2.jpg
     show_precursive_logo: true
     text: |
       Still managing resources in multiple spreadsheets?
@@ -76,8 +77,7 @@ components:
         button_text: Go To Page
     distribution: 2
     video_on_the_right_subtitle: This is a message at the bottom of the video
-    image_on_the_right:
-      - /assets/messy-spreadsheets.png
+    image_on_the_right: /assets/messy-spreadsheets.png
 title: Integrations
 fieldset: super_replicator
 template: custom_components
