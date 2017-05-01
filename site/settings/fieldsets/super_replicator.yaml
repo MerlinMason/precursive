@@ -239,6 +239,12 @@ fields:
             type: grid
             display: Header Data
             fields:
+              image:
+                type: assets
+                display: Image
+                container: main
+                folder: /
+                max_files: 1
               header_title:
                 type: title
                 display: Header Title
@@ -250,12 +256,9 @@ fields:
               show_separator_line:
                 type: toggle
                 display: Show Separator Line
-              image:
-                type: assets
-                display: Image
-                container: main
-                folder: /
-                max_files: 1
+              full_width_separator_line:
+                type: toggle
+                display: Full Width Separator Line
             mode: table
             max_rows: 1
             min_rows: 1

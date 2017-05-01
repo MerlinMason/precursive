@@ -7,9 +7,19 @@
             {{ /asset:image }}
 
             <h1 class="h s-lg w-m">{{ header_title }} </h1>
-            {{ if show_separator_line }}
+        </div>
+    </div>
+    {{ if show_separator_line }}
+        {{ if full_width_separator_line }}
+            <hr class="full-width-line">
+        {{ /if }}
+        {{ if !full_width_separator_line }}
             <hr>
-            {{ /if }}
+        {{ /if }}
+    {{ /if }}
+    <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3 text-center">
+
             <h2 class="h s-sm w-n mb-2x">{{ header_subtitle }} </h2>
         </div>
     </div>
