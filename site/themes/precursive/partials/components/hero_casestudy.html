@@ -1,3 +1,4 @@
+{{ if enable }}
 {{ collection:casestudies promoted:is="true" limit="1" sort="random" }}
     <section class="casestudy-promoted" style="background-image:url({{ asset:hero_image }}{{ glide:url width="1440" }}{{ /asset:hero_image }});">
         <div class="bg"></div>
@@ -20,3 +21,4 @@
         </div>
     </section>
 {{ /collection:casestudies }}
+{{ /if }}

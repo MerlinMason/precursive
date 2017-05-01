@@ -15,15 +15,13 @@ fields:
             display: Image Background
             container: main
             folder: /
-            restrict: false
-            max_files: "1"
+            max_files: 1
           show_precursive_logo:
             type: toggle
             display: Show Precursive Logo
           show_navigation_bar:
             type: toggle
             display: Show Navigation bar
-            default: ""
           show_form:
             type: toggle
             display: Show Form
@@ -52,10 +50,6 @@ fields:
             type: markdown
             display: text
             cheatsheet: true
-            container: null
-            folder: null
-            restrict_assets: false
-            default: ""
       contact_form:
         display: Contact Form
         fields:
@@ -87,9 +81,8 @@ fields:
                 display: oidMessage
                 default: 00ND0000006QJTk
             mode: table
-            max_rows: "1"
-            min_rows: "1"
-            add_row: null
+            max_rows: 1
+            min_rows: 1
           contact_form_action_text:
             type: text
             display: Contact Form Action Text
@@ -109,8 +102,7 @@ fields:
             display: image
             container: main
             folder: /
-            restrict: false
-            max_files: "1"
+            max_files: 1
           caption:
             type: text
             display: caption
@@ -122,9 +114,6 @@ fields:
             type: markdown
             display: text
             cheatsheet: true
-            container: null
-            folder: null
-            restrict_assets: false
             default: Here is the text
           form_data:
             type: grid
@@ -143,9 +132,8 @@ fields:
                 display: retURL
                 default: Redirection URL
             mode: table
-            max_rows: "1"
-            min_rows: "1"
-            add_row: null
+            max_rows: 1
+            min_rows: 1
           form_action_text:
             type: text
             display: Form Action Text
@@ -155,8 +143,7 @@ fields:
             display: image_background
             container: main
             folder: /
-            restrict: false
-            max_files: "1"
+            max_files: 1
       link_CTA:
         display: 'Link CTA (Text, 2 Buttons, Image, Video & Only Text)'
         fields:
@@ -165,8 +152,7 @@ fields:
             display: image_background
             container: main
             folder: /
-            restrict: false
-            max_files: "1"
+            max_files: 1
           show_angle:
             type: toggle
             display: Show Angle
@@ -180,14 +166,10 @@ fields:
             type: markdown
             display: text
             cheatsheet: true
-            container: null
-            folder: null
-            restrict_assets: false
             default: Here is the Text
           show_button_1:
             type: toggle
             display: Show Button 1
-            default: ""
           button_1_data:
             type: grid
             display: Button 1 Data
@@ -201,9 +183,8 @@ fields:
                 display: button_text
                 default: Go To Page
             mode: table
-            max_rows: "1"
-            min_rows: "1"
-            add_row: null
+            max_rows: 1
+            min_rows: 1
           show_button_2:
             type: toggle
             display: Show Button 2
@@ -220,9 +201,8 @@ fields:
                 display: button_text
                 default: Go To Page
             mode: table
-            max_rows: "1"
-            min_rows: "1"
-            add_row: null
+            max_rows: 1
+            min_rows: 1
           distribution:
             type: radio
             display: What do you want to display on the right?
@@ -235,15 +215,13 @@ fields:
             display: Video Placeholder
             container: main
             folder: /
-            restrict: false
-            max_files: "1"
+            max_files: 1
           video_on_the_right:
             type: assets
             display: Video (webm type)
             container: main
             folder: /
-            restrict: false
-            max_files: "1"
+            max_files: 1
           video_on_the_right_subtitle:
             type: text
             display: Video Subtitle
@@ -253,8 +231,7 @@ fields:
             display: image_on_the_right
             container: main
             folder: /
-            restrict: false
-            max_files: "1"
+            max_files: 1
       standard_header:
         display: Standard Header
         fields:
@@ -273,10 +250,15 @@ fields:
               show_separator_line:
                 type: toggle
                 display: Show Separator Line
+              image:
+                type: assets
+                display: Image
+                container: main
+                folder: /
+                max_files: 1
             mode: table
-            max_rows: "1"
-            min_rows: "1"
-            add_row: null
+            max_rows: 1
+            min_rows: 1
       top_picks:
         display: Top Picks
         fields:
@@ -297,19 +279,14 @@ fields:
                 display: image
                 container: main
                 folder: /
-                restrict: false
-                max_files: "1"
+                max_files: 1
               text:
                 type: markdown
                 display: text
                 cheatsheet: true
-                container: null
-                folder: null
-                restrict_assets: false
             mode: table
-            max_rows: "5"
-            min_rows: "1"
-            add_row: null
+            max_rows: 5
+            min_rows: 1
       multi_columns:
         display: Multi Columns
         fields:
@@ -330,20 +307,14 @@ fields:
                 display: Image
                 container: main
                 folder: /
-                restrict: false
-                max_files: "1"
+                max_files: 1
               text:
                 type: markdown
                 display: text
                 cheatsheet: true
-                container: null
-                folder: null
-                restrict_assets: false
-                default: ""
             mode: table
-            max_rows: "6"
-            min_rows: "1"
-            add_row: null
+            max_rows: 6
+            min_rows: 1
       image_and_text:
         display: 'Image & Text'
         fields:
@@ -351,17 +322,12 @@ fields:
             type: markdown
             display: text
             cheatsheet: true
-            container: null
-            folder: null
-            restrict_assets: false
-            default: ""
           image:
             type: assets
             display: image
             container: main
             folder: /
-            restrict: false
-            max_files: "1"
+            max_files: 1
           background_color:
             type: colorpicker
             display: Background Color
@@ -373,13 +339,22 @@ fields:
               2: 'Text & Image'
       hero_casestudy:
         display: Hero Casestudy
-        fields: [ ]
+        fields:
+          enable:
+            type: toggle
+            display: Enable
       carousel_casestudy:
         display: Carousel Casestudy
-        fields: [ ]
+        fields:
+          enable:
+            type: toggle
+            display: Enable
       all_benefits_section:
         display: "All Benefit's Section"
-        fields: [ ]
+        fields:
+          enable:
+            type: toggle
+            display: Enable
       sales_delivery:
         display: Sales + Delivery
         fields:
@@ -403,10 +378,6 @@ fields:
               # Available on the Salesforce AppExchange®
               ## Precursive is Native to Salesforce
               Find out why Precursive is the #1 app on Salesforce AppExchange® for resource scheduling, project planning and timesheets.
-            cheatsheet: false
-            container: null
-            folder: null
-            restrict_assets: false
       download_guide:
         display: Download Guide
         instructions: Use 4 hashes (h4) to style the title and use normal text for the parapraph.
@@ -418,10 +389,6 @@ fields:
               #### Download the Guide to Buying Resource Management Software
               Considering purchasing resource management software? This guide will take you through best practices for each step in the process, from building a business case to preparing for implementation.
             cheatsheet: true
-            container: null
-            folder: null
-            restrict_assets: false
-            default: ""
           form_heading:
             type: text
             display: Form Heading
@@ -447,6 +414,5 @@ fields:
                 display: Button Text
                 default: Download
             mode: table
-            max_rows: "1"
-            min_rows: "1"
-            add_row: null
+            max_rows: 1
+            min_rows: 1

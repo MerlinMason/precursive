@@ -14,8 +14,7 @@ components:
     show_contact_form: true
   - 
     type: image
-    image:
-      - /assets/29_-_introducing_Salesforce_DX_qklwxw-1488882866.png
+    image: /assets/29_-_introducing_Salesforce_DX_qklwxw-1488882866.png
     caption: This is text on the image
   - 
     type: masthead
@@ -29,8 +28,7 @@ components:
       ## This is text 2
       ### This is text 3
       This is normal text
-    image_background:
-      - /assets/2_hub_article_banner_672x357px_eng_no_title_v2_tcm1374-492843_1.jpg
+    image_background: /assets/2_hub_article_banner_672x357px_eng_no_title_v2_tcm1374-492843_1.jpg
     show_navigation_bar: true
     show_precursive_logo: true
     show_form: true
@@ -47,8 +45,7 @@ components:
         oid: 00DD0000000DBV2
         returl: http://precursive.com/demo-success
     form_action_text: Book a demo
-    image_background:
-      - /assets/backgrounds/girl-smile-1485428288.jpg
+    image_background: /assets/backgrounds/girl-smile-1485428288.jpg
     form_data:
       - 
         form_action: Action URL
@@ -70,20 +67,19 @@ components:
         url_redirection: https://precursive.com/
         button_text: Go To Page
     show_video_or_image: 2
-    video_on_the_right:
-      - /assets/videos/welcome_to_precursive.webm
-    image_on_the_right:
-      - /assets/Avatars.jpg
+    video_on_the_right: /assets/videos/welcome_to_precursive.webm
+    image_on_the_right: /assets/Avatars.jpg
     video_on_the_right_subtitle: This is a message at the bottom of the video
-    video_placeholder:
-      - /assets/download.jpeg
+    video_placeholder: /assets/download.jpeg
     show_button_1: true
     distribution: 3
     show_navigation_bar: true
   - 
     type: hero_casestudy
+    enable: true
   - 
     type: carousel_casestudy
+    enable: true
   - 
     type: all_benefits_section
   - 
@@ -119,38 +115,7 @@ components:
         header_title: Customer Success Stories
         header_subtitle: Learn how customers of all sizes succeed with Precursive
         show_separator_line: true
-  - 
-    type: multi_columns
-    columns_to_display: 1
-    multi_columns_grid:
-      - 
-        image:
-          - /assets/busy image.jpg
-        text: |
-          # Available on the Salesforce
-          ## Native to Salesforce
-          Today, many people rely on computers to do homework, work, and create or store useful information.
-      - 
-        image:
-          - /assets/2_hub_article_banner_672x357px_eng_no_title_v2_tcm1374-492843_1.jpg
-        text: |
-          # Available on the Salesforce
-          ## Native to Salesforce
-          Today, many people rely on computers to do homework, work, and create or store useful information.
-      - 
-        image:
-          - /assets/1383944_41477562-1024x682.jpg
-        text: |
-          # Available on the Salesforce
-          ## Native to Salesforce
-          Today, many people rely on computers to do homework, work, and create or store useful information.
-      - 
-        image:
-          - /assets/BaCHBv6CIAIvp1m.jpg-large-1488276030.jpeg
-        text: |
-          # Available on the Salesforce
-          ## Native to Salesforce
-          Today, many people rely on computers to do homework, work, and create or store useful information.
+        image: /assets/Avatars.jpg
   - 
     type: image_and_text
     text: |
@@ -158,8 +123,7 @@ components:
       ## More text
       
       Normal Text
-    image:
-      - /assets/29_-_introducing_Salesforce_DX_qklwxw-1488882866.png
+    image: /assets/29_-_introducing_Salesforce_DX_qklwxw-1488882866.png
     distribution: 1
     background_color: '#e2f7d9'
   - 
