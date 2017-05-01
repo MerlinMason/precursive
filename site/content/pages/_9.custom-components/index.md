@@ -99,6 +99,8 @@ components:
     text: |
       #### Download the Guide to Buying Resource Management Software
       
+      [Link Here](http://precursive.com)
+      
       Considering purchasing resource management software? This guide will take you through best practices for each step in the process, from building a business case to preparing for implementation.
     form_heading: Download the guide now
     form_data:
@@ -150,6 +152,8 @@ components:
       We speak to lots of companies who tell a similar story which reads like some sort of nightmarish nursery rhyme starring a range of familiar characters. It begins with a sales person aka 'the villain' bringing in a deal where the customer 'doesn't really know what they want', the quality of scoping and estimation is poor and surprise surprise we've discounted the business so our margin is lower than what we aim for. In the second act, we get introduced to the 'hero' aka our delivery team who end up having to rescope the project and throw more resources at it, battle through numerous meetings with stakeholders to 'get their buyin' and end up working all hours to get the solution out the door to meet some degree of customers expectations. After moving mountains, blood sweat and tears and a few internal shouting matches - you have that *'TA DA'* moment when you unveil your solution to the customer and they frown and say 'Hmmm that's OK' or worse 'That's not what I asked for and I want my money back!'.
       
       *So what can we do to begin to fix this?*
+      
+      [Link Here](http://precursive.com)
       
       **Here are three things we have seen work well**
 title: Custom Components
