@@ -156,6 +156,16 @@ components:
       [Link Here](http://precursive.com)
       
       **Here are three things we have seen work well**
+  - 
+    type: demo_CTA
+    text: Here is the text
+    form_data:
+      - 
+        form_action: http://precursive.com/
+        oid: "123123123"
+        returl: http://precursive.com/
+    form_action_text: Book a demo
+    image_background: /assets/29_-_introducing_Salesforce_DX_qklwxw.png
 title: Custom Components
 fieldset: super_replicator
 template: custom_components

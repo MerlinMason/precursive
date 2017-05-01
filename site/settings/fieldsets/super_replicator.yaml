@@ -95,7 +95,7 @@ fields:
             display: Contact Us Header
             default: Other ways to contact us
       image:
-        display: image
+        display: Image
         fields:
           image:
             type: assets
@@ -145,7 +145,7 @@ fields:
             folder: /
             max_files: 1
       link_CTA:
-        display: 'Link CTA (Text, 2 Buttons, Image, Video & Only Text)'
+        display: CTA with Links
         fields:
           image_background:
             type: assets
@@ -233,7 +233,7 @@ fields:
             folder: /
             max_files: 1
       standard_header:
-        display: Standard Header
+        display: Header
         fields:
           header_data:
             type: grid
@@ -263,7 +263,7 @@ fields:
             max_rows: 1
             min_rows: 1
       top_picks:
-        display: Top Picks
+        display: Carousel
         fields:
           top_picks_title:
             type: title
@@ -291,7 +291,7 @@ fields:
             max_rows: 5
             min_rows: 1
       multi_columns:
-        display: Multi Columns
+        display: ' Image (Multi column)'
         fields:
           columns_to_display:
             type: radio
