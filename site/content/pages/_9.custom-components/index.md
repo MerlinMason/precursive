@@ -1,5 +1,12 @@
 components:
   - 
+    type: app_exchange
+    text: |
+      # Available on the Salesforce AppExchange®
+      ## Precursive is Native to Salesforce
+      
+      Find out why Precursive is the #1 app on Salesforce AppExchange® for resource scheduling, project planning and timesheets.
+  - 
     type: contact_form
     contact_form_header_text: Getting in touch with the team is easy
     contact_form_action: https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8
@@ -87,13 +94,6 @@ components:
     salesforce_description: >
       Workflow Automation. Align sales activities with delivery resources, manage people and projects more
       effectively and create an effortless customer experience.
-  - 
-    type: app_exchange
-    text: |
-      # Available on the Salesforce AppExchange®
-      ## Precursive is Native to Salesforce
-      
-      Find out why Precursive is the #1 app on Salesforce AppExchange® for resource scheduling, project planning and timesheets.
   - 
     type: download_guide
     text: |

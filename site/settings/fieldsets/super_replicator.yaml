@@ -377,10 +377,6 @@ fields:
           text:
             type: markdown
             display: text
-            instructions: |
-              # Available on the Salesforce AppExchange®
-              ## Precursive is Native to Salesforce
-              Find out why Precursive is the #1 app on Salesforce AppExchange® for resource scheduling, project planning and timesheets.
       download_guide:
         display: Download Guide
         instructions: Use 4 hashes (h4) to style the title and use normal text for the parapraph.
