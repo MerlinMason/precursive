@@ -419,3 +419,18 @@ fields:
             mode: table
             max_rows: 1
             min_rows: 1
+      blockquote:
+        display: Blockquote
+        fields:
+          quote:
+            type: markdown
+            display: Quote
+          source:
+            type: text
+            display: Source
+      paragraph:
+        display: Paragraph
+        fields:
+          text:
+            type: markdown
+            display: text

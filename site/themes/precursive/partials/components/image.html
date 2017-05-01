@@ -1,6 +1,8 @@
-<figure class="image">
+<figure class="replicator image general">
     {{ asset:image }}
     <img src="{{ glide:url width='1000' }}" alt="{{ caption }}">
     {{ /asset:image }}
+    {{ if caption }}
     <figcaption>{{ caption }}</figcaption>
+    {{ /if}}
 </figure>

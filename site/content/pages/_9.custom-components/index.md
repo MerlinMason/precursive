@@ -15,7 +15,6 @@ components:
   - 
     type: image
     image: /assets/29_-_introducing_Salesforce_DX_qklwxw-1488882866.png
-    caption: This is text on the image
   - 
     type: masthead
     filter_name: no_filter
@@ -141,6 +140,18 @@ components:
         text: |
           # Resource Therapists
           Precursive’s professional resource therapists are guaranteed to relieve stress, improve productivity and cure you of your busy-ness.
+  - 
+    type: blockquote
+    quote: "There needs to be a 'reinvention of productivity' in order to find new ways for companies to tackle the world's biggest problems"
+    source: Jeff Immelt, CEO | General Electric
+  - 
+    type: paragraph
+    text: |
+      We speak to lots of companies who tell a similar story which reads like some sort of nightmarish nursery rhyme starring a range of familiar characters. It begins with a sales person aka 'the villain' bringing in a deal where the customer 'doesn't really know what they want', the quality of scoping and estimation is poor and surprise surprise we've discounted the business so our margin is lower than what we aim for. In the second act, we get introduced to the 'hero' aka our delivery team who end up having to rescope the project and throw more resources at it, battle through numerous meetings with stakeholders to 'get their buyin' and end up working all hours to get the solution out the door to meet some degree of customers expectations. After moving mountains, blood sweat and tears and a few internal shouting matches - you have that *'TA DA'* moment when you unveil your solution to the customer and they frown and say 'Hmmm that's OK' or worse 'That's not what I asked for and I want my money back!'.
+      
+      *So what can we do to begin to fix this?*
+      
+      **Here are three things we have seen work well**
 title: Custom Components
 fieldset: super_replicator
 template: custom_components

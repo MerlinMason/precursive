@@ -1,9 +1,11 @@
 .replicator {
+
     &.paragraph {
         .serif();
         p {
             .serif();
         }
+
         ol {
             list-style:none;
             counter-reset:ol-counter;
@@ -117,6 +119,14 @@
             color:#fff;
             .w-b();
             .shadow();
+        }
+    }
+    &.general {
+        font-family: sans-serif;
+        margin:(@space * 3) 12em;
+        p {
+            font-family: sans-serif;
+            //margin: 0 (@space * 2)(@space * 2)(@space * 2);
         }
     }
 }
