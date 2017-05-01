@@ -433,6 +433,9 @@ fields:
             folder: /
             restrict: false
             max_files: "1"
+          background_color:
+            type: colorpicker
+            display: Background Color
           distribution:
             type: radio
             display: Distribution
@@ -478,7 +481,7 @@ fields:
             instructions: |
               # Available on the Salesforce AppExchange®
               ## Precursive is Native to Salesforce
-              
+
               Find out why Precursive is the #1 app on Salesforce AppExchange® for resource scheduling, project planning and timesheets.
             cheatsheet: false
             container: null
@@ -493,7 +496,7 @@ fields:
             display: text
             instructions: |
               #### Download the Guide to Buying Resource Management Software
-              
+
               Considering purchasing resource management software? This guide will take you through best practices for each step in the process, from building a business case to preparing for implementation.
             cheatsheet: true
             container: null

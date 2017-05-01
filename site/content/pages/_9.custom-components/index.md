@@ -161,22 +161,19 @@ components:
     image:
       - /assets/29_-_introducing_Salesforce_DX_qklwxw-1488882866.png
     distribution: 1
+    background_color: '#e2f7d9'
   - 
     type: top_picks
     top_picks_title: Our Top Picks
     top_picks_subtitle: Come to visit us !
     top_picks_grid:
       - 
-        image:
-          - /assets/events/Marc-Jarvis.jpg
         text: |
           # Marc Jarvis
           ## Co-founder & Managing Director APAC
           
           Hailing from the UK, Marc is driving our mission to bring beautifully designed resource planning to the land Down Under.
       - 
-        image:
-          - /assets/events/Precursive_Booth_babes.jpg
         text: |
           # Resource Therapists
           Precursive’s professional resource therapists are guaranteed to relieve stress, improve productivity and cure you of your busy-ness.
