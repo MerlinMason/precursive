@@ -1,30 +1,84 @@
 <div class="image-text-container pt-2x pb-2x" style="background-color: {{ background_color }}">
 
+
+  <!-- TOP -->
   {{ if distribution == 1 }}
   <div class="row">
-    <div class="col-xs-12 col-sm-5 col-md-4 col-xs-offset-0 col-sm-offset-1 col-md-offset-2">
-      {{ asset:image }}
-        <img src="{{ glide:url }}" class="scale" alt="{{ caption }}">
-      {{ /asset:image }}
+    <div class="col-xs-10 col-sm-10 col-xs-offset-1 col-sm-offset-1 ">
+      <figure>
+        {{ asset:image }}
+        <img src="{{ glide:url width='1000' }}" alt="{{ caption }}">
+        {{ /asset:image }}
+        {{ if caption }}
+        <figcaption class="hidden-m">{{ caption }}</figcaption>
+        {{ /if}}
+      </figure>
     </div>
 
-    <div class="col-xs-12 col-sm-6">
+    <div class="col-xs-10 col-sm-10 col-xs-offset-1 col-sm-offset-1 mt-2x">
       {{ text | markdown }}
     </div>
   </div>
   {{ /if }}
 
+  <!-- RIGHT -->
   {{ if distribution == 2 }}
   <div class="row">
-    <div class="col-xs-12 col-sm-5 col-md-4 col-xs-offset-0 col-sm-offset-1 col-md-offset-2">
-      {{ text | markdown }}
+    <div class="col-xs-10 col-sm-5 col-xs-offset-1">
+      <figure>
+        {{ asset:image }}
+        <img src="{{ glide:url width='1000' }}" alt="{{ caption }}">
+        {{ /asset:image }}
+        {{ if caption }}
+        <figcaption class="hidden-m">{{ caption }}</figcaption>
+        {{ /if}}
+      </figure>
     </div>
-    <div class="col-xs-12 col-sm-5 col-md-4">
-      {{ asset:image }}
-      <img src="{{ glide:url }}" class="scale" alt="{{ caption }}">
-      {{ /asset:image }}
+    <div class="col-xs-10 col-sm-5 col-md-4 col-xs-offset-1  mt-2x-m">
+      {{ text | markdown }}
     </div>
   </div>
   {{ /if }}
+
+  <!-- BOTTOM -->
+  {{ if distribution == 3 }}
+  <div class="row">
+    <div class="col-xs-12 col-xs-offset-1">
+      {{ text | markdown }}
+    </div>
+    <div class="col-xs-12">
+      <figure class="image">
+        {{ asset:image }}
+        <img src="{{ glide:url width='1000' }}" alt="{{ caption }}">
+        {{ /asset:image }}
+        {{ if caption }}
+        <figcaption class="hidden-m">{{ caption }}</figcaption>
+        {{ /if}}
+      </figure>
+    </div>
+  </div>
+  {{ /if }}
+
+  <!-- LEFT -->
+  {{ if distribution == 4 }}
+  <div class="row">
+    <div class="col-xs-10 col-sm-5 col-md-4 col-xs-offset-1 col-sm-offset-1 col-md-offset-2">
+      <figure>
+        {{ asset:image }}
+        <img src="{{ glide:url width='1000' }}" alt="{{ caption }}">
+        {{ /asset:image }}
+        {{ if caption }}
+        <figcaption class="hidden-m">{{ caption }}</figcaption>
+        {{ /if}}
+      </figure>
+    </div>
+
+    <div class="col-xs-10 col-sm-6 col-xs-offset-1 col-sm-offset-0 mt-2x-m">
+      {{ text | markdown }}
+    </div>
+  </div>
+  {{ /if }}
+
+
 
 </div>

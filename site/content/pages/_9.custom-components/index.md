@@ -1,5 +1,16 @@
 components:
   - 
+    type: image_and_text
+    text: |
+      # This is text
+      ## More text
+      
+      Normal Text
+    image: /assets/29_-_introducing_Salesforce_DX_qklwxw-1488882866.png
+    distribution: 4
+    background_color: '#e2f7d9'
+    caption: This is the caption for the image
+  - 
     type: standard_header
     header_data:
       - 
@@ -116,16 +127,6 @@ components:
         header_subtitle: Learn how customers of all sizes succeed with Precursive
         show_separator_line: true
         image: /assets/Avatars.jpg
-  - 
-    type: image_and_text
-    text: |
-      # This is text
-      ## More text
-      
-      Normal Text
-    image: /assets/29_-_introducing_Salesforce_DX_qklwxw-1488882866.png
-    distribution: 1
-    background_color: '#e2f7d9'
   - 
     type: standard_header
     header_data:

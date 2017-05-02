@@ -321,25 +321,30 @@ fields:
       image_and_text:
         display: 'Image & Text'
         fields:
-          text:
-            type: markdown
-            display: text
-            cheatsheet: true
           image:
             type: assets
             display: image
             container: main
             folder: /
             max_files: 1
+          caption:
+            type: title
+            display: caption
+          text:
+            type: markdown
+            display: text
+            cheatsheet: true
           background_color:
             type: colorpicker
             display: Background Color
           distribution:
             type: radio
-            display: Distribution
+            display: Where do you want to put the image ?
             options:
-              1: 'Image & Text'
-              2: 'Text & Image'
+              1: Top
+              2: Right
+              3: Bottom
+              4: Left
       hero_casestudy:
         display: Hero Casestudy
         fields:
