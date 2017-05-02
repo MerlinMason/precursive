@@ -345,6 +345,9 @@ fields:
               2: Right
               3: Bottom
               4: Left
+          is_centered:
+            type: toggle
+            display: Do you want to display the text centered ?
       hero_casestudy:
         display: Hero Casestudy
         fields:
