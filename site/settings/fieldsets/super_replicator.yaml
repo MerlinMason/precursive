@@ -430,3 +430,6 @@ fields:
           text:
             type: markdown
             display: text
+          is_centered:
+            type: toggle
+            display: Do you want to display the text centered ?
