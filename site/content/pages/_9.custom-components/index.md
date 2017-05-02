@@ -171,6 +171,8 @@ components:
         returl: http://precursive.com/
     form_action_text: Book a demo
     image_background: /assets/29_-_introducing_Salesforce_DX_qklwxw.png
+  - 
+    type: separator_line
 title: Custom Components
 fieldset: super_replicator
 template: custom_components

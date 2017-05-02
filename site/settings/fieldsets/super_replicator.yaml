@@ -433,3 +433,11 @@ fields:
           is_centered:
             type: toggle
             display: Do you want to display the text centered ?
+      separator_line:
+        display: Separator Line
+        fields:
+          options:
+            type: checkboxes
+            display: Options
+            options:
+              1: Full Width
