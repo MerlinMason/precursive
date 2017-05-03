@@ -1,9 +1,67 @@
 components:
   - 
+    type: paragraph
+    text: |
+      Markdown is a text-to-HTML markup syntax for web writers. Markdown allows you to write using an easy-to-read, easy-to-write plain text format that is converted to structurally valid HTML.
+      
+      Headers
+      
+      # This is an h1
+      ## This is an h2
+      ## This is an h3, and so on.
+      Bold & Italic
+      
+      You can make things *emphasized*, **bold**, or _**both**_.
+      Links
+      
+      This is an [example link](http://example.com).
+      Code
+      
+      Wrap your code with 3 backticks (```) on the line before and after.
+      
+      ```
+      this: is some yaml
+      ```
+      You can also add code inline by wrapping content with ` single backticks.
+      
+      Quoting
+      
+      Create a blockquote by starting your text with > .
+      
+      > This is going to be a blockquote.
+      Images
+      
+      ![alt text](http://example.com/image.jpg)
+      Unordered List
+      
+      - Bacon
+      - Steak
+      - Beer
+      Ordered List
+      
+      1. Eat
+      2. Drink
+      3. Be merry
+      Tables
+      
+      First Header  | Second Header
+      ------------- | -------------
+      Content Cell  | Content Cell
+      Content Cell  | Content Cell
+  - 
     type: image_and_text
     text: |
-      # This is text
-      ## More text
+      In the text you can use markdown:
+      
+      # This is an h1
+      ## This is an h2
+      ## This is an h3, and so on.
+      
+      
+      # This is header
+      ## A smaller header
+      
+      A list:
       
       - Bacon
       - Steak
@@ -19,7 +77,6 @@ components:
     image: /assets/29_-_introducing_Salesforce_DX_qklwxw-1488882866.png
     distribution: 4
     background_color: '#f7f7f7'
-    caption: This is the caption for the image
   - 
     type: contact_form
     contact_form_header_text: Getting in touch with the team is easy
