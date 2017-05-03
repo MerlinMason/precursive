@@ -191,6 +191,8 @@ components:
     type: hero_casestudy
     enable: true
   - 
+    type: separator_line
+  - 
     type: carousel_casestudy
     enable: true
   - 
@@ -247,8 +249,6 @@ components:
           # Resource Therapists
           Precursive’s professional resource therapists are guaranteed to relieve stress, improve productivity and cure you of your busy-ness.
         image: /assets/events/speakers/Precursive_Booth_babes.jpg
-  - 
-    type: separator_line
   - 
     type: blockquote
     quote: "There needs to be a 'reinvention of productivity' in order to find new ways for companies to tackle the world's biggest problems"
