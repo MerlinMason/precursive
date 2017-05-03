@@ -21,14 +21,6 @@ components:
     background_color: '#f7f7f7'
     caption: This is the caption for the image
   - 
-    type: standard_header
-    header_data:
-      - 
-        header_title: Header with image
-        header_subtitle: Subheader
-        show_separator_line: true
-        image: /assets/Brand/integ-salesforce.png
-  - 
     type: contact_form
     contact_form_header_text: Getting in touch with the team is easy
     contact_form_action: https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8
@@ -135,10 +127,10 @@ components:
     type: standard_header
     header_data:
       - 
-        header_title: Customer Success Stories
-        header_subtitle: Learn how customers of all sizes succeed with Precursive
+        header_title: Header with image
+        header_subtitle: Subheader
         show_separator_line: true
-        image: /assets/Avatars.jpg
+        image: /assets/Brand/integ-salesforce.png
   - 
     type: standard_header
     header_data:
@@ -165,6 +157,8 @@ components:
     quote: "There needs to be a 'reinvention of productivity' in order to find new ways for companies to tackle the world's biggest problems"
     source: Jeff Immelt, CEO | General Electric
   - 
+    type: separator_line
+  - 
     type: paragraph
     text: |
       We speak to lots of companies who tell a similar story which reads like some sort of nightmarish nursery rhyme starring a range of familiar characters. It begins with a sales person aka 'the villain' bringing in a deal where the customer 'doesn't really know what they want', the quality of scoping and estimation is poor and surprise surprise we've discounted the business so our margin is lower than what we aim for. In the second act, we get introduced to the 'hero' aka our delivery team who end up having to rescope the project and throw more resources at it, battle through numerous meetings with stakeholders to 'get their buyin' and end up working all hours to get the solution out the door to meet some degree of customers expectations. After moving mountains, blood sweat and tears and a few internal shouting matches - you have that *'TA DA'* moment when you unveil your solution to the customer and they frown and say 'Hmmm that's OK' or worse 'That's not what I asked for and I want my money back!'.
@@ -184,8 +178,6 @@ components:
         returl: http://precursive.com/
     form_action_text: Book a demo
     image_background: /assets/29_-_introducing_Salesforce_DX_qklwxw.png
-  - 
-    type: separator_line
 title: Custom Components
 fieldset: super_replicator
 template: custom_components
