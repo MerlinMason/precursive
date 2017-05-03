@@ -241,16 +241,18 @@ components:
           ## Co-founder & Managing Director APAC
           
           Hailing from the UK, Marc is driving our mission to bring beautifully designed resource planning to the land Down Under.
+        image: /assets/events/speakers/Marc-Jarvis.jpg
       - 
         text: |
           # Resource Therapists
           Precursive’s professional resource therapists are guaranteed to relieve stress, improve productivity and cure you of your busy-ness.
+        image: /assets/events/speakers/Precursive_Booth_babes.jpg
+  - 
+    type: separator_line
   - 
     type: blockquote
     quote: "There needs to be a 'reinvention of productivity' in order to find new ways for companies to tackle the world's biggest problems"
     source: Jeff Immelt, CEO | General Electric
-  - 
-    type: separator_line
   - 
     type: paragraph
     text: |
