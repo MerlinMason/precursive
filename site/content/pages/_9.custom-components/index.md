@@ -42,14 +42,6 @@ components:
       1. Eat
       2. Drink
       3. Be merry
-      
-      
-      ##Tables
-      
-      First Header  | Second Header
-      ------------- | -------------
-      Content Cell  | Content Cell
-      Content Cell  | Content Cell
   - 
     type: image_and_text
     text: |
