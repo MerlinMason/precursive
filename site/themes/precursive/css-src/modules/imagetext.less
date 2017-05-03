@@ -1,34 +1,86 @@
 .image-text-container {
-    margin: 0 auto;
+  margin: 0 auto;
 
-    h1 {
-        .h();
-        .s-md();
-        .w-b();
-        margin-bottom: @1x;
-    }
+  .markdown-centered {
+    text-align: center;
 
-    h2 {
-        .h();
-        .s-md();
-        margin-bottom: @1x;
+    // All unordered list should be also centered and styled
+    ul, ol {
+      .style-list();
     }
+  }
 
-    h3 {
-        .h();
-        .s-sm();
-        margin-bottom: @1x;
-    }
+  // All unordered list is styled with ticklist
 
-    p {
-        .s-sm();
+  ul {
+    .markdown-ticklist();
+  }
+
+  ol {
+    .style-list();
+  }
+
+  h1 {
+    .h();
+    .s-md();
+    .w-b();
+    margin-bottom: @1x;
+  }
+
+  h2 {
+    .h();
+    .s-md();
+    margin-bottom: @1x;
+  }
+
+  h3 {
+    .h();
+    .s-sm();
+    margin-bottom: @1x;
+  }
+
+  p {
+    .s-sm();
+  }
+  a {
+    .link-sky();
+    &::after {
+      padding-left: @05x;
+      vertical-align: top;
+      content: url('/site/themes/precursive/img/icons/link-arrow.svg');
     }
-    a {
-        .link-sky();
-        &::after {
-            padding-left: @05x;
-            vertical-align: top;
-            content: url('/site/themes/precursive/img/icons/link-arrow.svg');
-        }
-    }
+  }
 }
+
+.style-list {
+  display: inline-block;
+  margin: 0 0 (@space * 2) 0;
+}
+
+.markdown-ticklist {
+  margin: 0 0 (@space * 2) 0;
+
+  li {
+    position: relative;
+    list-style: none;
+    padding-left: (@space * 1.5);
+    margin-bottom: (@space / 2);
+    &::before {
+      content: "";
+      .square(@space);
+      .position(absolute, 4px, auto, auto, 0);
+      border-radius: 50%;
+      background: @jade url('../img/icons/white-tick.svg') no-repeat center;
+      background-size: 65% auto;
+      transform: scale(1);
+      transition: all 0.2s;
+    }
+    &:hover::before {
+      transform: scale(1.1);
+    }
+  }
+
+}
+
+
+

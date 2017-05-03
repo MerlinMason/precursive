@@ -5,6 +5,16 @@ components:
       # This is text
       ## More text
       
+      - Bacon
+      - Steak
+      - Beer
+      
+      # This is text
+      
+      1. Eat
+      2. Drink
+      3. Be merry
+      
       Normal Text
     image: /assets/29_-_introducing_Salesforce_DX_qklwxw-1488882866.png
     distribution: 4
