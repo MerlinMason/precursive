@@ -17,6 +17,10 @@ components:
           Precursive helps you manage and schedule your resources, our friends over at Taskfeed have built a
           task management Salesforce app which seemless links to Precursive.
   - 
+    type: separator_line
+    options:
+      - 1
+  - 
     type: image
     image: /assets/p-taskfeed-1492554911.png
   - 
