@@ -111,7 +111,7 @@ components:
       2. Drink
       3. Be merry
     image: /assets/29_-_introducing_Salesforce_DX_qklwxw-1488882866.png
-    distribution: 2
+    distribution: 4
     background_color: '#f7f7f7'
   - 
     type: contact_form
