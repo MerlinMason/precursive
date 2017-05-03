@@ -23,7 +23,9 @@ components:
       
       Create a blockquote by starting your text with > .
       
-      > This is going to be a blockquote.
+      > This is going to be a pulloutquote, about someone saying how great something is.
+      
+      
       Images
       
       ![alt text](/img/paths/assets/29_-_introducing_Salesforce_DX_qklwxw-1488882866.png/832fefa6dc787f25b4949a09a1907fb5.png)
