@@ -18,17 +18,19 @@ components:
           task management Salesforce app which seemless links to Precursive.
   - 
     type: image
-    image:
-      - /assets/p-taskfeed-1492554911.png
-    caption: Caption
+    image: /assets/p-taskfeed-1492554911.png
+  - 
+    type: separator_line
+    options:
+      - 1
   - 
     type: image_and_text
     text: |
       ## Scheduling and task management
       Most firms are unable to see exactly how their staff are spending their time, and therefore unable to maximise resource utilization. Precursive with Taskfeed creates a complete project and resource management solution opening up visibility in utilization, and project delivery.
-    image:
-      - /assets/Brand/how-does-taskfeed-integrate.png
-    distribution: 2
+    image: /assets/Brand/how-does-taskfeed-integrate.png
+    distribution: 1
+    is_centered: true
   - 
     type: demo_CTA
     text: |
@@ -40,8 +42,7 @@ components:
         oid: "3092830982"
         returl: www.precursive.com/you-got-mail
     form_action_text: Demo
-    image_background:
-      - /assets/backgrounds/headache-1485428289.jpg
+    image_background: /assets/backgrounds/headache-1485428289.jpg
   - 
     type: app_exchange
     text: |
@@ -51,9 +52,6 @@ components:
       Find out why Precursive is the #1 app on Salesforce AppExchange® for resource scheduling, project planning and timesheets.
       
       [![](http://localhost:8888/site/themes/precursive/img/logos/appexchange.svg)](dude.com)
-  - 
-    type: image
-    caption: Caption
 title: Task Feed and Precursive Integration
 fieldset: super_replicator
 template: custom_components
