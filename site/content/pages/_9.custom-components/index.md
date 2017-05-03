@@ -24,8 +24,10 @@ components:
     type: standard_header
     header_data:
       - 
-        header_title: Carousel
-        header_subtitle: Multi box carousel
+        header_title: Header with image
+        header_subtitle: Subheader
+        show_separator_line: true
+        image: /assets/Brand/integ-salesforce.png
   - 
     type: contact_form
     contact_form_header_text: Getting in touch with the team is easy
