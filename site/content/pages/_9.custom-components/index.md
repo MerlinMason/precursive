@@ -2,29 +2,24 @@ components:
   - 
     type: paragraph
     text: |
+      # A guide to Writing text
       Markdown is a text-to-HTML markup syntax for web writers. Markdown allows you to write using an easy-to-read, easy-to-write plain text format that is converted to structurally valid HTML.
       
-      Headers
+      ## Headers
       
       # This is an h1
       ## This is an h2
       ## This is an h3, and so on.
-      Bold & Italic
+      
+      
+      ## Bold & Italic
       
       You can make things *emphasized*, **bold**, or _**both**_.
       Links
       
-      This is an [example link](http://example.com).
-      Code
+      This is an [example link](http://example.com)
       
-      Wrap your code with 3 backticks (```) on the line before and after.
-      
-      ```
-      this: is some yaml
-      ```
-      You can also add code inline by wrapping content with ` single backticks.
-      
-      Quoting
+      ## Quoting
       
       Create a blockquote by starting your text with > .
       
