@@ -18,7 +18,7 @@ components:
       Normal Text
     image: /assets/29_-_introducing_Salesforce_DX_qklwxw-1488882866.png
     distribution: 4
-    background_color: '#e2f7d9'
+    background_color: '#f7f7f7'
     caption: This is the caption for the image
     is_centered: true
   - 
