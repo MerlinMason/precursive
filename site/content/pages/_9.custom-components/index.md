@@ -26,18 +26,23 @@ components:
       > This is going to be a blockquote.
       Images
       
-      ![alt text](http://example.com/image.jpg)
-      Unordered List
+      ![alt text](/img/paths/assets/29_-_introducing_Salesforce_DX_qklwxw-1488882866.png/832fefa6dc787f25b4949a09a1907fb5.png)
+      
+      
+      ## Lists
       
       - Bacon
       - Steak
       - Beer
-      Ordered List
+      
+      ## Numbered List
       
       1. Eat
       2. Drink
       3. Be merry
-      Tables
+      
+      
+      ##Tables
       
       First Header  | Second Header
       ------------- | -------------
