@@ -1,12 +1,16 @@
 .image-text-container {
   margin: 0 auto;
 
+  .row {
+    margin: 0;
+  }
+
   .markdown-centered {
     text-align: center;
 
     // All unordered list should be also centered and styled
     ul, ol {
-      .style-list();
+      display: inline-block;
     }
   }
 
@@ -17,7 +21,7 @@
   }
 
   ol {
-    .style-list();
+    margin: 0 0 (@space * 2) @space;
   }
 
   h1 {
@@ -50,11 +54,6 @@
       content: url('/site/themes/precursive/img/icons/link-arrow.svg');
     }
   }
-}
-
-.style-list {
-  display: inline-block;
-  margin: 0 0 (@space * 2) 0;
 }
 
 .markdown-ticklist {

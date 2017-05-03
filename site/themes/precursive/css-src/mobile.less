@@ -55,4 +55,16 @@ html {
             transform:translateY(0) scale(1);
         }
     }
+
+    @media (min-width: @mobile) and (max-width: @tablet){
+        .show-t { display:block; }
+        .hidden-t { display:none!important; }
+        .pb-0-t { padding-bottom:0; }
+        .mt-2x-t { margin-top:(@space * 2); }
+        .mb-0-t { margin-bottom:0; }
+        .mb-2x-t { margin-bottom:(@space * 2); }
+        .pt-2x-t { padding-top:(@space * 2); }
+        .pb-2x-t { padding-bottom:(@space * 2); }
+    }
+
 }
