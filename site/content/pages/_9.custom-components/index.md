@@ -20,7 +20,6 @@ components:
     distribution: 4
     background_color: '#f7f7f7'
     caption: This is the caption for the image
-    is_centered: true
   - 
     type: standard_header
     header_data:
