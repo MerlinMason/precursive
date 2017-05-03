@@ -68,6 +68,48 @@ components:
       3. Be merry
       
       Normal Text
+      
+      
+      # A guide to Writing text
+      Markdown is a text-to-HTML markup syntax for web writers. Markdown allows you to write using an easy-to-read, easy-to-write plain text format that is converted to structurally valid HTML.
+      
+      ## Headers
+      
+      # This is an h1
+      ## This is an h2
+      ## This is an h3, and so on.
+      
+      
+      ## Bold & Italic
+      
+      You can make things *emphasized*, **bold**, or _**both**_.
+      Links
+      
+      This is an [example link](http://example.com)
+      
+      ## Quoting
+      
+      Create a blockquote by starting your text with > .
+      
+      > This is going to be a pulloutquote, about someone saying how great something is.
+      
+      
+      Images
+      
+      ![alt text](/img/paths/assets/29_-_introducing_Salesforce_DX_qklwxw-1488882866.png/832fefa6dc787f25b4949a09a1907fb5.png)
+      
+      
+      ## Lists
+      
+      - Bacon
+      - Steak
+      - Beer
+      
+      ## Numbered List
+      
+      1. Eat
+      2. Drink
+      3. Be merry
     image: /assets/29_-_introducing_Salesforce_DX_qklwxw-1488882866.png
     distribution: 4
     background_color: '#f7f7f7'
