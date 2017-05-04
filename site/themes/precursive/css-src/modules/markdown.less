@@ -1,0 +1,104 @@
+.markdown-styles {
+
+  .markdown-centered {
+    text-align: center;
+
+    // All unordered list should be also centered and styled
+    ul, ol {
+      display: inline-block;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+
+  // All unordered list is styled with ticklist
+  ol {
+    list-style: none;
+    counter-reset: ol-counter;
+    margin-bottom: 1.4em;
+    li {
+      counter-increment: ol-counter;
+      position: relative;
+      padding-left: 1.4em;
+      margin-bottom: 0.8em;
+      &::before {
+        content: counter(ol-counter) ". ";
+        font-weight: 700;
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+  ul {
+    list-style: none;
+    margin-bottom: 1.4em;
+    li {
+      position: relative;
+      list-style: none;
+      padding-left: 1.4em;
+      margin-bottom: 0.8em;
+      &::before {
+        content: "";
+        .square(@space);
+        .position(absolute, 4px, auto, auto, 0);
+        border-radius: 50%;
+        background: @jade url('../img/icons/white-tick.svg') no-repeat center;
+        background-size: 65% auto;
+        transform: scale(1);
+        transition: all 0.2s;
+      }
+      &:hover::before {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    .w-b();
+    margin-bottom: 0.7em;
+  }
+  h1 {
+    .s-lg();
+  }
+  h2 {
+    .s-md();
+  }
+  h3 {
+    .s-sm();
+  }
+  h4 {
+    .s-xs();
+  }
+  h5, h6 {
+    .s-xxs();
+  }
+
+  p {
+    .s-sm();
+  }
+
+  a {
+    .link-sky();
+    &::after {
+      padding-left: @05x;
+      vertical-align: top;
+      content: url('/site/themes/precursive/img/icons/link-arrow.svg');
+    }
+  }
+
+  blockquote {
+    p {
+      position: relative;
+      font-style: italic;
+      line-height: 1.8;
+      &::before {
+        content: "";
+        .position(absolute, 0, auto, 0, -1.4em, 0);
+        width: 1px;
+        background: linear-gradient(to bottom, @royal, @jade);
+      }
+    }
+  }
+}

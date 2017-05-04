@@ -1,6 +1,19 @@
 .replicator {
 
     &.paragraph {
+
+        &.markdown-centered {
+            text-align: center;
+            // All unordered list should be also centered and styled
+            ul, ol {
+                display: inline-block;
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+
         .serif();
         p {
             .serif();
@@ -16,7 +29,7 @@
                 padding-left:1.4em;
                 margin-bottom:0.8em;
                 &::before {
-                    content:counter(ol-counter) ",";
+                    content:counter(ol-counter) ". ";
                     font-weight:700;
                     position:absolute;
                     left:0;
@@ -123,7 +136,15 @@
     }
     &.general {
         .sans();
-        margin:(@space * 3) 12em;
+
+        @media (max-width: @mobile)  {
+            margin:(@space) 2em;
+        }
+
+        @media (min-width: @tablet){
+            margin:(@space * 3) 12em;
+        }
+
         p {
             .sans();
         }
