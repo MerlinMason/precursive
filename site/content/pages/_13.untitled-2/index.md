@@ -9,6 +9,7 @@ components:
     text: |
       ### Hey
       Do something or other
+    show_navigation_bar: true
   - 
     type: image
     image: /assets/1383944_41477562-1024x682.jpg
