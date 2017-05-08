@@ -68,6 +68,49 @@ $("#formEvent").on("submit", (e) => {
     });
 });
 
+$("#formEventExtended").on("submit", (e) => {
+    e.preventDefault();
+    console.log("Name:", $("#formEventFilter").val());
+    console.log("Name:", $("#formEventFirstName").val());
+    console.log("Name:", $("#formEventLastName").val());
+    console.log("Name:", $("#formEventEmail").val());
+    console.log("Name:", $("#formEventCompany").val());
+    console.log("Name:", $("#formEventPhoneNumber").val());
+    console.log("Name:", $("#formEventCountry").val());
+    console.log("CRM:", $("#formEventCrm").val());
+    $.ajax({
+        url: $("#formEventExtended").attr("action"),
+        data: ({
+            leadSource: $("#formEventFilter").val(),
+            firstName: $("#formEventFirstName").val(),
+            lastName: $("#formEventLastName").val(),
+            email: $("#formEventEmail").val(),
+            company: $("#formEventCompany").val(),
+            phoneNumber: $("#formEventPhoneNumber").val(),
+            country: $("#formEventCountry").val(),
+            crm: $("#formEventCrm").val()
+        }),
+        dataType: "jsonp",
+        timeout: 5000
+    }).done(() => {
+        console.log("Form Sent Successfully!");
+        $(".form-no-submitted").addClass("fadeOut");
+        $(".form-submitted").addClass("fadeIn");
+
+        /* Send data to GA */
+        /* eslint-disable no-undef*/
+        ga("send", {
+            hitType: "event",
+            eventCategory: "Booking",
+            eventAction: "submit",
+            eventLabel: "Events Campaign"
+        });
+        /* eslint-disable no-undef */
+    }).fail(() => {
+        console.log("Failed!");
+    });
+});
+
 $(".js-close-banner").on("click", () => $(".js-banner").hide());
 
 $("#contactUsForm").on("submit", (e) => {

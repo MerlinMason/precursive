@@ -2,4 +2,66 @@
     width: 100%;
 
     .brand-grad-trans();
+
+    .form-container {
+        padding: 36px 12px;
+        background-color: white;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        border-radius: 12px;
+
+        h1 {
+            .h();
+            .s-md();
+            .w-r();
+            .c-grey3();
+        }
+
+        .form-input {
+            border: 1px solid #b5b5b5;
+        }
+
+        .form-submitted {
+            display: none;
+
+            .tickIcon {
+                display: block;
+                width: 180px;
+                margin: 41px auto;
+                text-align: center;
+                text-indent: -9999px;
+                height: 180px;
+                background: url('../img/icons/circle-done.svg');
+                background-size: 180px 180px;
+            }
+
+            .submit-message-container {
+                h1 {
+                    .h();
+                    .w-r();
+                    font-size: 22px;
+                }
+            }
+
+            &.fadeIn {
+                transition: all 1s ease-in-out;
+                display: block;
+            }
+        }
+
+        .form-no-submitted {
+
+            h1 {
+                .h();
+                .s-md();
+                .w-r();
+            }
+
+            &.fadeOut {
+                transition: all 1s ease-in-out;
+                display: none;
+            }
+        }
+
+    }
 }

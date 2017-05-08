@@ -1,31 +1,52 @@
 <div class="contactFormContainer pt-4x pb-4x">
   <div class="container">
     <div class="row">
-      <div class="col-sm-8 col-sm-offset-2">
+      <div class="col-sm-8 col-sm-offset-2 form-container">
 
         {{ if show_contact_form }}
-        <div class="island c-grey3 mb-2x">
+
+        <div class=" form-submitted island c-grey3">
+
+            <div class="tickIcon"></div>
+
+            <div class="text-center submit-message-container mt-1x">
+              <h1>{{ form_success_message }}</h1>
+            </div>
+
+        </div>
+
+
+        <div class="form-no-submitted island c-grey3">
 
           <h1 class="h s-md w-n text-center mt-1x">{{ contact_form_header_text }}</h1>
           <hr>
 
           {{ contact_form_data }}
-          <form action="{{ contact_form_action }}" method="POST">
-            <input type=hidden name="oid" value="{{oid}}">
-            <input type=hidden name="retURL" value="{{ returl }}">
+          <form id="{{ if contact_type == 1}}form{{ /if }}{{ if contact_type == 2}}formEventExtended{{ /if }}"
+                action="{{ contact_form_action }}" method="POST">
+
+            {{ if contact_type == 1}}
+
+              <input type="hidden" name="oid" value="{{oid}}">
+              <input type="hidden" name="retURL" value="{{ returl }}">
+            {{ /if }}
+
+            {{ if contact_type == 2}}
+              <input id="formEventFilter" type="hidden" name="Lead Source" value="{{ filter_name }}">
+            {{ /if }}
 
             <div class="row">
               <div class="col-sm-6">
                 <div class="form-group">
                   <label>First Name</label>
-                  <input maxlength="40" required="required" name="first_name"
+                  <input id="formEventFirstName" maxlength="40" required="required" name="first_name"
                          type="text" class="form-input bordered">
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="form-group">
                   <label>Last Name</label>
-                  <input maxlength="80" required="required" name="last_name"
+                  <input id="formEventLastName" maxlength="80" required="required" name="last_name"
                          type="text" class="form-input bordered">
                 </div>
               </div>
@@ -35,24 +56,91 @@
               <div class="col-sm-6">
                 <div class="form-group">
                   <label>Email</label>
-                  <input maxlength="80" name="email" type="email" required="required"
+                  <input id="formEventEmail" maxlength="80" name="email" type="email" required="required"
                          class="form-input bordered">
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="form-group">
                   <label>Company</label>
-                  <input maxlength="40" name="company" type="text" required="required"
+                  <input id="formEventCompany" maxlength="40" name="company" type="text" required="required"
                          class="form-input bordered">
                 </div>
               </div>
+
+              {{ if contact_type == 2}}
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label>Phone Number</label>
+                    <input id="formEventPhoneNumber" name="phone_number" type="tel" required="required"
+                           class="form-input bordered">
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label>Country Number</label>
+                    <select id="formEventCountry" class="form-input bordered" name="country" required="required">
+                      <option value="">Select…</option>
+                      <option value="United Kingdom">United Kingdom</option>
+                      <option value="United States">United States</option>
+                      <option value="Australia">Australia</option>
+                      <option value="Austria">Austria</option>
+                      <option value="Brazil">Brazil</option>
+                      <option value="Belgium">Belgium</option>
+                      <option value="Canada">Canada</option>
+                      <option value="Denmark">Denmark</option>
+                      <option value="Finland">Finland</option>
+                      <option value="France">France</option>
+                      <option value="Germany">Germany</option>
+                      <option value="India">India</option>
+                      <option value="Ireland">Ireland</option>
+                      <option value="Italy">Italy</option>
+                      <option value="Japan">Japan</option>
+                      <option value="Luxembourg">Luxembourg</option>
+                      <option value="Netherlands">Netherlands</option>
+                      <option value="New Zealand">New Zealand</option>
+                      <option value="Norway">Norway</option>
+                      <option value="Portugal">Portugal</option>
+                      <option value="Singapore">Singapore</option>
+                      <option value="South Africa">South Africa</option>
+                      <option value="Spain">Spain</option>
+                      <option value="Sweden">Sweden</option>
+                      <option value="Switzerland">Switzerland</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label>CRM</label>
+                    <select id="formEventCrm" class="form-input bordered" name="crm" required="required">
+                      <option value="">Select…</option>
+                      <option value="Salesforce">Salesforce</option>
+                      <option value="desk.com">desk.com</option>
+                      <option value="Microsoft Dynamics">Microsoft Dynamics</option>
+                      <option value="Oracle">Oracle</option>
+                      <option value="Right Now">Right Now</option>
+                      <option value="Sage">Sage</option>
+                      <option value="SAP">SAP</option>
+                      <option value="Sugar">Sugar</option>
+                      <option value="Zendesk">Zendesk</option>
+                      <option value="In House">In House</option>
+                      <option value="Other">Other</option>
+                      <option value="Unknown">Unknown</option>
+                      <option value="None">None</option></select>
+                  </div>
+                </div>
+              {{ /if }}
             </div>
 
+            {{ if contact_type == 1}}
             <div class="form-group">
-                                <textarea name="{{oidmessage}}" required="required" wrap="soft"
-                                          class="form-input bordered"
-                                          placeholder="Add a message"></textarea>
+              <textarea name="{{oidmessage}}" required="required" wrap="soft"
+                        class="form-input bordered"
+                        placeholder="Add a message"></textarea>
             </div>
+            {{ /if }}
 
             <div class="text-right">
               <button type="submit" class="btn-sky btn-wide">{{contact_form_action_text}}</button>

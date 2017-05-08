@@ -56,6 +56,19 @@ fields:
           show_contact_form:
             type: toggle
             display: show Contact Form
+          contact_type:
+            type: radio
+            display: Contact Type
+            options:
+              1: Default Contact Form
+              2: Event Form
+          filter_name:
+            type: text
+            display: Filter Name
+          form_success_message:
+            type: text
+            display: Success Message Form Event Submission
+            default: Thank you !
           contact_form_header_text:
             type: text
             display: Contact Form Header Text

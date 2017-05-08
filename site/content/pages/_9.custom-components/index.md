@@ -1,5 +1,20 @@
 components:
   - 
+    type: contact_form
+    show_contact_form: true
+    contact_type: 2
+    contact_form_header_text: Getting in touch with the team is easy
+    contact_form_action: https://hooks.zapier.com/hooks/catch/2061017/186xa7/
+    contact_form_data:
+      - 
+        oid: 00DD0000000DBV2
+        returl: http://precursive.com/contact-success
+        oidmessage: 00ND0000006QJTk
+    contact_form_action_text: Submit
+    contact_us_header: Other ways to contact us
+    filter_name: formEventFilter
+    form_success_message: Thank you for submission!!
+  - 
     type: paragraph
     text: |
       # A guide to Writing text
