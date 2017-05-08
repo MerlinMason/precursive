@@ -36,20 +36,34 @@
             {{ /if }}
 
             <div class="row">
-              <div class="col-sm-6">
+
+              {{ if contact_type == 1}}
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label>First Name</label>
+                    <input id="formEventFirstName" maxlength="40" required="required" name="first_name"
+                           type="text" class="form-input bordered">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label>Last Name</label>
+                    <input id="formEventLastName" maxlength="80" required="required" name="last_name"
+                           type="text" class="form-input bordered">
+                  </div>
+                </div>
+              {{ /if}}
+
+              {{ if contact_type == 2}}
+              <div class="col-sm-12">
                 <div class="form-group">
-                  <label>First Name</label>
-                  <input id="formEventFirstName" maxlength="40" required="required" name="first_name"
+                  <label>Full Name</label>
+                  <input id="formEventFullName" maxlength="80" required="required" name="full_name"
                          type="text" class="form-input bordered">
                 </div>
               </div>
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <label>Last Name</label>
-                  <input id="formEventLastName" maxlength="80" required="required" name="last_name"
-                         type="text" class="form-input bordered">
-                </div>
-              </div>
+              {{ /if }}
+
             </div>
 
             <div class="row">
@@ -60,15 +74,25 @@
                          class="form-input bordered">
                 </div>
               </div>
+
+
               <div class="col-sm-6">
                 <div class="form-group">
-                  <label>Company</label>
+                  <label>Company Name</label>
                   <input id="formEventCompany" maxlength="40" name="company" type="text" required="required"
                          class="form-input bordered">
                 </div>
               </div>
 
               {{ if contact_type == 2}}
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label>Job Title</label>
+                    <input id="formEventJobTitle" name="job_title" type="text" required="required"
+                           class="form-input bordered">
+                  </div>
+                </div>
+
                 <div class="col-sm-6">
                   <div class="form-group">
                     <label>Phone Number</label>

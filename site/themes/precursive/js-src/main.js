@@ -71,9 +71,9 @@ $("#formEvent").on("submit", (e) => {
 $("#formEventExtended").on("submit", (e) => {
     e.preventDefault();
     console.log("Name:", $("#formEventFilter").val());
-    console.log("Name:", $("#formEventFirstName").val());
-    console.log("Name:", $("#formEventLastName").val());
+    console.log("Name:", $("#formEventFullName").val());
     console.log("Name:", $("#formEventEmail").val());
+    console.log("Name:", $("#formEventJobTitle").val());
     console.log("Name:", $("#formEventCompany").val());
     console.log("Name:", $("#formEventPhoneNumber").val());
     console.log("Name:", $("#formEventCountry").val());
@@ -82,10 +82,10 @@ $("#formEventExtended").on("submit", (e) => {
         url: $("#formEventExtended").attr("action"),
         data: ({
             leadSource: $("#formEventFilter").val(),
-            firstName: $("#formEventFirstName").val(),
-            lastName: $("#formEventLastName").val(),
-            email: $("#formEventEmail").val(),
+            fullName: $("#formEventFullName").val(),
+            emailAdress: $("#formEventEmail").val(),
             company: $("#formEventCompany").val(),
+            jobTitle: $("#formEventJobTitle").val(),
             phoneNumber: $("#formEventPhoneNumber").val(),
             country: $("#formEventCountry").val(),
             crm: $("#formEventCrm").val()

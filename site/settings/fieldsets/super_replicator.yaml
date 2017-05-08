@@ -64,10 +64,10 @@ fields:
               2: Event Form
           filter_name:
             type: text
-            display: Filter Name
+            display: Filter Name (Event Form)
           form_success_message:
             type: text
-            display: Success Message Form Event Submission
+            display: Success Message (Event Form)
             default: Thank you !
           contact_form_header_text:
             type: text
@@ -79,7 +79,7 @@ fields:
             default: https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8
           contact_form_data:
             type: grid
-            display: Contact Form Data
+            display: Contact Form Data (Default Contact Form)
             fields:
               oid:
                 type: text
