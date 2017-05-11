@@ -14,6 +14,10 @@ components:
     form_action: https://precursive.com/
     form_action_text: Submit
     form_success_message: Form has been sent successfully!
+    text: |
+      # Beautifully designed resource planning in Salesforce
+      
+      ### The key to project success and making customers happy
 title: Custom Components v2
 fieldset: super_replicator
 template: custom_components
