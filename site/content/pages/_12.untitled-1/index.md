@@ -48,7 +48,6 @@ components:
     type: link_CTA
     show_angle: true
     show_navigation_bar: true
-    show_precursive_logo: true
     text: |
       # Beautifully designed resource planning in Salesforce
       
