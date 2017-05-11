@@ -106,7 +106,7 @@ components:
         oid: SalesforceID
         returl: Redirection URL
     form_action_text: Book a demo
-    image_background: /assets/backgrounds/2_hub_article_banner_672x357px_eng_no_title_v2_tcm1374-492843_1.jpg
+    image_background: /assets/backgrounds/girl-smile-1485428288.jpg
   - 
     type: standard_header
     header_data:
