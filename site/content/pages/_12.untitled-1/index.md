@@ -4,7 +4,7 @@ components:
     header_data:
       - 
         header_title: Masthead
-        header_subtitle: 'With: Image background. Optional Navigation. Optional form. '
+        header_subtitle: 'With: Image background. Optional Navigation. Centered Text'
   - 
     type: masthead
     image_background: /assets/backgrounds/blog-main-1485428286.jpg
