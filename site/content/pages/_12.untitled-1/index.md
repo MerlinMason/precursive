@@ -38,6 +38,32 @@ components:
       # Beautifully designed resource planning in Salesforce
       
       ### The key to project success and making customers happy
+  - 
+    type: standard_header
+    header_data:
+      - 
+        header_title: CTA with links
+        header_subtitle: Used as Nav
+  - 
+    type: link_CTA
+    show_angle: true
+    show_navigation_bar: true
+    show_precursive_logo: true
+    text: |
+      # Beautifully designed resource planning in Salesforce
+      
+      ### The key to project success and making customers happy
+    show_button_1: true
+    button_1_data:
+      - 
+        url_redirection: https://precursive.com/
+        button_text: Do this
+    show_button_2: true
+    button_2_data:
+      - 
+        url_redirection: https://precursive.com/
+        button_text: Or This
+    video_on_the_right_subtitle: This is a message at the bottom of the video
 title: Custom Components v2
 fieldset: super_replicator
 template: custom_components
