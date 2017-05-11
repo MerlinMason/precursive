@@ -1,5 +1,20 @@
-components: [ ]
-title: Untitled-1
+components:
+  - 
+    type: standard_header
+    header_data:
+      - 
+        header_title: Masthead
+        header_subtitle: 'With: Image background. Optional Navigation. Optional form. '
+  - 
+    type: masthead
+    image_background: /assets/backgrounds/blog-main-1485428286.jpg
+    show_navigation_bar: true
+    filter_name: no_filter
+    form_title: Default Form Title
+    form_action: https://precursive.com/
+    form_action_text: Submit
+    form_success_message: Form has been sent successfully!
+title: Custom Components v2
 fieldset: super_replicator
 template: custom_components
 id: 16df39c9-feb3-4080-bf8d-b74e180339f0
