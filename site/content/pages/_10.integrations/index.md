@@ -57,9 +57,6 @@ components:
     options:
       - 1
   - 
-    type: carousel_casestudy
-    enable: true
-  - 
     type: link_CTA
     image_background: /assets/working-2.jpg
     show_precursive_logo: true
@@ -79,6 +76,9 @@ components:
     distribution: 2
     video_on_the_right_subtitle: This is a message at the bottom of the video
     image_on_the_right: /assets/messy-spreadsheets.png
+  - 
+    type: carousel_casestudy
+    enable: true
 title: Integrations
 fieldset: super_replicator
 template: custom_components
