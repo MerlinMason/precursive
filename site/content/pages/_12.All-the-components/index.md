@@ -299,14 +299,14 @@ components:
     type: carousel_casestudy
     enable: true
   - 
-    type: hero_casestudy
-    enable: true
-  - 
     type: standard_header
     header_data:
       - 
         header_title: Hero Case Study
         header_subtitle: Picks at random any case study which has been selected for the Hero Casestudy
+  - 
+    type: hero_casestudy
+    enable: true
 title: Custom Components v2
 fieldset: super_replicator
 template: custom_components
