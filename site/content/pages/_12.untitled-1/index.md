@@ -124,7 +124,7 @@ components:
         header_subtitle: This can have 1,2 or three columns with text
   - 
     type: multi_columns
-    columns_to_display: 3
+    columns_to_display: 2
     multi_columns_grid:
       - 
         image: /assets/events/London/SFWT-London_Afterparty.png
