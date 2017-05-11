@@ -18,13 +18,10 @@ components:
       
       We built Precursive on the Salesforce platform with the focus on using data from Saleforce. These maybe Salestriggers like ‘Deal Closed’ to anything which works for your business. Precursive also has an open API that can be configured for any integration.
       
-      
-      ![Image](http://localhost:8888/cp/assets/download/main/O3b_LOGO.png)
-      
       We connected our Sales team with Precursive and our project management tool Taskfeed, seemlessly without any loss of data. It’s such a nice workflow!
       Everyone in the business is not on the same page.
       
-      [Read full case study]()
+      [Read full case study](/customers/)
     image: /assets/integrations.png
     distribution: 2
     background_color: '#f8f7fc'
@@ -39,7 +36,6 @@ components:
           is lost.
         image: /assets/Brand/integ-salesforce.png
         show_separator_line: true
-        full_width_separator_line: true
   - 
     type: image
     image: /assets/sf-pc.png
@@ -52,9 +48,14 @@ components:
           Have a finger on the pulse of all your projects! See what is happening in realtime with our clean
           and clear dashboards. See how much time is spent on projects, if costs are going up and when margin
           is lost.
+        show_separator_line: true
   - 
     type: image
     image: /assets/p-taskfeed.png
+  - 
+    type: separator_line
+    options:
+      - 1
   - 
     type: carousel_casestudy
     enable: true
