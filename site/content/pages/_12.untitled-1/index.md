@@ -120,31 +120,6 @@ components:
     type: standard_header
     header_data:
       - 
-        header_title: Image (Multi Column)
-        header_subtitle: This can have 1,2 or three columns with text
-  - 
-    type: multi_columns
-    columns_to_display: 3
-    multi_columns_grid:
-      - 
-        image: /assets/events/London/SFWT-London_Afterparty.png
-        text: |
-          # SF London
-          Something about the event etc
-      - 
-        image: /assets/events/newyork/NYC-liberty-01.png
-        text: |
-          # SF NYC
-          Something about the event etc
-      - 
-        image: /assets/events/sydney/sales-force-world-tour-img.jpg
-        text: |
-          # SF Sydney
-          Something about the event etc
-  - 
-    type: standard_header
-    header_data:
-      - 
         header_title: 'Image & Text'
         header_subtitle: Positioned top. The background color is custom, Text centering, image can have captions
   - 
