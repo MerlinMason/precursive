@@ -65,7 +65,7 @@ components:
         button_text: Or This
     video_on_the_right_subtitle: This is a message at the bottom of the video
     distribution: 2
-    image_on_the_right: /assets/casestudies/C Space Image-1485883921.jpg
+    image_on_the_right: /assets/features/project-accounting.png
 title: Custom Components v2
 fieldset: super_replicator
 template: custom_components
