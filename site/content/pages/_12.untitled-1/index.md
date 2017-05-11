@@ -64,7 +64,7 @@ components:
         url_redirection: https://precursive.com/
         button_text: Or This
     video_on_the_right_subtitle: This is a message at the bottom of the video
-    distribution: 1
+    distribution: 2
     image_on_the_right: /assets/features/reporting.png
 title: Custom Components v2
 fieldset: super_replicator
