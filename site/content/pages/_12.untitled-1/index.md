@@ -64,6 +64,8 @@ components:
         url_redirection: https://precursive.com/
         button_text: Or This
     video_on_the_right_subtitle: This is a message at the bottom of the video
+    distribution: 1
+    video_placeholder: /assets/videos/welcome_to_precursive.webm
 title: Custom Components v2
 fieldset: super_replicator
 template: custom_components
