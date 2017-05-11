@@ -77,6 +77,8 @@ components:
     video_on_the_right_subtitle: This is a message at the bottom of the video
     image_on_the_right: /assets/messy-spreadsheets.png
   - 
+    type: separator_line
+  - 
     type: carousel_casestudy
     enable: true
 title: Integrations
