@@ -43,7 +43,9 @@ components:
     header_data:
       - 
         header_title: CTA with links
-        header_subtitle: Used as Nav
+        header_subtitle: >
+          Used as Nav. Could be just a block without the nav. On the right can be an image, video or just
+          centered text
   - 
     type: link_CTA
     show_angle: true
