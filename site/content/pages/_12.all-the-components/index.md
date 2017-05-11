@@ -267,7 +267,11 @@ components:
         header_subtitle: Header Subtitle
   - 
     type: app_exchange
-    text: Some text about it
+    text: >
+      Kantar Futures helps clients "Profit From Change." As the leading global strategic insights and
+      innovation consultancy, with unparalleled global expertise in foresights, trends and futures, Kantar
+      Futures offers a complete range of subscription services and consulting solutions. Kantar Futures
+      was formed through the integration of The Henley Centre, HeadlightVision, Yankelovich and TRU.
   - 
     type: standard_header
     header_data:
