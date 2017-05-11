@@ -124,7 +124,7 @@ components:
         header_subtitle: This can have 1,2 or three columns with text
   - 
     type: multi_columns
-    columns_to_display: 2
+    columns_to_display: 3
     multi_columns_grid:
       - 
         image: /assets/events/London/SFWT-London_Afterparty.png
@@ -208,6 +208,8 @@ components:
   - 
     type: paragraph
     text: |
+      # This is same way the blog works
+      
       Markdown is a text-to-HTML markup syntax for web writers. Markdown allows you to write using an easy-to-read, easy-to-write plain text format that is converted to structurally valid HTML.
       
       ## Headers
@@ -282,6 +284,54 @@ components:
       - 
         image: /assets/events/newyork/EmpireState_533x533.png
         text: 'And another one. If you only add one slide then there it no arrows. '
+  - 
+    type: standard_header
+    header_data:
+      - 
+        header_title: App Exchange
+        header_subtitle: Header Subtitle
+  - 
+    type: app_exchange
+    text: Some text about it
+  - 
+    type: standard_header
+    header_data:
+      - 
+        header_title: "All Benefit's Section"
+        header_subtitle: All of the benefits from the front page
+  - 
+    type: all_benefits_section
+    enable: true
+  - 
+    type: standard_header
+    header_data:
+      - 
+        header_title: Sales + Delivery
+        header_subtitle: Standard module
+  - 
+    type: sales_delivery
+    salesforce_heading: Connecting Sales and Delivery
+    salesforce_description: >
+      Workflow Automation. Align sales activities with delivery resources, manage people and projects more
+      effectively and create an effortless customer experience.
+  - 
+    type: standard_header
+    header_data:
+      - 
+        header_title: Carousel Casestudy
+        header_subtitle: All casestudies in a carousel
+  - 
+    type: carousel_casestudy
+    enable: true
+  - 
+    type: hero_casestudy
+    enable: true
+  - 
+    type: standard_header
+    header_data:
+      - 
+        header_title: Hero Case Study
+        header_subtitle: Picks at random any case study which has been selected for the Hero Casestudy
 title: Custom Components v2
 fieldset: super_replicator
 template: custom_components
