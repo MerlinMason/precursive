@@ -7,7 +7,9 @@ components:
     form_action: https://precursive.com/
     form_action_text: Submit
     form_success_message: Form has been sent successfully!
-    text: '# Front Developer'
+    text: |
+      # Front Developer
+      ## B2B Start-Up
     image_background: /assets/backgrounds/blog-offsite-1485428287.jpg
   - 
     type: paragraph
