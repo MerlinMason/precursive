@@ -58,7 +58,7 @@ components:
       Send a CV and covering letter via this site
       Send personal projects or collaborations in Single Web Page Applications hosted in public ( or accessible ) code repositories ( GitHub, Bitbucket, Google Code… ) in order to show his abilities and code style ( not necessarily in the same technologies )
       
-      NO AGENCIES PLEASE
+      NO AGENCIES PLEASE Applications by email to [robertovg@precursive.co.uk](mailto: robertovg@precursive.co.uk)
 title: Front end dev
 fieldset: super_replicator
 template: custom_components
