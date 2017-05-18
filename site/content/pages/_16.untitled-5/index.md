@@ -7,7 +7,7 @@ components:
     form_action: https://precursive.com/
     form_action_text: Submit
     form_success_message: Form has been sent successfully!
-    text: '### Front Developer'
+    text: '# Front Developer'
   - 
     type: paragraph
     text: |
