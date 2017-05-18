@@ -2,7 +2,7 @@ components:
   - 
     type: link_CTA
     show_navigation_bar: true
-    text: Front End Developer
+    text: '### Front End Developer'
     button_1_data:
       - 
         url_redirection: https://precursive.com/
@@ -12,6 +12,7 @@ components:
         url_redirection: https://precursive.com/
         button_text: Go To Page
     video_on_the_right_subtitle: This is a message at the bottom of the video
+    distribution: 3
   - 
     type: paragraph
     text: |
@@ -65,5 +66,5 @@ components:
 title: Untitled-5
 fieldset: super_replicator
 template: custom_components
-id: 121e9b93-5f4f-4015-beb9-669a2fd8c5e5
 tags: [ ]
+id: 121e9b93-5f4f-4015-beb9-669a2fd8c5e5
