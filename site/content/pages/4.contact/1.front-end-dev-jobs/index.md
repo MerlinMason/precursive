@@ -14,8 +14,6 @@ components:
   - 
     type: paragraph
     text: |
-      Front End Developer - B2B Start-Up
-      
       ## About Precursive
       
       Precursive helps our consulting and agency customers to manage their teams more efficiently via our web app. Our strategy is to win in tired, old markets by having a beautifully designed product that people will enjoy using and blow away the competition.
