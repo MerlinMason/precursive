@@ -42,7 +42,7 @@ components:
       ## Requirements
       
       Bachelor’s Degree in Computer Science or equivalent or commercial experience in web UI development environment
-      Strong web development skills using JavaScript, HTML5, CSS and XML. Specially will be very valuable to have experiences with our product technologies ( Angular, Jasmine, Karma, Bower, D3.js, moment, lodash / underscore, jQuery, Grunt… )
+      Strong web development skills using JavaScript, HTML5, CSS and XML. Specially will be very valuable to have experiences with our product technologies ( Angular, React, Jasmine, Karma, Bower, D3.js, moment, lodash / underscore, jQuery, Grunt… )
       Fluent written and spoken English
       Professional and flexible individual who can adapt quickly to changing requirements or priorities and where necessary divert to assist other teams/projects
       Responsible and confident developer able to drive his own responsibility in order to get to the arranged goals
