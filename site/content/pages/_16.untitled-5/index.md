@@ -8,22 +8,23 @@ components:
     form_action_text: Submit
     form_success_message: Form has been sent successfully!
     text: '# Front Developer'
+    image_background: /assets/backgrounds/blog-offsite-1485428287.jpg
   - 
     type: paragraph
     text: |
       Front End Developer - B2B Start-Up
       
-      About Precursive
+      ## About Precursive
       
       Precursive helps our consulting and agency customers to manage their teams more efficiently via our web app. Our strategy is to win in tired, old markets by having a beautifully designed product that people will enjoy using and blow away the competition.
       
       We partner with a well-established SaaS platform – Salesforce.com – and have a direct go-to-market approach with customers in the UK, US and Australia including Soft cat, Kantar Futures, Arqiva, Render that, ACSN, Agilisys, Anomaly42, Armstrong, Attenda, Tikit, Builtech, BusinessOptix, CSpace, Certeco, Daily Mail, DMG, Essentra, FreeWheel, Fujitsu, Fusion, Irondata, ITC, Itelligence, Nectar, O3b, ACSN, Bitmap, Unified, WPP, XCD and more mid sized agencies and consultancies.
       
-      About the Job
+      ## About the Job
       
       Precursive are looking for an energetic, enthusiastic, well-organized team player to become a key member of a growing product team. You can based in London, Poland or Spain and speak English fluently.
       
-      Responsibilities
+      ## Responsibilities
       
       Design and develop Precursive UI new features as well as maintenance the existing one
       Build a deep knowledge of the existing application and code base
@@ -37,7 +38,7 @@ components:
       Share learned knowledge with the team via peer review, peer programming code reviews session; document them with our actual Jira and Confluence team management tools
       
       
-      Requirements
+      ## Requirements
       
       Bachelor’s Degree in Computer Science or equivalent or commercial experience in web UI development environment
       Strong web development skills using JavaScript, HTML5, CSS and XML. Specially will be very valuable to have experiences with our product technologies ( Angular, Jasmine, Karma, Bower, D3.js, moment, lodash / underscore, jQuery, Grunt… )
@@ -52,13 +53,13 @@ components:
       Ability to fully assess the impact of changes on existing development / code base
       Provide regular feedback to the Engineering Lead to ensure awareness of progress or issues that could affect quality, content or timing of the delivery
       
-      How to Apply
+      ## How to Apply
       
       Send a CV and covering letter via this site
       Send personal projects or collaborations in Single Web Page Applications hosted in public ( or accessible ) code repositories ( GitHub, Bitbucket, Google Code… ) in order to show his abilities and code style ( not necessarily in the same technologies )
       
       NO AGENCIES PLEASE
-title: Untitled-5
+title: Front end dev
 fieldset: super_replicator
 template: custom_components
 tags: [ ]
