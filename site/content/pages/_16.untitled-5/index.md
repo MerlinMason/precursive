@@ -1,18 +1,13 @@
 components:
   - 
-    type: link_CTA
+    type: masthead
     show_navigation_bar: true
-    text: '### Front End Developer'
-    button_1_data:
-      - 
-        url_redirection: https://precursive.com/
-        button_text: Go To Page
-    button_2_data:
-      - 
-        url_redirection: https://precursive.com/
-        button_text: Go To Page
-    video_on_the_right_subtitle: This is a message at the bottom of the video
-    distribution: 3
+    filter_name: no_filter
+    form_title: Default Form Title
+    form_action: https://precursive.com/
+    form_action_text: Submit
+    form_success_message: Form has been sent successfully!
+    text: '### Front Developer'
   - 
     type: paragraph
     text: |
