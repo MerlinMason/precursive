@@ -29,6 +29,7 @@ components:
       Design and develop Precursive UI new features as well as maintenance the existing one
       Build a deep knowledge of the existing application and code base
       Participate in technical designing processes and produce technical specification documents as requested
+      Nice opportunity to learn and apply new Lightning Salesforce Technology
       Take the initiative to develop, debug and test tasks / problems
       Work effectively with Quality Assurance Team to resolve open product issues in an efficient manner
       Be proactive in improving the product quality and the development process
@@ -58,7 +59,7 @@ components:
       Send a CV and covering letter via this site
       Send personal projects or collaborations in Single Web Page Applications hosted in public ( or accessible ) code repositories ( GitHub, Bitbucket, Google Code… ) in order to show his abilities and code style ( not necessarily in the same technologies )
       
-      Applications by email to <a href="mailto:robertovg@precursive.co.uk">Roberto robertovg@precursive.co.uk</a>
+      Applications by email to <a href="mailto:robertovg@precursive.co.uk?subject=Front%20end%20dev%20Precursive%20Application">Roberto, robertovg@precursive.co.uk</a>
 title: Front end dev
 fieldset: super_replicator
 template: custom_components
