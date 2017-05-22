@@ -10,6 +10,7 @@ components:
     text: |
       # UX Designer
       ## B2B Start-Up
+    show_navigation_bar: true
   - 
     type: paragraph
     text: |
