@@ -34,5 +34,5 @@ components:
 title: UX-Designer
 fieldset: super_replicator
 template: custom_components
-tags: [ ]
 id: b277c1a8-a522-47e5-9bf5-502ecb09c82c
+tags: [ ]
