@@ -1,7 +1,7 @@
 .top-picks-carousel {
   .carousel-cell {
     width:100%;
-    height: 280px;
+    min-height: 280px;
 
     .carousel-margin {
       margin: 0 @2x;
@@ -29,6 +29,11 @@
   }
 
   .flickity-prev-next-button {
+
+    @media (max-width: @mobile)  {
+      display: none;
+    }
+
     position:absolute;
     height:110px;
     width:80px;

@@ -9,14 +9,18 @@
 
                     <div class="row">
                         <div class="col-sm-4 mb-1x">
+                            {{ if site_email }}
                             <a href="mailto:{{ site_email | obfuscate_email }}" class="link-white" target="_blank">
                                 <img src="{{ theme:img src='/icons/email.svg' }}" width="50px">
                                 <div>{{ site_email | obfuscate_email }}</div>
                             </a>
+                            {{ /if }}
                         </div>
                         <div class="col-sm-4 mb-1x">
+                            {{ if site_phone }}
                             <img src="{{ theme:img src='/icons/call.svg' }}" width="50px">
                             <p class="c-white">{{ site_phone }}</p>
+                            {{ /if }}
                         </div>
                         <div class="col-sm-4 mb-1x">
                             <a href="#" class="link-white js-show-intercom">

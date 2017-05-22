@@ -12,7 +12,7 @@ export default () => {
             autoPlay: 4500,
             wrapAround: true,
             adaptiveHeight: true,
-            imagesLoaded: false,
+            imagesLoaded: true,
             draggable: true
         });
     }

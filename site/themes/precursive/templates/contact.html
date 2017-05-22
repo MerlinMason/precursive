@@ -11,10 +11,10 @@
                         <hr>
 
                         <form id="contactUsForm" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
-                            <input type=hidden name='captcha_settings' value='{"keyname":"precursiveWebsite","fallback":"true","orgId":"00DD0000000DBV2","ts":""}'>
-                            <input type=hidden name="oid" value="00DD0000000DBV2">
-                            <input type=hidden name="retURL" value="http://precursive.com/contact-success">
-                            <input type=hidden name="Lead Source" value="contactUs">
+                            <input type="hidden" name='captcha_settings' value='{"keyname":"precursiveWebsite","fallback":"true","orgId":"00DD0000000DBV2","ts":""}'>
+                            <input type="hidden" name="oid" value="00DD0000000DBV2">
+                            <input type="hidden" name="retURL" value="http://precursive.com/contact-success">
+                            <input type="hidden" name="Lead Source" value="contactUs">
 
                             <div class="row">
                                 <div class="col-sm-6">
@@ -75,16 +75,21 @@
                         <hr>
                         <div class="row">
                             <div class="col-sm-4 mb-1x">
+                                {{ if site_email }}
                                 <a href="mailto:{{ site_email | obfuscate_email }}" class="link-royal" target="_blank">
                                     <img src="{{ theme:img src='/icons/email.svg' }}" width="50px">
                                     <div>{{ site_email | obfuscate_email }}</div>
                                 </a>
+                                {{ /if }}
                             </div>
                             <div class="col-sm-4 mb-1x">
+
+                                {{ if site_phone }}
                                 <a href="tel:{{ site_phone }}" class="link-royal">
                                     <img src="{{ theme:img src='/icons/call.svg' }}" width="50px">
                                     <div>{{ site_phone }}</div>
                                 </a>
+                                {{ /if }}
                             </div>
                             <div class="col-sm-4 mb-1x">
                                 <a href="#" class="link-royal js-show-intercom">
