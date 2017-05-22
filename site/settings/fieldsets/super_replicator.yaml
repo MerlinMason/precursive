@@ -76,7 +76,7 @@ fields:
           contact_form_action:
             type: text
             display: Contact Form Action
-            default: https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8
+            default: https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8
           contact_form_data:
             type: grid
             display: Contact Form Data (Default Contact Form)
@@ -420,7 +420,7 @@ fields:
               action_url:
                 type: text
                 display: Action URL
-                default: https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8
+                default: https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8
               oid:
                 type: text
                 display: oid
