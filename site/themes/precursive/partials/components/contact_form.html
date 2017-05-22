@@ -26,14 +26,11 @@
                 action="{{ contact_form_action }}" method="POST">
 
             {{ if contact_type == 1}}
-
               <input type="hidden" name="oid" value="{{oid}}">
               <input type="hidden" name="retURL" value="{{ returl }}">
             {{ /if }}
 
-            {{ if contact_type == 2}}
-              <input id="formEventFilter" type="hidden" name="Lead Source" value="{{ filter_name }}">
-            {{ /if }}
+            <input id="formEventFilter" type="hidden" name="Lead Source" value="{{ filter_name }}">
 
             <div class="row">
 
