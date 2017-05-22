@@ -14,14 +14,14 @@ components:
   - 
     type: paragraph
     text: |
-      ## You:
+      ## You
       You’re a full time UX designer who’s ready for their next challenge. You want to make great products and have a technical UX focus - no fluffy marketing UX designers need apply.  You make things happen. You don’t need to have senior in your title, you just need to have drive to make our product great
       
       An experienced hand that shapes incredible user experiences and designs that come to life through mobile and desktop apps. You focus intensely on users, researching and validating what they're thinking, how they are acting and how they are feeling. You know that everything that ships has your personal stamp attached to it and you work closely with other teams to make sure it’s perfect.
       
       You are looking for an opportunity to unleash your creative vision and talent and lead the re-imagination of a successful app.
       
-      ## Us:
+      ## Us
       We are a software business who are passionate about making professional services companies effortless to run. We have made successful strides in the market and count BT, WPP, Omnicom and Essentra as customers. We are partnered with Forbe’s most innovative software company, Salesforce.com, and provide software to that ecosystem. We believe that becoming user centric and design obsessed we can evolve our product to the next level.  If you know anything about Salesforce you’ll be using their brand new design framework Lightning.
       
       ## Why we’re hiring
