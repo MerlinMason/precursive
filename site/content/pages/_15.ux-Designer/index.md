@@ -1,5 +1,16 @@
 components:
   - 
+    type: masthead
+    image_background: /assets/backgrounds/blog-offsite-1485428287.jpg
+    filter_name: no_filter
+    form_title: Default Form Title
+    form_action: https://precursive.com/
+    form_action_text: Submit
+    form_success_message: Form has been sent successfully!
+    text: |
+      # UX Designer
+      ## B2B Start-Up
+  - 
     type: paragraph
     text: |
       ## You:
@@ -18,7 +29,8 @@ components:
       You will take stock of the market, existing product, customer insight and the Salesforce UX framework to start to document the future user journeys, key moments and overall experience.
       
       From there you will work with key user groups and help evolve the low fidelity wireframes into the final high fidelity designs. You will work with the development team to ensure that people are aligned and that the right solution gets delivered first time.
-      Obviously this will be mobile first followed by the web platform
+      
+      Applications by email to <a href="mailto:robertovg@precursive.com?subject=Front end dev Precursive Application">robertovg@precursive.com</a>
 title: UX-Designer
 fieldset: super_replicator
 template: custom_components
