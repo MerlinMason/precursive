@@ -30,7 +30,7 @@ components:
       
       From there you will work with key user groups and help evolve the low fidelity wireframes into the final high fidelity designs. You will work with the development team to ensure that people are aligned and that the right solution gets delivered first time.
       
-      Applications by email to <a href="mailto:robertovg@precursive.com?subject=Front end dev Precursive Application">robertovg@precursive.com</a>
+      Applications by email to <a href="mailto:jgasteen@precursive.com?subject=UX Job at Precursive">jgasteen@precursive.com</a>
 title: UX-Designer
 fieldset: super_replicator
 template: custom_components
