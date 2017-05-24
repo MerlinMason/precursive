@@ -9,10 +9,10 @@
         </div>
         <div class="col-sm-4">
             <h6 class="h s-md">Download the guide now</h6>
-            <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+            <form id="downloadGuideForm" action="" method="POST">
                 <input type="hidden" name="oid" value="00DD0000000DBV2">
                 <input type="hidden" name="retURL" value="http://precursive.com/buying-guide-success">
-                <input type="hidden" name="Lead Source" value="DownloadGuide">
+                <input type="hidden" id="lead_source" name="lead_source" value="Precursive.com Buying Guide">
 
                 <div class="row-sm">
                     <div class="col-xs-6">
@@ -34,11 +34,15 @@
                            required="required" class="form-input bordered" placeholder="Email">
                 </div>
 
-                <button class="g-recaptcha btn-sky btn-fit"
-                    data-sitekey="6Ld2yR4UAAAAABOFcKrT2vFvvoI1fIxaAa_PCxzq"
-                    data-callback="formsOnSubmit">
+                <div id="downloadGuideCaptcha" style="display: none;" class="g-recaptcha btn-sky btn-fit"
+                        data-sitekey="6Ld2yR4UAAAAABOFcKrT2vFvvoI1fIxaAa_PCxzq"
+                        data-callback="downloadGuideFormOnSubmit"
+                        data-after-submit="downloadGuideFormOnSubmit">
                     Download
-                    </button>
+                </div>
+
+                <button type="submit" class="btn-sky btn-fit">Download</button>
+
             </form>
         </div>
     </div>

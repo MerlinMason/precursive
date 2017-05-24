@@ -106,14 +106,50 @@ $("#formEventExtended").on("submit", (e) => {
 
 $(".js-close-banner").on("click", () => $(".js-banner").hide());
 
-$("#contactUsForm").on("submit", (e) => {
+$("#contactUsForm, #bookDemoForm, #bookDemoModalForm, #downloadGuideForm").on("submit", (e) => {
+    console.log("CAPTCHA CALLED", grecaptcha.getResponse());
     if (grecaptcha.getResponse() === "") {
         e.preventDefault();
     }
+
+    /* console.log(e);
+    console.log(e.target);
+    const submitButtonId = $(e.target).find('.g-recaptcha').outerHTML;
+    console.log(submitButtonId);*/
 
     grecaptcha.execute();
 });
 
 window.formsOnSubmit = function () {
+    console.log("formsOnSubmit");
     $("#contactUsForm").submit();
 };
+
+window.bookDemoModalFormOnSubmit = function () {
+    console.log("book Demo Modal");
+    $("#bookDemoModalForm").submit();
+};
+
+window.bookDemoFormOnSubmit = function () {
+    console.log("book Demo");
+    $("#bookDemoForm").submit();
+};
+
+window.downloadGuideFormOnSubmit = function () {
+    console.log("download guide Modal");
+    $("#bookDemoForm").submit();
+};
+
+
+window.captchaCallback = function () {
+    $(".g-recaptcha").each((index, el) => {
+        console.log("el: ", el);
+
+        const holderId = grecaptcha.render(el, {
+            sitekey: "6Ld2yR4UAAAAABOFcKrT2vFvvoI1fIxaAa_PCxzq"
+        });
+
+        console.log(holderId);
+    });
+};
+

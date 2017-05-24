@@ -1,12 +1,20 @@
-<form class="row-sm" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+<form id="bookDemoForm" class="row-sm" action="" method="POST">
     <input type="hidden" name="oid" value="00DD0000000DBV2">
     <input type="hidden" name="retURL" value="http://precursive.com/demo-success">
-    <input type="hidden" name="Lead Source" value="BookADemo">
+    <input type="hidden" name="Lead Source" value="Precursive.com Book a Meeting">
 
     <div class="col-xs-7 col-sm-8">
-        <input type="email" class="form-input" placeholder="Enter your email" maxlength="80" name="email" validate>
+        <input type="email" class="form-input" placeholder="Enter your email" maxlength="80" name="email"
+               required="required" validate>
     </div>
     <div class="col-xs-5 col-sm-4">
+        <div id="bookDemoCaptcha" style="display: none;" class="btn-white btn-fit g-recaptcha"
+                data-sitekey="6Ld2yR4UAAAAABOFcKrT2vFvvoI1fIxaAa_PCxzq"
+                data-callback="bookDemoFormOnSubmit"
+                data-after-submit="bookDemoFormOnSubmit">
+            Book a demo
+        </div>
+
         <button class="btn-white btn-fit" type="submit">Book a demo</button>
     </div>
 </form>
