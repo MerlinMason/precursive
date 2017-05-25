@@ -48,18 +48,6 @@
     </script>
     <!-- End Google Analytics -->
 
-    <!-- Google Recaptcha -->
-    <script src="https://www.google.com/recaptcha/api.js?onload=captchaCallback&render=explicit" async defer></script>
-    <!--<script>
-        function timestamp() {
-            var response = document.getElementById("g-recaptcha-response");
-            if ( (response == null || response.value.trim() == "") && document.getElementsByName("captcha_settings"))
-            {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);
-                elems["ts"] = JSON.stringify(new Date().getTime());
-                document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } }
-        setInterval(timestamp, 500);
-    </script>-->
-
     <link rel="stylesheet" href="{{ theme:css }}">
     <link rel="shortcut icon" type="image/png" href="{{ theme:img src='/favicon.png' }}">
     <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Source+Sans+Pro:400,600,700" rel="stylesheet">
@@ -75,6 +63,8 @@
     {{ cookie_consent }}
     {{ cookie_consent:js }}
     <script src="{{ theme:js }}"></script>
+    <!-- Google Recaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js?onload=captchaCallback&render=explicit" async defer></script>
     <script>
         /* Intercom Settings */
         window.intercomSettings = { app_id: "xc24ywss" };
