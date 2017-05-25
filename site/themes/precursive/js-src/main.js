@@ -92,6 +92,7 @@ window.downloadGuideFormOnSubmit = function () {
 };
 
 window.captchaCallback = function () {
+    console.log("Recaptcha Callback");
     $(".recaptcha-container").each((index, el) => {
         const idCaptchaHtml = $(el).attr("id");
         const idCaptcha = grecaptcha.render(idCaptchaHtml, {
