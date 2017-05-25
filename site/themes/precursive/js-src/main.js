@@ -41,3 +41,17 @@ $(".js-toggle-form-modal").on("click", (e) => {
 });
 
 $(".js-close-banner").on("click", () => $(".js-banner").hide());
+
+/* eslint-disable no-undef*/
+window.captchaCallback = function () {
+    $(".recaptcha-container").each((index, el) => {
+        const idCaptchaHtml = $(el).attr("id");
+        const idCaptcha = grecaptcha.render(idCaptchaHtml, {
+            sitekey: "6Ld2yR4UAAAAABOFcKrT2vFvvoI1fIxaAa_PCxzq",
+            callback: $(el).data("after-submit")
+        });
+        // Save id of all the captcha from the page
+        mapRecaptcha.set(idCaptchaHtml, idCaptcha);
+    });
+};
+/* eslint-disable no-undef*/
