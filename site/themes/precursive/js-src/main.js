@@ -6,12 +6,10 @@ import CssAnimation from "./modules/css-animation";
 import CaseStudies from "./modules/case-studies";
 import TopPicks from "./modules/top-picks";
 
-// console.log(Share);
 Home();
 CssAnimation();
 CaseStudies();
 TopPicks();
-
 
 $(".js-show-intercom").on("click", (e) => {
     e.preventDefault();
@@ -106,48 +104,74 @@ $("#formEventExtended").on("submit", (e) => {
 
 $(".js-close-banner").on("click", () => $(".js-banner").hide());
 
-$("#contactUsForm, #bookDemoForm, #bookDemoModalForm, #downloadGuideForm").on("submit", (e) => {
-    console.log("CAPTCHA CALLED", grecaptcha.getResponse());
-    if (grecaptcha.getResponse() === "") {
+const map = new Map();
+
+$("#bookDemoModalForm").on("submit", (e) => {
+    const idCaptchaForm = map.get("bookDemoModalCaptcha");
+    if (grecaptcha.getResponse(idCaptchaForm) === "") {
         e.preventDefault();
+        grecaptcha.execute(idCaptchaForm);
     }
-
-    /* console.log(e);
-    console.log(e.target);
-    const submitButtonId = $(e.target).find('.g-recaptcha').outerHTML;
-    console.log(submitButtonId);*/
-
-    grecaptcha.execute();
+    console.log("bookDemoModalForm - Submitted");
 });
 
-window.formsOnSubmit = function () {
-    console.log("formsOnSubmit");
+$("#contactUsForm").on("submit", (e) => {
+    const idCaptchaForm = map.get("contactCaptcha");
+    if (grecaptcha.getResponse(idCaptchaForm) === "") {
+        e.preventDefault();
+        grecaptcha.execute(idCaptchaForm);
+    }
+    console.log("contactFormOnSubmit - Submitted");
+});
+
+$("#bookDemoForm").on("submit", (e) => {
+    const idCaptchaForm = map.get("bookDemoCaptcha");
+    if (grecaptcha.getResponse(idCaptchaForm) === "") {
+        e.preventDefault();
+        grecaptcha.execute(idCaptchaForm);
+    }
+    console.log("bookDemoForm - Submitted");
+});
+
+$("#downloadGuideForm").on("submit", (e) => {
+    const idCaptchaForm = map.get("downloadGuideCaptcha");
+    if (grecaptcha.getResponse(idCaptchaForm) === "") {
+        e.preventDefault();
+        grecaptcha.execute(idCaptchaForm);
+    }
+    console.log("downloadGuideForm - Submitted");
+});
+
+
+window.contactFormOnSubmit = function () {
+    console.log("Contact Form");
     $("#contactUsForm").submit();
 };
 
 window.bookDemoModalFormOnSubmit = function () {
-    console.log("book Demo Modal");
+    console.log("Book Demo Modal");
     $("#bookDemoModalForm").submit();
 };
 
 window.bookDemoFormOnSubmit = function () {
-    console.log("book Demo");
+    console.log("Book Demo");
     $("#bookDemoForm").submit();
 };
 
 window.downloadGuideFormOnSubmit = function () {
-    console.log("download guide Modal");
-    $("#bookDemoForm").submit();
+    console.log("Download Guide");
+    $("#downloadGuideForm").submit();
 };
-
 
 window.captchaCallback = function () {
-    $(".g-recaptcha").each((index, el) => {
-        console.log("el: ", el);
-
-        grecaptcha.render(el, {
-            sitekey: "6Ld2yR4UAAAAABOFcKrT2vFvvoI1fIxaAa_PCxzq"
+    $(".recaptcha-container").each((index, el) => {
+        const idCaptchaHtml = $(el).attr("id");
+        const idCaptcha = grecaptcha.render(idCaptchaHtml, {
+            sitekey: "6Ld2yR4UAAAAABOFcKrT2vFvvoI1fIxaAa_PCxzq",
+            callback: $(el).data("after-submit")
         });
+
+        map.set(idCaptchaHtml, idCaptcha);
+        console.log(idCaptchaHtml, idCaptcha);
     });
 };
-
