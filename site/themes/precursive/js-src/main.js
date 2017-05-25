@@ -5,14 +5,12 @@ import Home from "./pages/home";
 import CssAnimation from "./modules/css-animation";
 import CaseStudies from "./modules/case-studies";
 import TopPicks from "./modules/top-picks";
-import ReCaptcha from "./modules/recaptcha";
 import FormEvents from "./modules/form-events";
 
 Home();
 CssAnimation();
 CaseStudies();
 TopPicks();
-ReCaptcha();
 FormEvents();
 
 $(".js-show-intercom").on("click", (e) => {
@@ -43,6 +41,56 @@ $(".js-toggle-form-modal").on("click", (e) => {
 $(".js-close-banner").on("click", () => $(".js-banner").hide());
 
 /* eslint-disable no-undef*/
+const mapRecaptcha = new Map();
+/* eslint-disable no-undef*/
+$("#bookDemoModalForm").on("submit", (e) => {
+    const idCaptchaForm = mapRecaptcha.get("bookDemoModalCaptcha");
+    if (grecaptcha.getResponse(idCaptchaForm) === "") {
+        e.preventDefault();
+        grecaptcha.execute(idCaptchaForm);
+    }
+});
+
+$("#contactUsForm").on("submit", (e) => {
+    const idCaptchaForm = mapRecaptcha.get("contactCaptcha");
+    if (grecaptcha.getResponse(idCaptchaForm) === "") {
+        e.preventDefault();
+        grecaptcha.execute(idCaptchaForm);
+    }
+});
+
+$("#bookDemoForm").on("submit", (e) => {
+    const idCaptchaForm = mapRecaptcha.get("bookDemoCaptcha");
+    if (grecaptcha.getResponse(idCaptchaForm) === "") {
+        e.preventDefault();
+        grecaptcha.execute(idCaptchaForm);
+    }
+});
+
+$("#downloadGuideForm").on("submit", (e) => {
+    const idCaptchaForm = mapRecaptcha.get("downloadGuideCaptcha");
+    if (grecaptcha.getResponse(idCaptchaForm) === "") {
+        e.preventDefault();
+        grecaptcha.execute(idCaptchaForm);
+    }
+});
+
+window.contactFormOnSubmit = function () {
+    $("#contactUsForm").submit();
+};
+
+window.bookDemoModalFormOnSubmit = function () {
+    $("#bookDemoModalForm").submit();
+};
+
+window.bookDemoFormOnSubmit = function () {
+    $("#bookDemoForm").submit();
+};
+
+window.downloadGuideFormOnSubmit = function () {
+    $("#downloadGuideForm").submit();
+};
+
 window.captchaCallback = function () {
     $(".recaptcha-container").each((index, el) => {
         const idCaptchaHtml = $(el).attr("id");
