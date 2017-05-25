@@ -145,11 +145,9 @@ window.captchaCallback = function () {
     $(".g-recaptcha").each((index, el) => {
         console.log("el: ", el);
 
-        const holderId = grecaptcha.render(el, {
+        grecaptcha.render(el, {
             sitekey: "6Ld2yR4UAAAAABOFcKrT2vFvvoI1fIxaAa_PCxzq"
         });
-
-        console.log(holderId);
     });
 };
 
