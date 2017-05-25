@@ -8,11 +8,11 @@ import TopPicks from "./modules/top-picks";
 import ReCaptcha from "./modules/recaptcha";
 import FormEvents from "./modules/form-events";
 
-ReCaptcha();
 Home();
 CssAnimation();
 CaseStudies();
 TopPicks();
+ReCaptcha();
 FormEvents();
 
 $(".js-show-intercom").on("click", (e) => {
