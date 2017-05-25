@@ -42,7 +42,7 @@ $(".js-close-banner").on("click", () => $(".js-banner").hide());
 
 /* eslint-disable no-undef*/
 const mapRecaptcha = new Map();
-/* eslint-disable no-undef*/
+
 $("#bookDemoModalForm").on("submit", (e) => {
     const idCaptchaForm = mapRecaptcha.get("bookDemoModalCaptcha");
     if (grecaptcha.getResponse(idCaptchaForm) === "") {
@@ -91,17 +91,18 @@ window.downloadGuideFormOnSubmit = function () {
     $("#downloadGuideForm").submit();
 };
 
-/* eslint-disable no-undef*/
-window.captchaCallback = function () {
-    console.log("Recaptcha Callback");
-    $(".recaptcha-container").each((index, el) => {
-        const idCaptchaHtml = $(el).attr("id");
-        const idCaptcha = grecaptcha.render(idCaptchaHtml, {
-            sitekey: "6Ld2yR4UAAAAABOFcKrT2vFvvoI1fIxaAa_PCxzq",
-            callback: $(el).data("after-submit")
+setTimeout(() => {
+    window.captchaCallback = function () {
+        console.log("Recaptcha Callback");
+        $(".recaptcha-container").each((index, el) => {
+            const idCaptchaHtml = $(el).attr("id");
+            const idCaptcha = grecaptcha.render(idCaptchaHtml, {
+                sitekey: "6Ld2yR4UAAAAABOFcKrT2vFvvoI1fIxaAa_PCxzq",
+                callback: $(el).data("after-submit")
+            });
+            // Save id of all the captcha from the page
+            mapRecaptcha.set(idCaptchaHtml, idCaptcha);
         });
-        // Save id of all the captcha from the page
-        mapRecaptcha.set(idCaptchaHtml, idCaptcha);
-    });
-};
+    };
+}, 1000);
 /* eslint-disable no-undef*/
