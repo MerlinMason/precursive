@@ -91,6 +91,7 @@ window.downloadGuideFormOnSubmit = function () {
     $("#downloadGuideForm").submit();
 };
 
+/* eslint-disable no-undef*/
 window.captchaCallback = function () {
     console.log("Recaptcha Callback");
     $(".recaptcha-container").each((index, el) => {
