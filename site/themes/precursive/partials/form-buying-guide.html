@@ -10,6 +10,7 @@
         <div class="col-sm-4">
             <h6 class="h s-md">Download the guide now</h6>
             <form id="downloadGuideForm" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+                <input type="hidden" name='captcha_settings' value='{"keyname":"precursiveWebsite","fallback":"true","orgId":"00DD0000000DBV2","ts":""}'>
                 <input type="hidden" name="oid" value="00DD0000000DBV2">
                 <input type="hidden" name="retURL" value="http://precursive.com/buying-guide-success">
                 <input type="hidden" name="lead_source" value="Precursive.com Buying Guide">
