@@ -73,24 +73,24 @@
                         <h1 class="h s-md w-n mt-1x">{{ contact_heading }}</h1>
                         <hr>
                         <div class="row">
-                            <div class="col-sm-4 mb-1x">
-                                {{ if site_email }}
+                            {{ if site_email }}
+                            <div class="{{ if site_phone }} col-sm-4 {{ else }} col-sm-6 {{ /if}}  mb-1x">
+
                                 <a href="mailto:{{ site_email | obfuscate_email }}" class="link-royal" target="_blank">
                                     <img src="{{ theme:img src='/icons/email.svg' }}" width="50px">
                                     <div>{{ site_email | obfuscate_email }}</div>
                                 </a>
-                                {{ /if }}
                             </div>
-                            <div class="col-sm-4 mb-1x">
-
-                                {{ if site_phone }}
+                            {{ /if }}
+                            {{ if site_phone }}
+                            <div class="{{ if site_phone }} col-sm-4 {{ else }} col-sm-6 {{ /if}} mb-1x">
                                 <a href="tel:{{ site_phone }}" class="link-royal">
                                     <img src="{{ theme:img src='/icons/call.svg' }}" width="50px">
                                     <div>{{ site_phone }}</div>
                                 </a>
-                                {{ /if }}
                             </div>
-                            <div class="col-sm-4 mb-1x">
+                            {{ /if }}
+                            <div class="{{ if site_phone }} col-sm-4 {{ else }} col-sm-6 {{ /if}} mb-1x">
                                 <a href="#" class="link-royal js-show-intercom">
                                     <img src="{{ theme:img src='/icons/chat.svg' }}" width="50px">
                                     <div>Live Chat</div>
