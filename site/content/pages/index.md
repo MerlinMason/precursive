@@ -10,8 +10,8 @@ appexchange_description: 'Find out why Precursive is the #1 app on Salesforce Ap
 demo_form_image: /assets/backgrounds/girl-smile-1485428288.jpg
 salesforce_heading: Connecting Sales and Delivery
 salesforce_description: >
-  Workflow Automation. Align sales activities with delivery resources, manage people and projects more
-  effectively and create an effortless customer experience.
+  Align sales activities with delivery resources in Salesforce to create an effortless customer
+  experience.
 benefits_heading: Helping Your Business Succeed
 benefits_description: Maximise the performance and profitability of your people
 case_studies_header:
