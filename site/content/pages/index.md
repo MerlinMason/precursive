@@ -13,7 +13,7 @@ salesforce_description: >
   Align sales activities with delivery resources in Salesforce to create an effortless customer
   experience.
 benefits_heading: Helping Your Business Succeed
-benefits_description: Maximise the performance and profitability of your people
+benefits_description: Maximise the performance and profitability of your people and projects
 case_studies_header:
   - 
     case_studies_title: Customer Success Stories
