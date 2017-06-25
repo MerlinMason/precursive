@@ -1,5 +1,5 @@
-page_heading: Digital Workforce Planning in Salesforce
-page_subheading: The key to project success and making customers happy
+page_heading: Where people mean business
+page_subheading: Digital Workforce Planning in Salesforce
 masthead_video_subtitle: Precursive is also available to non Salesforce customers
 masthead_video_webm: /assets/videos/welcome_to_precursive.webm
 masthead_video_placeholder: /assets/Video-option1-1485550825.jpg
