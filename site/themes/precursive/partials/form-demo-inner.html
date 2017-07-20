@@ -1,12 +1,31 @@
-<form id="bookDemoForm" class="row-sm" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+<form id="bookDemoForm" class="row-sm" action="#" method="POST">
     <input type="hidden" name='captcha_settings' value='{"keyname":"precursiveWebsite","fallback":"true","orgId":"00DD0000000DBV2","ts":""}'>
     <input type="hidden" name="oid" value="00DD0000000DBV2">
     <input type="hidden" name="retURL" value="http://precursive.com/demo-success">
     <input type="hidden" name="lead_source" value="Precursive.com Book a Meeting">
 
-    <div class="col-xs-7 col-sm-8">
-        <input type="email" class="form-input" placeholder="Enter your email" maxlength="80" name="email"
-               required="required" validate>
+    <div class="col-xs-6 col-sm-6 mb-05x">
+        <input type="text" class="form-input" placeholder="Name" maxlength="40" name="first_name"
+               required="required">
+    </div>
+    <div class="col-xs-6 col-sm-6 mb-05x">
+        <input type="text" class="form-input" placeholder="Surname" maxlength="80" name="last_name"
+               required="required">
+    </div>
+
+    <div class="col-xs-6 col-sm-6 mb-05x">
+        <input type="text" class="form-input" placeholder="Company" maxlength="25" name="company"
+               required="required">
+    </div>
+    <div class="col-xs-6 col-sm-6 mb-05x">
+        <input type="text" class="form-input" placeholder="Job Title" maxlength="30" name="job_title"
+               required="required">
+    </div>
+
+
+    <div class="col-xs-7 col-sm-8 mb-05x">
+        <input type="email" class="form-input" placeholder="Email" maxlength="80" name="email"
+               required="required">
     </div>
     <div class="col-xs-5 col-sm-4">
         <button id="bookDemoCaptcha" style="display: none;" class="btn-white btn-fit recaptcha-container"
