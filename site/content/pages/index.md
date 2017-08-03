@@ -11,7 +11,7 @@ demo_form_image: /assets/backgrounds/girl-smile-1485428288.jpg
 salesforce_heading: Connecting Sales and Delivery
 salesforce_description: Align sales with delivery in Salesforce to create an effortless customer experience
 benefits_heading: Helping Your Business Succeed
-benefits_description: Maximise the performance and profitability of your people and projects
+benefits_description: Maximise the productivity of your people and projects to increase revenues and profitability
 case_studies_header:
   - 
     case_studies_title: Customer Success Stories
