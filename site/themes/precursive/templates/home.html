@@ -13,11 +13,14 @@
                 <div class="col-sm-6">
                     <h1 class="h s-xl w-n">{{ page_heading }}</h1>
                     <h1 class="h s-md w-n">{{ page_subheading }}</h1>
-                    <a href="#" class="btn-white btn-large hidden-m js-toggle-form-modal mb-05x">Book a demo</a>
+                    <!-- To Open the modal again, add this class: js-toggle-form-modal -->
+                    <a href="/contact" class="btn-white btn-large hidden-m mb-05x">Book a demo</a>
                     <a href="{{ appexchange_link }}" class="btn-white btn-large has-image hidden-m" target="_blank">
                         <img src="{{ theme:img src='/logos/salesforce-blue.svg' }}" alt="Salesforce logo">
                         View on app exchange
                     </a>
+
+
                 </div>
                 <div class="col-sm-6">
                     <div class="masthead-video" style="background-image:url({{ asset:masthead_video_placeholder }}{{ glide:url width="500" height="300" }}{{ /asset:masthead_video_placeholder }});">
