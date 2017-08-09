@@ -17,14 +17,14 @@ $(".js-show-intercom").on("click", (e) => {
     e.preventDefault();
     window.Intercom("show");
     console.log("Intercom Live Chat");
-    /* eslint-disable no-undef*/
+    /* eslint-disable no-undef */
     ga("send", {
         hitType: "event",
         eventCategory: "Intercom",
         eventAction: "open Intercom Widget",
         eventLabel: "Contact Live Chat"
     });
-    /* eslint-disable no-undef*/
+    /* eslint-disable no-undef */
 });
 
 $(".js-toggle-menu").on("click", () => {
@@ -40,8 +40,14 @@ $(".js-toggle-form-modal").on("click", (e) => {
 
 $(".js-close-banner").on("click", () => $(".js-banner").hide());
 
+$("#contactUsForm").on("submit", (e) => {
+    if (grecaptcha.getResponse() === "") {
+        e.preventDefault();
+        $(".form-message-recaptcha").css("visibility", "visible").css("opacity", 1);
+    }
+});
 
-const mapRecaptcha = new Map();
+/* const mapRecaptcha = new Map();
 
 $("#bookDemoModalForm").on("submit", (e) => {
     const idCaptchaForm = mapRecaptcha.get("bookDemoModalCaptcha");
@@ -102,4 +108,4 @@ window.captchaCallback = function () {
         mapRecaptcha.set(idCaptchaHtml, idCaptcha);
     });
 };
-/* eslint-disable no-undef*/
+ eslint-disable no-undef */

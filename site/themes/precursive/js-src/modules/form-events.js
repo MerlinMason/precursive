@@ -16,9 +16,7 @@ export default () => {
             console.log("Form Sent Successfully!");
             $(".form-no-submitted").addClass("fadeOut");
             $(".form-submitted").addClass("fadeIn");
-
-            /* Send data to GA */
-            /* eslint-disable no-undef*/
+            /* eslint-disable no-undef */
             ga("send", {
                 hitType: "event",
                 eventCategory: "Booking",
@@ -53,8 +51,7 @@ export default () => {
             $(".form-no-submitted").addClass("fadeOut");
             $(".form-submitted").addClass("fadeIn");
 
-            /* Send data to GA */
-            /* eslint-disable no-undef*/
+            /* eslint-disable no-undef */
             ga("send", {
                 hitType: "event",
                 eventCategory: "Booking",
