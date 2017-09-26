@@ -9,8 +9,8 @@ overlay_form_subheading: 'Through an initial consultation  you will  understand 
 demo_form_heading: Wave goodbye to spending your weekend working in spreadsheets
 demo_form_subheading: Get in touch to find out how much time you could save
 blog_demo_form_image: /assets/backgrounds/girl-smile-1485428288.jpg
-banner_enable: false
-banner_text: "We're at Salesforce World Tour London on 18th May"
+banner_enable: true
+banner_text: Get ready for Dreamforce 2017! See you at the learning event of the year
 banner_link: View events
 banner_link_page:
   - 63cc2e7d-f16d-4199-959f-62c0c5ea62c7
