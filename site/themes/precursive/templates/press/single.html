@@ -1,0 +1,88 @@
+<div class="masthead">
+    {{ asset:hero_image }}
+    <div class="masthead-bg" style="background-image:url({{ glide:url width="1440" height="500" fit="crop" }});">
+    </div>
+    {{ /asset:hero_image }}
+    <div class="masthead-content">
+        {{ partial:nav }}
+        <div class="container mt-4x mb-4x text-center">
+            <h1 class="h s-xl w-r mb-05x">{{ title }}</h1>
+            <h1 class="h s-md w-n mb-3x">{{ subtitle }}</h1>
+            <span>
+                {{ if public_date }}
+                    Posted {{ date format="M j, Y" }}
+                {{ /if }}
+            </span>
+        </div>
+    </div>
+
+</div>
+
+<div class="container mt-4x mb-4x">
+    <div class="row">
+        <div class="col-sm-2">
+            <a class="openshare" href="#"
+                data-open-share="facebook"
+                data-open-share-link="{{ current_url }}"
+                data-open-share-picture="{{ glide:intro_image width='600' height='300' }}"
+                data-open-share-caption="{{ site_name }}"
+                data-open-share-description="{{ title }}">
+
+                <span class="icon-facebook"></span>
+                <span class="count"
+                    data-open-share-count="facebook"
+                    data-open-share-count-url="{{ current_url }}">
+                </span>
+            </a>
+
+            <a class="openshare" href="#"
+                data-open-share="google"
+                data-open-share-url="{{ current_url }}">
+
+                <span class="icon-googleplus"></span>
+                <span class="count"
+                    data-open-share-count="google"
+                    data-open-share-count-url="{{ current_url }}">
+                </span>
+            </a>
+
+            <a class="openshare" href="#"
+                data-open-share="linkedin"
+                data-open-share-url="{{ current_url }}"
+                data-open-share-media="{{ glide:intro_image width='600' height='300' }}"
+                data-open-share-title="{{ site_name }} — {{ title }}">
+
+                <span class="icon-linkedin"></span>
+                <span class="count"
+                    data-open-share-count="linkedin"
+                    data-open-share-count-url="{{ current_url }}">
+                </span>
+            </a>
+
+            <a class="openshare" href="#"
+                data-open-share="twitter"
+                data-open-share-url="{{ current_url }}"
+                data-open-share-via="precursive"
+                data-open-share-text="{{ site_name }} — {{ title }}">
+
+                <span class="icon-twitter"></span>
+
+            </a>
+        </div>
+        <div class="col-sm-8">
+            {{ replicator_content }}
+            {{ partial src="replicator/{type}" }}
+            {{ /replicator_content }}
+
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    {{ components }}
+    {{ partial src="components/{type}" }}
+    {{ /components}}
+</div>
+
+{{ partial:form-demo :image="blog_demo_form_image" }}

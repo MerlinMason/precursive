@@ -15,6 +15,7 @@ collections:
   features: 'features/{slug}'
   modules: 'features/modules/{slug}'
   events: 'events/{slug}'
+  press: 'press/{slug}'
 taxonomies:
   tags: '/blog/tags/{slug}'
   categories: '/blog/categories/{slug}'
