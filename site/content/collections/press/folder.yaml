@@ -1,3 +1,4 @@
 title: Press
 order: date
 fieldset: presspost
+template: press/single
