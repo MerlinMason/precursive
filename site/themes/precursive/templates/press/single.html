@@ -10,7 +10,7 @@
             <h1 class="h s-md w-n mb-3x">{{ subtitle }}</h1>
             <span>
                 {{ if public_date }}
-                    Posted {{ date format="M j, Y" }}
+                    {{ public_date format="F j, Y" }}
                 {{ /if }}
             </span>
         </div>
@@ -21,10 +21,10 @@
 <div class="container mt-4x mb-4x">
     <div class="row">
         <div class="col-sm-2">
+            {{ current_url }}
             <a class="openshare" href="#"
                 data-open-share="facebook"
                 data-open-share-link="{{ current_url }}"
-                data-open-share-picture="{{ glide:intro_image width='600' height='300' }}"
                 data-open-share-caption="{{ site_name }}"
                 data-open-share-description="{{ title }}">
 
@@ -49,7 +49,6 @@
             <a class="openshare" href="#"
                 data-open-share="linkedin"
                 data-open-share-url="{{ current_url }}"
-                data-open-share-media="{{ glide:intro_image width='600' height='300' }}"
                 data-open-share-title="{{ site_name }} — {{ title }}">
 
                 <span class="icon-linkedin"></span>
