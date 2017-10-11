@@ -8,7 +8,7 @@ components:
     form_action_text: Submit
     form_success_message: Form has been sent successfully!
     text: '## Combine Project Management, Task Allocation and Resource Planning'
-    image_background: /assets/precursivetwittercard_example.jpg
+    image_background: /assets/precursivelinkedinbanner_example.jpg
   - 
     type: standard_header
     header_data:
