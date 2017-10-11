@@ -13,10 +13,10 @@ components:
     type: standard_header
     header_data:
       - 
-        header_title: We’re integrated to Taskfeed
+        header_title: Precursive + Taskfeed = Customer Success
         header_subtitle: >
-          Precursive helps you manage and schedule your resources, our friends over at Taskfeed have built a
-          task management Salesforce app which seemless links to Precursive.
+          Precursive helps you improve resource allocation and workforce planning, our friends at Taskfeed are
+          the experts in project management, customer onboarding and task allocation.
   - 
     type: image
     image: /assets/p-taskfeed-1492554911.png
@@ -53,8 +53,8 @@ components:
       Find out why Precursive is the #1 app on Salesforce AppExchange® for resource scheduling, project planning and timesheets.
       
       [![](http://localhost:8888/site/themes/precursive/img/logos/appexchange.svg)](dude.com)
-title: Precursive + Taskfeed = Customer Success
+title: We take the WORK out of Workflow
 fieldset: super_replicator
 template: custom_components
-id: 368bbab8-6f4c-458b-acce-9d443bd33ff2
 tags: [ ]
+id: 368bbab8-6f4c-458b-acce-9d443bd33ff2
