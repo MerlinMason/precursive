@@ -1,0 +1,52 @@
+<div class="masthead">
+    {{ asset:masthead }}
+    <div class="masthead-bg" style="background-image:url({{ glide:url width="1440" height="350" fit="crop" }});">
+    </div>
+    {{ /asset:masthead }}
+    <div class="masthead-content">
+        {{ partial:nav }}
+        <div class="text-center mt-4x mb-4x">
+            <h1 class="h s-xl w-n">{{ title }}</h1>
+            <h2 class="h s-md w-r">{{ subtitle }}</h2>
+        </div>
+    </div>
+</div>
+
+<section class="container mt-4x">
+    {{ collection:press paginate="true" as="pressItem" limit="9" }}
+        {{ pressItem }}
+            {{ if zero_index % 3 == 0 }}<div class="row">{{ /if }}
+                <div class="col-sm-4">
+                    <article class="post mb-4x">
+
+                        <!--{{ if index == 1 }}
+                            <div class="label bg-jade">Most Recent</div>
+                        {{ elseif most_read }}
+                            <div class="label bg-flamingo">Most Read</div>
+                        {{ /if }}-->
+
+                        <a href="{{ url }}" class="text-center">
+                            {{ if intro_image }}
+                                <img src="{{ glide:intro_image width='400' height='250' fit='crop' }}" class="scale mb-1x">
+                            {{ /if }}
+
+                            <h1 class="h s-sm w-r caps c-jade mb-05x">{{ title }}</h1>
+
+                            <h2 class="h s-sm w-n c-grey3">{{ subtitle }}</h2>
+
+                            <div class="c-grey2">
+                               <span>
+                                    {{ if public_date }}
+                                        {{ public_date format="F j, Y" }}
+                                    {{ /if }}
+                                </span>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            {{ if last || index % 3 == 0 }}</div>{{ /if }}
+        {{ /pressItem }}
+
+        {{ partial:pagination }}
+    {{ /collection:press }}
+</section>

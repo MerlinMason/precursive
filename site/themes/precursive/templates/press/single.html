@@ -1,0 +1,53 @@
+<div class="masthead">
+    {{ asset:hero_image }}
+    <div class="masthead-bg" style="background-image:url({{ glide:url width="1440" height="500" fit="crop" }});">
+    </div>
+    {{ /asset:hero_image }}
+    <div class="masthead-content">
+        {{ partial:nav }}
+        <div class="container mt-4x mb-4x text-center">
+            <h1 class="h s-xl w-r mb-05x">{{ title }}</h1>
+            <h1 class="h s-md w-n mb-3x">{{ subtitle }}</h1>
+            <span>
+                {{ if public_date }}
+                    {{ public_date format="F j, Y" }}
+                {{ /if }}
+            </span>
+        </div>
+    </div>
+
+</div>
+
+<div class="container mt-4x mb-4x">
+    <div class="row">
+        <div class="col-sm-2">
+            <a class="openshare" target="_blank" href="https://www.facebook.com/precursive/">
+                <span class="icon-facebook"></span>
+            </a>
+
+            <a class="openshare" target="_blank" href="https://plus.google.com/116817843882776902655">
+                <span class="icon-googleplus"></span>
+            </a>
+
+            <a class="openshare" target="_blank" href="https://es.linkedin.com/company/precursive">
+                <span class="icon-linkedin"></span>
+            </a>
+
+            <a class="openshare" target="_blank" href="https://twitter.com/precursive">
+                <span class="icon-twitter"></span>
+            </a>
+        </div>
+        <div class="col-sm-8">
+            {{ replicator_content }}
+            {{ partial src="replicator/{type}" }}
+            {{ /replicator_content }}
+        </div>
+    </div>
+</div>
+
+<div>
+    {{ components }}
+    {{ partial src="components/{type}" }}
+    {{ /components}}
+</div>
+

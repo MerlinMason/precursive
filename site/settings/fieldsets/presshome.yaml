@@ -1,0 +1,20 @@
+title: 'Page - Press Releases Home'
+create_title: ""
+taxonomies: false
+fields:
+  subtitle:
+    type: text
+    display: Subtitle
+  masthead:
+    type: assets
+    display: Masthead
+    container: main
+    folder: backgrounds
+    max_files: "1"
+    restrict: false
+  is_hidden_header:
+    type: toggle
+    display: Hide from header navigation
+  is_hidden_footer:
+    type: toggle
+    display: Hide from footer navigation

@@ -1,0 +1,40 @@
+title: Press Post
+hide: true
+taxonomies: false
+fields:
+  title:
+    type: title
+    display: Title
+    localizable: true
+  subtitle:
+    type: text
+    display: Subtitle
+    localizable: true
+  intro_image:
+    type: assets
+    display: Intro Image
+    container: main
+    folder: /
+    max_files: 1
+    width: 50
+  hero_image:
+    type: assets
+    display: Hero Image
+    container: main
+    folder: backgrounds
+    max_files: 1
+    width: 50
+  public_date:
+    type: date
+    display: Public Date
+    allow_blank: true
+    allow_time: true
+    earliest_date: January 1, 2010
+  replicator:
+    type: partial
+    display: Blog Replicator
+    fieldset: precursive_replicator
+  super_replicator:
+    type: partial
+    display: Super Replicator Content
+    fieldset: super_replicator

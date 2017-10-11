@@ -27,12 +27,31 @@
 .icon-facebook:before {
     content:"\e05d";
 }
+
+.icon-facebook:hover {
+    color: #3b5998;
+}
+
 .icon-twitter:before {
     content:"\e05e";
 }
+
+.icon-twitter:hover {
+    color: #1dcaff;
+}
+
 .icon-googleplus:before {
     content:"\e05f";
 }
+
+.icon-googleplus:hover {
+    color: #d34836;
+}
+
 .icon-linkedin:before {
     content:"\e062";
+}
+
+.icon-linkedin:hover {
+    color: #0077B5;
 }
