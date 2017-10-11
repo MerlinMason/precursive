@@ -30,7 +30,6 @@ components:
       Most firms are unable to see exactly how their staff are spending their time, and therefore unable to maximise resource utilization. Precursive with Taskfeed creates a complete project and resource management solution opening up visibility in utilization, and project delivery.
     image: /assets/Brand/how-does-taskfeed-integrate.png
     distribution: 2
-    is_centered: true
   - 
     type: demo_CTA
     text: |
