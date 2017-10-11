@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit46c90478fecb20e8553ff4c6c5e717e0
+class ComposerStaticInit09b6e84a48b212684ed51c3dd116cb95
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -2698,6 +2698,7 @@ class ComposerStaticInit46c90478fecb20e8553ff4c6c5e717e0
         'Statamic\\Console\\Commands\\Update\\UpdateHousekeepingCommand' => __DIR__ . '/../..' . '/core/Console/Commands/Update/UpdateHousekeepingCommand.php',
         'Statamic\\Console\\Commands\\Update\\UpdateStatamicCommand' => __DIR__ . '/../..' . '/core/Console/Commands/Update/UpdateStatamicCommand.php',
         'Statamic\\Console\\Commands\\VersionCommand' => __DIR__ . '/../..' . '/core/Console/Commands/VersionCommand.php',
+        'Statamic\\Console\\EnhancesCommands' => __DIR__ . '/../..' . '/core/Console/EnhancesCommands.php',
         'Statamic\\Console\\Kernel' => __DIR__ . '/../..' . '/core/Console/Kernel.php',
         'Statamic\\Console\\Please' => __DIR__ . '/../..' . '/core/Console/Please.php',
         'Statamic\\Contracts\\Assets\\Asset' => __DIR__ . '/../..' . '/core/Contracts/Assets/Asset.php',
@@ -2904,6 +2905,7 @@ class ComposerStaticInit46c90478fecb20e8553ff4c6c5e717e0
         'Statamic\\Http\\Controllers\\AddonsController' => __DIR__ . '/../..' . '/core/Http/Controllers/AddonsController.php',
         'Statamic\\Http\\Controllers\\AssetContainersController' => __DIR__ . '/../..' . '/core/Http/Controllers/AssetContainersController.php',
         'Statamic\\Http\\Controllers\\AssetFoldersController' => __DIR__ . '/../..' . '/core/Http/Controllers/AssetFoldersController.php',
+        'Statamic\\Http\\Controllers\\AssetThumbnailController' => __DIR__ . '/../..' . '/core/Http/Controllers/AssetThumbnailController.php',
         'Statamic\\Http\\Controllers\\AssetsController' => __DIR__ . '/../..' . '/core/Http/Controllers/AssetsController.php',
         'Statamic\\Http\\Controllers\\Auth\\AuthController' => __DIR__ . '/../..' . '/core/Http/Controllers/Auth/AuthController.php',
         'Statamic\\Http\\Controllers\\Auth\\OAuthController' => __DIR__ . '/../..' . '/core/Http/Controllers/Auth/OAuthController.php',
@@ -3636,10 +3638,10 @@ class ComposerStaticInit46c90478fecb20e8553ff4c6c5e717e0
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit46c90478fecb20e8553ff4c6c5e717e0::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit46c90478fecb20e8553ff4c6c5e717e0::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit46c90478fecb20e8553ff4c6c5e717e0::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit46c90478fecb20e8553ff4c6c5e717e0::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit09b6e84a48b212684ed51c3dd116cb95::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit09b6e84a48b212684ed51c3dd116cb95::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit09b6e84a48b212684ed51c3dd116cb95::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit09b6e84a48b212684ed51c3dd116cb95::$classMap;
 
         }, null, ClassLoader::class);
     }
