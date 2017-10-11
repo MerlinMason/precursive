@@ -51,7 +51,7 @@ components:
       
       Find out why Precursive is the #1 app on Salesforce AppExchange® for resource scheduling, project planning and timesheets.
       
-      [![](http://localhost:8888/site/themes/precursive/img/logos/appexchange.svg)](dude.com)
+      [App Exchange![App](https://precursive.com/site/themes/precursive/img/logos/appexchange.svg)](dude.com)
 title: Project Management
 fieldset: super_replicator
 template: custom_components
