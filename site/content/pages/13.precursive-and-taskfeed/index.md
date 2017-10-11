@@ -8,7 +8,7 @@ components:
     form_action_text: Submit
     form_success_message: Form has been sent successfully!
     text: '## Combine Project Management, Task Allocation and Resource Planning'
-    image_background: /assets/website-image.png
+    image_background: /assets/website-image-1507703974.png
   - 
     type: standard_header
     header_data:
