@@ -51,6 +51,23 @@ components:
         returl: www.precursive.com/you-got-mail
     form_action_text: Demo
     image_background: /assets/backgrounds/headache-1485428289.jpg
+  - 
+    type: link_CTA
+    show_angle: true
+    text: Here is the Text
+    button_1_data:
+      - 
+        url_redirection: https://precursive.com/
+        button_text: Go To Page
+    button_2_data:
+      - 
+        url_redirection: https://precursive.com/
+        button_text: Go To Page
+    video_on_the_right_subtitle: This is a message at the bottom of the video
+  - 
+    type: top_picks
+    top_picks_title: Our Top Picks
+    top_picks_subtitle: Come to visit us !
 title: Project Management
 fieldset: super_replicator
 template: custom_components
