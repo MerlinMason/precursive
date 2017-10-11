@@ -50,7 +50,7 @@ components:
       ## Available on the Salesforce AppExchange®
       ### Precursive is Native to Salesforce
       
-      Find out why Precursive is the #1 app on Salesforce AppExchange® for resource scheduling, project planning and timesheets.
+      Find out why Precursive is the #1 app on Salesforce AppExchange® for high tech, telecommunications, media and consulting industries.
       
       [![](http://localhost:8888/site/themes/precursive/img/logos/appexchange.svg)](dude.com)
 title: Project Management
