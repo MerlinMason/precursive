@@ -31,6 +31,15 @@ components:
     image: /assets/Brand/how-does-taskfeed-integrate.png
     distribution: 2
   - 
+    type: app_exchange
+    text: |
+      ## Available on the Salesforce AppExchange®
+      ### Precursive is Native to Salesforce
+      
+      Find out why Precursive is the #1 app on Salesforce AppExchange® for resource scheduling, project planning and timesheets.
+      
+      [![](https://precursive.com/site/themes/precursive/img/logos/appexchange.svg)](here_is_the_url)
+  - 
     type: demo_CTA
     text: |
       ## Wave goodbye to spending your weekend working in spreadsheets
@@ -42,15 +51,6 @@ components:
         returl: www.precursive.com/you-got-mail
     form_action_text: Demo
     image_background: /assets/backgrounds/headache-1485428289.jpg
-  - 
-    type: app_exchange
-    text: |
-      ## Available on the Salesforce AppExchange®
-      ### Precursive is Native to Salesforce
-      
-      Find out why Precursive is the #1 app on Salesforce AppExchange® for resource scheduling, project planning and timesheets.
-      
-      [![](https://precursive.com/site/themes/precursive/img/logos/appexchange.svg)](here_is_the_url)
 title: Project Management
 fieldset: super_replicator
 template: custom_components
