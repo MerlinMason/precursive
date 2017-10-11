@@ -56,3 +56,4 @@ title: Task Feed and Precursive Integration
 fieldset: super_replicator
 template: custom_components
 id: 368bbab8-6f4c-458b-acce-9d443bd33ff2
+tags: [ ]
