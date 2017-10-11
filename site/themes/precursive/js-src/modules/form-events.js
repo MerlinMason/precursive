@@ -9,7 +9,8 @@ export default () => {
                 name: $("#formEventName").val(),
                 email: $("#formEventEmail").val(),
                 leadSource: $("#formEventFilter").val(),
-                company: $("#formEventCompany").val() }),
+                company: $("#formEventCompany").val()
+            }),
             dataType: "jsonp",
             timeout: 5000
         }).done(() => {
