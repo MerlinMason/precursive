@@ -7,15 +7,13 @@ components:
     form_action: https://precursive.com/
     form_action_text: Submit
     form_success_message: Form has been sent successfully!
-    text: '## Integrate resourcing and related task management'
+    text: '## Project Management, Task Allocation and Resource Planning'
   - 
     type: standard_header
     header_data:
       - 
-        header_title: We’re integrated to Taskfeed
-        header_subtitle: >
-          Precursive helps you manage and schedule your resources, our friends over at Taskfeed have built a
-          task management Salesforce app which seemless links to Precursive.
+        header_title: Precursive + Taskfeed = Customer Success
+        header_subtitle: "Precursive helps you improve resource allocation and workforce planning, our friends over at Taskfeed specialise in project management, task allocation and customer onboarding. We have a combined solution which is native to Salesforce so whatever you need to achieve, we've got you covered."
   - 
     type: image
     image: /assets/p-taskfeed-1492554911.png
@@ -26,8 +24,8 @@ components:
   - 
     type: image_and_text
     text: |
-      ## Scheduling and task management
-      Most firms are unable to see exactly how their staff are spending their time, and therefore unable to maximise resource utilization. Precursive with Taskfeed creates a complete project and resource management solution opening up visibility in utilization, and project delivery.
+      ## An integrated solution for Customer Success
+      As companies look to grow and scale, often they are dealing with larger and more complex projects. With increased demand from customers and the pressure this places on project management and resourcing functions - customers will begin to look beyond the manual processes and spreadsheets that served their needs in the past. Precursive and Taskfeed provide a fully integrated solution that is native to Salesforce which helps to improve project management, task allocation and resource planning.
     image: /assets/Brand/how-does-taskfeed-integrate.png
     distribution: 2
   - 
@@ -36,7 +34,7 @@ components:
       ## Available on the Salesforce AppExchange®
       ### Precursive is Native to Salesforce
       
-      Find out why Precursive is the #1 app on Salesforce AppExchange® for resource scheduling, project planning and timesheets.
+      Find out why Precursive is the #1 app on Salesforce AppExchange® for high tech, telecommunications, media and consulting industries.
       
       [![](https://precursive.com/site/themes/precursive/img/logos/appexchange.svg)](here_is_the_url)
   - 
