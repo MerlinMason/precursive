@@ -14,9 +14,9 @@
   <title>{{ title ensure_right=" — " }} {{ site_name }}</title>
 
   <!-- Start Google Tag Manager -->
-  <noscript>
+  <!--<noscript>
     <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P974JH" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe>
+            ></iframe>
   </noscript>
   <script>
     (function (w, d, s, l, i) {
@@ -27,7 +27,7 @@
       j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
       f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', 'GTM-P974JH');
-  </script>
+  </script>-->
   <!-- End Google Tag Manager -->
 
   <!-- Hotjar Tracking Code for www.precursive.com and GA Tracking Code -->
@@ -82,20 +82,35 @@
   <link rel="stylesheet" href="{{ theme:css }}">
   <link rel="shortcut icon" type="image/png" href="{{ theme:img src='/favicon.png' }}">
   <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Source+Sans+Pro:400,600,700" rel="stylesheet">
+
+  <!-- Cookie Consent Plugin addon -->
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+  <script>
+    window.addEventListener("load", function(){
+      window.cookieconsent.initialise({
+        "palette": {
+          "popup": {
+            "background": "#000"
+          },
+          "button": {
+            "background": "#f1d600"
+          }
+        },
+        "theme": "classic"
+      })});
+  </script>
 </head>
 
-<body class="section-{{ segment_1 or " home
-" }}">
+<body class="section-{{ segment_1 or " home" }}">
 {{ partial:banner }}
 
 {{ template_content }}
 
 {{ partial:footer }}
 
-
 <script src="{{ theme:js }}"></script>
-<!-- Google Recaptcha -->
-<!-- <script src="https://www.google.com/recaptcha/api.js?onload=captchaCallback&render=explicit" async defer></script> -->
+
 <script>
   /* Intercom Settings */
   window.intercomSettings = { app_id: "xc24ywss" };
