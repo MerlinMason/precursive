@@ -2,13 +2,13 @@
     <div class="hamburger js-toggle-menu"></div>
     <a href="/" class="logo fl">{{ site_name }}</a>
     <span class="panel">
-        {{ nav from="/" is_hidden_header:is="false" include_home="true" }}
+        {{ nav from="/" is_hidden_header:is="false" }}
         <a {{ if is_current || is_parent }} class="active" {{ /if }} href="{{ url }}">{{ tag:nav_title or title }}</a>
         {{ /nav }}
-        <a href="{{ login_link }}" class="fr">
+        <!--<a href="{{ login_link }}" class="fr">
             Sign In
             <img src="{{ theme:img src="icons/link-arrow-white.svg" }}" width="22px">
-        </a>
+        </a>-->
         <a href="{{ support_link ]}}" class="fr">Support</a>
     </span>
 </nav>
