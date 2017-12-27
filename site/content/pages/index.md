@@ -1,5 +1,5 @@
 page_heading: Where PEOPLE mean business
-page_subheading: Workforce Planning in Salesforce
+page_subheading: Manage people and projects in Salesforce
 masthead_video_subtitle: ""
 masthead_video_webm: /assets/videos/welcome_to_precursive.webm
 masthead_video_placeholder: /assets/Video-option1-1485550825.jpg
