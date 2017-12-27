@@ -5,8 +5,8 @@ masthead_video_webm: /assets/videos/welcome_to_precursive.webm
 masthead_video_placeholder: /assets/Video-option1-1485550825.jpg
 customers_heading: Customers of all sizes succeed with Precursive
 appexchange_heading: Available on the Salesforce AppExchange®
-appexchange_subheading: Precursive is Native to Salesforce
-appexchange_description: 'Find out why Precursive is the #1 app on Salesforce AppExchange® for high tech, telecommunications, media and consulting industries.'
+appexchange_subheading: ""
+appexchange_description: 'Precursive is the #1 app on Salesforce AppExchange® for high tech, telecommunications, media and consulting industries. Read customer reviews on how we help them succeeed.'
 demo_form_image: /assets/backgrounds/girl-smile-1485428288.jpg
 salesforce_heading: Connecting Sales and Delivery
 salesforce_description: Align sales with delivery in Salesforce to create an effortless customer experience
