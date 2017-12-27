@@ -7,7 +7,7 @@ customers_heading: Customers of all sizes succeed with Precursive
 appexchange_heading: Available on the Salesforce AppExchange®
 appexchange_subheading: ""
 appexchange_description: |
-  Precursive is the #1 app for Resource Management and Professional Services Automation PSA) used in high tech, telecoms, media and consulting industries.
+  Precursive is the #1 app for Resource Management and Professional Services Automation PSA) used across high tech, telecoms, media and consulting.
   Read customer reviews on how Precursive helps makes people more productive and projects more profitable.
 demo_form_image: /assets/backgrounds/girl-smile-1485428288.jpg
 salesforce_heading: Connecting Sales and Delivery
