@@ -1,5 +1,5 @@
 page_heading: Welcome to the Future of Work
-page_subheading: Helping our customers create more growth opportunities
+page_subheading: Manage people and projects in Salesforce
 masthead: /assets/backgrounds/working-3-1485428290.jpg
 demo_form_image: /assets/backgrounds/headache-1485428289.jpg
 title: Product
