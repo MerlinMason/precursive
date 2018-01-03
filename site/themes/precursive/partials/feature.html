@@ -5,14 +5,14 @@
                 {{ assets:icon }}
                 {{ svg_output id="{id}" class="class-name" }}
                 {{ /assets:icon }}
-                <h2 class="h s-lg w-n">{{ title }}</h2>
+                <h2 class="h s-md w-n">{{ title }}</h2>
                 <h3 class="h s-sm w-n">{{ description | widont }}</h3>
             </div>
         </div>
         <hr>
         <div class="row">
             <div class="col-sm-5 col-sm-offset-1 {{ if index % 2 == 0 }}fr{{ /if }}">
-                <h2 class="h s-lg w-n">{{ subtitle }}</h2>
+                <h2 class="h s-md w-n">{{ subtitle }}</h2>
                 <h3 class="h s-sm w-n">{{ secondarydescription }}</h3>
                 <ul class="ticklist">
                     {{ feature_list }}
