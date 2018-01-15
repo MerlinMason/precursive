@@ -12,7 +12,7 @@
             <div class="row mt-4x mt-2x-m pb-2x mb-angle">
                 <div class="col-sm-6">
                     <h1 class="h s-xl w-n">{{ page_heading }}</h1>
-                    <h1 class="h s-md w-n">{{ page_subheading }}</h1>
+                    <h1 class="h s-md w-n mb-5x">{{ page_subheading }}</h1>
                     <!-- To Open the modal again, add this class: js-toggle-form-modal -->
                     <a href="/contact" class="btn-white btn-large hidden-m mb-05x">Book a demo</a>
                     <a href="{{ appexchange_link }}" class="btn-white btn-large has-image hidden-m" target="_blank">
@@ -37,7 +37,7 @@
         <h1 class="h s-lg w-n text-center mt-2x mb-2x">{{ customers_heading }}</h1>
     </div>
     <div class="customer-carousel js-customer-carousel">
-        {{ collection:customer }}
+        {{ collection:customer sort="title" }}
         {{ asset:logo }}
         <div class="carousel-cell">
             <img src="{{ glide:url width="150" height="60" }}" alt="logo for {{ title }}" title="{{ title }}">
