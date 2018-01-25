@@ -10,6 +10,8 @@
             <h1 class="h s-md w-n text-center mt-1x">{{ form_heading }}</h1>
             <hr>
 
+            <div id="map" style="width: 100%;height: 400px;background-color: grey;"></div>
+
             <form id="contactUsForm" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
               <input type="hidden" name='captcha_settings'
                      value='{"keyname":"precursive_normal_recaptcha","fallback":"true","orgId":"00DD0000000DBV2","ts":""}'>
@@ -111,3 +113,26 @@
     </div>
   </div>
 </div>
+
+<script>
+    function initMap() {
+        var precursiveLocation = {lat: 51.502495, lng: -0.082402};
+        var icon = {
+            url: "https://precursive.com/site/themes/precursive/img/logos/precursive-green.png",
+            scaledSize: new google.maps.Size(70, 70), // scaled size
+            origin: new google.maps.Point(0,0), // origin
+            anchor: new google.maps.Point(0,0) // anchor
+        };
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 4,
+            center: precursiveLocation
+        });
+        var marker = new google.maps.Marker({
+            position: precursiveLocation,
+            map: map,
+            icon: icon
+        });
+    }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGcAoimt3Khnwq4ENTVkyeTy9kF5hZogg&callback=initMap"
+        type="text/javascript"></script>
