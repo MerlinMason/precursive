@@ -10,7 +10,7 @@
             <h1 class="h s-md w-n text-center mt-1x">{{ form_heading }}</h1>
             <hr>
 
-            <div id="map" style="width: 100%;height: 400px;background-color: grey;"></div>
+            <div id="map" style="margin-bottom: 2em; width: 100%;height: 300px;background: linear-gradient(300deg,rgba(0,201,181,.8) 0,rgba(19,110,181,.8) 100%);"></div>
 
             <form id="contactUsForm" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
               <input type="hidden" name='captcha_settings'
@@ -119,7 +119,7 @@
         var precursiveLocation = {lat: 51.502495, lng: -0.082402};
         var icon = {
             url: "https://precursive.com/site/themes/precursive/img/logos/precursive-green.png",
-            scaledSize: new google.maps.Size(70, 70), // scaled size
+            scaledSize: new google.maps.Size(70, 50), // scaled size
             origin: new google.maps.Point(0,0), // origin
             anchor: new google.maps.Point(0,0) // anchor
         };
@@ -127,10 +127,48 @@
             zoom: 4,
             center: precursiveLocation
         });
+
+        var contentString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Uluru</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
+            'sandstone rock formation in the southern part of the '+
+            'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
+            'south west of the nearest large town, Alice Springs; 450&#160;km '+
+            '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
+            'features of the Uluru - Kata Tjuta National Park. Uluru is '+
+            'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
+            'Aboriginal people of the area. It has many springs, waterholes, '+
+            'rock caves and ancient paintings. Uluru is listed as a World '+
+            'Heritage Site.</p>'+
+            '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+            'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
+            '(last visited June 22, 2009).</p>'+
+            '</div>'+
+            '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+            content: '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">We are <b>Precursive</b>!</h1>'+
+            '<div id="bodyContent">'+
+            '<h3>Found us at Arch 4 1 Crucifix Ln, London SE1 3JW</h3>'+
+            '</div>'+
+            '</div>'
+        });
+
         var marker = new google.maps.Marker({
             position: precursiveLocation,
             map: map,
-            icon: icon
+            icon: icon,
+            title: 'Arch 4\n' +
+            '1 Crucifix Ln, London SE1 3JW'
+        });
+        marker.addListener('click', function() {
+            infowindow.open(map, marker);
         });
     }
 </script>
