@@ -1,5 +1,5 @@
-page_heading: Where PEOPLE mean business
-page_subheading: Manage people and projects in Salesforce
+page_heading: MANAGE YOUR RESOURCES
+page_subheading: 'With the #1 App for Project Management on Salesforce'
 masthead_video_subtitle: ""
 masthead_video_webm: /assets/videos/welcome_to_precursive.webm
 masthead_video_placeholder: /assets/Video-option1-1485550825.jpg
