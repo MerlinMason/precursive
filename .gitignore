@@ -7,3 +7,6 @@ local/temp/*
 installer.php
 *.map
 .idea
+pve_digitalocean
+pve_digitalocean.pub
+
